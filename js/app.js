@@ -10,7 +10,7 @@ angular = require('angular');
 require('angular-route');
 require('../dist/templateCachePartials');
 
-angular.module('woin-starship', ['ngRoute','todoPartials'])
+angular.module('woin-starship', ['ngRoute','todoPartials', 'ui.bootstrap'])
 	.config(function ($routeProvider) {
 		'use strict';
 

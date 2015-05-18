@@ -11,6 +11,29 @@ angular.module('woin-starship')
 	.controller('StarshipCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {
 		'use strict';
 
+		$scope.tabs = [
+			{ title:'Hull Class', content:'partials/hull.html' },
+			{ title:'Command & Control', content:'Choose your Hull Class' },
+			{ title:'Crew', content:'Choose your Hull Class' },
+			{ title:'Sub-Liminal Engines', content:'Choose your Hull Class' },
+			{ title:'FTL Engines', content:'Choose your Hull Class' },
+			{ title:'Superstructure', content:'Choose your Hull Class' },
+			{ title:'Deflector Shields', content:'Choose your Hull Class' },
+			{ title:'Point Defenses', content:'Choose your Hull Class' },
+			{ title:'Weaponry', content:'Choose your Hull Class' },
+			{ title:'Additional Equipment', content:'Choose your Hull Class' },
+			{ title:'Fighter Bay', content:'Choose your Hull Class' },
+			{ title:'Facilities', content:'Choose your Hull Class' },
+			{ title:'Misc', content:'Choose your Hull Class' },
+			{ title:'Download CSV', content:'Choose your Hull Class' }
+		];
+
+		$scope.setPartial = function(tab) {
+			console.log(tab);
+			console.log("Setting choice partial to:" + tab.content);
+      $scope.chosenPartial = tab.content;
+		};
+
 		var todos = $scope.todos = store.todos;
 
 		$scope.newTodo = '';

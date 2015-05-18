@@ -1,42 +1,17 @@
 <div class="row">
     <div class="col-md-4">
-        <!--<tabset vertical="true" type="pills">-->
-            <!--<tab heading="Hull Class">Vertical content 1</tab>-->
-            <!--<tab heading="Command & Control">Vertical content 2</tab>-->
-            <!--<tab heading="Crew">Vertical content 2</tab>-->
-            <!--<tab heading="Sub-Liminal Engines">Vertical content 2</tab>-->
-            <!--<tab heading="FTL Engines">Vertical content 2</tab>-->
-            <!--<tab heading="Superstructure">Vertical content 2</tab>-->
-            <!--<tab heading="Deflector Shields">Vertical content 2</tab>-->
-            <!--<tab heading="Point Defenses">Vertical content 2</tab>-->
-            <!--<tab heading="Weaponry">Vertical content 2</tab>-->
-            <!--<tab heading="Additional Equipment">Vertical content 2</tab>-->
-            <!--<tab heading="Fighter Bay">Vertical content 2</tab>-->
-            <!--<tab heading="Facilities">Vertical content 2</tab>-->
-            <!--<tab heading="Misc">Vertical content 2</tab>-->
-            <!--<tab heading="Download CSV">Vertical content 2</tab>-->
-        <!--</tabset>-->
-        <div class="list-group">
-            <a href="#" class="list-group-item active">
-                Just the facts
-            </a>
-            <a href="#" class="list-group-item">Hull Class</a>
-            <a href="#" class="list-group-item">Command & Control</a>
-            <a href="#" class="list-group-item">Crew</a>
-            <a href="#" class="list-group-item">Sub-Liminal Engines</a>
-            <a href="#" class="list-group-item">FTL Engines</a>
-            <a href="#" class="list-group-item">Superstructure</a>
-            <a href="#" class="list-group-item">Deflector Shields</a>
-            <a href="#" class="list-group-item">Point Defenses</a>
-            <a href="#" class="list-group-item">Weaponry</a>
-            <a href="#" class="list-group-item">Additional Equipment</a>
-            <a href="#" class="list-group-item">Fighter Bay</a>
-            <a href="#" class="list-group-item">Facilities</a>
-            <a href="#" class="list-group-item">Misc</a>
-            <a href="#" class="list-group-item">Download Ship CSV</a>
-        </div>
+        <tabset  vertical="true" type="pills">
+            <tab ng-repeat="tab in tabs" select='setPartial(tab)' heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+
+            </tab>
+        </tabset>
     </div>
     <div class="col-md-8">
+        <div data-ng-include data-src="chosenPartial"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
         <table class='centered' cols="10" frame="void" rules="none" border="0" cellspacing="0">
             <colgroup>
                 <col width="157">
