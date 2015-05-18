@@ -1,0 +1,11 @@
+{
+  "name": "woin-starships",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.3.12",
+    "bootstrap": "^3.3.4",
+    "ngStorage": "^0.3.0",
+    "ng-csv": "0.3.3",
+    "angular-csv-import": "0.0.16"
+  }
+}
