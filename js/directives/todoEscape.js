@@ -7,7 +7,7 @@
 
 angular = require('angular');
 
-angular.module('todomvc')
+angular.module('woin-starship')
 	.directive('todoEscape', function () {
 		'use strict';
 

@@ -9,7 +9,7 @@
  */
 angular = require('angular');
 
-angular.module('todomvc')
+angular.module('woin-starship')
 	.factory('todoStorage', function ($http, $injector) {
 		'use strict';
 		return $injector.get('localStorage');

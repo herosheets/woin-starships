@@ -7,8 +7,8 @@
  */
 angular = require('angular');
 
-angular.module('todomvc')
-	.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {
+angular.module('woin-starship')
+	.controller('StarshipCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {
 		'use strict';
 
 		var todos = $scope.todos = store.todos;

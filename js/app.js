@@ -10,12 +10,12 @@ angular = require('angular');
 require('angular-route');
 require('../dist/templateCachePartials');
 
-angular.module('todomvc', ['ngRoute','todoPartials'])
+angular.module('woin-starship', ['ngRoute','todoPartials'])
 	.config(function ($routeProvider) {
 		'use strict';
 
 		var routeConfig = {
-			controller: 'TodoCtrl',
+			controller: 'StarshipCtrl',
 			templateUrl: '/partials/todomvc-index.html',
 			resolve: {
 				store: ['todoStorage', function (todoStorage) {
@@ -33,8 +33,7 @@ angular.module('todomvc', ['ngRoute','todoPartials'])
 			});
 	});
 
-require('todoCtrl');
+require('starshipCtrl');
 require('todoStorage');
 require('todoFocus');
 require('todoEscape');
-require('footer');

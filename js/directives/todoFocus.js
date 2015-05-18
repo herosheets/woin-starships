@@ -7,7 +7,7 @@
 
 angular = require('angular');
 
-angular.module('todomvc')
+angular.module('woin-starship')
 	.directive('todoFocus', function todoFocus($timeout) {
 		'use strict';
 
