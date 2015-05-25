@@ -13,19 +13,19 @@ angular.module('woin-starship')
 
 		$scope.tabs = [
 			{ title:'Hull Class', content:'/partials/hull.html' },
-			{ title:'Command & Control', content:'Choose your Hull Class' },
-			{ title:'Crew', content:'Choose your Hull Class' },
-			{ title:'Sub-Liminal Engines', content:'Choose your Hull Class' },
-			{ title:'FTL Engines', content:'Choose your Hull Class' },
-			{ title:'Superstructure', content:'Choose your Hull Class' },
-			{ title:'Deflector Shields', content:'Choose your Hull Class' },
-			{ title:'Point Defenses', content:'Choose your Hull Class' },
-			{ title:'Weaponry', content:'Choose your Hull Class' },
-			{ title:'Additional Equipment', content:'Choose your Hull Class' },
-			{ title:'Fighter Bay', content:'Choose your Hull Class' },
-			{ title:'Facilities', content:'Choose your Hull Class' },
-			{ title:'Misc', content:'Choose your Hull Class' },
-			{ title:'Download CSV', content:'Choose your Hull Class' }
+			{ title:'Command & Control', content:'/partials/commandcontrol.html' },
+			{ title:'Crew', content:'/partials/crew.html' },
+			{ title:'Sub-Liminal Engines', content:'/partials/subliminal.html' },
+			{ title:'FTL Engines', content:'/partials/ftl.html' },
+			{ title:'Superstructure', content:'/partials/superstructure.html' },
+			{ title:'Deflector Shields', content:'/partials/shields.html' },
+			{ title:'Point Defenses', content:'/partials/pointdefense.html' },
+			{ title:'Weaponry', content:'/partials/weaponry.html' },
+			{ title:'Additional Equipment', content:'/partials/equipment.html' },
+			{ title:'Fighter Bay', content:'/partials/fighter_bay.html' },
+			{ title:'Facilities', content:'/partials/facilities.html' },
+			{ title:'Misc', content:'/partials/misc.html' },
+			{ title:'Download CSV', content:'/partials/download.html' }
 		];
 
 		$scope.setPartial = function(tab) {
