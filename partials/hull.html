@@ -1,1 +1,35 @@
-1000 testss
+<h2>Starship Hull Class</h2>
+<p class="explainer">
+
+    Starships are categorized by class, which is a rough measure of tonnage. This initial decision determines the size
+    parameters of your ship design. It also determines your crew requirement, fuel capacity, cargo space, and DEFENSE
+    values.
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Select</td>
+            <td>Class</td>
+            <td>Tonnage</td>
+            <td>Cost</td>
+            <td>Crew</td>
+            <td>Max CU</td>
+            <td>DEFENSE</td>
+            <td>Fuel</td>
+            <td>Initiative</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="h in hulls">
+            <td><input type="radio" ng-model="hull"></td>
+            <td ng-bind="h.Class"></td>
+            <td ng-bind="h.Tonnage"></td>
+            <td ng-bind="h.Cost"></td>
+            <td ng-bind="h.Crew"></td>
+            <td ng-bind="h['Max CU']"></td>
+            <td ng-bind="h.DEFENSE"></td>
+            <td ng-bind="h.FUEL"></td>
+            <td ng-bind="h.INITIATIVE"></td>
+        </tr>
+    </tbody>
+</table>

@@ -7,8 +7,107 @@
  */
 angular = require('angular');
 
+var loadCsvData = function (scope) {
+	Papa.parse(computers, {
+		header: true,
+		step: function(row) {
+			//console.log("Row:", row.data);
+			scope.computers.push(row.data);
+		},
+		complete: function() {
+			console.log("Computers Loaded");
+		}
+	});
+
+	Papa.parse(hulls, {
+		header: true,
+    quotes: true,
+		step: function(row) {
+			console.log("Row:", row.data);
+			scope.hulls.push(row.data[0]);
+		},
+		complete: function() {
+			console.log("Hulls Loaded");
+      console.log(scope.hulls);
+    }
+	});
+
+	Papa.parse(sensors, {
+		header: true,
+		step: function(row) {
+			//console.log("Row:", row.data);
+			scope.sensors.push(row.data);
+		},
+		complete: function() {
+			console.log("Sensors Loaded");
+		}
+	});
+}
+
+var computers =
+	 "Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n"+
+	 "Chemerkin-Liang Products LM-1,30,L,5,4,16,-,15,1,-,+0d6\n"+
+	 "Chemerkin-Liang Products LM-2,60,L,5,5,20,-1.00%,16,1,-,+0d6\n"+
+	 "Chemerkin-Liang Products LM-2H,380,L,5,10,40,-6.00%,18,2,1,+1d6\n"+
+	 "Chemerkin-Liang Products LM-2S,800,L,5,13,52,-11.00%,21,2,2,+1d6\n"+
+	 "Chemerkin-Liang Products LM-3S,1200,L,5,14,56,-13.00%,22,2,3,+1d6\n"+
+	 "Chemerkin-Liang Products LM-5S,2000,L,5,16,64,-15.00%,23,3,4,+1d6\n"+
+	 "Frontier Products Frontier Products MM-1,15,M,3,2,8,-,10,-,-,+0d6\n"+
+	 "Frontier Products MM-2,30,M,3,3,12,-1.00%,11,-,-,+0d6\n"+
+	 "Frontier Products MM-3,45,M,3,4,16,-2.00%,11,-,1,+0d6\n"+
+	 "Frontier Products MM-3H,345,M,3,8,32,-7.00%,13,1,2,+1d6\n"+
+	 "Frontier Products MM-4H,435,M,3,9,36,-8.00%,14,2,2,+1d6\n"+
+	 "Highwatch SM-1,3,S,1,2,8,-,5,-,-,+0d6\n"+
+	 "Highwatch SM-1H,109,S,1,4,16,-5.00%,7,1,1,+1d6\n"+
+	 "MicroCorp EM-2H,470,E,10,9,36,-11.00%,23,3,1,+1d6\n"+
+	 "MicroCorp EM-3S,1425,E,10,14,56,-17.00%,26,3,3,+1d6\n"+
+	 "Newstellar EM-1,45,E,10,4,16,-5.00%,20,2,-,+0d6\n"+
+	 "Newstellar EM-1H,235,E,10,8,32,-10.00%,22,3,1,+1d6\n"+
+	 "Terra Prime GM-1,75,G,20,4,16,-10.00%,25,3,-,+0d6\n"+
+	 "Terra Prime GM-1H,325,G,20,8,32,-15.00%,27,4,1,+1d6";
+
+var hulls =
+		"Class,Tonnage,Cost,Crew,Max CU,DEFENSE,FUEL,INITIATIVE\n"+
+		"I,\"1,000-5,000\",5,4,50,20,1,-\n"+
+		"II,\"5,000-15,000\",20,5,150,19,8,-\n"+
+		"III,\"15,000-25,000\",45,7,250,18,27,-\n"+
+		"IV,\"25,000-40,000\",80,12,400,17,64,-\n"+
+		"V,\"40,000-60,000\",125,20,600,16,125,-1d6\n"+
+		"VI,\"60,000-80,000\",180,30,800,15,216,-1d6\n"+
+		"VII,\"80,000-100,000\",245,50,1000,14,343,-1d6\n"+
+		"VIII,\"100,000-120,000\",320,100,1200,13,512,-1d6\n"+
+		"IX,\"120,000-140,000\",405,200,1400,12,729,-1d6\n"+
+		"X,\"140,000-160,000\",500,300,1600,11,1000,-2d6\n"+
+		"XI,\"160,000-180,000\",605,400,1800,10,1331,-2d6\n"+
+		"XII,\"180,000-210,000\",620,500,2100,9,1728,-2d6\n"+
+		"XIII,\"210,000-240,000\",845,750,2400,8,2197,-2d6\n"+
+		"XIV,\"240,000-300,000\",980,1000,3000,7,2744,-2d6\n"+
+		"XV,\"300,000-350,000\",1125,2000,3500,6,3375,-3d6\n"+
+		"XVI,\"350,000-400,000\",1280,3000,4000,5,4096,-3d6\n"+
+		"XVII,\"400,000-450,000\",1445,4000,4500,4,4913,-3d6\n"+
+		"XVIII,\"450,000-500,000\",1620,5000,5000,3,5832,-3d6";
+
+var sensors =
+	"Sensor Systems,Cost,Size,Space,Range,Range Inc,DEFENSE,Checks\n"+
+	"Chen-Collins SS-1,4,S,1,2,5,-,+0d6\n"+
+	"Chen-Collins SS-2,8,S,1,4,6,-,+0d6\n"+
+	"Chen-Collins SS-2H,224,S,1,8,8,1,+1d6\n"+
+	"Interstellar Enterprises MS-1,20,M,3,4,10,-,+0d6\n"+
+	"Interstellar Enterprises MS-1H,160,M,3,8,12,1,+1 die\n"+
+	"Interstellar Enterprises MS-2,40,M,3,6,11,-,+0d6\n"+
+	"Lunar Works LS-1,40,L,5,6,15,-,+0d6\n"+
+	"Lunar Works LS-2,80,L,5,8,16,-,+0d6\n"+
+	"Lunar Works LS-2H,160,L,5,14,18,1,+1d6\n"+
+	"Newwatch ES-1,60,E,10,8,20,-,+0d6\n"+
+	"Newwatch ES-1H,280,E,10,16,22,1,+1d6\n"+
+	"Newwatch ES-2,120,E,10,10,21,-,+0d6\n"+
+	"Intergalactic Foundation GS-1,100,G,20,110,25,-,+0d6\n"+
+	"Intergalactic Foundation GS-2,200,G,20,12,26,-,+0d6\n"+
+	"Intergalactic Foundation GS-2H,800,G,20,22,28,1,+1d6";
+
+
 angular.module('woin-starship')
-	.controller('StarshipCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {
+	.controller('StarshipCtrl', function StarshipCtrl($scope, $routeParams, $filter, store) {
 		'use strict';
 
 		$scope.tabs = [
@@ -34,104 +133,10 @@ angular.module('woin-starship')
       $scope.chosenPartial = tab.content;
 		};
 
-		var todos = $scope.todos = store.todos;
+		$scope.hulls = [];
+		$scope.computers = [];
+		$scope.sensors = [];
 
-		$scope.newTodo = '';
-		$scope.editedTodo = null;
+		loadCsvData($scope);
 
-		$scope.$watch('todos', function () {
-			$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;
-			$scope.completedCount = todos.length - $scope.remainingCount;
-			$scope.allChecked = !$scope.remainingCount;
-		}, true);
-
-		// Monitor the current route for changes and adjust the filter accordingly.
-		$scope.$on('$routeChangeSuccess', function () {
-			var status = $scope.status = $routeParams.status || '';
-
-			$scope.statusFilter = (status === 'active') ?
-				{ completed: false } : (status === 'completed') ?
-				{ completed: true } : {};
-		});
-
-		$scope.addTodo = function () {
-			var newTodo = {
-				title: $scope.newTodo.trim(),
-				completed: false
-			};
-
-			if (!newTodo.title) {
-				return;
-			}
-
-			store.insert(newTodo);
-			$scope.newTodo = '';
-		};
-
-		$scope.editTodo = function (todo) {
-			$scope.editedTodo = todo;
-			// Clone the original todo to restore it on demand.
-			$scope.originalTodo = angular.extend({}, todo);
-		};
-
-		$scope.saveEdits = function (todo, event) {
-			// Blur events are automatically triggered after the form submit event.
-			// This does some unfortunate logic handling to prevent saving twice.
-			if (event === 'blur' && $scope.saveEvent === 'submit') {
-				$scope.saveEvent = null;
-				return;
-			}
-
-			$scope.saveEvent = event;
-
-			if ($scope.reverted) {
-				// Todo edits were reverted-- don't save.
-				$scope.reverted = null;
-				return;
-			}
-
-			todo.title = todo.title.trim();
-
-			if (todo.title === $scope.originalTodo.title) {
-				$scope.editedTodo = null;
-				return;
-			}
-
-			store[todo.title ? 'put' : 'delete'](todo);
-			$scope.editedTodo = null;
-		};
-
-		$scope.revertEdits = function (todo) {
-			todos[todos.indexOf(todo)] = $scope.originalTodo;
-			$scope.editedTodo = null;
-			$scope.originalTodo = null;
-			$scope.reverted = true;
-		};
-
-		$scope.removeTodo = function (todo) {
-			store.delete(todo);
-		};
-
-		$scope.saveTodo = function (todo) {
-			store.put(todo);
-		};
-
-		$scope.toggleCompleted = function (todo, completed) {
-			if (angular.isDefined(completed)) {
-				todo.completed = completed;
-			}
-			store.put(todo, todos.indexOf(todo));
-		};
-
-		$scope.clearCompletedTodos = function () {
-			store.clearCompleted();
-		};
-
-		$scope.markAll = function (completed) {
-			todos.forEach(function (todo) {
-				if (todo.completed !== completed) {
-					$scope.toggleCompleted(todo, completed);
-				}
-			});
-		};
 	});
