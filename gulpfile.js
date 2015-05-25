@@ -72,7 +72,7 @@ gulp.task('build-template-cache', ['clean'], function() {
     
     return gulp.src("./partials/*.html")
         .pipe(ngHtml2Js({
-            moduleName: "todoPartials",
+            moduleName: "starshipPartials",
             prefix: "/partials/"
         }))
         .pipe(concat("templateCachePartials.js"))

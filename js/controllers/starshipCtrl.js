@@ -12,7 +12,7 @@ angular.module('woin-starship')
 		'use strict';
 
 		$scope.tabs = [
-			{ title:'Hull Class', content:'partials/hull.html' },
+			{ title:'Hull Class', content:'/partials/hull.html' },
 			{ title:'Command & Control', content:'Choose your Hull Class' },
 			{ title:'Crew', content:'Choose your Hull Class' },
 			{ title:'Sub-Liminal Engines', content:'Choose your Hull Class' },
