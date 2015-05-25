@@ -1,6 +1,9 @@
 <div class="row">
     <h3> {{ ship }} </h3>
-
+    <h3> CPU: {{ currentCpu(ship) }} ({{maxCpu(ship)}} Max)
+         Space: {{ currentSpace(ship) }} ({{ maxSpace(ship)}} Max)
+         Credits Spent: {{ totalCost(ship) }}
+    </h3>
     <div class="col-md-4">
         <tabset  vertical="true" type="pills">
             <tab ng-repeat="tab in tabs" select='setPartial(tab)' heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
