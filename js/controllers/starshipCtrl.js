@@ -8,11 +8,15 @@
 angular = require('angular');
 
 var loadCsvData = function (scope) {
+
+  scope.hullConfigurations = hullConfigurations;
+  scope.passengerOptions = passengers;
+
 	Papa.parse(computers, {
 		header: true,
 		step: function(row) {
 			//console.log("Row:", row.data);
-			scope.computers.push(row.data);
+			scope.computers.push(row.data[0]);
 		},
 		complete: function() {
 			console.log("Computers Loaded");
@@ -23,7 +27,7 @@ var loadCsvData = function (scope) {
 		header: true,
     quotes: true,
 		step: function(row) {
-			console.log("Row:", row.data);
+			//console.log("Row:", row.data);
 			scope.hulls.push(row.data[0]);
 		},
 		complete: function() {
@@ -36,7 +40,7 @@ var loadCsvData = function (scope) {
 		header: true,
 		step: function(row) {
 			//console.log("Row:", row.data);
-			scope.sensors.push(row.data);
+			scope.sensors.push(row.data[0]);
 		},
 		complete: function() {
 			console.log("Sensors Loaded");
@@ -105,6 +109,32 @@ var sensors =
 	"Intergalactic Foundation GS-2,200,G,20,12,26,-,+0d6\n"+
 	"Intergalactic Foundation GS-2H,800,G,20,22,28,1,+1d6";
 
+var hullConfigurations = [
+  { name: "None", display: "None"},
+  { name: "Evasive", display: "Evasive: Patrol craft gain +2 to their DEFENSE score."},
+  { name: "Inspector", display: "Inspector: Patrol craft may make two scanning checks per turn as a single action."},
+  { name: "Fast", display: "Fast: Couriers gain +1 to their FTL speed."},
+  { name: "Silent-running", display: "Silent-running: A courier ship can operate stealthily. While this will not protect it from actual scans in the way that a cloaking device might, it can pass unnoticed when not actively being looked for."},
+  { name: "Scientific", display: "Scientific: Research ships may treat all labs and medical facilities as high quality even when they are not."},
+  { name: "Deep scan", display: "Deep scan: A research ship can perform a deep scan of the area in a radius equal to the range of its sensors and automatically detect the presence of (but not the exact location of) cloaked vessels within that area."},
+  { name: "Well-appointed", display: "Well-appointed: Yachts gain a bonus LUXURY percentage of 20%."},
+  { name: "Explorer", display: "Explorer: Scouts have a +20% operational range."},
+  { name: "Hauler", display: "Hauler: Freighters gain +20% cargo space (which must be used for cargo, not components)."},
+  { name: "Tactical", display: "Tactical: Escorts have 50% extra sensor range."},
+  { name: "Heavily-armed", display: "Heavily-armed: Destroyers reduce the CPU requirement of each weapon by 1"},
+  { name: "Gunboat", display: "Gunboat: Frigates increase weapon range by 10%."},
+  { name: "Skeleton crew", display: "Skeleton crew: Transports have 10% the crew requirement of other ships as long as no weapons are installed."},
+  { name: "5 year mission", display: "5 year mission: Cruisers have a +20% operational range."},
+  { name: "Luxurious", display: "Luxurious: Liners gain a bonus LUXURY percentage of 20% and free passenger capacity equal to ten times their class."},
+  { name: "Tough", display: "Tough: Battleships start with double the base SS for their class."},
+  { name: "Scramble", display: "Scramble: Carriers may launch all fighters/shuttles as a single action."}
+];
+
+var passengers = [
+  { Type: "Troops", Space: "2 CU", Cost: "0.1 Mcr" },
+  { Type: "Standard Passengers", Space: "2 CU", Cost: "0.2 Mcr" },
+  { Type: "Luxury Passengers", Space: "4 CU", Cost: "0.3 Mcr" }
+];
 
 angular.module('woin-starship')
 	.controller('StarshipCtrl', function StarshipCtrl($scope, $routeParams, $filter, store) {
