@@ -119,7 +119,7 @@ gulp.task('test', ['build-js'], function() {
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('build-js', ['clean'], function() {
+gulp.task('build-js', ['clean', 'build-template-cache'], function() {
     var b = browserify({
         entries: './js/app.js',
         debug: true,
