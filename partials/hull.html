@@ -21,7 +21,7 @@
     </thead>
     <tbody>
         <tr ng-repeat="h in hulls">
-            <td><input type="radio" ng-model="hull"></td>
+            <td><input type="radio" ng-model="ship.hull" ng-value="h"></td>
             <td ng-bind="h.Class"></td>
             <td ng-bind="h.Tonnage"></td>
             <td ng-bind="h.Cost"></td>

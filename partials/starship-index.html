@@ -1,4 +1,6 @@
 <div class="row">
+    <h3> {{ ship }} </h3>
+
     <div class="col-md-4">
         <tabset  vertical="true" type="pills">
             <tab ng-repeat="tab in tabs" select='setPartial(tab)' heading="{{tab.title}}" active="tab.active" disable="tab.disabled">

@@ -111,7 +111,8 @@ angular.module('woin-starship')
 		'use strict';
 
 		$scope.tabs = [
-			{ title:'Hull Class', content:'/partials/hull.html' },
+      { title:'Basics', content:'/partials/basics.html' },
+      { title:'Hull Class', content:'/partials/hull.html' },
 			{ title:'Command & Control', content:'/partials/commandcontrol.html' },
 			{ title:'Crew', content:'/partials/crew.html' },
 			{ title:'Sub-Liminal Engines', content:'/partials/subliminal.html' },
@@ -132,6 +133,8 @@ angular.module('woin-starship')
 			console.log("Setting choice partial to:" + tab.content);
       $scope.chosenPartial = tab.content;
 		};
+
+    $scope.ship = { name: "", description: "" };
 
 		$scope.hulls = [];
 		$scope.computers = [];
