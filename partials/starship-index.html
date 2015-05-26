@@ -1,8 +1,8 @@
 <div class="row">
     <h3> {{ ship }} </h3>
-    <h3> CPU: {{ currentCpu(ship) }} ({{maxCpu(ship)}} Max)
-         Space: {{ currentSpace(ship) }} ({{ maxSpace(ship)}} Max)
-         Credits Spent: {{ totalCost(ship) }}
+    <h3> CPU: {{ currentCpu() }} ({{maxCpu()}} Max)
+         Cargo Units: {{ currentSpace() }} ({{ maxSpace() - currentSpace() }} available)
+         Credits Spent: {{ totalCost() }}
     </h3>
     <div class="col-md-4">
         <tabset  vertical="true" type="pills">

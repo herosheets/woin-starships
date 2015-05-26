@@ -7,15 +7,82 @@
  */
 angular = require('angular');
 
-var loadCsvData = function (scope) {
+var flatComponents =  ['hull', 'sensor'];
+var quantityComponents = ['crew', 'computers'];
 
+var getComponentValue = function(c, val) {
+  if (c !== undefined && c !== null) {
+    if (_.has(c, val)) {
+      return c[val];
+    } else {
+      return 0;
+    }
+  }
+  return 0;
+};
+
+var getQuantityValue = function(c, val) {
+  var total = 0;
+  if (c !== undefined && c !== null) {
+    angular.forEach(c, function(component) {
+      var quantity = component.quantity;
+      if (_.has(component, val)) {
+        total += c[val] * quantity;
+      }
+    });
+  }
+  return total;
+};
+
+var getTotalShipValue = function(ship, valueName) {
+  var base = 0;
+  angular.forEach(flatComponents, function(c) {
+    base += getComponentValue(ship[c], valueName);
+  });
+  angular.forEach(quantityComponents, function(c) {
+    base += getQuantityValue(ship[c], valueName);
+  });
+  return base;
+};
+
+var getCost = function(ship) {
+  return getTotalShipValue(ship, 'Cost');
+};
+
+var getSpace = function(ship) {
+  return getTotalShipValue(ship, 'Space');
+};
+
+var getSpaceMax = function(ship) {
+  if (_.has(ship, 'hull')) {
+    return ship.hull['Max CU'];
+  } else {
+    return 0;
+  }
+};
+
+var getCpu = function(ship) {
+  return getTotalShipValue(ship, 'CPU');
+};
+
+var getCpuMax = function(ship) {
+  if (_.has(ship, 'computer')) {
+    return getQuantityValue(ship.computer, 'Max CPU');
+  } else {
+    return 0;
+  }};
+
+var loadCsvData = function (scope) {
+  scope.hulls = [];
+  scope.computers = [];
+  scope.sensors = [];
   scope.hullConfigurations = hullConfigurations;
   scope.passengerOptions = passengers;
 
 	Papa.parse(computers, {
 		header: true,
-		step: function(row) {
-			//console.log("Row:", row.data);
+    dynamicTyping: true,
+    step: function(row) {
 			scope.computers.push(row.data[0]);
 		},
 		complete: function() {
@@ -26,8 +93,8 @@ var loadCsvData = function (scope) {
 	Papa.parse(hulls, {
 		header: true,
     quotes: true,
-		step: function(row) {
-			//console.log("Row:", row.data);
+    dynamicTyping: true,
+    step: function(row) {
 			scope.hulls.push(row.data[0]);
 		},
 		complete: function() {
@@ -38,8 +105,8 @@ var loadCsvData = function (scope) {
 
 	Papa.parse(sensors, {
 		header: true,
+    dynamicTyping: true,
 		step: function(row) {
-			//console.log("Row:", row.data);
 			scope.sensors.push(row.data[0]);
 		},
 		complete: function() {
@@ -136,40 +203,75 @@ var passengers = [
   { Type: "Luxury Passengers", Space: "4 CU", Cost: "0.3 Mcr" }
 ];
 
+var tabs = [
+  { title:'Basics', content:'/partials/basics.html' },
+  { title:'Hull Class', content:'/partials/hull.html' },
+  { title:'Command & Control', content:'/partials/commandcontrol.html' },
+  { title:'Crew', content:'/partials/crew.html' },
+  { title:'Sub-Liminal Engines', content:'/partials/subliminal.html' },
+  { title:'FTL Engines', content:'/partials/ftl.html' },
+  { title:'Superstructure', content:'/partials/superstructure.html' },
+  { title:'Deflector Shields', content:'/partials/shields.html' },
+  { title:'Point Defenses', content:'/partials/pointdefense.html' },
+  { title:'Weaponry', content:'/partials/weaponry.html' },
+  { title:'Additional Equipment', content:'/partials/equipment.html' },
+  { title:'Fighter Bay', content:'/partials/fighter_bay.html' },
+  { title:'Facilities', content:'/partials/facilities.html' },
+  { title:'Misc', content:'/partials/misc.html' },
+  { title:'Download CSV', content:'/partials/download.html' }
+];
+
 angular.module('woin-starship')
 	.controller('StarshipCtrl', function StarshipCtrl($scope, $routeParams, $filter, store) {
 		'use strict';
 
-		$scope.tabs = [
-      { title:'Basics', content:'/partials/basics.html' },
-      { title:'Hull Class', content:'/partials/hull.html' },
-			{ title:'Command & Control', content:'/partials/commandcontrol.html' },
-			{ title:'Crew', content:'/partials/crew.html' },
-			{ title:'Sub-Liminal Engines', content:'/partials/subliminal.html' },
-			{ title:'FTL Engines', content:'/partials/ftl.html' },
-			{ title:'Superstructure', content:'/partials/superstructure.html' },
-			{ title:'Deflector Shields', content:'/partials/shields.html' },
-			{ title:'Point Defenses', content:'/partials/pointdefense.html' },
-			{ title:'Weaponry', content:'/partials/weaponry.html' },
-			{ title:'Additional Equipment', content:'/partials/equipment.html' },
-			{ title:'Fighter Bay', content:'/partials/fighter_bay.html' },
-			{ title:'Facilities', content:'/partials/facilities.html' },
-			{ title:'Misc', content:'/partials/misc.html' },
-			{ title:'Download CSV', content:'/partials/download.html' }
-		];
+    // initialize data
+		$scope.tabs = tabs;
+    $scope.ship = { name: "", description: "" };
+
+    loadCsvData($scope);
 
 		$scope.setPartial = function(tab) {
-			console.log(tab);
-			console.log("Setting choice partial to:" + tab.content);
       $scope.chosenPartial = tab.content;
 		};
 
-    $scope.ship = { name: "", description: "" };
+    // helper functions for cost & cargo calculations
+    $scope.totalCost = function() {
+      return getCost($scope.ship);
+    };
 
-		$scope.hulls = [];
-		$scope.computers = [];
-		$scope.sensors = [];
+    $scope.currentSpace = function() {
+      return getSpace($scope.ship);
+    };
 
-		loadCsvData($scope);
+    $scope.maxSpace = function() {
+      return getSpaceMax($scope.ship);
+    };
+
+    $scope.maxCpu = function() {
+      return getCpuMax($scope.ship);
+    };
+
+    $scope.currentCpu = function() {
+      return getCpu($scope.ship);
+    };
+
+    $scope.addQuantitied = function(component, key, item) {
+      if (component[key] === undefined) {
+        component[key] = item;
+        component[key].quantity = 1;
+      } else {
+        component[key].quantity += 1;
+      }
+    };
+
+    $scope.removeQuantitied = function(component, key) {
+      if (component[key].quantity > 1) {
+        component[key].quantity -= 1;
+      } else {
+        var index = component.indexOf(key);
+        component.splice(index, 1);
+      }
+    };
 
 	});

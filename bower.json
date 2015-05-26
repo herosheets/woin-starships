@@ -8,6 +8,7 @@
     "ngStorage": "^0.3.0",
     "ng-csv": "0.3.3",
     "angular-csv-import": "0.0.16",
-    "papaparse": "4.1.1"
+    "papaparse": "4.1.1",
+    "lodash": "3.9.0"
   }
 }

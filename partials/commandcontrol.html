@@ -5,9 +5,11 @@
 
     A ship's computer system is able to perform faster-than-light calculations for FTL travel, and ties directly into the sensor array. Data storage in a ship's computer is so efficient that the concept of storage capacity does not factor into computer design any more. Some computer systems have a basic AI, while others do not.
 </p>
+<h3>Your Computers</h3>
 <table class="table table-striped">
     <thead>
     <tr>
+        <td>Remove</td>
         <td>Quantity</td>
         <td>Control Computers</td>
         <td>Cost</td>
@@ -23,8 +25,44 @@
     </tr>
     </thead>
     <tbody>
+    <tr ng-repeat="c in ship.computers">
+        <td><button type="button" class="btn btn-primary" ng-click="removeQuantitied(ship.computers, c['Control Computers'])">Remove</button></td>
+        <td ng-bind="c.quantity"></td>
+        <td ng-bind="c['Control Computers']"></td>
+        <td ng-bind="c.Cost"></td>
+        <td ng-bind="c.Size"></td>
+        <td ng-bind="c.Space"></td>
+        <td ng-bind="c['Max FTL']"></td>
+        <td ng-bind="c['CPU']"></td>
+        <td ng-bind="c.Crew"></td>
+        <td ng-bind="c['Rng Inc']"></td>
+        <td ng-bind="c.SOAK"></td>
+        <td ng-bind="c.DEFENSE"></td>
+        <td ng-bind="c.Checks"></td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>Add</td>
+        <td>Control Computers</td>
+        <td>Cost</td>
+        <td>Size</td>
+        <td>Space</td>
+        <td>Max FTL</td>
+        <td>Max CPU</td>
+        <td>Crew</td>
+        <td>Rng Inc</td>
+        <td>SOAK</td>
+        <td>DEFENSE</td>
+        <td>Checks</td>
+    </tr>
+    </thead>
+    <tbody>
     <tr ng-repeat="c in computers">
-        <td><input type="radio" ng-model="ship.computer" ng-value="c"></td>
+        <td><button type="button" class="btn btn-primary" ng-click="addQuantitied(ship.computers, c['Control Computers'], c)">Add</button></td>
         <td ng-bind="c['Control Computers']"></td>
         <td ng-bind="c.Cost"></td>
         <td ng-bind="c.Size"></td>

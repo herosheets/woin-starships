@@ -1,0 +1,25 @@
+<h3>Troops & Passengers</h3>
+<p class="explainer">
+    In addition to the crew, a ship can carry troops (military personnel of various kinds). Troops add to the crew
+    complement for the purposes of calculating LUXURY (see below), and each uses 2 CU of cargo space.
+
+    Passenger capacity also uses cargo space. Standard passengers use 2 CU each, while Luxury passengers use 4 Cu. As
+    with troops, passengers add to the crew complement for the purposes of calculating LUXURY</p>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>Select</td>
+        <td>Type</td>
+        <td>Space</td>
+        <td>Cost</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="p in passengerOptions">
+        <td><input type="radio" ng-model="ship.passengers" ng-value="p"></td>
+        <td ng-bind="p.Type"></td>
+        <td ng-bind="p.Space"></td>
+        <td ng-bind="p.Cost"></td>
+    </tr>
+    </tbody>
+</table>
