@@ -204,29 +204,29 @@ var passengers = [
 ];
 
 var tabs = [
-  { title:'Basics', content:'/partials/basics.html' },
-  { title:'Hull Class', content:'/partials/hull.html' },
-  { title:'Command & Control', content:'/partials/commandcontrol.html' },
-  { title:'Crew', content:'/partials/crew.html' },
-  { title:'Sub-Liminal Engines', content:'/partials/subliminal.html' },
-  { title:'FTL Engines', content:'/partials/ftl.html' },
-  { title:'Superstructure', content:'/partials/superstructure.html' },
-  { title:'Deflector Shields', content:'/partials/shields.html' },
-  { title:'Point Defenses', content:'/partials/pointdefense.html' },
-  { title:'Weaponry', content:'/partials/weaponry.html' },
-  { title:'Additional Equipment', content:'/partials/equipment.html' },
-  { title:'Fighter Bay', content:'/partials/fighter_bay.html' },
-  { title:'Facilities', content:'/partials/facilities.html' },
-  { title:'Misc', content:'/partials/misc.html' },
-  { title:'Download CSV', content:'/partials/download.html' }
+  { heading:'Basics', route:'/partials/basics.html' },
+  { heading:'Hull Class', route:'/partials/hull.html' },
+  { heading:'Command & Control', route:'main.command' },
+  { heading:'Crew', route:'/partials/crew.html' },
+  { heading:'Sub-Liminal Engines', route:'/partials/subliminal.html' },
+  { heading:'FTL Engines', route:'/partials/ftl.html' },
+  { heading:'Superstructure', route:'/partials/superstructure.html' },
+  { heading:'Deflector Shields', route:'/partials/shields.html' },
+  { heading:'Point Defenses', route:'/partials/pointdefense.html' },
+  { heading:'Weaponry', route:'/partials/weaponry.html' },
+  { heading:'Additional Equipment', route:'/partials/equipment.html' },
+  { heading:'Fighter Bay', route:'/partials/fighter_bay.html' },
+  { heading:'Facilities', route:'/partials/facilities.html' },
+  { heading:'Misc', route:'/partials/misc.html' },
+  { heading:'Download CSV', route:'/partials/download.html' }
 ];
 
 angular.module('woin-starship')
-	.controller('StarshipCtrl', function StarshipCtrl($scope, $routeParams, $filter, store) {
+	.controller('StarshipCtrl', function StarshipCtrl($scope) {
 		'use strict';
 
     // initialize data
-		$scope.tabs = tabs;
+    $scope.tabs = tabs;
     $scope.ship = { name: "", description: "" };
 
     loadCsvData($scope);

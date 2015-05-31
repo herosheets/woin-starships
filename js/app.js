@@ -10,30 +10,27 @@ angular = require('angular');
 require('angular-route');
 require('../dist/templateCachePartials');
 
-angular.module('woin-starship', ['ngRoute','starshipPartials', 'ui.bootstrap'])
-	.config(function ($routeProvider) {
+angular.module('woin-starship', ['ngRoute','starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs'])
+	.config(function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 
-		var routeConfig = {
-			controller: 'StarshipCtrl',
-			templateUrl: '/partials/starship-index.html',
-			resolve: {
-				store: ['todoStorage', function (todoStorage) {
-					// Get the correct module (API or localStorage).
-					return todoStorage;
-				}]
-			}
-		};
+		$urlRouterProvider.otherwise('/');
 
-		$routeProvider
-			.when('/', routeConfig)
-			.when('/:status', routeConfig)
-			.otherwise({
-				redirectTo: '/'
-			});
+		$stateProvider
+			.state('main', {
+				url: '/',
+				controller: 'StarshipCtrl',
+				templateUrl: '/partials/starship-index.html'
+			})
+			.state('main.command', {
+				url: 'commandcontrol',
+				controller: 'CommandCtrl',
+				views: {
+					content: { templateUrl: '/partials/commandcontrol.html' }
+				}
+			})
+		;
 	});
 
 require('starshipCtrl');
-require('todoStorage');
-require('todoFocus');
-require('todoEscape');
+require('commandCtrl');
