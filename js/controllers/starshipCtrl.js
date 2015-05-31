@@ -204,8 +204,8 @@ var passengers = [
 ];
 
 var tabs = [
-  { heading:'Basics', route:'/partials/basics.html' },
-  { heading:'Hull Class', route:'/partials/hull.html' },
+  { heading:'Basics', route:'main.basics' },
+  { heading:'Hull Class', route:'main.hull' },
   { heading:'Command & Control', route:'main.command' },
   { heading:'Crew', route:'/partials/crew.html' },
   { heading:'Sub-Liminal Engines', route:'/partials/subliminal.html' },
@@ -230,10 +230,6 @@ angular.module('woin-starship')
     $scope.ship = { name: "", description: "" };
 
     loadCsvData($scope);
-
-		$scope.setPartial = function(tab) {
-      $scope.chosenPartial = tab.content;
-		};
 
     // helper functions for cost & cargo calculations
     $scope.totalCost = function() {
@@ -274,4 +270,4 @@ angular.module('woin-starship')
       }
     };
 
-	});
+  });

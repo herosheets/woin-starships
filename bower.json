@@ -10,7 +10,6 @@
     "angular-csv-import": "0.0.16",
     "papaparse": "4.1.1",
     "lodash": "3.9.0",
-    "ng-table": "~0.5.4",
     "angular-ui-router-tabs": "~1.5.0"
   },
   "resolutions": {

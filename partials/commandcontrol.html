@@ -9,36 +9,36 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <td>Remove</td>
-        <td>Quantity</td>
-        <td>Control Computers</td>
-        <td>Cost</td>
-        <td>Size</td>
-        <td>Space</td>
-        <td>Max FTL</td>
-        <td>Max CPU</td>
-        <td>Crew</td>
-        <td>Rng Inc</td>
-        <td>SOAK</td>
-        <td>DEFENSE</td>
-        <td>Checks</td>
+        <th>Quantity</th>
+        <th>Control Computers</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>Space</th>
+        <th>Max FTL</th>
+        <th>Max CPU</th>
+        <th>Crew</th>
+        <th>Rng Inc</th>
+        <th>SOAK</th>
+        <th>DEFENSE</th>
+        <th>Checks</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="c in ship.computers">
-        <td><button type="button" class="btn btn-primary" ng-click="removeQuantitied(ship.computers, c['Control Computers'])">Remove</button></td>
-        <td ng-bind="c.quantity"></td>
-        <td ng-bind="c['Control Computers']"></td>
-        <td ng-bind="c.Cost"></td>
-        <td ng-bind="c.Size"></td>
-        <td ng-bind="c.Space"></td>
-        <td ng-bind="c['Max FTL']"></td>
-        <td ng-bind="c['CPU']"></td>
-        <td ng-bind="c.Crew"></td>
-        <td ng-bind="c['Rng Inc']"></td>
-        <td ng-bind="c.SOAK"></td>
-        <td ng-bind="c.DEFENSE"></td>
-        <td ng-bind="c.Checks"></td>
+    <tr ng-repeat="(name, count) in ship['Control Computers']">
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td ng-bind="computerHash[name].Cost"></td>
+        <td ng-bind="computerHash[name].Size"></td>
+        <td ng-bind="computerHash[name].Space"></td>
+        <td ng-bind="computerHash[name]['Max FTL']"></td>
+        <td ng-bind="computerHash[name]['CPU']"></td>
+        <td ng-bind="computerHash[name].Crew"></td>
+        <td ng-bind="computerHash[name]['Rng Inc']"></td>
+        <td ng-bind="computerHash[name].SOAK"></td>
+        <td ng-bind="computerHash[name].DEFENSE"></td>
+        <td ng-bind="computerHash[name].Checks"></td>
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(name)">-</button></td>
     </tr>
     </tbody>
 </table>
@@ -46,23 +46,22 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <td>Add</td>
-        <td>Control Computers</td>
-        <td>Cost</td>
-        <td>Size</td>
-        <td>Space</td>
-        <td>Max FTL</td>
-        <td>Max CPU</td>
-        <td>Crew</td>
-        <td>Rng Inc</td>
-        <td>SOAK</td>
-        <td>DEFENSE</td>
-        <td>Checks</td>
+        <th>Control Computers</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>Space</th>
+        <th>Max FTL</th>
+        <th>Max CPU</th>
+        <th>Crew</th>
+        <th>Rng Inc</th>
+        <th>SOAK</th>
+        <th>DEFENSE</th>
+        <th>Checks</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="c in computers">
-        <td><button type="button" class="btn btn-primary" ng-click="addQuantitied(ship.computers, c['Control Computers'], c)">Add</button></td>
         <td ng-bind="c['Control Computers']"></td>
         <td ng-bind="c.Cost"></td>
         <td ng-bind="c.Size"></td>
@@ -74,6 +73,7 @@
         <td ng-bind="c.SOAK"></td>
         <td ng-bind="c.DEFENSE"></td>
         <td ng-bind="c.Checks"></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(c['Control Computers'])">+</button></td>
     </tr>
     </tbody>
 </table>

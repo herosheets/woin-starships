@@ -1,16 +1,9 @@
 /*global angular */
 
-/**
- * The main TodoMVC app module
- *
- * @type {angular.Module}
- */
-
 angular = require('angular');
-require('angular-route');
 require('../dist/templateCachePartials');
 
-angular.module('woin-starship', ['ngRoute','starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs'])
+angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs'])
 	.config(function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 
@@ -22,11 +15,22 @@ angular.module('woin-starship', ['ngRoute','starshipPartials', 'ui.bootstrap', '
 				controller: 'StarshipCtrl',
 				templateUrl: '/partials/starship-index.html'
 			})
+			.state('main.basics', {
+				url: 'basics',
+				views: {
+					content: { templateUrl: '/partials/basics.html' }
+				}
+			})
+			.state('main.hull', {
+				url: 'hull',
+				views: {
+					content: { templateUrl: '/partials/hull.html' }
+				}
+			})
 			.state('main.command', {
 				url: 'commandcontrol',
-				controller: 'CommandCtrl',
 				views: {
-					content: { templateUrl: '/partials/commandcontrol.html' }
+					content: { controller: 'CommandCtrl', templateUrl: '/partials/commandcontrol.html' }
 				}
 			})
 		;
