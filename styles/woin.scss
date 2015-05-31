@@ -1,3 +1,14 @@
 
 @import "base";
 @import "index";
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.display-row {
+  .col-md-3 {
+    text-align: right;
+    font-weight: bold;
+  }
+}

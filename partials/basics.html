@@ -3,9 +3,16 @@
     Name your vessel!
 </p>
 
-<div>
-    Name: <input type="text" ng-model="ship.name">
+<div class="row display-row">
+    <div class="col-md-3">Name</div>
+    <div class="col-md-9">
+        <input class="form-control" type="text" ng-model="ship.name">
+    </div>
 </div>
-<div>
-    Description: <textarea ng-model="ship.description">
+
+<div class="row display-row margin-top-15">
+    <div class="col-md-3">Description</div>
+    <div class="col-md-9">
+        <textarea class="form-control" ng-model="ship.description" rows="3">
+    </div>
 </div>

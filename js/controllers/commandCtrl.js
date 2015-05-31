@@ -6,6 +6,10 @@ angular.module('woin-starship')
         var KEY = 'Control Computers';
         if(!$scope.ship[KEY]) $scope.ship[KEY] = {};
 
+        $scope.isEmpty = function() {
+            return _.size($scope.ship[KEY]) === 0;
+        };
+
         $scope.incrementItem = function(itemKey) {
             if(!$scope.ship[KEY][itemKey]) $scope.ship[KEY][itemKey] = 0;
             $scope.ship[KEY][itemKey]++;
