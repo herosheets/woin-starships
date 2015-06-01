@@ -33,8 +33,15 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: 'CommandCtrl', templateUrl: '/partials/commandcontrol.html' }
 				}
 			})
+			.state('main.crew', {
+				url: 'crew',
+				views: {
+					content: { controller: "CrewCtrl", templateUrl: '/partials/crew.html' }
+				}
+			})
 		;
 	});
 
 require('starshipCtrl');
 require('commandCtrl');
+require('crewCtrl');

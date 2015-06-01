@@ -5,6 +5,32 @@
 
     Passenger capacity also uses cargo space. Standard passengers use 2 CU each, while Luxury passengers use 4 Cu. As
     with troops, passengers add to the crew complement for the purposes of calculating LUXURY</p>
+
+<h3>Your Crew</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td>Type</td>
+        <td>Space</td>
+        <td>Cost</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship['Crew']">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td ng-bind="crewHash[name].Space"></td>
+        <td ng-bind="crewHash[name].Cost"></td>
+    </tr>
+    <tr ng-if="isEmpty()">
+        <td colspan="13" class="text-center">No crew selected.</td>
+    </tr>
+    </tbody>
+</table>
+
 <table class="table table-striped">
     <thead>
     <tr>
@@ -16,7 +42,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="p in passengerOptions">
-        <td><input type="radio" ng-model="ship.passengers" ng-value="p"></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(p['Type'])">+</button></td>
         <td ng-bind="p.Type"></td>
         <td ng-bind="p.Space"></td>
         <td ng-bind="p.Cost"></td>

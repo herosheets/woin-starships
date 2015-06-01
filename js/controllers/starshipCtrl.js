@@ -207,7 +207,7 @@ var tabs = [
   { heading:'Basics', route:'main.basics' },
   { heading:'Hull Class', route:'main.hull' },
   { heading:'Command & Control', route:'main.command' },
-  { heading:'Crew', route:'/partials/crew.html' },
+  { heading:'Crew', route:'main.crew' },
   { heading:'Sub-Liminal Engines', route:'/partials/subliminal.html' },
   { heading:'FTL Engines', route:'/partials/ftl.html' },
   { heading:'Superstructure', route:'/partials/superstructure.html' },
