@@ -7,7 +7,7 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 	.config(function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 
-		$urlRouterProvider.otherwise('/');
+		$urlRouterProvider.otherwise('/basics');
 
 		$stateProvider
 			.state('main', {
