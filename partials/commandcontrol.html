@@ -26,7 +26,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="(name, count) in ship['Control Computers']">
-        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(name)">-</button></td>
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
         <td ng-bind="computerHash[name].Cost"></td>
@@ -65,7 +65,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="c in computers">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(c['Control Computers'])">+</button></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Control Computers'])">+</button></td>
         <td ng-bind="c['Control Computers']"></td>
         <td ng-bind="c.Cost"></td>
         <td ng-bind="c.Size"></td>

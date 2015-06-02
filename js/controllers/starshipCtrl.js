@@ -672,4 +672,18 @@ angular.module('woin-starship')
       }
     };
 
+    $scope.isEmpty = function(KEY) {
+      return _.size($scope.ship[KEY]) === 0;
+    };
+
+    $scope.incrementItem = function(KEY, itemKey) {
+      if(!$scope.ship[KEY][itemKey]) $scope.ship[KEY][itemKey] = 0;
+      $scope.ship[KEY][itemKey]++;
+    };
+
+    $scope.decrementItem = function(KEY, itemKey) {
+      $scope.ship[KEY][itemKey]--;
+      if($scope.ship[KEY][itemKey] <= 0) delete $scope.ship[KEY][itemKey];
+    };
+
   });

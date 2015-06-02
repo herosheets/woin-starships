@@ -19,7 +19,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="(name, count) in ship['Crew']">
-        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(name)">-</button></td>
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
         <td ng-bind="crewHash[name].Space"></td>
@@ -42,7 +42,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="p in passengerOptions">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(p['Type'])">+</button></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p['Type'])">+</button></td>
         <td ng-bind="p.Type"></td>
         <td ng-bind="p.Space"></td>
         <td ng-bind="p.Cost"></td>
