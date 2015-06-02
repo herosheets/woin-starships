@@ -1,0 +1,58 @@
+<h2>Facilities</h2>
+<p class="explainer">
+    They facilitate.
+</p>
+<h3>Your Facilities</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Customization</th>
+        <th>Cost/crew</th>
+        <th>Luxury/crew</th>
+        <th>Space (CU)/crew</th>
+        <th>Recommended</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship.Facilities">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{facilitiesHash[name]['Cost/crew']}}</td>
+        <td>{{facilitiesHash[name]['Luxury/crew']}}</td>
+        <td>{{facilitiesHash[name]['Space (CU)/crew']}}</td>
+        <td>{{facilitiesHash[name].Recommended}}</td>
+        <td>{{facilitiesHash[name].Notes}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY)">
+        <td colspan="7" class="text-center">No facilities selected.</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Customization</th>
+        <th>Cost/crew</th>
+        <th>Luxury/crew</th>
+        <th>Space (CU)/crew</th>
+        <th>Recommended</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="c in facilities">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Customization)">+</button></td>
+        <td>{{c.Customization}}</td>
+        <td>{{c['Cost/crew']}}</td>
+        <td>{{c['Luxury/crew']}}</td>
+        <td>{{c['Space (CU)/crew']}}</td>
+        <td>{{c.Recommended}}</td>
+        <td>{{c.Notes}}</td>
+    </tr>
+    </tbody>
+</table>

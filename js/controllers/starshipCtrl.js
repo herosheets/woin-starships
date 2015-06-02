@@ -149,7 +149,6 @@ var loadCsvData = function (scope) {
     },
     complete: function () {
       console.log("Hulls Loaded");
-      console.log(scope.hulls);
     }
   });
 
@@ -637,7 +636,7 @@ var tabs = [
   {heading: 'Weaponry', route: '/partials/weaponry.html'},
   {heading: 'Additional Equipment', route: '/partials/equipment.html'},
   {heading: 'Fighter Bay', route: '/partials/fighter_bay.html'},
-  {heading: 'Facilities', route: '/partials/facilities.html'},
+  {heading: 'Facilities', route: 'main.facilities'},
   {heading: 'Misc', route: '/partials/misc.html'},
   {heading: 'Download CSV', route: '/partials/download.html'}
 ];
