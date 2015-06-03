@@ -497,11 +497,12 @@ var fueling =
   "SilverCorp E95 External Cargo Bay,-,L,250 MCr,-,'Adds 1,000 CU; -2�DEFENSE, -2 SPEED'";
 
 var hangars =
+  "Item,Space,Size,Cost,CPU,Notes\n" +
   "Parsec Systems ZM2 Shuttle/fighter Bay,25,S,400 MCr,1,Room for 1 shuttle or fighter\n" +
   "Megalight EI93 Shuttle/fighter Bay,80,M,700 MCr,1,Room for 4 shuttles or fighters\n" +
-  "Ultrabeam VN34 Shuttle/fighter Bay,150,L,'1,000 MCr',2,Room for 16 shuttles or fighters\n" +
-  "Waydyne Shuttle/fighter Bay,250,E,'1,500 MCr',2,Room for 32 shuttles or fighters\n" +
-  "'Newwide Gravitics DI11 Shuttle/fighter Bay,',460,G,'2,000 MCr',3,Room for 64 shuttles or fighters";
+  "Ultrabeam VN34 Shuttle/fighter Bay,150,L,'1000 MCr',2,Room for 16 shuttles or fighters\n" +
+  "Waydyne Shuttle/fighter Bay,250,E,'1500 MCr',2,Room for 32 shuttles or fighters\n" +
+  "'Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,'2000 MCr',3,Room for 64 shuttles or fighters";
 
 var engMods =
   "Ultradyne Lines CP97 Repair Bay,10,M,200 MCr,4,Repairs 1 SS per turn\n" +
@@ -635,7 +636,7 @@ var tabs = [
   {heading: 'Point Defenses', route: '/partials/pointdefense.html'},
   {heading: 'Weaponry', route: '/partials/weaponry.html'},
   {heading: 'Additional Equipment', route: '/partials/equipment.html'},
-  {heading: 'Fighter Bay', route: '/partials/fighter_bay.html'},
+  {heading: 'Fighter Bay', route: 'main.fighterbay'},
   {heading: 'Facilities', route: 'main.facilities'},
   {heading: 'Misc', route: '/partials/misc.html'},
   {heading: 'Download CSV', route: '/partials/download.html'}
