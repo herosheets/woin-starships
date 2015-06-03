@@ -51,6 +51,12 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "FighterBayCtrl", templateUrl: '/partials/fighter_bay.html' }
 				}
 			})
+			.state('main.weaponry', {
+				url: 'weaponry',
+				views: {
+					content: { controller: "WeaponCtrl", templateUrl: '/partials/weaponry.html' }
+				}
+			})
 		;
 	});
 
@@ -59,3 +65,4 @@ require('commandCtrl');
 require('crewCtrl');
 require('facilitiesCtrl');
 require('fighterbayCtrl');
+require('weaponCtrl');

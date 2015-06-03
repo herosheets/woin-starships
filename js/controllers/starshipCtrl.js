@@ -634,7 +634,7 @@ var tabs = [
   {heading: 'Superstructure', route: '/partials/superstructure.html'},
   {heading: 'Deflector Shields', route: '/partials/shields.html'},
   {heading: 'Point Defenses', route: '/partials/pointdefense.html'},
-  {heading: 'Weaponry', route: '/partials/weaponry.html'},
+  {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Additional Equipment', route: '/partials/equipment.html'},
   {heading: 'Fighter Bay', route: 'main.fighterbay'},
   {heading: 'Facilities', route: 'main.facilities'},

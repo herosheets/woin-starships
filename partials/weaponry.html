@@ -1,0 +1,67 @@
+<h2>Weaponry</h2>
+<p class="explainer">
+    They do things.
+</p>
+<h3>Your Weaponry</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Amount</th>
+        <th>Weapon System</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>CPU</th>
+        <th>Space</th>
+        <th>Range</th>
+        <th>Attack</th>
+        <th>Damage</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship['Weapon System']">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{weaponHash[name].Cost}}</td>
+        <td>{{weaponHash[name].Size}}</td>
+        <td>{{weaponHash[name].CPU}}</td>
+        <td>{{weaponHash[name].Space}}</td>
+        <td>{{weaponHash[name].Range}}</td>
+        <td>{{weaponHash[name].Attack}}</td>
+        <td>{{weaponHash[name].Damage}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY)">
+        <td colspan="10" class="text-center">No weaponry selected.</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Weapon System</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>CPU</th>
+        <th>Space</th>
+        <th>Range</th>
+        <th>Attack</th>
+        <th>Damage</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="c in weapons">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Weapon System'])">+</button></td>
+        <td>{{c['Weapon System']}}</td>
+        <td>{{c.Cost}}</td>
+        <td>{{c.Size}}</td>
+        <td>{{c.CPU}}</td>
+        <td>{{c.Space}}</td>
+        <td>{{c.Range}}</td>
+        <td>{{c.Attack}}</td>
+        <td>{{c.Damage}}</td>
+    </tr>
+    </tbody>
+</table>
