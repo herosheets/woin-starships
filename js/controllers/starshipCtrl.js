@@ -632,7 +632,7 @@ var tabs = [
   {heading: 'Sub-Liminal Engines', route: '/partials/subliminal.html'},
   {heading: 'FTL Engines', route: '/partials/ftl.html'},
   {heading: 'Superstructure', route: '/partials/superstructure.html'},
-  {heading: 'Deflector Shields', route: '/partials/shields.html'},
+  {heading: 'Deflector Shields', route: 'main.deflectors'},
   {heading: 'Point Defenses', route: '/partials/pointdefense.html'},
   {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Additional Equipment', route: '/partials/equipment.html'},

@@ -1,0 +1,59 @@
+<h2>Deflector Shields</h2>
+<p class="explainer">
+    They deflect.
+</p>
+<h3>Your Deflector Shields</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Amount</th>
+        <th>Deflector Shield</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>CPU</th>
+        <th>Space</th>
+        <th>Power</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship[KEY]">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{deflectorHash[name].Cost}}</td>
+        <td>{{deflectorHash[name].Size}}</td>
+        <td>{{deflectorHash[name].CPU}}</td>
+        <td>{{deflectorHash[name].Space}}</td>
+        <td>{{deflectorHash[name].Power}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY)">
+        <td colspan="7" class="text-center">No deflectors selected.</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Deflector Shield</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>CPU</th>
+        <th>Space</th>
+        <th>Power</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="c in deflectors">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c[KEY])">+</button></td>
+        <td>{{c['Deflector Shields']}}</td>
+        <td>{{c.Cost}}</td>
+        <td>{{c.Size}}</td>
+        <td>{{c.CPU}}</td>
+        <td>{{c.Space}}</td>
+        <td>{{c.Power}}</td>
+    </tr>
+    </tbody>
+</table>
