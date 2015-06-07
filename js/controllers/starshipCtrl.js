@@ -515,10 +515,12 @@ var hangars =
   "'Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,'2000 MCr',3,Room for 64 shuttles or fighters";
 
 var engMods =
+  "Item,Space,Size,Cost,CPU,Notes\n" +
   "Ultradyne Lines CP97 Repair Bay,10,M,200 MCr,4,Repairs 1 SS per turn\n" +
   "Newwatch IE17 Remote Repair Bay,20,L,500 MCr,8,Repairs 1 SS per turn; range 4 hexes";
 
 var commandControl =
+  "Item,Space,Size,Cost,CPU,Notes\n" +
   "Daylight CEA46 Tactical Command Center,2,S,200 MCr,3,Grants +1d6 bonus to 4 ships; range 8 hexes\n" +
   "OmniCo NE79 Tactical Operations Center,5,M,500 MCr,6,Grants +1d6 bonus to 10 ships; range 12 hexes\n" +
   "Terradyne TAC-COM WPA40�,10,L,'1,000 MCr',9,Grants +1d6 bonus to 25 ships; range 16 hexes\n" +
@@ -526,6 +528,7 @@ var commandControl =
   "Kavelin-Song Ltd. N82 Tactical Coordination Module,30,G,'5,000 MCr',15,Grants +1d6 bonus to 100 ships; range 25 hexes";
 
 var electronicWarfare =
+  "Item,Space,Size,Cost,CPU,Notes\n" +
   "TerraCo L56 ECM System,5,S,50 MCr,2,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 8 hexes'\n" +
   "Omniwide Productions YPO57 Electronic Countermeasures,10,M,100 MCr,3,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 12 hexes'\n" +
   "Ultralight BMS55 Jamming System,15,L,250 MCr,4,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 16 hexes'\n" +
@@ -644,10 +647,8 @@ var tabs = [
   {heading: 'Superstructure', route: '/partials/superstructure.html'},
   {heading: 'Deflector Shields', route: 'main.deflectors'},
   {heading: 'Weaponry', route: 'main.weaponry'},
-  {heading: 'Additional Equipment', route: '/partials/equipment.html'},
-  {heading: 'Fighter Bay', route: 'main.fighterbay'},
   {heading: 'Facilities', route: 'main.facilities'},
-  {heading: 'Misc', route: '/partials/misc.html'},
+  {heading: 'General Equipment', route: 'main.general'},
   {heading: 'Download CSV', route: '/partials/download.html'}
 ];
 
