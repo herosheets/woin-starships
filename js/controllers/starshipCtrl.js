@@ -82,6 +82,16 @@ var loadCsvData = function (scope) {
   scope.ftl = [];
   scope.subluminal = [];
 
+  scope.pointDefenses = [
+    {
+      'Point Defense': 'Point defenses',
+      'Space': 10,
+      'CPU': 0.5,
+      'Cost': 10,
+      'DEFENSE': "+2 DEFENSE per point/ship class rank"
+    }
+  ];
+
   scope.systems = {
     cloaking: [],
     fueling: [],
@@ -633,7 +643,6 @@ var tabs = [
   {heading: 'FTL Engines', route: 'main.ftl'},
   {heading: 'Superstructure', route: '/partials/superstructure.html'},
   {heading: 'Deflector Shields', route: 'main.deflectors'},
-  {heading: 'Point Defenses', route: '/partials/pointdefense.html'},
   {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Additional Equipment', route: '/partials/equipment.html'},
   {heading: 'Fighter Bay', route: 'main.fighterbay'},
