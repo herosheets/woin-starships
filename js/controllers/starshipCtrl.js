@@ -629,7 +629,7 @@ var tabs = [
   {heading: 'Hull Class', route: 'main.hull'},
   {heading: 'Command & Control', route: 'main.command'},
   {heading: 'Crew', route: 'main.crew'},
-  {heading: 'Sub-Liminal Engines', route: '/partials/subliminal.html'},
+  {heading: 'Sub-Luminal Engines', route: 'main.subluminal'},
   {heading: 'FTL Engines', route: '/partials/ftl.html'},
   {heading: 'Superstructure', route: '/partials/superstructure.html'},
   {heading: 'Deflector Shields', route: 'main.deflectors'},
