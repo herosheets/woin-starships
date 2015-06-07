@@ -709,6 +709,19 @@ angular.module('woin-starship')
       $scope.ship[KEY][itemKey]++;
     };
 
+    // only allow one type of the item at a time
+    $scope.incrementOneItem = function (KEY, itemKey) {
+
+      var keys = Object.getOwnPropertyNames($scope.ship[KEY]);
+      console.log("KEY: " + KEY);
+      console.log(keys);
+
+      if (keys.length === 0 ||  (_.includes(keys, itemKey))) {
+        $scope.incrementItem(KEY, itemKey);
+      }
+
+    };
+
     $scope.decrementItem = function (KEY, itemKey) {
       $scope.ship[KEY][itemKey]--;
       if ($scope.ship[KEY][itemKey] <= 0) delete $scope.ship[KEY][itemKey];

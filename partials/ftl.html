@@ -5,20 +5,50 @@
 <h3>Your FTL Engine</h3>
 <table class="table table-striped">
     <thead>
-    <tr>
-        <th></th>
-        <th>FTL Engine</th>
-        <th>Cost</th>
-        <th>Size</th>
-        <th>CPU</th>
-        <th>Space</th>
-        <th>Power</th>
-        <th>Fuel Eff</th>
+        <tr>
+            <th></th>
+            <th>Count</th>
+            <th>FTL Engine</th>
+            <th>Cost</th>
+            <th>Size</th>
+            <th>CPU</th>
+            <th>Space</th>
+            <th>Power</th>
+            <th>Fuel Eff</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship[KEY]">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{ftlHash[name][KEY]}}</td>
+        <td>{{ftlHash[name].Cost}}</td>
+        <td>{{ftlHash[name].Size}}</td>
+        <td>{{ftlHash[name].CPU}}</td>
+        <td>{{ftlHash[name].Space}}</td>
+        <td>{{ftlHash[name].Power}}</td>
+        <td>{{ftlHash[name]['Fuel Eff']}}</td>
     </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>FTL Engine</th>
+            <th>Cost</th>
+            <th>Size</th>
+            <th>CPU</th>
+            <th>Space</th>
+            <th>Power</th>
+            <th>Fuel Eff</th>
+        </tr>
     </thead>
     <tbody>
     <tr ng-repeat="item in ftl">
-        <td><input type="radio" ng-model="ship.ftl" ng-value="item"></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementOneItem(KEY, item['FTL Engine'])">+</button></td>
         <td>{{item['FTL Engine']}}</td>
         <td>{{item.Cost}}</td>
         <td>{{item.Size}}</td>

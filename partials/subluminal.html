@@ -7,6 +7,36 @@
     <thead>
     <tr>
         <th></th>
+        <th>Count</th>
+        <th>Sub-luminal Engine</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>CPU</th>
+        <th>Space</th>
+        <th>Power</th>
+        <th>Fuel Eff</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship[KEY]">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{item['Sub-luminal Engine']}}</td>
+        <td>{{item.Cost}}</td>
+        <td>{{item.Size}}</td>
+        <td>{{item.CPU}}</td>
+        <td>{{item.Space}}</td>
+        <td>{{item.Power}}</td>
+        <td>{{item['Fuel Eff']}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
         <th>Sub-luminal Engine</th>
         <th>Cost</th>
         <th>Size</th>
@@ -18,8 +48,8 @@
     </thead>
     <tbody>
     <tr ng-repeat="item in subluminal">
-        <td><input type="radio" ng-model="ship.subluminal" ng-value="item"></td>
-        <td>{{item['Sub-luminal Engine']}}</td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementOneItem(KEY, item[KEY])">+</button></td>
+        <td>{{item[KEY]}}</td>
         <td>{{item.Cost}}</td>
         <td>{{item.Size}}</td>
         <td>{{item.CPU}}</td>
