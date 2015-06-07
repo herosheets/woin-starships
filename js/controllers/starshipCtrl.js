@@ -630,7 +630,7 @@ var tabs = [
   {heading: 'Command & Control', route: 'main.command'},
   {heading: 'Crew', route: 'main.crew'},
   {heading: 'Sub-Luminal Engines', route: 'main.subluminal'},
-  {heading: 'FTL Engines', route: '/partials/ftl.html'},
+  {heading: 'FTL Engines', route: 'main.ftl'},
   {heading: 'Superstructure', route: '/partials/superstructure.html'},
   {heading: 'Deflector Shields', route: 'main.deflectors'},
   {heading: 'Point Defenses', route: '/partials/pointdefense.html'},
