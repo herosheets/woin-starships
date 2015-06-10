@@ -3,7 +3,7 @@
 angular = require('angular');
 require('../dist/templateCachePartials');
 
-angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs'])
+angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs', 'ngFileUpload'])
 	.config(function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 
@@ -12,7 +12,6 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 		$stateProvider
 			.state('main', {
 				url: '/',
-				controller: 'StarshipCtrl',
 				templateUrl: '/partials/starship-index.html'
 			})
 			.state('main.basics', {

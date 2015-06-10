@@ -643,7 +643,7 @@ var tabs = [
 ];
 
 angular.module('woin-starship')
-  .controller('StarshipCtrl', function StarshipCtrl($scope) {
+  .controller('StarshipCtrl', function StarshipCtrl($scope, Upload) {
     'use strict';
 
     // initialize data
@@ -703,6 +703,30 @@ angular.module('woin-starship')
     $scope.decrementItem = function (KEY, itemKey) {
       $scope.ship[KEY][itemKey]--;
       if ($scope.ship[KEY][itemKey] <= 0) delete $scope.ship[KEY][itemKey];
+    };
+
+    $scope.save = function() {
+      var str = JSON.stringify($scope.ship, null, 4);
+      var blob = new Blob([str], {type: 'application/json'});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.download = "starship-"+Date.now()+".json";
+      a.href = url;
+      a.click();
+    };
+
+    $scope.load = function(files) {
+      if(!files.length) return;
+
+      var reader = new FileReader();
+
+      reader.onload = function() {
+        var text = reader.result;
+        $scope.ship = JSON.parse(text);
+        $scope.$apply(); // wtf angular?
+      };
+
+      reader.readAsText(files[0], 'UTF-8');
     };
 
   });

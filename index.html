@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-framework="angularjs">
+<html lang="en" data-framework="angularjs" ng-app="woin-starship" ng-controller="StarshipCtrl">
 	<head>
 		<meta charset="utf-8">
 		<title>What's Old is New - Starship Builder</title>
@@ -24,11 +24,13 @@
 						<li class="active"><a href="#">Your Starship <span class="sr-only">(current)</span></a></li>
 						<li><a href="#">New Starship</a></li>
 						<li><a href="#">WOIN Rulebook</a></li>
+						<li><a href ng-click="save()">Save</a></li>
+						<li><a href ngf-select ngf-change="load($files)">Load</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<div ng-app="woin-starship" class="container-fluid">
+		<div class="container-fluid">
 			<ui-view />
 		</div>
 
@@ -40,5 +42,6 @@
 	    <script src="/bower_components/lodash/lodash.min.js"></script>
 		<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 		<script src="/bower_components/angular-ui-router-tabs/src/ui-router-tabs.js"></script>
+		<script src="/bower_components/ng-file-upload/ng-file-upload-all.min.js"></script>
 	</body>
 </html>
