@@ -169,7 +169,6 @@ gulp.task('watch', function() {
 gulp.task('webserver', ['watch','build'], function() {
     gulp.src('.')
         .pipe(webserver({
-            livereload: true,
             directoryListing: true,
             open: "http://localhost:8000/dist/index.html"
         }));
