@@ -1,0 +1,172 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <table class='centered' cols="10" frame="void" rules="none" border="0" cellspacing="0">
+            <colgroup>
+                <col width="157">
+                <col width="72">
+                <col width="61">
+                <col width="71">
+                <col width="52">
+                <col width="50">
+                <col width="43">
+                <col width="48">
+                <col width="48">
+                <col width="48">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="10" align="center" height="23" bgcolor="#cccccc"
+                    valign="bottom" width="650"><b ><font size="4" ng-bind="ship.name"></font></b></td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Weight</span>
+                    <span ng-bind="ship.hull.Tonnage"></span> tons;
+                    <span style="font-weight: bold;">Cargo Units</span>
+                    <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
+                    <span style="font-weight: bold;">Hull Class </span>
+                    <span ng-bind='ship.hull.Class'></span> (INIT <span ng-bind="ship.hull.INITIATIVE"></span>)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Crew</span>
+                    <span ng-bind="ship.hull.Crew"></span> (cost <span ng-bind=""></span>Cr/m);
+                    <span style="font-weight: bold;">Troops</span>
+                    <span ng-bind="ship.Crew.Troops"></span>; Passengers
+                    <span ng-bind="ship.Crew['Standard Passengers'] + ship.Crew['Luxury Passengers']"></span>
+                    (<span ng-bind="ship.Crew['Standard Passengers']"></span> standard, <span ng-bind="ship.Crew['Luxury Passengers']"></span> luxury)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom">
+                    <b>Command &amp; Control Systems</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Computers: </span>
+                    <span ng-repeat="(name, quantity) in ship['Control Computers']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        ( each CPU cycles: <span ng-bind="computerHash[name]['CPU']"></span> ;
+                        max FTL: <span ng-bind="computerHash[name]['Max FTL']"></span> ;
+                        checks: <span ng-bind="computerHash[name].Checks"></span> )
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Sensors</span>
+                    <span ng-bind="ship.sensor['Sensor Systems']"></span>
+                    (range <span ng-bind="ship.sensor.Range"></span>; check <span ng-bind="ship.sensor.Checks"></span>)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom">
+                    <b>Engine &amp; Power Data</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Subluminal</span>
+                      <span ng-repeat="(name, quantity) in ship['Sub-luminal Engine']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        ( each power: <span ng-bind="sublHash[name]['Power']"></span> ;
+                        SPEED: <span ng-bind="calculateSublSpeed(name, quantity)"></span> ;
+                        fuel efficiency: <span ng-bind="sublHash[name]['Fuel Eff']"></span> )
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">FTL</span>
+                      <span ng-repeat="(name, quantity) in ship['FTL Engine']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        ( each power: <span ng-bind="ftlHash[name]['Power']"></span> ;
+                        FTL: <span ng-bind="calculateFtl(name, quantity)"></span> ;
+                        fuel efficiency: <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Operational Range</span>
+                    <span ng-bind="calculateOperationalRange()"></span> parsecs
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Defensive Data</b></td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom"><span
+                        style="font-weight: bold;">Superstructure</span>
+                    93; <span style="font-weight: bold;">DEFENSE</span>
+                    12; <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>
+                    34
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Armor</span>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Shields</span>
+                    2x Cui-Cui Systems ESM-2 combat deflector screens (power 152; SOAK 11)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Point
+Defenses</span> -
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Weapons Data</b></td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">2x Saito Cybernetics EPCl-1 Whiteswarm
+                    photonic torpedo cluster (range 17; damage 5d6 heat; attack +0d6)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">4x Solar Industries GHB-1 Excelsior phaser
+                    beam emitter (range 15; damage +0d6; attack +0d6)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Facilities</b></td>
+            </tr>
+            <tr>
+                <td colspan="10" sdnum="2057;0;0" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Luxury</span>
+                    38.8% (poor;
+                    -1d6)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Facilities</span>
+                    Sick bay (50), Messhall (80), Transporter pad (24), Brig (20), Cabin,
+                    double (200), Gymnasium (45), Holographic suite (15), Observation
+                    lounge (20)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Other
+Systems</span> Omnibeam J21 Gravity Beam
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Shuttles</span>
+                    16 (Ultrabeam VN34 Shuttle/fighter Bay);<span style="font-weight: bold;"> Fighters</span> 0
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Market Value
+                    12444.5 MCr</b></td>
+            </tr>
+            </tbody>
+        </table>
+        <div>
+        </div>
+    </div>
+
+</div>

@@ -8,7 +8,19 @@
 angular = require('angular');
 
 var flatComponents = ['hull', 'sensor'];
-var quantityComponents = ['crew', 'computers'];
+
+var quantityComponents = {
+  'Crew': 'crewHash',
+  'Control Computers': "computerHash",
+  'Sub-luminal Engine': 'sublHash',
+  'FTL Engine': 'ftlHash',
+  'Point Defense': 'pointDefensesHash',
+  'Deflector Shields': 'deflectorHash',
+  'Weapon System': 'weaponHash',
+  'Facilities': 'facilitiesHash',
+  'General': 'generalHash'
+};
+
 
 var getComponentValue = function (c, val) {
   if (c !== undefined && c !== null) {
@@ -21,36 +33,43 @@ var getComponentValue = function (c, val) {
   return 0;
 };
 
-var getQuantityValue = function (c, val) {
+var getQuantityValue = function (shipPart, val, partsList) {
   var total = 0;
-  if (c !== undefined && c !== null) {
-    angular.forEach(c, function (component) {
-      var quantity = component.quantity;
-      if (_.has(component, val)) {
-        total += c[val] * quantity;
+  if (shipPart !== undefined && shipPart !== null) {
+    angular.forEach(shipPart, function (quantity, component) {
+      if (_.has(partsList[component], val)) {
+        var b = parseInt(partsList[component][val]);
+        if (!(isNaN(b))) {
+          total += b * quantity;
+        }
       }
     });
   }
   return total;
 };
 
-var getTotalShipValue = function (ship, valueName) {
+var getTotalShipValue = function (ship, valueName, scope) {
   var base = 0;
   angular.forEach(flatComponents, function (c) {
     base += getComponentValue(ship[c], valueName);
   });
-  angular.forEach(quantityComponents, function (c) {
-    base += getQuantityValue(ship[c], valueName);
+  angular.forEach(quantityComponents, function (hashName, componentName) {
+    var hash = scope[hashName];
+    base += getQuantityValue(ship[componentName], valueName, hash);
   });
   return base;
 };
 
-var getCost = function (ship) {
-  return getTotalShipValue(ship, 'Cost');
+var getAllShipValues = function (ship, valueName, scope) {
+  return getTotalShipValue(ship, valueName, scope);
 };
 
-var getSpace = function (ship) {
-  return getTotalShipValue(ship, 'Space');
+var getCost = function (ship, scope) {
+  return getTotalShipValue(ship, 'Cost', scope);
+};
+
+var getSpace = function (ship, scope) {
+  return getTotalShipValue(ship, 'Space', scope);
 };
 
 var getSpaceMax = function (ship) {
@@ -61,16 +80,21 @@ var getSpaceMax = function (ship) {
   }
 };
 
-var getCpu = function (ship) {
-  return getTotalShipValue(ship, 'CPU');
+var getCpu = function (ship, scope) {
+  return getTotalShipValue(ship, 'CPU', scope);
 };
 
-var getCpuMax = function (ship) {
+var getCpuMax = function (ship, scope) {
   if (_.has(ship, 'computer')) {
-    return getQuantityValue(ship.computer, 'Max CPU');
+    return getQuantityValue(ship.computer, 'Max CPU', scope);
   } else {
     return 0;
   }
+};
+
+var getHullClassInteger = function (ship, hulls) {
+  var index = hulls.indexOf(ship.hull);
+  return index + 1;
 };
 
 var loadCsvData = function (scope) {
@@ -106,6 +130,11 @@ var loadCsvData = function (scope) {
   scope.hullConfigurations = hullConfigurations;
   scope.passengerOptions = passengers;
 
+  scope.crewHash = {};
+  _.each(scope.passengerOptions, function(item) {
+    scope.crewHash[item['Type']] = item;
+  });
+
   Papa.parse(computers, {
     header: true,
     dynamicTyping: true,
@@ -126,7 +155,19 @@ var loadCsvData = function (scope) {
     header: true,
     dynamicTyping: true,
     step: function (row) {
+      var KEY = 'Deflector Shields';
+      var PKEY = 'Point Defense';
       scope.deflectors.push(row.data[0]);
+      scope.deflectorHash = {};
+      _.each(scope.deflectors, function(item) {
+        scope.deflectorHash[item[KEY]] = item;
+      });
+
+
+      scope.pointDefensesHash = {};
+      _.each(scope.pointDefenses, function(item) {
+        scope.pointDefensesHash[item[PKEY]] = item;
+      });
     },
     complete: function () {
       console.log("Deflectors Loaded");
@@ -138,6 +179,10 @@ var loadCsvData = function (scope) {
     dynamicTyping: true,
     step: function (row) {
       scope.facilities.push(row.data[0]);
+      scope.facilitiesHash = {};
+      _.each(scope.facilities, function(item) {
+        scope.facilitiesHash[item['Customization']] = item;
+      });
     },
     complete: function () {
       console.log("Facilities Loaded");
@@ -149,6 +194,11 @@ var loadCsvData = function (scope) {
     dynamicTyping: true,
     step: function (row) {
       scope.ftl.push(row.data[0]);
+      var KEY = 'FTL Engine';
+      scope.ftlHash = {};
+      _.each(scope.ftl, function(item) {
+        scope.ftlHash[item[KEY]] = item;
+      });
     },
     complete: function () {
       console.log("FTL Loaded");
@@ -182,7 +232,12 @@ var loadCsvData = function (scope) {
     header: true,
     dynamicTyping: true,
     step: function (row) {
+      var KEY = 'Sub-luminal Engine';
       scope.subluminal.push(row.data[0]);
+      scope.sublHash = {};
+      _.each(scope.subluminal, function(item) {
+        scope.sublHash[item[KEY]] = item;
+      });
     },
     complete: function () {
       console.log("Subluminal Loaded");
@@ -261,6 +316,26 @@ var loadCsvData = function (scope) {
     dynamicTyping: true,
     step: function (row) {
       scope.systems.electronicWarfare.push(row.data[0]);
+      scope.generalHash = {};
+      _.each(scope.systems.hangars, function(item) {
+        scope.generalHash[item.Item] = item;
+      });
+
+      _.each(scope.systems.fueling, function(item) {
+        scope.generalHash[item.Item] = item;
+      });
+
+      _.each(scope.systems.tractor, function(item) {
+        scope.generalHash[item.Item] = item;
+      });
+
+      _.each(scope.systems.engMods, function(item) {
+        scope.generalHash[item.Item] = item;
+      });
+
+      _.each(scope.systems.electronicWarfare, function(item) {
+        scope.generalHash[item.Item] = item;
+      });
     },
     complete: function () {
       console.log("electronicWarfare Systems Loaded");
@@ -283,7 +358,13 @@ var loadCsvData = function (scope) {
     header: true,
     dynamicTyping: true,
     step: function (row) {
+      var KEY = 'Weapon System';
       scope.weapons.push(row.data[0]);
+
+      scope.weaponHash = {};
+      _.each(scope.weapons, function(item) {
+        scope.weaponHash[item[KEY]] = item;
+      });
     },
     complete: function () {
       console.log("Weapons Loaded");
@@ -654,7 +735,7 @@ var tabs = [
   {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Facilities', route: 'main.facilities'},
   {heading: 'General Equipment', route: 'main.general'},
-  {heading: 'Download CSV', route: '/partials/download.html'}
+  {heading: 'Your Ship', route: 'main.ship'}
 ];
 
 angular.module('woin-starship')
@@ -669,23 +750,63 @@ angular.module('woin-starship')
 
     // helper functions for cost & cargo calculations
     $scope.totalCost = function () {
-      return getCost($scope.ship);
+      return getCost($scope.ship, $scope);
     };
 
     $scope.currentSpace = function () {
-      return getSpace($scope.ship);
+      return getSpace($scope.ship, $scope);
     };
 
     $scope.maxSpace = function () {
-      return getSpaceMax($scope.ship);
+      return getSpaceMax($scope.ship, $scope);
     };
 
     $scope.maxCpu = function () {
-      return getCpuMax($scope.ship);
+      return getCpuMax($scope.ship, $scope);
     };
 
     $scope.currentCpu = function () {
-      return getCpu($scope.ship);
+      return getCpu($scope.ship, $scope);
+    };
+
+    $scope.calculateSublSpeed = function (engineName, quantity) {
+      var totalPower = $scope.sublHash[engineName]['Power'] * quantity;
+      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+
+      if (totalPower !== undefined && hullClass !== undefined) {
+        return totalPower/hullClass;
+      } else {
+        return 0;
+      }
+    };
+
+    $scope.calculateFtl = function (engineName, quantity) {
+      var totalPower = $scope.ftlHash[engineName]['Power'] * quantity;
+      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+      var maxFtl = getTotalShipValue($scope.ship, 'Max FTL', $scope);
+
+      if (totalPower !== undefined && hullClass !== undefined) {
+        var max = totalPower/hullClass;
+        if (max <= maxFtl) {
+          return max;
+        } else {
+          return maxFtl;
+        }
+      } else {
+        return 0;
+      }
+    };
+
+    $scope.calculateOperationalRange = function() {
+      if ($scope.ship.hull !== undefined) {
+        var baseRange = $scope.ship.hull.FUEL;
+        var modifiers = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
+
+        return baseRange * modifiers;
+      } else {
+        return 0;
+      }
+
     };
 
     $scope.addQuantitied = function (component, key, item) {

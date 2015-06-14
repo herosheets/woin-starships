@@ -74,6 +74,12 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "DeflectorShieldCtrl", templateUrl: '/partials/shields.html' }
 				}
 			})
+			.state('main.ship', {
+				url: 'ship',
+				views: {
+					content: { controller: "ShipViewCtrl", templateUrl: '/partials/ship.html' }
+				}
+			})
 		;
 	});
 
@@ -86,3 +92,4 @@ require('ftlCtrl');
 require('weaponCtrl');
 require('deflectorsCtrl');
 require('generalCtrl');
+require('shipViewCtrl');

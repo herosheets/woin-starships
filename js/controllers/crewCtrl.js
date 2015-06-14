@@ -6,8 +6,7 @@ angular.module('woin-starship')
     var KEY = $scope.KEY = 'Crew';
     if(!$scope.ship[KEY]) $scope.ship[KEY] = {};
 
-    $scope.crewHash = {};
-    _.each($scope.passengerOptions, function(item) {
-      $scope.crewHash[item['Type']] = item;
-    });
+    $scope.crewHash = $scope.$parent.crewHash;
+
+
   });

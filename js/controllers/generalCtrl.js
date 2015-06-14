@@ -6,24 +6,6 @@ angular.module('woin-starship')
     var KEY = $scope.KEY = 'General';
     if(!$scope.ship[KEY]) $scope.ship[KEY] = {};
 
-    $scope.generalHash = {};
-    _.each($scope.systems.hangars, function(item) {
-      $scope.generalHash[item.Item] = item;
-    });
+    $scope.generalHash = $scope.$parent.generalHash;
 
-    _.each($scope.systems.fueling, function(item) {
-      $scope.generalHash[item.Item] = item;
-    });
-
-    _.each($scope.systems.tractor, function(item) {
-      $scope.generalHash[item.Item] = item;
-    });
-
-    _.each($scope.systems.engMods, function(item) {
-      $scope.generalHash[item.Item] = item;
-    });
-
-    _.each($scope.systems.electronicWarfare, function(item) {
-      $scope.generalHash[item.Item] = item;
-    });
   });
