@@ -110,7 +110,12 @@ var loadCsvData = function (scope) {
     header: true,
     dynamicTyping: true,
     step: function (row) {
+      var KEY = 'Control Computers';
       scope.computers.push(row.data[0]);
+      scope.computerHash = {};
+      _.each(scope.computers, function(item) {
+        scope.computerHash[item[KEY]] = item;
+      });
     },
     complete: function () {
       console.log("Computers Loaded");

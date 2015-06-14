@@ -29,38 +29,49 @@
             <tbody>
             <tr>
                 <td colspan="10" align="center" height="23" bgcolor="#cccccc"
-                    valign="bottom" width="650"><b ><font size="4">Excalibur Class XIV Battleship</font></b></td>
+                    valign="bottom" width="650"><b ><font size="4" ng-bind="ship.name"></font></b></td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Weight</span>
-                    297459 tons; <span style="font-weight: bold;">Cargo Units</span>
-                    1960 (83 available)<br>
-                    <span style="font-weight: bold;">Hull Class </span>XIV
-                    (INIT -2d6);
-                    <span style="font-weight: bold;">Length</span>
-                    420m; <span style="font-weight: bold;">Width</span>
-                    210m; <span style="font-weight: bold;">Height</span>
-                    140m
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Weight</span>
+                    <span ng-bind="ship.hull.Tonnage"></span> tons;
+                    <span style="font-weight: bold;">Cargo Units</span>
+                    <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
+                    <span style="font-weight: bold;">Hull Class </span>
+                    <span ng-bind='ship.hull.Class'></span> (INIT <span ng-bind="ship.hull.INITIATIVE"></span>)
                 </td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Crew</span>
-                    850 (cost 170000Cr/m); <span style="font-weight: bold;">Troops</span>
-                    0; Passengers 0 (0 standard, 0 luxury)
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Crew</span>
+                    <span ng-bind="ship.hull.Crew"></span> (cost <span ng-bind=""></span>Cr/m);
+                    <span style="font-weight: bold;">Troops</span>
+                    <span ng-bind="ship.Crew.Troops"></span>; Passengers
+                    <span ng-bind="ship.Crew['Standard Passengers'] + ship.Crew['Luxury Passengers']"></span>
+                    (<span ng-bind="ship.Crew['Standard Passengers']"></span> standard, <span ng-bind="ship.Crew['Luxury Passengers']"></span> luxury)
                 </td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Command
-                    &amp; Control Systems</b></td>
-            </tr>
-            <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Computer</span>
-                    Chemerkin-Liang Products LM-5S (CPU cycles 64; max FTL 16; checks +1d6)
+                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom">
+                    <b>Command &amp; Control Systems</b>
                 </td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Sensors</span>
-                    Newwatch ES-1H (range 16; check +1d6)
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Computers: </span>
+                    <span ng-repeat="(name, quantity) in ship['Control Computers']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        ( each CPU cycles: <span ng-bind="computerHash[name]['CPU']"></span> ;
+                        max FTL: <span ng-bind="computerHash[name]['Max FTL']"></span> ;
+                        checks: <span ng-bind="computerHash[name].Checks"></span> )
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Sensors</span>
+                    <span ng-bind="ship.sensor['Sensor Systems']"></span>
+                    (range <span ng-bind="ship.sensor.Range"></span>; check <span ng-bind="ship.sensor.Checks"></span>)
                 </td>
             </tr>
             <tr>
