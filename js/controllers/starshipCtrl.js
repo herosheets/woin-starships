@@ -821,6 +821,50 @@ angular.module('woin-starship')
 
     };
 
+    $scope.calculateSuperstructure = function() {
+      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+      var baseSs = hullClass * 3;
+      var additional = $scope.ship.Superstructure["Additional SS"];
+      if (additional !== undefined) {
+        baseSs += additional;
+      }
+      return baseSs;
+    };
+
+    $scope.calculateDefense = function() {
+      return getAllShipValues($scope.ship, 'DEFENSE', $scope);
+    };
+
+    $scope.calculateElectronicDefense = function() {
+      var bonus = getAllShipValues($scope.ship, 'ELECTRONIC DEFENSE', $scope);
+      var base = getCpu($scope.ship, $scope);
+      return base + bonus;
+    };
+
+    $scope.presentArmor = function() {
+      var base = "";
+      var reactive = $scope.ship.Superstructure["Armor, reactive"];
+      var ablative = $scope.ship.Superstructure["Armor, ablative"];
+
+      if (reactive !== undefined) {
+        base += reactive + "x Armor, reactive ";
+      }
+
+      if (ablative !== undefined) {
+        base += ablative + "x Armor, ablative ";
+      }
+
+      if (base === "") {
+        base = "-";
+      }
+      return base;
+    };
+
+    $scope.calculateSoak = function(power) {
+      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+      return parseInt(power/hullClass);
+    };
+
     $scope.addQuantitied = function (component, key, item) {
       if (component[key] === undefined) {
         component[key] = item;

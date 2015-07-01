@@ -98,26 +98,35 @@
                 <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Defensive Data</b></td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span
-                        style="font-weight: bold;">Superstructure</span>
-                    93; <span style="font-weight: bold;">DEFENSE</span>
-                    12; <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>
-                    34
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Superstructure</span>
+                    <span ng-bind="calculateSuperstructure()"></span>
+                    <span style="font-weight: bold;">DEFENSE</span>
+                    <span ng-bind="calculateDefense()"></span>
+                    <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>
+                    <span ng-bind="calculateElectronicDefense()"></span>
                 </td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Armor</span>
-                    -
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Armor</span>
+                    <span ng-bind="presentArmor()"></span>
                 </td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Shields</span>
-                    2x Cui-Cui Systems ESM-2 combat deflector screens (power 152; SOAK 11)
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Shields</span>
+                     <span ng-repeat="(name, quantity) in ship['Deflector Shields']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        (power: <span ng-bind="deflectorHash[name]['Power']"></span>;
+                        SOAK: <span ng-bind="calculateSoak(deflectorHash[name]['Power'])"></span>)
+                    </span>
                 </td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom"><span style="font-weight: bold;">Point
-Defenses</span> -
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Point Defenses</span>
+                    <span ng-bind="ship['Point Defense']['Point defenses'] || '-'"></span>
                 </td>
             </tr>
             <tr>
