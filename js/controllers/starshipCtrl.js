@@ -129,10 +129,16 @@ var loadCsvData = function (scope) {
   scope.weapons = [];
   scope.hullConfigurations = hullConfigurations;
   scope.passengerOptions = passengers;
+  scope.superstructureOptions = superstructures;
 
   scope.crewHash = {};
   _.each(scope.passengerOptions, function(item) {
     scope.crewHash[item['Type']] = item;
+  });
+
+  scope.superstructureHash = {};
+  _.each(scope.superstructureOptions, function(item) {
+    scope.superstructureHash[item['Type']] = item;
   });
 
   Papa.parse(computers, {
@@ -723,6 +729,12 @@ var passengers = [
   {Type: "Luxury Passengers", Space: "4 CU", Cost: "0.3 Mcr"}
 ];
 
+var superstructures = [
+  {Type: "Additional SS", Space: "1 CU", Cost: "0.5 Mcr", Notes: "Base (free) SS = ship class"},
+  {Type: "Armor, reactive", Space: "10 CU", Cost: "10 Mcr", Notes: "1 SOAK per armor point/class vs. ballistic; 1.5 SOAK per armor point/class vs energy."},
+  {Type: "Armor, ablative", Space: "10 CU", Cost: "10 Mcr", Notes: "1 SOAK per armor point/class vs. energy; 1.5 SOAK per armor point/class vs ballistic."}
+];
+
 var tabs = [
   {heading: 'Basics', route: 'main.basics'},
   {heading: 'Hull Class', route: 'main.hull'},
@@ -730,7 +742,7 @@ var tabs = [
   {heading: 'Crew', route: 'main.crew'},
   {heading: 'Sub-Luminal Engines', route: 'main.subluminal'},
   {heading: 'FTL Engines', route: 'main.ftl'},
-  {heading: 'Superstructure', route: '/partials/superstructure.html'},
+  {heading: 'Superstructure', route: 'main.superstructure'},
   {heading: 'Deflector Shields', route: 'main.deflectors'},
   {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Facilities', route: 'main.facilities'},

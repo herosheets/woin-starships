@@ -1,0 +1,51 @@
+<h3>Superstructure</h3>
+<p class="explainer">
+    A basic ship's SUPERSTRUCTURE is equal to three times its ship class. This typically isn't a lot, and many ships have additional superstructure added to the hull. Superstructure is cheaper and lighter than armor; but it does deplete, which armor does not tend to do.
+</p>
+<h3>Your Superstructure</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td></td>
+        <td>Quantity</td>
+        <td>Type</td>
+        <td>Space</td>
+        <td>Cost</td>
+        <td>Notes</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship['Superstructure']">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td ng-bind="superstructureHash[name].Space"></td>
+        <td ng-bind="superstructureHash[name].Cost"></td>
+        <td ng-bind="superstructureHash[name].Notes"></td>
+    </tr>
+    <tr ng-if="isEmpty(KEY)">
+        <td colspan="13" class="text-center">No additional superstructure selected.</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>Select</td>
+        <td>Type</td>
+        <td>Space</td>
+        <td>Cost</td>
+        <td>Notes</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="p in superstructureOptions">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p['Type'])">+</button></td>
+        <td ng-bind="p.Type"></td>
+        <td ng-bind="p.Space"></td>
+        <td ng-bind="p.Cost"></td>
+        <td ng-bind="p.Notes"></td>
+    </tr>
+    </tbody>
+</table>

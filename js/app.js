@@ -62,6 +62,12 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "GeneralCtrl", templateUrl: '/partials/general.html' }
 				}
 			})
+			.state('main.superstructure', {
+				url: 'superstructure',
+				views: {
+					content: { controller: "SuperstructureCtrl", templateUrl: '/partials/superstructure.html' }
+				}
+			})
 			.state('main.weaponry', {
 				url: 'weaponry',
 				views: {
@@ -92,4 +98,5 @@ require('ftlCtrl');
 require('weaponCtrl');
 require('deflectorsCtrl');
 require('generalCtrl');
+require('superstructureCtrl');
 require('shipViewCtrl');
