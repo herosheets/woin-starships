@@ -324,6 +324,7 @@ var loadCsvData = function (scope) {
       scope.systems.electronicWarfare.push(row.data[0]);
       scope.generalHash = {};
       _.each(scope.systems.hangars, function(item) {
+        item['hangar'] = true;
         scope.generalHash[item.Item] = item;
       });
 
@@ -865,6 +866,15 @@ angular.module('woin-starship')
       return parseInt(power/hullClass);
     };
 
+    $scope.isHangar = function(itemName) {
+      return ($scope.generalHash[itemName].hangar !== undefined);
+    };
+
+    $scope.getHangarQty = function(hangar) {
+      var notes = $scope.generalHash[hangar].Notes;
+      return notes.split('Room for ')[1].split(' ')[0];
+    };
+
     $scope.addQuantitied = function (component, key, item) {
       if (component[key] === undefined) {
         component[key] = item;
@@ -894,15 +904,11 @@ angular.module('woin-starship')
 
     // only allow one type of the item at a time
     $scope.incrementOneItem = function (KEY, itemKey) {
-
       var keys = Object.getOwnPropertyNames($scope.ship[KEY]);
-      console.log("KEY: " + KEY);
-      console.log(keys);
 
       if (keys.length === 0 ||  (_.includes(keys, itemKey))) {
         $scope.incrementItem(KEY, itemKey);
       }
-
     };
 
     $scope.decrementItem = function (KEY, itemKey) {
