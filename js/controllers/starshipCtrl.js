@@ -97,6 +97,14 @@ var getHullClassInteger = function (ship, hulls) {
   return index + 1;
 };
 
+var getTotalCrew = function (ship, scope) {
+  var baseCrew = ship.hull.Crew;
+  angular.forEach(ship.Crew, function(crewType, quantity) {
+    baseCrew += quantity;
+  });
+  return baseCrew;
+};
+
 var loadCsvData = function (scope) {
   scope.hulls = [];
   scope.computers = [];
@@ -859,6 +867,24 @@ angular.module('woin-starship')
         base = "-";
       }
       return base;
+    };
+
+    $scope.calculateLuxury = function() {
+      var luxuryTotal = getAllShipValues($scope.ship, 'Luxury/crew', $scope);
+      var crewTotal = getTotalCrew($scope.ship, $scope);
+      var lux = (luxuryTotal / crewTotal) * 100;
+
+      if (lux < 50) {
+        return lux + "% (Spartan: -2d6)";
+      } else if (lux < 90) {
+        return lux + "% (Poor: -1d6)";
+      } else if (lux < 150) {
+        return lux + "% (Adequate: -)";
+      } else if (lux < 199) {
+        return lux + "% (Comfortable: +1d6)";
+      } else {
+        return lux + "% (Decadent: -1d6)";
+      }
     };
 
     $scope.calculateSoak = function(power) {
