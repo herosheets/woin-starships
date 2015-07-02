@@ -133,13 +133,13 @@
                 <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Weapons Data</b></td>
             </tr>
             <tr>
-                <td colspan="10" align="left" height="17" valign="bottom">2x Saito Cybernetics EPCl-1 Whiteswarm
-                    photonic torpedo cluster (range 17; damage 5d6 heat; attack +0d6)
-                </td>
-            </tr>
-            <tr>
-                <td colspan="10" align="left" height="17" valign="bottom">4x Solar Industries GHB-1 Excelsior phaser
-                    beam emitter (range 15; damage +0d6; attack +0d6)
+                <td colspan="10" align="left" height="17" valign="bottom">
+                     <span ng-repeat="(name, quantity) in ship['Weapon System']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        (range: <span ng-bind="weaponHash[name]['Range']"></span>;
+                        damage: <span ng-bind="weaponHash[name]['Damage']"></span>;
+                        attack: <span ng-bind="weaponHash[name]['Attack']"></span>)<br/>
+                    </span>
                 </td>
             </tr>
             <tr>
