@@ -205,8 +205,8 @@ gulp.task('sprite', function () {
 });
 
 // deploy
-gulp.tash('deploy', function() {
-    return gulp.src('./dist/**/*')
+gulp.task('deploy', function() {
+    return gulp.src(['./dist/**/*', './bower_components'])
         .pipe(ghPages());
 });
 
