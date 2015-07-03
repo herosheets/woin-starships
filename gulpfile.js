@@ -145,10 +145,15 @@ gulp.task('build-js', ['clean', 'build-template-cache'], function() {
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshint', 'build-js'], function() {
+gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshint', 'build-js', 'copy'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
         .pipe(gulp.dest('dist'));
+});
+
+gulp.task('copy', ['clean'], function() {
+   return gulp.src('bower_components/**/*')
+       .pipe(gulp.dest('./dist/bower_components'));
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -168,10 +173,10 @@ gulp.task('watch', function() {
 /////////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('webserver', ['watch','build'], function() {
-    gulp.src('.')
+    gulp.src('./dist')
         .pipe(webserver({
             directoryListing: true,
-            open: "http://localhost:8000/dist/index.html"
+            open: "http://localhost:8000/index.html"
         }));
 });
 
@@ -206,7 +211,7 @@ gulp.task('sprite', function () {
 
 // deploy
 gulp.task('deploy', function() {
-    return gulp.src(['./dist/**/*', './bower_components'])
+    return gulp.src('./dist/**/*')
         .pipe(ghPages());
 });
 
