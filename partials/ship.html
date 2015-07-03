@@ -25,7 +25,9 @@
                     <span style="font-weight: bold;">Cargo Units</span>
                     <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
                     <span style="font-weight: bold;">Hull Class </span>
-                    <span ng-bind='ship.hull.Class'></span> (INIT <span ng-bind="ship.hull.INITIATIVE"></span>)
+                    <span ng-bind='ship.hull.Class'></span> (INIT <span ng-bind="ship.hull.INITIATIVE"></span>)<br>
+                    <span style="font-weight: bold;">Hull Configuration </span>
+                    <span ng-bind='ship.hull | json'></span>
                 </td>
             </tr>
             <tr>
