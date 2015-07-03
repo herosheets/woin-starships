@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     buffer = require('vinyl-buffer'),
     uglify = require('gulp-uglify'),
     gutil = require('gulp-util'),
+    ghPages = require('gulp-gh-pages'),
     ngAnnotate = require('browserify-ngannotate');
 
 var CacheBuster = require('gulp-cachebust');
@@ -201,6 +202,12 @@ gulp.task('sprite', function () {
 
     spriteData.css.pipe(gulp.dest('./dist'));
     spriteData.img.pipe(gulp.dest('./dist'))
+});
+
+// deploy
+gulp.tash('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
