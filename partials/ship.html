@@ -25,7 +25,7 @@
                     <span style="font-weight: bold;">Cargo Units</span>
                     <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
                     <span style="font-weight: bold;">Hull Class </span>
-                    <span ng-bind='ship.hull.Class || 'none'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>
+                    <span ng-bind='ship.hull.Class || "none"'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>
                     <span style="font-weight: bold;">Hull Configuration </span>
                     <span ng-bind='ship.hullConfig.display'></span>
                 </td>
@@ -59,7 +59,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Sensors</span>
-                    <span ng-bind="ship.sensor['Sensor Systems'] || 'none''"></span>
+                    <span ng-bind="ship.sensor['Sensor Systems'] || 'none'"></span>
                     (range <span ng-bind="ship.sensor.Range || 0"></span>; check <span ng-bind="ship.sensor.Checks || 0"></span>)
                 </td>
             </tr>
