@@ -847,7 +847,7 @@ angular.module('woin-starship')
     $scope.calculateElectronicDefense = function() {
       var bonus = getAllShipValues($scope.ship, 'ELECTRONIC DEFENSE', $scope);
       var base = getCpu($scope.ship, $scope);
-      return base + bonus;
+      return Math.floor((base/2) + bonus);
     };
 
     $scope.presentArmor = function() {
