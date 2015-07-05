@@ -21,11 +21,11 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Weight</span>
-                    <span ng-bind="ship.hull.Tonnage"></span> tons;
+                    <span ng-bind="ship.hull.Tonnage || 0"></span> tons;
                     <span style="font-weight: bold;">Cargo Units</span>
                     <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
                     <span style="font-weight: bold;">Hull Class </span>
-                    <span ng-bind='ship.hull.Class'></span> (INIT <span ng-bind="ship.hull.INITIATIVE"></span>)<br>
+                    <span ng-bind='ship.hull.Class || 'none'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>
                     <span style="font-weight: bold;">Hull Configuration </span>
                     <span ng-bind='ship.hullConfig.display'></span>
                 </td>
@@ -33,11 +33,11 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Crew</span>
-                    <span ng-bind="ship.hull.Crew"></span> (cost <span ng-bind=""></span>Cr/m);
+                    <span ng-bind="ship.hull.Crew || 0"></span> (cost <span ng-bind=""></span>Cr/m);
                     <span style="font-weight: bold;">Troops</span>
-                    <span ng-bind="ship.Crew.Troops"></span>; Passengers
-                    <span ng-bind="ship.Crew['Standard Passengers'] + ship.Crew['Luxury Passengers']"></span>
-                    (<span ng-bind="ship.Crew['Standard Passengers']"></span> standard, <span ng-bind="ship.Crew['Luxury Passengers']"></span> luxury)
+                    <span ng-bind="ship.Crew.Troops || 0"></span>; Passengers
+                    <span ng-bind="ship.Crew['Standard Passengers'] + ship.Crew['Luxury Passengers'] || 0"></span>
+                    (<span ng-bind="ship.Crew['Standard Passengers'] || 0"></span> standard, <span ng-bind="ship.Crew['Luxury Passengers'] || 0"></span> luxury)
                 </td>
             </tr>
             <tr>
@@ -59,8 +59,8 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Sensors</span>
-                    <span ng-bind="ship.sensor['Sensor Systems']"></span>
-                    (range <span ng-bind="ship.sensor.Range"></span>; check <span ng-bind="ship.sensor.Checks"></span>)
+                    <span ng-bind="ship.sensor['Sensor Systems'] || 'none''"></span>
+                    (range <span ng-bind="ship.sensor.Range || 0"></span>; check <span ng-bind="ship.sensor.Checks || 0"></span>)
                 </td>
             </tr>
             <tr>
@@ -102,7 +102,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Superstructure</span>
-                    <span ng-bind="calculateSuperstructure()"></span>
+                    <span ng-bind="calculateSuperstructure() || 'none'"></span>
                     <span style="font-weight: bold;">DEFENSE</span>
                     <span ng-bind="calculateDefense()"></span>
                     <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>
@@ -112,7 +112,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Armor</span>
-                    <span ng-bind="presentArmor()"></span>
+                    <span ng-bind="presentArmor() || 'none'"></span>
                 </td>
             </tr>
             <tr>
@@ -150,7 +150,7 @@
             <tr>
                 <td colspan="10" sdnum="2057;0;0" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Luxury</span>
-                    <span ng-bind="calculateLuxury()"></span>
+                    <span ng-bind="calculateLuxury() || 'none'"></span>
                 </td>
             </tr>
             <tr>
