@@ -21,7 +21,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Weight</span>
-                    <span ng-bind="ship.hull.Tonnage || 0"></span> tons;
+                    <span ng-bind="calculateWeight(ship.hull.Tonnage)"></span> tons;
                     <span style="font-weight: bold;">Cargo Units</span>
                     <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
                     <span style="font-weight: bold;">Hull Class </span>
