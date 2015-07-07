@@ -1,3 +1,13 @@
+<h2>Starship Hull Configuration</h2>
+<p class="explainer">
+    Select an (optional) hull configuration. There are as many different vessel types as there are stars in the
+    sky. The following list is a summary of some common classifications listed in approximate typical size order. Each
+    configuration grants the ship one exploit.
+</p>
+<select style='overflow:hidden;max-width:500px;' ng-model="ship.hullConfig"
+        ng-options="config.display for config in hullConfigurations">
+</select>
+
 <h2>Starship Hull Class</h2>
 <p class="explainer">
 
@@ -33,14 +43,3 @@
     </tr>
     </tbody>
 </table>
-
-<h3>Hull Configuration</h3>
-<p class="explainer">
-    Also select an (optional) hull configuration. There are as many different vessel types as there are stars in the
-    sky. The following list is a summary of some common classifications listed in approximate typical size order. Each
-    configuration grants the ship one exploit.
-</p>
-<select style='overflow:hidden;max-width:500px;' ng-model="ship.hullConfig"
-        ng-options="config.display for config in hullConfigurations">
-
-</select>

@@ -748,6 +748,7 @@ var tabs = [
   {heading: 'Basics', route: 'main.basics'},
   {heading: 'Hull Class', route: 'main.hull'},
   {heading: 'Command & Control', route: 'main.command'},
+  {heading: 'Ship Sensors', route: 'main.sensors'},
   {heading: 'Crew', route: 'main.crew'},
   {heading: 'Sub-Luminal Engines', route: 'main.subluminal'},
   {heading: 'FTL Engines', route: 'main.ftl'},

@@ -80,36 +80,3 @@
     </tr>
     </tbody>
 </table>
-
-<h2>Sensor Systems</h2>
-<p class="explainer">
-
-    A sensor array is a collection of sensors and sub processors designed to gather and collate information. They include navigational and combat sensors, as well as equipment which measures and records the environment capable of detecting a wide range of phenomena. Sensors also include communications equipment, and are used for offensive electronic warfare.</p>
-<table class="table table-striped">
-    <thead>
-    <tr>
-        <td></td>
-        <td>Sensor Systems</td>
-        <td>Cost</td>
-        <td>Size</td>
-        <td>Space</td>
-        <td>Range</td>
-        <td>Range Inc</td>
-        <td>DEFENSE</td>
-        <td>Checks</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="s in sensors">
-        <td><input type="radio" ng-model="ship.sensor" ng-value="s"></td>
-        <td ng-bind="s['Sensor Systems']"></td>
-        <td ng-bind="s.Cost"></td>
-        <td ng-bind="s.Size"></td>
-        <td ng-bind="s.Space"></td>
-        <td ng-bind="s.Range"></td>
-        <td ng-bind="s['Range Inc']"></td>
-        <td ng-bind="s.DEFENSE"></td>
-        <td ng-bind="s.Checks"></td>
-    </tr>
-    </tbody>
-</table>
