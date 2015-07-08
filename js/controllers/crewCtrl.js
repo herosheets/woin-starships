@@ -6,7 +6,9 @@ angular.module('woin-starship')
     var KEY = $scope.KEY = 'Crew';
     if(!$scope.ship[KEY]) $scope.ship[KEY] = {};
 
-    $scope.crewHash = $scope.$parent.crewHash;
+    $scope.crewValueAddHash = {};
+    $scope.crewValueRemoveHash = {};
 
+    $scope.crewHash = $scope.$parent.crewHash;
 
   });

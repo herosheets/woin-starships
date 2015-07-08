@@ -1,3 +1,5 @@
+{{crewValueAddHash}} {{crewValueRemoveHash}}
+
 <h2>Facilities</h2>
 <p class="explainer">
     They A basic ship comes with a bridge, dormitory accommodations for crew and one cabin for the captain. Ships of smaller than class I do not include accommodations, and have a cockpit instead of a bridge.
@@ -8,7 +10,8 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th></th>
+        <th class="input-cell"></th>
+        <th>Quantity</th>
         <th>Customization</th>
         <th>Cost/crew</th>
         <th>Luxury/crew</th>
@@ -19,7 +22,12 @@
     </thead>
     <tbody>
     <tr ng-repeat="(name, count) in ship.Facilities">
-        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td>
+            <div class="input-group">
+                <input type="number" class="form-control small-input" ng-init="facilitiesValueRemoveHash[name] = 1" ng-model="facilitiesValueRemoveHash[name]" />
+                <button type="button" class="input-group-addon btn btn-primary" ng-click="decrementItem(KEY, name, facilitiesValueRemoveHash[name])">-</button>
+            </div>
+        </td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
         <td>{{facilitiesHash[name]['Cost/crew']}}</td>
@@ -37,7 +45,7 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th></th>
+        <th class="input-cell"></th>
         <th>Customization</th>
         <th>Cost/crew</th>
         <th>Luxury/crew</th>
@@ -48,7 +56,12 @@
     </thead>
     <tbody>
     <tr ng-repeat="c in facilities">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Customization)">+</button></td>
+        <td>
+            <div class="input-group">
+                <input type="number" class="form-control small-input" ng-init="facilitiesValueAddHash[c.Customization] = 1" ng-model="facilitiesValueAddHash[c.Customization]" />
+                <button type="button" class="input-group-addon btn btn-primary" ng-click="incrementItem(KEY, c.Customization, facilitiesValueAddHash[c.Customization])">+</button>
+            </div>
+        </td>
         <td>{{c.Customization}}</td>
         <td>{{c['Cost/crew']}}</td>
         <td>{{c['Luxury/crew']}}</td>

@@ -924,9 +924,12 @@ angular.module('woin-starship')
       return _.size($scope.ship[KEY]) === 0;
     };
 
-    $scope.incrementItem = function (KEY, itemKey) {
+    $scope.incrementItem = function (KEY, itemKey, value) {
+      if(!value) value = 1;
       if (!$scope.ship[KEY][itemKey]) $scope.ship[KEY][itemKey] = 0;
-      $scope.ship[KEY][itemKey]++;
+      $scope.ship[KEY][itemKey] += value;
+
+      if(_.isNaN($scope.ship[KEY][itemKey])) $scope.ship[KEY][itemKey] = 0;
     };
 
     // only allow one type of the item at a time
@@ -938,9 +941,10 @@ angular.module('woin-starship')
       }
     };
 
-    $scope.decrementItem = function (KEY, itemKey) {
-      $scope.ship[KEY][itemKey]--;
-      if ($scope.ship[KEY][itemKey] <= 0) delete $scope.ship[KEY][itemKey];
+    $scope.decrementItem = function (KEY, itemKey, value) {
+      if(!value) value = 1;
+      $scope.ship[KEY][itemKey] -= value;
+      if ($scope.ship[KEY][itemKey] <= 0 || _.isNaN($scope.ship[KEY][itemKey])) delete $scope.ship[KEY][itemKey];
     };
 
     $scope.save = function() {

@@ -12,3 +12,19 @@
     font-weight: bold;
   }
 }
+
+.small-input {
+  width: 80px !important;
+}
+
+.input-cell {
+  width: 130px;
+}
+
+.input-group-addon.btn.btn-primary {
+  height: 34px;
+  text-align: center;
+  padding: 6px 18px 6px 12px !important;
+  background-color: #337ab7;
+  color: #fff;
+}

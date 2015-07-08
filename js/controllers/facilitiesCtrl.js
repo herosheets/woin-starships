@@ -6,5 +6,8 @@ angular.module('woin-starship')
     var KEY = $scope.KEY = 'Facilities';
     if(!$scope.ship[KEY]) $scope.ship[KEY] = {};
 
+    $scope.facilitiesValueAddHash = {};
+    $scope.facilitiesValueRemoveHash = {};
+
     $scope.facilitiesHash = $scope.$parent.facilitiesHash;
   });

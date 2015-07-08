@@ -19,7 +19,12 @@
     </thead>
     <tbody>
     <tr ng-repeat="(name, count) in ship['Crew']">
-        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td>
+            <div class="input-group">
+                <input type="number" class="form-control small-input" ng-init="crewValueRemoveHash[name] = 1" ng-model="crewValueRemoveHash[name]" />
+                <button type="button" class="input-group-addon btn btn-primary" ng-click="decrementItem(KEY, name, crewValueRemoveHash[name])">-</button>
+            </div>
+        </td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
         <td ng-bind="crewHash[name].Space"></td>
@@ -42,7 +47,12 @@
     </thead>
     <tbody>
     <tr ng-repeat="p in passengerOptions">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p['Type'])">+</button></td>
+        <td>
+            <div class="input-group">
+                <input type="number" class="form-control small-input" ng-init="crewValueAddHash[p.Type] = 1" ng-model="crewValueAddHash[p.Type]" />
+                <button type="button" class="input-group-addon btn btn-primary" ng-click="incrementItem(KEY, p.Type, crewValueAddHash[p.Type])">+</button>
+            </div>
+        </td>
         <td ng-bind="p.Type"></td>
         <td ng-bind="p.Space"></td>
         <td ng-bind="p.Cost"></td>
