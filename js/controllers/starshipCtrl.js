@@ -948,13 +948,23 @@ angular.module('woin-starship')
     };
 
     $scope.save = function() {
+      var filename = "starship-"+Date.now()+".json";
       var str = JSON.stringify($scope.ship, null, 4);
       var blob = new Blob([str], {type: 'application/json'});
-      var url = URL.createObjectURL(blob);
       var a = document.createElement('a');
-      a.download = "starship-"+Date.now()+".json";
-      a.href = url;
-      a.click();
+
+      if (navigator.msSaveBlob) {
+        return navigator.msSaveBlob(blob, filename);
+
+      } else if('download' in a) {
+        var url = URL.createObjectURL(blob);
+        a.download = filename;
+        a.href = url;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        return true;
+      }
     };
 
     $scope.load = function(files) {
