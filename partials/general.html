@@ -96,5 +96,15 @@
         <td>{{c.CPU}}</td>
         <td>{{c.Notes}}</td>
     </tr>
+    <tr><td colspan="7" class="text-center"><strong>Cloaking Systems</strong></td></tr>
+    <tr ng-repeat="c in systems.cloaking">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)" ng-disabled="notValidHull(c.Notes)">+</button></td>
+        <td>{{c.Item}}</td>
+        <td>{{c.Space}}</td>
+        <td>{{c.Size}}</td>
+        <td>{{c.Cost}}</td>
+        <td>{{c.CPU}}</td>
+        <td>{{c.Notes}}</td>
+    </tr>
     </tbody>
 </table>

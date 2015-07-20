@@ -1,6 +1,6 @@
 /*global angular */
 
-angular = require('angular');
+var angular = require('angular');
 require('../dist/templateCachePartials');
 
 angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs', 'ngFileUpload'])

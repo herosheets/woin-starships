@@ -5,7 +5,7 @@
  * - retrieves and persists the model via the todoStorage service
  * - exposes the model to the template and provides event handlers
  */
-angular = require('angular');
+var angular = require('angular');
 
 var flatComponents = ['hull', 'sensor'];
 
@@ -583,11 +583,11 @@ var subluminal =
 
 var cloaking =
   "Item,Space,Size,Cost,CPU,Notes\n" +
-  "Ultrabeam Y62 Cloaking Device,3,S,750,1,Ship classes I-III only\n" +
-  "NorthCo GYN3 Starship Stealth System,10,M,'2,000',2,Ship classes IV-VII only\n" +
-  "Highdyne S2 Stealth Solution,40,L,'10,000',3,Ship classes VIII-XI only\n" +
-  "Daystellar-Silvertech Society JG51 Integrated Cloaking System,100,E,'40,000',4,Ship classes XII-XVI only\n" +
-  "Waywatch BI95 Cloaking Device,300,G,'90,000',5,Ship classes XVII-XIX only";
+  "Ultrabeam Y62 Cloaking Device,3,S,750,1,Restricted to ship classes I;II;III\n" +
+  "NorthCo GYN3 Starship Stealth System,10,M,'2000',2,Restricted to ship classes IV;V;VI;VII\n" +
+  "Highdyne S2 Stealth Solution,40,L,'10000',3,Restricted to ship classes VIII;IX;X;XI\n" +
+  "Daystellar-Silvertech Society JG51 Integrated Cloaking System,100,E,'40000',4,Restricted to ship classes XII;XIII;XIV;XV;XVI\n" +
+  "Waywatch BI95 Cloaking Device,300,G,'90000',5,Restricted to ship classes XVII;XVIII;XIX";
 
 var tractor =
   "Item,Space,Size,Cost,CPU,Notes\n" +
@@ -888,13 +888,22 @@ angular.module('woin-starship')
       }
     };
 
+    $scope.clearCloaking = function() {
+      if(!$scope.ship.General) return;
+      _.each($scope.ship.General, function(value, key) {
+        if(_.findWhere($scope.systems.cloaking, {Item: key})) {
+          delete $scope.ship.General[key];
+        }
+      });
+    };
+
     $scope.calculateSoak = function(power) {
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
       return parseInt(power/hullClass);
     };
 
     $scope.isHangar = function(itemName) {
-      return ($scope.generalHash[itemName].hangar !== undefined);
+      return ($scope.generalHash[itemName] && $scope.generalHash[itemName].hangar !== undefined);
     };
 
     $scope.getHangarQty = function(hangar) {

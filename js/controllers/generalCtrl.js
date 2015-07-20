@@ -8,4 +8,11 @@ angular.module('woin-starship')
 
     $scope.generalHash = $scope.$parent.generalHash;
 
+    $scope.notValidHull = function(string) {
+      if(!$scope.ship.hull) return true;
+      var arr = string.split(' ');
+      var validHulls = arr[arr.length-1].split(';');
+      return validHulls.indexOf($scope.ship.hull.Class) === -1;
+    }
+
   });
