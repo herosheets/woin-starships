@@ -695,12 +695,13 @@ var weapons =
 
 var hullConfigurations = [
   {name: "None", display: "None"},
-  {name: "Evasive", display: "Evasive: Patrol craft gain +2 to their DEFENSE score."},
-  {name: "Inspector", display: "Inspector: Patrol craft may make two scanning checks per turn as a single action."},
-  {name: "Fast", display: "Fast: Couriers gain +1 to their FTL speed."},
+  {name: "Evasive", display: "Evasive: Patrol craft gain +2 to their DEFENSE score.", levels: ['I', 'II']},
+  {name: "Inspector", display: "Inspector: Patrol craft may make two scanning checks per turn as a single action.", levels: ['I', 'II']},
+  {name: "Fast", display: "Fast: Couriers gain +1 to their FTL speed.", levels: ['I', 'II']},
   {
     name: "Silent-running",
-    display: "Silent-running: A courier ship can operate stealthily. While this will not protect it from actual scans in the way that a cloaking device might, it can pass unnoticed when not actively being looked for."
+    display: "Silent-running: A courier ship can operate stealthily. While this will not protect it from actual scans in the way that a cloaking device might, it can pass unnoticed when not actively being looked for.",
+    levels: ['I', 'II']
   },
   {
     name: "Scientific",
@@ -711,25 +712,27 @@ var hullConfigurations = [
     display: "Deep scan: A research ship can perform a deep scan of the area in a radius equal to the range of its sensors and automatically detect the presence of (but not the exact location of) cloaked vessels within that area."
   },
   {name: "Well-appointed", display: "Well-appointed: Yachts gain a bonus LUXURY percentage of 20%."},
-  {name: "Explorer", display: "Explorer: Scouts have a +20% operational range."},
+  {name: "Explorer", display: "Explorer: Scouts have a +20% operational range.", levels: ['IV', 'V', 'VI', 'VII']},
   {
     name: "Hauler",
-    display: "Hauler: Freighters gain +20% cargo space (which must be used for cargo, not components)."
+    display: "Hauler: Freighters gain +20% cargo space (which must be used for cargo, not components).",
+    levels: ['III', 'IV', 'V', 'VI']
   },
-  {name: "Tactical", display: "Tactical: Escorts have 50% extra sensor range."},
-  {name: "Heavily-armed", display: "Heavily-armed: Destroyers reduce the CPU requirement of each weapon by 1"},
-  {name: "Gunboat", display: "Gunboat: Frigates increase weapon range by 10%."},
+  {name: "Tactical", display: "Tactical: Escorts have 50% extra sensor range.", levels: ['V', 'VI', 'VII', 'VIII']},
+  {name: "Heavily-armed", display: "Heavily-armed: Destroyers reduce the CPU requirement of each weapon by 1", levels: ['VII', 'VIII', 'IX']},
+  {name: "Gunboat", display: "Gunboat: Frigates increase weapon range by 10%.", levels: ['VIII', 'IX', 'X', 'XI']},
   {
     name: "Skeleton crew",
     display: "Skeleton crew: Transports have 10% the crew requirement of other ships as long as no weapons are installed."
   },
-  {name: "5 year mission", display: "5 year mission: Cruisers have a +20% operational range."},
+  {name: "5 year mission", display: "5 year mission: Cruisers have a +20% operational range.", levels: ['X', 'XI', 'XII', 'XIII']},
   {
     name: "Luxurious",
-    display: "Luxurious: Liners gain a bonus LUXURY percentage of 20% and free passenger capacity equal to ten times their class."
+    display: "Luxurious: Liners gain a bonus LUXURY percentage of 20% and free passenger capacity equal to ten times their class.",
+    levels: ['VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV']
   },
-  {name: "Tough", display: "Tough: Battleships start with double the base SS for their class."},
-  {name: "Scramble", display: "Scramble: Carriers may launch all fighters/shuttles as a single action."}
+  {name: "Tough", display: "Tough: Battleships start with double the base SS for their class.", levels: ['XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII']},
+  {name: "Scramble", display: "Scramble: Carriers may launch all fighters/shuttles as a single action.", levels: ['XIV', 'XV', 'XVI', 'XVII', 'XVIII']}
 ];
 
 var passengers = [
@@ -766,7 +769,7 @@ angular.module('woin-starship')
 
     // initialize data
     $scope.tabs = tabs;
-    $scope.ship = {name: "", description: ""};
+    $scope.ship = {name: "", description: "", hullConfig: hullConfigurations[0]};
 
     loadCsvData($scope);
 
@@ -789,6 +792,12 @@ angular.module('woin-starship')
 
     $scope.currentCpu = function () {
       return getCpu($scope.ship, $scope);
+    };
+
+    $scope.isHullConfigDisabled = function(config) {
+      if(!config.levels) return false;
+      if(config.levels && !$scope.ship.hull) return true;
+      return config.levels.indexOf($scope.ship.hull.Class) === -1;
     };
 
     $scope.calculateSublSpeed = function (engineName, quantity) {
