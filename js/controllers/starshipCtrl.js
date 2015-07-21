@@ -737,9 +737,9 @@ var hullConfigurations = [
 ];
 
 var passengers = [
-  {Type: "Troops", Space: "2 CU", Cost: "0.1 Mcr"},
-  {Type: "Standard Passengers", Space: "2 CU", Cost: "0.2 Mcr"},
-  {Type: "Luxury Passengers", Space: "4 CU", Cost: "0.3 Mcr"}
+  {Type: "Troops", Space: "2 CU", Cost: "0.1"},
+  {Type: "Standard Passengers", Space: "2 CU", Cost: "0.2"},
+  {Type: "Luxury Passengers", Space: "4 CU", Cost: "0.3"}
 ];
 
 var superstructures = [
