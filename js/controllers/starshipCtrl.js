@@ -85,11 +85,12 @@ var getCpu = function (ship, scope) {
 };
 
 var getCpuMax = function (ship, scope) {
-  if (_.has(ship, 'computer')) {
-    return getQuantityValue(ship.computer, 'Max CPU', scope);
+  return getTotalShipValue(ship, 'Max CPU', scope);
+  /*if (_.has(ship, 'Control Computers')) {
+    return getQuantityValue(ship['Control Computers'], 'Max CPU', scope);
   } else {
     return 0;
-  }
+  }*/
 };
 
 var getHullClassInteger = function (ship, hulls) {
@@ -388,7 +389,7 @@ var loadCsvData = function (scope) {
 };
 
 var computers =
-  "Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +
+  "Control Computers,Cost,Size,Space,Max FTL,Max CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +
   "Chemerkin-Liang Products LM-1,30,L,5,4,16,-,15,1,-,+0d6\n" +
   "Chemerkin-Liang Products LM-2,60,L,5,5,20,-1.00%,16,1,-,+0d6\n" +
   "Chemerkin-Liang Products LM-2H,380,L,5,10,40,-6.00%,18,2,1,+1d6\n" +
