@@ -863,19 +863,28 @@ angular.module('woin-starship')
 
     $scope.presentArmor = function() {
       var base = "";
+      var ballistic = 0;
+      var energy = 0;
+      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
       var reactive = $scope.ship.Superstructure["Armor, reactive"];
       var ablative = $scope.ship.Superstructure["Armor, ablative"];
 
       if (reactive !== undefined) {
-        base += reactive + "x Armor, reactive ";
+        ballistic += (reactive/hullClass);
+        energy += (1.5 * reactive / hullClass);
+        base += reactive + "x reactive ";
       }
 
       if (ablative !== undefined) {
-        base += ablative + "x Armor, ablative ";
+        ballistic += (1.5 * ablative/hullClass);
+        energy += (ablative / hullClass);
+        base += ablative + "x ablative ";
       }
 
       if (base === "") {
         base = "-";
+      } else {
+        base += "(SOAK " + ballistic + " ballstic, " + energy + " energy.)";
       }
       return base;
     };
