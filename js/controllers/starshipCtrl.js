@@ -743,9 +743,9 @@ var passengers = [
 ];
 
 var superstructures = [
-  {Type: "Additional SS", Space: "1 CU", Cost: "0.5 Mcr", Notes: "Base (free) SS = ship class"},
-  {Type: "Armor, reactive", Space: "10 CU", Cost: "10 Mcr", Notes: "1 SOAK per armor point/class vs. ballistic; 1.5 SOAK per armor point/class vs energy."},
-  {Type: "Armor, ablative", Space: "10 CU", Cost: "10 Mcr", Notes: "1 SOAK per armor point/class vs. energy; 1.5 SOAK per armor point/class vs ballistic."}
+  {Type: "Additional SS", Space: "1 CU", Cost: "0.5", Notes: "Base (free) SS = ship class"},
+  {Type: "Armor, reactive", Space: "10 CU", Cost: "10", Notes: "1 SOAK per armor point/class vs. ballistic; 1.5 SOAK per armor point/class vs energy."},
+  {Type: "Armor, ablative", Space: "10 CU", Cost: "10", Notes: "1 SOAK per armor point/class vs. energy; 1.5 SOAK per armor point/class vs ballistic."}
 ];
 
 var tabs = [
