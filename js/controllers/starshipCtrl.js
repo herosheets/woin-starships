@@ -862,7 +862,14 @@ angular.module('woin-starship')
     };
 
     $scope.calculateDefense = function() {
-      return getAllShipValues($scope.ship, 'DEFENSE', $scope);
+      var base = getAllShipValues($scope.ship, 'DEFENSE', $scope);
+      var pointDefense = $scope.ship['Point Defense']['Point defenses'];
+      if (pointDefense !== undefined) {
+        var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+        base -= (pointDefense * 2);
+        base += ((pointDefense * 2)/hullClass);
+      }
+      return base;
     };
 
     $scope.calculateElectronicDefense = function() {
@@ -889,13 +896,13 @@ angular.module('woin-starship')
         ablative = $scope.ship.Superstructure["Armor, ablative"];
       }
 
-      if (reactive !== undefined) {
+      if (reactive !== undefined && reactive !== 0) {
         ballistic += (reactive/hullClass);
         energy += (1.5 * reactive / hullClass);
         base += reactive + "x reactive ";
       }
 
-      if (ablative !== undefined) {
+      if (ablative !== undefined && ablative !== 0) {
         ballistic += (1.5 * ablative/hullClass);
         energy += (ablative / hullClass);
         base += ablative + "x ablative ";
