@@ -99,11 +99,16 @@ var getHullClassInteger = function (ship, hulls) {
 };
 
 var getTotalCrew = function (ship, scope) {
-  var baseCrew = ship.hull.Crew;
-  angular.forEach(ship.Crew, function(crewType, quantity) {
-    baseCrew += quantity;
-  });
-  return baseCrew;
+  try {
+    var baseCrew = ship.hull.Crew;
+    angular.forEach(ship.Crew, function(crewType, quantity) {
+      baseCrew += quantity;
+    });
+    return baseCrew;
+  } catch(e) {
+    return 0;
+  }
+
 };
 
 var loadCsvData = function (scope) {
@@ -842,13 +847,18 @@ angular.module('woin-starship')
     };
 
     $scope.calculateSuperstructure = function() {
-      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
-      var baseSs = hullClass * 3;
-      var additional = $scope.ship.Superstructure["Additional SS"];
-      if (additional !== undefined) {
-        baseSs += additional;
+      try {
+        var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+        var baseSs = hullClass * 3;
+        var additional = $scope.ship.Superstructure["Additional SS"];
+        if (additional !== undefined) {
+          baseSs += additional;
+        }
+        return baseSs;
+      } catch(e) {
+        return 0;
       }
-      return baseSs;
+
     };
 
     $scope.calculateDefense = function() {
@@ -856,9 +866,14 @@ angular.module('woin-starship')
     };
 
     $scope.calculateElectronicDefense = function() {
-      var bonus = getAllShipValues($scope.ship, 'ELECTRONIC DEFENSE', $scope);
-      var base = getCpu($scope.ship, $scope);
-      return Math.floor((base/2) + bonus);
+      try {
+        var bonus = getAllShipValues($scope.ship, 'ELECTRONIC DEFENSE', $scope);
+        var base = getCpu($scope.ship, $scope);
+        return Math.floor((base/2) + bonus);
+      } catch (e) {
+        return 0;
+      }
+
     };
 
     $scope.presentArmor = function() {
@@ -866,8 +881,13 @@ angular.module('woin-starship')
       var ballistic = 0;
       var energy = 0;
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
-      var reactive = $scope.ship.Superstructure["Armor, reactive"];
-      var ablative = $scope.ship.Superstructure["Armor, ablative"];
+      var reactive = 0;
+      var ablative = 0;
+
+      if ($scope.ship.Superstructure !== undefined) {
+        reactive = $scope.ship.Superstructure["Armor, reactive"];
+        ablative = $scope.ship.Superstructure["Armor, ablative"];
+      }
 
       if (reactive !== undefined) {
         ballistic += (reactive/hullClass);

@@ -6,16 +6,21 @@ angular.module('woin-starship')
     $scope = $scope.$parent;
 
     $scope.calculateWeight = function(weightString) {
-      var split = weightString.split(',').join('').split('-');
-      var min = parseInt(split[0].trim());
-      var max = parseInt(split[1].trim());
+      try {
+        var split = weightString.split(',').join('').split('-');
+        var min = parseInt(split[0].trim());
+        var max = parseInt(split[1].trim());
 
-      var diff = max - min;
+        var diff = max - min;
 
-      var currentSpace = $scope.currentSpace();
-      var maxSpace = $scope.maxSpace();
+        var currentSpace = $scope.currentSpace();
+        var maxSpace = $scope.maxSpace();
 
-      return min + (currentSpace/maxSpace * diff);
+        return min + (currentSpace/maxSpace * diff);
+      } catch(e) {
+        return 0;
+      }
+
     };
 
   });
