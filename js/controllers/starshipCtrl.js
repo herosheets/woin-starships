@@ -921,6 +921,10 @@ angular.module('woin-starship')
       var crewTotal = getTotalCrew($scope.ship, $scope);
       var lux = (luxuryTotal / crewTotal) * 100;
 
+      console.log(luxuryTotal, crewTotal);
+
+      if(_.isNaN(lux)) lux = 0;
+
       if (lux < 50) {
         return lux + "% (Spartan: -2d6)";
       } else if (lux < 90) {
