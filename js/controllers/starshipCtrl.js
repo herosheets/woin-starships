@@ -38,7 +38,7 @@ var getQuantityValue = function (shipPart, val, partsList) {
   if (shipPart !== undefined && shipPart !== null) {
     angular.forEach(shipPart, function (quantity, component) {
       if (_.has(partsList[component], val)) {
-        var b = parseInt(partsList[component][val]);
+        var b = +(partsList[component][val]);
         if (!(isNaN(b))) {
           total += b * quantity;
         }
@@ -81,6 +81,7 @@ var getSpaceMax = function (ship) {
 };
 
 var getCpu = function (ship, scope) {
+  console.log('cpu', getTotalShipValue(ship, 'CPU', scope))
   return getTotalShipValue(ship, 'CPU', scope);
 };
 
