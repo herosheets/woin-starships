@@ -741,7 +741,6 @@ var hullConfigurations = [
   {name: "Scramble", display: "Scramble: Carriers may launch all fighters/shuttles as a single action.", levels: ['XIV', 'XV', 'XVI', 'XVII', 'XVIII']}
 ];
 
-
 var passengers = [
   {Type: "Troops", Space: "2 CU", Cost: "0.1"},
   {Type: "Standard Passengers", Space: "2 CU", Cost: "0.2"},
@@ -864,8 +863,8 @@ angular.module('woin-starship')
 
     $scope.calculateDefense = function() {
       var base = getAllShipValues($scope.ship, 'DEFENSE', $scope);
-      var pointDefense = $scope.ship['Point Defense']['Point defenses'];
-      if (pointDefense !== undefined) {
+      if ($scope.ship['Point Defense'] && $scope.ship['Point Defense']['Point defenses']) {
+        var pointDefense = $scope.ship['Point Defense']['Point defenses'];
         var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
         base -= (pointDefense * 2);
         base += ((pointDefense * 2)/hullClass);
