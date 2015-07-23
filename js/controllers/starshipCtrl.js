@@ -741,6 +741,7 @@ var hullConfigurations = [
   {name: "Scramble", display: "Scramble: Carriers may launch all fighters/shuttles as a single action.", levels: ['XIV', 'XV', 'XVI', 'XVII', 'XVIII']}
 ];
 
+
 var passengers = [
   {Type: "Troops", Space: "2 CU", Cost: "0.1"},
   {Type: "Standard Passengers", Space: "2 CU", Cost: "0.2"},
