@@ -68,6 +68,12 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "GeneralCtrl", templateUrl: '/partials/general.html' }
 				}
 			})
+			.state('main.hangars', {
+				url: 'hangars',
+				views: {
+					content: { controller: "HangarsCtrl", templateUrl: '/partials/hangars.html' }
+				}
+			})
 			.state('main.superstructure', {
 				url: 'superstructure',
 				views: {
@@ -107,3 +113,4 @@ require('generalCtrl');
 require('superstructureCtrl');
 require('sensorCtrl');
 require('shipViewCtrl');
+require('hangarsCtrl');
