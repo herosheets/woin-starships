@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./woin.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -26,10 +26,17 @@
 						<li><a href ng-click="save()">Save</a></li>
 						<li><a href ngf-select ngf-change="load($files)">Load</a></li>
 					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a>CPU: {{ currentCpu() }} ({{maxCpu()}} Max)
+								Cargo Units: {{ currentSpace() }} ({{ maxSpace() - currentSpace() }} available)
+								Credits Spent: {{ totalCost() }}</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
-		<div class="container-fluid">
+		<div class="container-fluid" style="margin-top: 50px;">
 			<ui-view />
 		</div>
 
