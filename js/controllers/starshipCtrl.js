@@ -1033,6 +1033,11 @@ angular.module('woin-starship')
       reader.onload = function() {
         var text = reader.result;
         $scope.ship = JSON.parse(text);
+        _.each($scope.hulls, function(hull) {
+          if(hull.Class === $scope.ship.hull.Class) {
+            $scope.ship.hull = hull;
+          }
+        });
         $scope.$apply(); // wtf angular?
       };
 
