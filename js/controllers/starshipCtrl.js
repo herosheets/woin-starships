@@ -122,7 +122,7 @@ var getTotalCrew = function (ship, scope) {
   try {
     var baseCrew = ship.hull.Crew;
     if (_.has(ship, 'Crew')) {
-      angular.forEach(ship.Crew, function(crewType, quantity) {
+      angular.forEach(ship.Crew, function(quantity, crewType) {
         baseCrew += quantity;
       });
     }
