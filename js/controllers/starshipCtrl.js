@@ -18,6 +18,7 @@ var quantityComponents = {
   'Deflector Shields': 'deflectorHash',
   'Weapon System': 'weaponHash',
   'Facilities': 'facilitiesHash',
+  'Hangars': 'hangarHash',
   'General': 'generalHash'
 };
 
@@ -120,6 +121,7 @@ var loadCsvData = function (scope) {
   scope.facilities = [];
   scope.ftl = [];
   scope.subluminal = [];
+  scope.hangars = [];
 
   scope.pointDefenses = [
     {
@@ -136,7 +138,6 @@ var loadCsvData = function (scope) {
     fueling: [],
     commandControl: [],
     tractor: [],
-    hangars: [],
     engMods: [],
     electronicWarfare: []
   };
@@ -314,7 +315,12 @@ var loadCsvData = function (scope) {
     header: true,
     dynamicTyping: true,
     step: function (row) {
-      scope.systems.hangars.push(row.data[0]);
+      scope.hangars.push(row.data[0]);
+      scope.hangarHash = {};
+      _.each(scope.hangars, function(item) {
+        item['hangar'] = true;
+        scope.hangarHash[item.Item] = item;
+      });
     },
     complete: function () {
       console.log("hangar Systems Loaded");
@@ -338,10 +344,6 @@ var loadCsvData = function (scope) {
     step: function (row) {
       scope.systems.electronicWarfare.push(row.data[0]);
       scope.generalHash = {};
-      _.each(scope.systems.hangars, function(item) {
-        item['hangar'] = true;
-        scope.generalHash[item.Item] = item;
-      });
 
       _.each(scope.systems.fueling, function(item) {
         scope.generalHash[item.Item] = item;
@@ -766,6 +768,7 @@ var tabs = [
   {heading: 'Deflector Shields', route: 'main.deflectors'},
   {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Facilities', route: 'main.facilities'},
+  {heading: 'Hangars', route: 'main.hangars'},
   {heading: 'General Equipment', route: 'main.general'},
   {heading: 'Your Ship', route: 'main.ship'}
 ];
