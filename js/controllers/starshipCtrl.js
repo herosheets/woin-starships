@@ -22,6 +22,7 @@ var quantityComponents = {
   'General': 'generalHash'
 };
 
+var crewValues = ['Space', 'Cost', 'Luxury'];
 
 var getComponentValue = function (c, val) {
   if (c !== undefined && c !== null) {
@@ -49,14 +50,31 @@ var getQuantityValue = function (shipPart, val, partsList) {
   return total;
 };
 
+var getCrewValue = function (shipPart, val, partsList, crewSize) {
+  try {
+    if (_.contains(crewValues, val) && crewSize > 0) {
+      var key = val + "/crew";
+      var base = getQuantityValue(shipPart, key, partsList);
+      return base * crewSize;
+    } else {
+      return 0;
+    }
+  } catch (e) {
+    console.log(e);
+    return 0;
+  }
+}
+
 var getTotalShipValue = function (ship, valueName, scope) {
   var base = 0;
+  var crewSize = getTotalCrew(ship, scope);
   angular.forEach(flatComponents, function (c) {
     base += getComponentValue(ship[c], valueName);
   });
   angular.forEach(quantityComponents, function (hashName, componentName) {
     var hash = scope[hashName];
     base += getQuantityValue(ship[componentName], valueName, hash);
+    base += getCrewValue(ship[componentName], valueName, hash, crewSize);
   });
   return base;
 };
@@ -103,14 +121,15 @@ var getHullClassInteger = function (ship, hulls) {
 var getTotalCrew = function (ship, scope) {
   try {
     var baseCrew = ship.hull.Crew;
-    angular.forEach(ship.Crew, function(crewType, quantity) {
-      baseCrew += quantity;
-    });
+    if (_.has(ship, 'Crew')) {
+      angular.forEach(ship.Crew, function(crewType, quantity) {
+        baseCrew += quantity;
+      });
+    }
     return baseCrew;
-  } catch(e) {
+  } catch (e) {
     return 0;
   }
-
 };
 
 var loadCsvData = function (scope) {
@@ -491,7 +510,7 @@ var deflectors =
   "Yang-Chen Co ESC-2 civilian shield generator,51,E,5,62,41";
 
 var facilities =
-  "Customization,Luxury/crew,Space (CU)/crew,Cost/crew,Notes,Recommended\n" +
+  "Customization,Luxury/crew,Space/crew,Cost/crew,Notes,Recommended\n" +
   "Sick bay,2,3,20,Accomodates 1 patient,5% of crew capacity\n" +
   "'Cabin, standard',0.5,1,0.5,Accomodates 1 crewmember,-\n" +
   "'Cabin, double',0.3,0.5,0.3,,-\n" +
@@ -500,7 +519,7 @@ var facilities =
   "Galley,2,3,4,,5% of crew capacity\n" +
   "Gymnasium,1,3,4,,5% of crew capacity\n" +
   "Laboratory,-,4,8,,-\n" +
-  "Lounge/recreation area,1,1,1�MCr,,5% of crew capacity\n" +
+  "Lounge/recreation area,1,1,1,,5% of crew capacity\n" +
   "Messhall,1,4,2,,10% of crew capacity\n" +
   "Bar/restaurant,2,4,10,0.5/m income,5% of crew capacity\n" +
   "Shop,2,3,8,0.6/m income; type should be specified,-\n" +
@@ -956,6 +975,10 @@ angular.module('woin-starship')
 
     $scope.isHangar = function(itemName) {
       return ($scope.generalHash[itemName] && $scope.generalHash[itemName].hangar !== undefined);
+    };
+
+    $scope.getCrewSize = function() {
+      return getTotalCrew($scope.ship, $scope);
     };
 
     $scope.getHangarQty = function(hangar) {
