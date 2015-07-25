@@ -101,7 +101,6 @@ var getSpaceMax = function (ship) {
 };
 
 var getCpu = function (ship, scope) {
-  console.log('cpu', getTotalShipValue(ship, 'CPU', scope))
   return getTotalShipValue(ship, 'CPU', scope);
 };
 

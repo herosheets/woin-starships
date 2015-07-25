@@ -35,7 +35,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Crew</span>
-                    <span ng-bind="ship.hull.Crew || 0"></span> (cost <span ng-bind=""></span>Cr/m);
+                    <span ng-bind="calculateCrew() || 0"></span> (cost <span ng-bind=""></span>Cr/m);
                     <span style="font-weight: bold;">Troops</span>
                     <span ng-bind="ship.Crew.Troops || 0"></span>; Passengers
                     <span ng-bind="ship.Crew['Standard Passengers'] + ship.Crew['Luxury Passengers'] || 0"></span>
