@@ -4,8 +4,9 @@
     sky. The following list is a summary of some common classifications listed in approximate typical size order. Each
     configuration grants the ship one exploit.
 </p>
-<select style='overflow:hidden;max-width:500px;' ng-model="ship.hullConfig"
-        ng-options="config.display for config in hullConfigurations">
+<select style='overflow:hidden;max-width:500px;'
+        ng-model="ship.hullConfig"
+        ng-options="presentType(config) for config in hullConfigurations">
 </select>
 
 <h2>Starship Hull Class</h2>

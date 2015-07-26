@@ -29,7 +29,7 @@
                     <span style="font-weight: bold;">Hull Class </span>
                     <span ng-bind='ship.hull.Class || "none"'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>
                     <span style="font-weight: bold;">Hull Configuration </span>
-                    <span ng-bind='ship.hullConfig.display'></span>
+                    <span ng-bind='presentType(ship.hullConfig)'></span>
                 </td>
             </tr>
             <tr>
