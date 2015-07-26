@@ -764,6 +764,7 @@ var hullConfigurations = [
 ];
 
 var passengers = [
+  {Type: "Additional Crew", Space: "2", Cost: "0.1"},
   {Type: "Troops", Space: "2", Cost: "0.1"},
   {Type: "Standard Passengers", Space: "2", Cost: "0.2"},
   {Type: "Luxury Passengers", Space: "4", Cost: "0.3"}
