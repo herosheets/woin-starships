@@ -943,6 +943,17 @@ angular.module('woin-starship')
       return base;
     };
 
+    $scope.presentCargo = function() {
+      if ($scope.ship.hull !== undefined) {
+        var initialCargo = $scope.ship.hull['Max CU'];
+        var amountRemaining = $scope.maxSpace() - $scope.currentSpace();
+        var tonnage = $scope.maxSpace() * 50;
+        return "[" + initialCargo + "] ("+amountRemaining+" : " + tonnage + " tons)";
+      } else {
+        return "-";
+      }
+    };
+
     $scope.calculateLuxury = function() {
       var luxuryTotal = getAllShipValues($scope.ship, 'Luxury/crew', $scope);
       var crewTotal = getTotalCrew($scope.ship, $scope);
