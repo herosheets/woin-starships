@@ -1029,6 +1029,12 @@ angular.module('woin-starship')
       }
     };
 
+    $scope.hasThisItem = function (KEY, itemKey) {
+      var keys = Object.getOwnPropertyNames($scope.ship[KEY]);
+
+      return (keys.length === 0 || (_.includes(keys, itemKey)));
+    };
+
     $scope.decrementItem = function (KEY, itemKey, value) {
       if(!value) value = 1;
       $scope.ship[KEY][itemKey] -= value;

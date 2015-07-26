@@ -32,10 +32,41 @@
     </tbody>
 </table>
 
+<h3>Your Backup Engines</h3>
 <table class="table table-striped">
     <thead>
         <tr>
             <th></th>
+            <th>Count</th>
+            <th>FTL Engine</th>
+            <th>Cost</th>
+            <th>Size</th>
+            <th>CPU</th>
+            <th>Space</th>
+            <th>Power</th>
+            <th>Fuel Eff</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship[BKEY]">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(BKEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{ftlHash[name].Cost}}</td>
+        <td>{{ftlHash[name].Size}}</td>
+        <td>{{ftlHash[name].CPU}}</td>
+        <td>{{ftlHash[name].Space}}</td>
+        <td>{{ftlHash[name].Power}}</td>
+        <td>{{ftlHash[name]['Fuel Eff']}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Add</th>
+            <th>Backup</th>
             <th>FTL Engine</th>
             <th>Cost</th>
             <th>Size</th>
@@ -47,7 +78,14 @@
     </thead>
     <tbody>
     <tr ng-repeat="item in ftl">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementOneItem(KEY, item['FTL Engine'])">+</button></td>
+        <td><button
+                type="button"
+                class="btn btn-primary"
+                ng-disabled="!hasThisItem(KEY, item['FTL Engine'])"
+                ng-click="incrementOneItem(KEY, item['FTL Engine'])">
+            +</button>
+        </td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(BKEY, item['FTL Engine'])">+</button></td>
         <td>{{item['FTL Engine']}}</td>
         <td>{{item.Cost}}</td>
         <td>{{item.Size}}</td>
