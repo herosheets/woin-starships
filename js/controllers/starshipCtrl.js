@@ -862,6 +862,9 @@ angular.module('woin-starship')
       if ($scope.ship.hull !== undefined) {
         var baseRange = $scope.ship.hull.FUEL;
         var modifiers = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
+        if (modifiers === undefined || modifiers === 0) {
+          modifiers = 1;
+        }
 
         return baseRange * modifiers;
       } else {
