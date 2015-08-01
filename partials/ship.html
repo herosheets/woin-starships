@@ -89,6 +89,7 @@
                         ( each power: <span ng-bind="ftlHash[name]['Power']"></span> ;
                         FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;
                         fuel efficiency: <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
+                    <br>
                     <span style="font-weight: bold;">Backup FTL</span>
                      <span ng-repeat="(name, quantity) in ship['Backup FTL Engine']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>

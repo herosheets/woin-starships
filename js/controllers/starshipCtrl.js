@@ -897,6 +897,7 @@ angular.module('woin-starship')
 
     };
 
+      
     $scope.presentArmor = function() {
       var base = "";
       var ballistic = 0;
