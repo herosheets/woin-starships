@@ -147,7 +147,7 @@
                 <td colspan="10" align="left" height="17" valign="bottom">
                      <span ng-repeat="(name, quantity) in ship['Weapon System']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (range: <span ng-bind="weaponHash[name]['Range']"></span>;
+                        (range: <span ng-bind="calculateWeaponRange(name)"></span>;
                         damage: <span ng-bind="weaponHash[name]['Damage']"></span>;
                         attack: <span ng-bind="weaponHash[name]['Attack']"></span>)<br/>
                     </span>

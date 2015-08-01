@@ -904,6 +904,7 @@ angular.module('woin-starship')
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
       var reactive = 0;
       var ablative = 0;
+      
 
       if ($scope.ship.Superstructure !== undefined) {
         reactive = $scope.ship.Superstructure["Armor, reactive"];

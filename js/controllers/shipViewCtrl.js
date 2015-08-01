@@ -35,6 +35,10 @@ angular.module('woin-starship')
         });
 
         return Math.floor(base + (base*(modPercent/100)));
-      }
+      };
+
+      $scope.calculateWeaponRange = function(weaponName) {
+        return Math.min($scope.weaponHash[weaponName]['Range'], $scope.ship.sensor.Range);
+      };
 
   });
