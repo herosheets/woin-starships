@@ -668,9 +668,9 @@ var hangars =
   "Item,Space,Size,Cost,CPU,Notes\n" +
   "Parsec Systems ZM2 Shuttle/fighter Bay,25,S,400,1,Room for 1 shuttle or fighter\n" +
   "Megalight EI93 Shuttle/fighter Bay,80,M,700,1,Room for 4 shuttles or fighters\n" +
-  "Ultrabeam VN34 Shuttle/fighter Bay,150,L,'1000',2,Room for 16 shuttles or fighters\n" +
-  "Waydyne Shuttle/fighter Bay,250,E,'1500',2,Room for 32 shuttles or fighters\n" +
-  "'Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,'2000',3,Room for 64 shuttles or fighters";
+  "Ultrabeam VN34 Shuttle/fighter Bay,150,L,1000,2,Room for 16 shuttles or fighters\n" +
+  "Waydyne Shuttle/fighter Bay,250,E,1500,2,Room for 32 shuttles or fighters\n" +
+  "'Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,2000,3,Room for 64 shuttles or fighters";
 
 var engMods =
   "Item,Space,Size,Cost,CPU,Notes\n" +
@@ -904,7 +904,6 @@ angular.module('woin-starship')
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
       var reactive = 0;
       var ablative = 0;
-      
 
       if ($scope.ship.Superstructure !== undefined) {
         reactive = $scope.ship.Superstructure["Armor, reactive"];

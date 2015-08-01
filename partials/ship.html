@@ -182,10 +182,8 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Shuttles</span>
-                    <span ng-repeat="(name, quantity) in ship['General']">
-                        <span ng-if="isHangar(name)">
-                           <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="getHangarQty(name)"></span>),
-                        </span>
+                    <span ng-repeat="(name, quantity) in ship['Hangars']">
+                       <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,
                     </span>
                 </td>
             </tr>
