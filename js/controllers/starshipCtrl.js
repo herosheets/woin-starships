@@ -925,7 +925,7 @@ angular.module('woin-starship')
       if (base === "") {
         base = "-";
       } else {
-        base += "(SOAK " + ballistic + " ballstic, " + energy + " energy.)";
+        base += "(SOAK " + ballistic + " ballistic, " + energy + " energy.)";
       }
       return base;
     };
