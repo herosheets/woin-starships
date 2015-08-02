@@ -25,7 +25,7 @@
                     <span style="font-weight: bold;">Weight</span>
                     <span ng-bind="calculateWeight(ship.hull.Tonnage)"></span> tons;
                     <span style="font-weight: bold;">Cargo Units</span>
-                    <span ng-bind="presentCargo()"></span>
+                    <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
                     <span style="font-weight: bold;">Hull Class </span>
                     <span ng-bind='ship.hull.Class || "none"'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>
                     <span style="font-weight: bold;">Hull Configuration </span>
