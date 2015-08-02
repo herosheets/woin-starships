@@ -973,9 +973,9 @@ angular.module('woin-starship')
       });
     };
 
-    $scope.calculateSoak = function(power) {
+    $scope.calculateSoak = function(power, quantity) {
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
-      return parseInt(power/hullClass);
+      return parseInt(power * quantity / hullClass);
     };
 
     $scope.isHangar = function(itemName) {
