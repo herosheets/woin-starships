@@ -941,7 +941,11 @@ angular.module('woin-starship')
     };
 
     $scope.presentType = function(type) {
-      return type['Type'] + ": " + type.Traits;
+      if (type.Traits === undefined) {
+        return "None";
+      } else {
+        return "Traits: " + type.Traits;
+      }
     };
 
     $scope.calculateLuxury = function() {
