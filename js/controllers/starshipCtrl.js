@@ -55,8 +55,7 @@ var getCrewValue = function (shipPart, val, partsList, crewSize) {
   try {
     if (_.contains(crewValues, val) && crewSize > 0) {
       var key = val + "/crew";
-      var base = getQuantityValue(shipPart, key, partsList);
-      return base * crewSize;
+      return getQuantityValue(shipPart, key, partsList);
     } else {
       return 0;
     }
