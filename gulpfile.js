@@ -145,7 +145,7 @@ gulp.task('build-js', ['clean', 'build-template-cache'], function() {
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshint', 'build-js', 'copy'], function() {
+gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshint', 'build-js', 'copy', 'cname'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
         .pipe(gulp.dest('dist'));
@@ -154,6 +154,10 @@ gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshin
 gulp.task('copy', ['clean'], function() {
    return gulp.src('bower_components/**/*')
        .pipe(gulp.dest('./dist/bower_components'));
+});
+
+gulp.task('cname', ['clean'], function() {
+    return gulp.src('CNAME').pipe(gulp.dest('./dist'));
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
