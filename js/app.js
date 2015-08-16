@@ -101,6 +101,7 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 		;
 	});
 
+require('components');
 require('starshipCtrl');
 require('commandCtrl');
 require('crewCtrl');
