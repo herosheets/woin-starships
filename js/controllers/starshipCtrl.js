@@ -313,7 +313,7 @@ angular.module('woin-starship')
       if (type.Traits === undefined) {
         return "None";
       } else {
-        return "Traits: " + type.Traits;
+        return type.Type;
       }
     };
 

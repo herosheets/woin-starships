@@ -18,7 +18,7 @@
             <tbody>
             <tr>
                 <td colspan="10" align="center" height="23" bgcolor="#cccccc"
-                    valign="bottom" width="650">{{ship.name}} Class {{ship.hull.Class}} {{ship.hullConfig.Type}}</b></td>
+                    valign="bottom" width="650">{{ship.name}} Class {{ship.hull.Class}} {{ship.hullConfig.Type}} Ship</b></td>
             </tr>
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
@@ -28,6 +28,7 @@
                     <span ng-bind="currentSpace()"></span> (<span ng-bind="maxSpace() - currentSpace()"></span> available)<br>
                     <span style="font-weight: bold;">Hull Class </span>
                     <span ng-bind='ship.hull.Class || "none"'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>
+                    <span style="font-weight: bold;">Traits</span> {{ship.hullConfig.Traits}}<br>
                     <span style="font-weight: bold;">Hull Configuration </span>
                     <span ng-bind='presentType(ship.hullConfig)'></span>
                 </td>
