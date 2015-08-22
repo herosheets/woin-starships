@@ -13,6 +13,8 @@ angular.module('woin-starship').service('Components',
         scope.ftl = [];
         scope.subluminal = [];
         scope.hangars = [];
+        scope.hangarHash = {};
+        scope.generalHash = {};
 
         scope.pointDefenses = [
           {
@@ -30,6 +32,7 @@ angular.module('woin-starship').service('Components',
           commandControl: [],
           tractor: [],
           engMods: [],
+          cargo: [],
           electronicWarfare: []
         };
 
@@ -181,106 +184,6 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(fueling, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.systems.fueling.push(row.data[0]);
-          },
-          complete: function () {
-            console.log("fueling Systems Loaded");
-          }
-        });
-
-        Papa.parse(commandControl, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.systems.commandControl.push(row.data[0]);
-          },
-          complete: function () {
-            console.log("commandControl Systems Loaded");
-          }
-        });
-
-        Papa.parse(tractor, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.systems.tractor.push(row.data[0]);
-          },
-          complete: function () {
-            console.log("tractor Systems Loaded");
-          }
-        });
-
-        Papa.parse(hangars, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.hangars.push(row.data[0]);
-            scope.hangarHash = {};
-            _.each(scope.hangars, function (item) {
-              item['hangar'] = true;
-              scope.hangarHash[item.Item] = item;
-            });
-          },
-          complete: function () {
-            console.log("hangar Systems Loaded");
-          }
-        });
-
-        Papa.parse(engMods, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.systems.engMods.push(row.data[0]);
-          },
-          complete: function () {
-            console.log("engMods Systems Loaded");
-          }
-        });
-
-        Papa.parse(electronicWarfare, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.systems.electronicWarfare.push(row.data[0]);
-            scope.generalHash = {};
-
-            _.each(scope.systems.fueling, function (item) {
-              scope.generalHash[item.Item] = item;
-            });
-
-            _.each(scope.systems.tractor, function (item) {
-              scope.generalHash[item.Item] = item;
-            });
-
-            _.each(scope.systems.engMods, function (item) {
-              scope.generalHash[item.Item] = item;
-            });
-
-            _.each(scope.systems.electronicWarfare, function (item) {
-              scope.generalHash[item.Item] = item;
-            });
-          },
-          complete: function () {
-            console.log("electronicWarfare Systems Loaded");
-          }
-        });
-
-        Papa.parse(commandControl, {
-          header: true,
-          dynamicTyping: true,
-          step: function (row) {
-            scope.systems.commandControl.push(row.data[0]);
-          },
-          complete: function () {
-            console.log("commandControl Systems Loaded");
-          }
-        });
-        // end systems
-
         Papa.parse(weapons, {
           header: true,
           dynamicTyping: true,
@@ -297,6 +200,43 @@ angular.module('woin-starship').service('Components',
             console.log("Weapons Loaded");
           }
         });
+
+        Papa.parse(systems, {
+          header: true,
+          dynamicTyping: true,
+          step: function (row) {
+            var s = row.data[0];
+            console.log("Loaded s:" + s.Type);
+            scope.generalHash[s.Item] = s;
+            switch(s.Type) {
+              case 'Tractor Beam':
+                scope.systems.tractor.push(s);
+                break;
+              case 'Cargo Equipment':
+                scope.systems.cargo.push(s);
+                break;
+              case 'Engineering Modification':
+                scope.systems.engMods.push(s);
+                break;
+              case 'Fueling Equipment':
+                scope.systems.fueling.push(s);
+                break;
+              case 'C&C':
+                scope.systems.commandControl.push(s);
+                break;
+              case 'ECM':
+                scope.systems.electronicWarfare.push(s);
+                break;
+              case 'Hangar':
+                s['hangar'] = true;
+                scope.hangarHash[s.Item] = s;
+                scope.hangars.push(s);
+                break;
+              default:
+                break;
+            }
+          }
+        })
       };
 
       var types =
@@ -511,60 +451,12 @@ angular.module('woin-starship').service('Components',
         "WayDyne Incorporated GI-2 ion engine,132,G,9.6,103,96,1.6";
 
       var cloaking =
-        "Item ,Space ,Size,Cost ,CPU ,Notes \n" +
+        "Item,Space,Size,Cost,CPU,Notes\n" +
         "Ultrabeam Y62 Cloaking Device,3,S,750,1,Restricted to ship classes I;II;III\n" +
         "NorthCo GYN3 Starship Stealth System,10,M,2000,2,Restricted to ship classes IV;V;VI;VII\n" +
         "Highdyne S2 Stealth Solution,40,L,10000,3,Restricted to ship classes VIII;IX;X;XI\n" +
         "Daystellar-Silvertech Society JG51 Integrated Cloaking System,100,E,40000,4,Restricted to ship classes XII;XIII;XIV;XV;XVI\n" +
         "Waywatch BI95 Cloaking Device,300,G,90000,5,Restricted to ship classes XVII;XVIII;XIX";
-
-      var tractor =
-        "Item,Space,Size,Cost,CPU,Notes\n" +
-        "Galaxy Technologies X2 Tractor Beam,5,S,10,-,'STR 2, range 5'\n" +
-        "Transwatch L4 Magnetic Beam,10,M,30,-,'STR 4, range 7'\n" +
-        "Warp Sun Metallurgy G75 Tractor/Pressor System,15,L,75,-,'STR 6, range 10'\n" +
-        "Omnibeam J21 Gravity Beam,20,E,120,-,'STR 8, range 12'\n" +
-        "Outer Sun Merchants CCH80 Magnetic Projector,25,G,3,-,'STR 10, range 15'";
-
-      var fueling =
-        "Item,Space,Size,Cost,CPU,Notes\n" +
-        "Fuel bay alteration,1 CU/10 fuel,-,0.5/fuel,-,This can increase or decrease fuel capacity\n" +
-        "Over Prime O68 Fuel Scoop,5,S,100,-,Gathers 1 fuel unit per hour\n" +
-        "Black Hole Products P40 Fuel Scoop,40,M,250,-,Gathers 5 fuel units per hour\n" +
-        "Davison Aeronautics SAA48 Fuel Scoop,90,E,'1,000',-,Gathers 20 fuel units per hour\n" +
-        "Westbreak-NewCorp Partnership H80 External Cargo Bay,-,S,30,-,'Adds 20 CU; -2 DEFENSE, -2 SPEED'\n" +
-        "Daylight KE27 External Cargo Bay,-,M,100,-,'Adds 250 CU; -2�DEFENSE, -2 SPEED'\n" +
-        "SilverCorp E95 External Cargo Bay,-,L,250,-,'Adds 1,000 CU; -2�DEFENSE, -2 SPEED'";
-
-      var hangars =
-        "Item,Space,Size,Cost,CPU,Notes\n" +
-        "Parsec Systems ZM2 Shuttle/fighter Bay,25,S,400,1,Room for 1 shuttle or fighter\n" +
-        "Megalight EI93 Shuttle/fighter Bay,80,M,700,1,Room for 4 shuttles or fighters\n" +
-        "Ultrabeam VN34 Shuttle/fighter Bay,150,L,1000,2,Room for 16 shuttles or fighters\n" +
-        "Waydyne Shuttle/fighter Bay,250,E,1500,2,Room for 32 shuttles or fighters\n" +
-        "'Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,2000,3,Room for 64 shuttles or fighters";
-
-      var engMods =
-        "Item,Space,Size,Cost,CPU,Notes\n" +
-        "Ultradyne Lines CP97 Repair Bay,10,M,200,4,Repairs 1 SS per turn\n" +
-        "Newwatch IE17 Remote Repair Bay,20,L,500,8,Repairs 1 SS per turn; range 4 hexes";
-
-      var commandControl =
-        "Item,Space,Size,Cost,CPU,Notes\n" +
-        "Daylight CEA46 Tactical Command Center,2,S,200,3,Grants +1d6 bonus to 4 ships; range 8 hexes\n" +
-        "OmniCo NE79 Tactical Operations Center,5,M,500,6,Grants +1d6 bonus to 10 ships; range 12 hexes\n" +
-        "Terradyne TAC-COM WPA40�,10,L,'1,000',9,Grants +1d6 bonus to 25 ships; range 16 hexes\n" +
-        "Omnibreak Group GO17 Tactical Command Center,20,E,'2,5000',12,Grants +1d6 bonus to 50 ships; range 20 hexes\n" +
-        "Kavelin-Song Ltd. N82 Tactical Coordination Module,30,G,'5,000',15,Grants +1d6 bonus to 100 ships; range 25 hexes";
-
-      var electronicWarfare =
-        "Item,Space,Size,Cost,CPU,Notes\n" +
-        "TerraCo L56 ECM System,5,S,50,2,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 8 hexes'\n" +
-        "Omniwide Productions YPO57 Electronic Countermeasures,10,M,100,3,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 12 hexes'\n" +
-        "Ultralight BMS55 Jamming System,15,L,250,4,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 16 hexes'\n" +
-        "Sun Prime LC84 Precision Electronic Warfare System,25,E,500,5,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes'\n" +
-        "PanCorp Gravitics YN28 Active Decoy Transmitter,35,G,'1,000',6,'Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 25 hexes'\n" +
-        "Electronic Reinforcement,10/point,-,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.";
 
       var weapons =
         "Weapon System,Cost,Size,CPU,Space,Range,Attack,Damage\n" +
@@ -621,6 +513,44 @@ angular.module('woin-starship').service('Components',
         "Waywatch Lines MCPx-1 Redswarm proximity concussion missile,45,M,2,4,7,+1d6,2d6 ballistic\n" +
         "Weststellar Ltd. LPaB-1 Hellseeker particle beam,66,L,3,11,8,+0d6,3d6 heat\n" +
         "Young Asteroid Co. GBB-1 Flamebird blaster beam,109,G,5,60,8,+0d6,5d6 heat";
+
+      var systems =
+        "Item,Type,Space,Size,Cost,CPU,Notes\n"+
+        "Ultrabeam Y62 Cloaking Device,Cloaking Device,3,S,750,1,Ship classes I-III only\n"+
+        "NorthCo GYN3 Starship Stealth System,Cloaking Device,10,M,2000,2,Ship classes IV-VII only\n"+
+        "Highdyne S2 Stealth Solution,Cloaking Device,40,L,10000,3,Ship classes VIII-XI only\n"+
+        "Daystellar-Silvertech Society JG51 Integrated Cloaking System,Cloaking Device,100,E,40000,4,Ship classes XII-XVI only\n"+
+        "Waywatch BI95 Cloaking Device,Cloaking Device,300,G,90000,5,Ship classes XVII-XIX only\n"+
+        "Galaxy Technologies X2 Tractor Beam,Tractor Beam,5,S,10,-,\"STR 2, range 5\"\n"+
+        "Transwatch L4 Magnetic Beam,Tractor Beam,10,M,30,-,\"STR 4, range 7\"\n"+
+        "Warp Sun Metallurgy G75 Tractor/Pressor System,Tractor Beam,15,L,75,-,\"STR 6, range 10\"\n"+
+        "Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,-,\"STR 8, range 12\"\n"+
+        "Outer Sun Merchants CCH80 Magnetic Projector,Tractor Beam,25,G,300,-,\"STR 10, range 15\"\n"+
+        "Fuel bay alteration,Fueling Equipment,1 CU/10 fuel,-,0.5/fuel,-,This can increase or decrease fuel capacity\n"+
+        "Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,-,Gathers 1 fuel unit per hour\n"+
+        "Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,-,Gathers 5 fuel units per hour\n"+
+        "Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,-,Gathers 20 fuel units per hour\n"+
+        "Westbreak-NewCorp Partnership H80 External Cargo Bay,Cargo Equipment,-,S,30,-,\"Adds 20 CU; -2 DEFENSE, -2 SPEED\"\n"+
+        "Daylight KE27 External Cargo Bay,Cargo Equipment,-,M,100,-,\"Adds 250 CU; -2 DEFENSE, -2 SPEED\"\n"+
+        "SilverCorp E95 External Cargo Bay,Cargo Equipment,-,L,250,-,\"Adds 1,000 CU; -2 DEFENSE, -2 SPEED\"\n"+
+        "Parsec Systems ZM2 Shuttle/fighter Bay,Hangar,25,S,400,1,Room for 1 shuttle or fighter\n"+
+        "Megalight EI93 Shuttle/fighter Bay,Hangar,80,M,700,1,Room for 4 shuttles or fighters\n"+
+        "Ultrabeam VN34 Shuttle/fighter Bay,Hangar,150,L,1000,2,Room for 16 shuttles or fighters\n"+
+        "Waydyne Shuttle/fighter Bay,Hangar,250,E,1500,2,Room for 32 shuttles or fighters\n"+
+        "\"Newwide Gravitics DI11 Shuttle/fighter Bay,Hangar,\",460,G,2000,3,Room for 64 shuttles or fighters\n"+
+        "Ultradyne Lines CP97 Repair Bay,Engineering Modification,10,M,200,4,Repairs 1 SS per turn\n"+
+        "Newwatch IE17 Remote Repair Bay,Engineering Modification,20,L,500,8,Repairs 1 SS per turn; range 4 hexes\n"+
+        "Daylight CEA46 Tactical Command Center,C&C,2,S,200,3,Grants +1d6 bonus to 4 ships; range 8 hexes\n"+
+        "OmniCo NE79 Tactical Operations Center,C&C,5,M,500,6,Grants +1d6 bonus to 10 ships; range 12 hexes\n"+
+        "Terradyne TAC-COM WPA40,C&C,10,L,1000,9,Grants +1d6 bonus to 25 ships; range 16 hexes\n"+
+        "Omnibreak Group GO17 Tactical Command Center,C&C,20,E,2500,12,Grants +1d6 bonus to 50 ships; range 20 hexes\n"+
+        "Kavelin-Song Ltd. N82 Tactical Coordination Module,C&C,0,G,5000,15,Grants +1d6 bonus to 100 ships; range 25 hexes\n"+
+        "TerraCo L56 ECM System,ECM,5,S,50,2,\"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 8 hexes\"\n"+
+        "Omniwide Productions YPO57 Electronic Countermeasures,ECM,10,M,100,3,\"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 12 hexes\"\n"+
+        "Ultralight BMS55 Jamming System,ECM,15,L,250,4,\"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 16 hexes\"\n"+
+        "Sun Prime LC84 Precision Electronic Warfare System,ECM,25,E,500,5,\"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes\"\n"+
+        "PanCorp Gravitics YN28 Active Decoy Transmitter,ECM,35,G,1000,6,\"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 25 hexes\"\n"+
+        "Electronic Reinforcement,ECM,10/point,-,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.\n";
 
       var passengers = [
         {Type: "Additional Crew", Space: "2", Cost: "0.1"},
