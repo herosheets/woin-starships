@@ -122,10 +122,20 @@ var getTotalCrew = function (ship, scope) {
     var baseCrew = ship.hull.Crew;
     if (_.has(ship, 'Crew')) {
       angular.forEach(ship.Crew, function(quantity, crewType) {
+        console.log("Crew has " + crewType + " (x " + quantity);
         baseCrew += quantity;
       });
     }
-    return baseCrew;
+    var modPercent = 0;
+
+    _.each(scope.ship['Control Computers'], function(num, key) {
+      var baseString = scope.computerHash[key].Crew;
+      if(!_.contains(baseString, '%')) return;
+      var mod = +(baseString.split('%')[0]);
+      modPercent += mod*num;
+    });
+
+    return Math.floor(baseCrew + (baseCrew*(modPercent/100)));
   } catch (e) {
     return 0;
   }
@@ -194,6 +204,10 @@ angular.module('woin-starship')
       } else {
         return 0;
       }
+    };
+
+    $scope.getTotalCrew = function() {
+      return getTotalCrew($scope.ship, $scope);
     };
 
     $scope.calculateFtl = function (engineName, quantity) {
@@ -310,16 +324,14 @@ angular.module('woin-starship')
       }
     };
 
-    $scope.presentShuttles = function() {
-
-    }
-
     $scope.calculateLuxury = function() {
       var luxuryTotal = getAllShipValues($scope.ship, 'Luxury/crew', $scope);
-      var crewTotal = getTotalCrew($scope.ship, $scope);
+      var crewTotal = $scope.getTotalCrew();
       var lux = (luxuryTotal / crewTotal) * 100;
 
       if(_.isNaN(lux)) lux = 0;
+
+      lux = Math.round(lux * 100) / 100;
 
       if (lux < 50) {
         return lux + "% (Spartan: -2d6)";
@@ -357,8 +369,7 @@ angular.module('woin-starship')
     };
 
     $scope.getHangarQty = function(hangar) {
-      var notes = $scope.generalHash[hangar].Notes;
-      return notes.split('Room for ')[1].split(' ')[0];
+      return $scope.generalHash[hangar].Craft;
     };
 
     $scope.addQuantitied = function (component, key, item) {

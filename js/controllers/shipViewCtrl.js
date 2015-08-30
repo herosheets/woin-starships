@@ -24,17 +24,7 @@ angular.module('woin-starship')
     };
 
       $scope.calculateCrew = function() {
-        var base = +$scope.ship.hull.Crew;
-        var modPercent = 0;
-
-        _.each($scope.ship['Control Computers'], function(num, key) {
-          var baseString = $scope.computerHash[key].Crew;
-          if(!_.contains(baseString, '%')) return;
-          var mod = +(baseString.split('%')[0]);
-          modPercent += mod*num;
-        });
-
-        return Math.floor(base + (base*(modPercent/100)));
+        return $scope.getTotalCrew();
       };
 
       $scope.calculateWeaponRange = function(weaponName) {
