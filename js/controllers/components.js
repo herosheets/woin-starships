@@ -368,7 +368,7 @@ angular.module('woin-starship').service('Components',
         "Yang-Chen Co ESC-2 civilian shield generator,51,E,5,62,41";
 
       var facilities =
-        "Customization,Luxury/crew,Space/Crew,Cost/crew,CPU,Notes,Recommended\n" +
+        "Customization,Luxury/crew,Space/crew,Cost/crew,CPU,Notes,Recommended\n" +
         "Sick bay,2,3,20,0,Accomodates 1 patient,5% of crew capacity\n" +
         "\"Cabin, standard\",0.5,1,0.5,0,Accomodates 1 crewmember,-\n" +
         "\"Cabin, double\",0.3,0.5,0.3,0,,-\n" +
