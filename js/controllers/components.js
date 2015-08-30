@@ -233,9 +233,6 @@ angular.module('woin-starship').service('Components',
                 scope.systems.electronicWarfare.push(s);
                 break;
               case 'Hangar':
-                s['hangar'] = true;
-                scope.hangarHash[s.Item] = s;
-                scope.hangars.push(s);
                 break;
               default:
                 break;
@@ -252,6 +249,19 @@ angular.module('woin-starship').service('Components',
           },
           complete: function () {
             console.log("Point Defence Systems Loaded");
+          }
+        });
+
+        Papa.parse(hangars, {
+          header: true,
+          dynamicTyping: true,
+          step: function (row) {
+            row.data[0].hangar = true;
+            scope.hangars.push(row.data[0]);
+            scope.hangarHash[row.data[0]['Hangar Bay']] = row.data[0];
+          },
+          complete: function () {
+            console.log("Hangars");
           }
         });
       };
@@ -294,6 +304,14 @@ angular.module('woin-starship').service('Components',
         "Newstellar EM-1H,235,E,10,8,32,-10.00%,22,3,1,+1d6\n" +
         "Terra Prime GM-1,75,G,20,4,16,-10.00%,25,3,-,+0d6\n" +
         "Terra Prime GM-1H,325,G,20,8,32,-15.00%,27,4,1,+1d6";
+
+      var hangars =
+        "Hangar Bay,Space,Size,Cost,CPU,Craft\n"+
+        "Parsec Systems ZM2 Shuttle/fighter Bay,25,S,400,1,1\n"+
+        "Megalight EI93 Shuttle/fighter Bay,80,M,700,1,4\n"+
+        "Ultrabeam VN34 Shuttle/fighter Bay,150,L,1000,2,16\n"+
+        "Waydyne Shuttle/fighter Bay,250,E,1500,2,32\n"+
+        "Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,2000,3,64";
 
       var hulls =
         "Class,Tonnage,Cost,Crew,Max CU,DEFENSE,FUEL,INITIATIVE\n" +

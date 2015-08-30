@@ -13,11 +13,12 @@
         <th>Size</th>
         <th>Cost</th>
         <th>CPU</th>
+        <th>Craft</th>
         <th>Notes</th>
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="(name, count) in ship.Hangars">
+    <tr ng-repeat="(name, count) in ship['Hangar Bay']">
         <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
@@ -25,6 +26,7 @@
         <td>{{hangarHash[name].Size}}</td>
         <td>{{hangarHash[name].Cost}}</td>
         <td>{{hangarHash[name].CPU}}</td>
+        <td>{{hangarHash[name].Craft}}</td>
         <td>{{hangarHash[name].Notes}}</td>
     </tr>
     <tr ng-if="isEmpty(KEY)">
@@ -37,23 +39,24 @@
     <thead>
     <tr colspan="7">
         <th></th>
-        <th>Item</th>
+        <th>Hangar</th>
         <th>Space</th>
         <th>Size</th>
         <th>Cost</th>
         <th>CPU</th>
+        <th>Craft</th>
         <th>Notes</th>
     </tr>
     </thead>
     <tbody>
-      <tr><td colspan="7" class="text-center"><strong>Hangars</strong></td></tr>
       <tr ng-repeat="c in hangars">
-          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>
-          <td>{{c.Item}}</td>
+          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Hangar Bay'])">+</button></td>
+          <td>{{c['Hangar Bay']}}</td>
           <td>{{c.Space}}</td>
           <td>{{c.Size}}</td>
           <td>{{c.Cost}}</td>
           <td>{{c.CPU}}</td>
+          <td>{{c.Craft}}</td>
           <td>{{c.Notes}}</td>
       </tr>
   </tbody>

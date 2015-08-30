@@ -310,6 +310,10 @@ angular.module('woin-starship')
       }
     };
 
+    $scope.presentShuttles = function() {
+
+    }
+
     $scope.calculateLuxury = function() {
       var luxuryTotal = getAllShipValues($scope.ship, 'Luxury/crew', $scope);
       var crewTotal = getTotalCrew($scope.ship, $scope);
