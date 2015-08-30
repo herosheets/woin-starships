@@ -1,0 +1,20 @@
+Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+Chemerkin-Liang Products LM-1,30,L,5,4,16,-,15,1,-,+0d6
+Chemerkin-Liang Products LM-2,60,L,5,5,20,-1.00%,16,1,-,+0d6
+Chemerkin-Liang Products LM-2H,380,L,5,10,40,-6.00%,18,2,1,+1d6
+Chemerkin-Liang Products LM-2S,800,L,5,13,52,-11.00%,21,2,2,+1d6
+Chemerkin-Liang Products LM-3S,1200,L,5,14,56,-13.00%,22,2,3,+1d6
+Chemerkin-Liang Products LM-5S,2000,L,5,16,64,-15.00%,23,3,4,+1d6
+Frontier Products Frontier Products MM-1,15,M,3,2,8,-,10,-,-,+0d6
+Frontier Products MM-2,30,M,3,3,12,-1.00%,11,-,-,+0d6
+Frontier Products MM-3,45,M,3,4,16,-2.00%,11,-,1,+0d6
+Frontier Products MM-3H,345,M,3,8,32,-7.00%,13,1,2,+1d6
+Frontier Products MM-4H,435,M,3,9,36,-8.00%,14,2,2,+1d6
+Highwatch SM-1,3,S,1,2,8,-,5,-,-,+0d6
+Highwatch SM-1H,109,S,1,4,16,-5.00%,7,1,1,+1d6
+MicroCorp EM-2H,470,E,10,9,36,-11.00%,23,3,1,+1d6
+MicroCorp EM-3S,1425,E,10,14,56,-17.00%,26,3,3,+1d6
+Newstellar EM-1,45,E,10,4,16,-5.00%,20,2,-,+0d6
+Newstellar EM-1H,235,E,10,8,32,-10.00%,22,3,1,+1d6
+Terra Prime GM-1,75,G,20,4,16,-10.00%,25,3,-,+0d6
+Terra Prime GM-1H,325,G,20,8,32,-15.00%,27,4,1,+1d6

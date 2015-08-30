@@ -1,0 +1,15 @@
+Type,Traits
+Patrol Craft,"Evasive, Inspector"
+Courier,"Fast, Silent-running"
+Research Ship,"Scientific, Deep Scan"
+Yacht,Well-appointed
+Scout,Explorer
+Freighter,Hauler
+Escort,Tactical
+Destroyer,Heavily-armed
+Frigate,Gunboat
+Transport,Skeleton Crew
+Cruiser,5 Year Mission
+Liner,"Luxurious, Skeleton Crew"
+Battleship,Tough
+Carrier,Scramble

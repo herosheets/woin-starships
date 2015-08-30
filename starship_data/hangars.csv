@@ -1,0 +1,7 @@
+Hangar Bay,Space,Size,Cost,CPU,Craft
+Parsec Systems ZM2 Shuttle/fighter Bay,25,S,400,1,1
+Megalight EI93 Shuttle/fighter Bay,80,M,700,1,4
+Ultrabeam VN34 Shuttle/fighter Bay,150,L,1000,2,16
+Waydyne Shuttle/fighter Bay,250,E,1500,2,32
+Newwide Gravitics DI11 Shuttle/fighter Bay,460,G,2000,3,64
+-,0,,0,0,0

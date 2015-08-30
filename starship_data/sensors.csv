@@ -1,0 +1,16 @@
+Sensor Systems,Cost,Size,Space,Range,Range Inc,DEFENSE,Checks
+Chen-Collins SS-1,4,S,1,2,5,-,+0d6
+Chen-Collins SS-2,8,S,1,4,6,-,+0d6
+Chen-Collins SS-2H,224,S,1,8,8,1,+1d6
+Interstellar Enterprises MS-1,20,M,3,4,10,-,+0d6
+Interstellar Enterprises MS-1H,160,M,3,8,12,1,+1 die
+Interstellar Enterprises MS-2,40,M,3,6,11,-,+0d6
+Lunar Works LS-1,40,L,5,6,15,-,+0d6
+Lunar Works LS-2,80,L,5,8,16,-,+0d6
+Lunar Works LS-2H,160,L,5,14,18,1,+1d6
+Newwatch ES-1,60,E,10,8,20,-,+0d6
+Newwatch ES-1H,280,E,10,16,22,1,+1d6
+Newwatch ES-2,120,E,10,10,21,-,+0d6
+Intergalactic Foundation GS-1,100,G,20,110,25,-,+0d6
+Intergalactic Foundation GS-2,200,G,20,12,26,-,+0d6
+Intergalactic Foundation GS-2H,800,G,20,22,28,1,+1d6

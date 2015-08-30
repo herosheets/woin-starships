@@ -1,0 +1,37 @@
+Item , Type ,Space ,Size,Cost ,CPU ,Notes 
+Ultrabeam Y62 Cloaking Device,Cloaking Device,3,S,750,1,Ship classes I-III only
+NorthCo GYN3 Starship Stealth System,Cloaking Device,10,M,2000,2,Ship classes IV-VII only
+Highdyne S2 Stealth Solution,Cloaking Device,40,L,10000,3,Ship classes VIII-XI only
+Daystellar-Silvertech Society JG51 Integrated Cloaking System,Cloaking Device,100,E,40000,4,Ship classes XII-XVI only
+Waywatch BI95 Cloaking Device,Cloaking Device,300,G,90000,5,Ship classes XVII-XIX only
+Galaxy Technologies X2 Tractor Beam,Tractor Beam,5,S,10,-,"STR 2, range 5"
+Transwatch L4 Magnetic Beam,Tractor Beam,10,M,30,-,"STR 4, range 7"
+Warp Sun Metallurgy G75 Tractor/Pressor System,Tractor Beam,15,L,75,-,"STR 6, range 10"
+Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,-,"STR 8, range 12"
+Outer Sun Merchants CCH80 Magnetic Projector,Tractor Beam,25,G,300,-,"STR 10, range 15"
+Fuel bay alteration,Fueling Equipment,1 CU/10 fuel,-,0.5/fuel,-,This can increase or decrease fuel capacity
+Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,-,Gathers 1 fuel unit per hour
+Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,-,Gathers 5 fuel units per hour
+Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,-,Gathers 20 fuel units per hour
+Westbreak-NewCorp Partnership H80 External Cargo Bay,Cargo Equipment,-,S,30,-,"Adds 20 CU; -2 DEFENSE, -2 SPEED"
+Daylight KE27 External Cargo Bay,Cargo Equipment,-,M,100,-,"Adds 250 CU; -2 DEFENSE, -2 SPEED"
+SilverCorp E95 External Cargo Bay,Cargo Equipment,-,L,250,-,"Adds 1,000 CU; -2 DEFENSE, -2 SPEED"
+HANGARS,,,,,
+Parsec Systems ZM2 Shuttle/fighter Bay,Hangar,25,S,400,1,Room for 1 shuttle or fighter
+Megalight EI93 Shuttle/fighter Bay,Hangar,80,M,700,1,Room for 4 shuttles or fighters
+Ultrabeam VN34 Shuttle/fighter Bay,Hangar,150,L,1000,2,Room for 16 shuttles or fighters
+Waydyne Shuttle/fighter Bay,Hangar,250,E,1500,2,Room for 32 shuttles or fighters
+"Newwide Gravitics DI11 Shuttle/fighter Bay,Hangar,",460,G,2000,3,Room for 64 shuttles or fighters
+Ultradyne Lines CP97 Repair Bay,Engineering Modification,10,M,200,4,Repairs 1 SS per turn
+Newwatch IE17 Remote Repair Bay,Engineering Modification,20,L,500,8,Repairs 1 SS per turn; range 4 hexes
+Daylight CEA46 Tactical Command Center,C&C,2,S,200,3,Grants +1d6 bonus to 4 ships; range 8 hexes
+OmniCo NE79 Tactical Operations Center,C&C,5,M,500,6,Grants +1d6 bonus to 10 ships; range 12 hexes
+Terradyne TAC-COM WPA40,C&C,10,L,1000,9,Grants +1d6 bonus to 25 ships; range 16 hexes
+Omnibreak Group GO17 Tactical Command Center,C&C,20,E,2500,12,Grants +1d6 bonus to 50 ships; range 20 hexes
+Kavelin-Song Ltd. N82 Tactical Coordination Module,C&C,0,G,5000,15,Grants +1d6 bonus to 100 ships; range 25 hexes
+TerraCo L56 ECM System,ECM,5,S,50,2,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 8 hexes"
+Omniwide Productions YPO57 Electronic Countermeasures,ECM,10,M,100,3,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 12 hexes"
+Ultralight BMS55 Jamming System,ECM,15,L,250,4,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 16 hexes"
+Sun Prime LC84 Precision Electronic Warfare System,ECM,25,E,500,5,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes"
+PanCorp Gravitics YN28 Active Decoy Transmitter,ECM,35,G,1000,6,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 25 hexes"
+Electronic Reinforcement,ECM,10/point,-,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.
