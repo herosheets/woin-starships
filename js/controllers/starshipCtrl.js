@@ -214,18 +214,11 @@ angular.module('woin-starship')
     };
 
     $scope.calculateOperationalRange = function() {
-      if ($scope.ship.hull !== undefined) {
-        var baseRange = $scope.ship.hull.FUEL;
-        var modifiers = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
-        if (modifiers === undefined || modifiers === 0) {
-          modifiers = 1;
-        }
+      if (!$scope.ship.hull) return;
+      var shipClass = Number.fromRoman($scope.ship.hull.Class);
+      var modifier = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
 
-        return baseRange * modifiers;
-      } else {
-        return 0;
-      }
-
+      return Math.pow(shipClass, 3) * modifier;
     };
 
     $scope.calculateSuperstructure = function() {
