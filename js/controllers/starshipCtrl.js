@@ -296,7 +296,7 @@ angular.module('woin-starship')
         var initialCargo = $scope.ship.hull['Max CU'];
         var amountRemaining = $scope.maxSpace() - $scope.currentSpace();
         var tonnage = $scope.maxSpace() * 50;
-        return "[" + initialCargo + "] ("+amountRemaining+" : " + tonnage + " tons)";
+        return initialCargo + " ("+amountRemaining+" available; capacity " + tonnage + " tons)";
       } else {
         return "-";
       }
