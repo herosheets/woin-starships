@@ -44,7 +44,7 @@ angular.module('woin-starship').service('Components',
           scope.superstructureHash[item['Type']] = item;
         });
 
-        var doDownload = location.hostname === 'enworld.org';
+        var doDownload = location.hostname === 'starships.enworld.org';
         var getUrl = function(file) {
           return 'http://www.enworld.org/woin/components/' + file + '.csv';
         };
