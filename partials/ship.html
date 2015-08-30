@@ -136,7 +136,11 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Point Defenses</span>
-                    <span ng-bind="ship['Point Defense']['Point defenses'] || '-'"></span>
+                     <span ng-repeat="(name, quantity) in ship['Point Defenses']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
+                        (DEFENSE: <span ng-bind="pointDefensesHash[name]['DEFENSE'] * quantity"></span>)
+
+                    </span>
                 </td>
             </tr>
             <tr>

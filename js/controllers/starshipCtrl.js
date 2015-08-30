@@ -14,7 +14,7 @@ var quantityComponents = {
   'Control Computers': "computerHash",
   'Sub-luminal Engine': 'sublHash',
   'FTL Engine': 'ftlHash',
-  'Point Defense': 'pointDefensesHash',
+  'Point Defenses': 'pointDefensesHash',
   'Deflector Shields': 'deflectorHash',
   'Superstructure': 'superstructureHash',
   'Weapon System': 'weaponHash',
