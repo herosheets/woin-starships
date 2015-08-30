@@ -51,8 +51,14 @@ angular.module('woin-starship').service('Components',
           scope.superstructureHash[item['Type']] = item;
         });
 
-        Papa.parse(computers, {
+        var doDownload = location.hostname === 'enworld.org';
+        var getUrl = function(file) {
+          return 'http://www.enworld.org/woin/components/' + file + '.csv';
+        };
+
+        Papa.parse(doDownload ? getUrl('computers') : computers, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             var KEY = 'Control Computers';
@@ -67,8 +73,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(deflectors, {
+        Papa.parse(doDownload ? getUrl('deflectors') : deflectors, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             var KEY = 'Deflector Shields';
@@ -90,8 +97,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(facilities, {
+        Papa.parse(doDownload ? getUrl('facilities') : facilities, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             scope.facilities.push(row.data[0]);
@@ -105,8 +113,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(ftl, {
+        Papa.parse(doDownload ? getUrl('ftl') : ftl, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             scope.ftl.push(row.data[0]);
@@ -121,8 +130,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(hulls, {
+        Papa.parse(doDownload ? getUrl('hulls') : hulls, {
           header: true,
+          download: doDownload,
           quotes: true,
           dynamicTyping: true,
           step: function (row) {
@@ -133,8 +143,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(types, {
+        Papa.parse(doDownload ? getUrl('shiptype') : types, {
           header: true,
+          download: doDownload,
           quotes: true,
           dynamicTyping: true,
           step: function (row) {
@@ -145,8 +156,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(sensors, {
+        Papa.parse(doDownload ? getUrl('sensors') : sensors, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             scope.sensors.push(row.data[0]);
@@ -156,8 +168,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(subluminal, {
+        Papa.parse(doDownload ? getUrl('subluminal') : subluminal, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             var KEY = 'Sub-luminal Engine';
@@ -173,8 +186,9 @@ angular.module('woin-starship').service('Components',
         });
 
         // systems
-        Papa.parse(cloaking, {
+        Papa.parse(doDownload ? getUrl('cloaks') : cloaking, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             scope.systems.cloaking.push(row.data[0]);
@@ -184,8 +198,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(weapons, {
+        Papa.parse(doDownload ? getUrl('weapons') : weapons, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             var KEY = 'Weapon System';
@@ -201,8 +216,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(systems, {
+        Papa.parse(doDownload ? getUrl('systems') : systems, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             var s = row.data[0];
