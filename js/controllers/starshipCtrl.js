@@ -100,16 +100,16 @@ var getSpaceMax = function (ship) {
 };
 
 var getCpu = function (ship, scope) {
-  return getTotalShipValue(ship, 'CPU', scope);
+  return (getTotalShipValue(ship, 'CPU', scope) - getCpuMax(ship, scope));
 };
 
 var getCpuMax = function (ship, scope) {
-  return getTotalShipValue(ship, 'Max CPU', scope);
-  /*if (_.has(ship, 'Control Computers')) {
-    return getQuantityValue(ship['Control Computers'], 'Max CPU', scope);
+  if (_.has(ship, 'Control Computers')) {
+    var q = getQuantityValue(ship['Control Computers'], 'CPU', scope.computerHash);
+    return q;
   } else {
     return 0;
-  }*/
+  }
 };
 
 var getHullClassInteger = function (ship, hulls) {
