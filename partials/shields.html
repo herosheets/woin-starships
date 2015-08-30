@@ -10,8 +10,9 @@
         <th>Name</th>
         <th>Space</th>
         <th>CPU</th>
-        <th>Cost</th>
+        <th>Cost/point</th>
         <th>DEFENSE</th>
+        <th>Aura<th>
     </tr>
     </thead>
     <tbody>
@@ -23,6 +24,7 @@
         <td>{{pointDefensesHash[name].CPU}}</td>
         <td>{{pointDefensesHash[name].Cost}}</td>
         <td>{{pointDefensesHash[name].DEFENSE}}</td>
+        <td>{{pointDefensesHash[name].Aura}}</td>
     </tr>
     <tr ng-if="isEmpty(KEY)">
         <td colspan="7" class="text-center">No point defenses selected.</td>
@@ -34,20 +36,23 @@
     <thead>
     <tr>
         <th></th>
+        <th>Point Defense</th>
         <th>Space</th>
         <th>CPU</th>
-        <th>Cost</th>
+        <th>Cost/point</th>
         <th>DEFENSE</th>
+        <th>Aura</th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="c in pointDefenses">
         <td><button type="button" class="btn btn-primary" ng-click="incrementItem(PKEY, c[PKEY])">+</button></td>
-        <td>{{c['Point Defense']}}</td>
+        <td>{{c['Point Defenses']}}</td>
         <td>{{c.Space}}</td>
         <td>{{c.CPU}}</td>
         <td>{{c.Cost}}</td>
         <td>{{c.DEFENSE}}</td>
+        <td>{{c.Aura}}</td>
     </tr>
     </tbody>
 </table>

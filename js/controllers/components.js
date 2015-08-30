@@ -16,15 +16,8 @@ angular.module('woin-starship').service('Components',
         scope.hangarHash = {};
         scope.generalHash = {};
 
-        scope.pointDefenses = [
-          {
-            'Point Defense': 'Point defenses',
-            'Space': 10,
-            'CPU': 0.5,
-            'Cost': 10,
-            'DEFENSE': "+2 DEFENSE per point/ship class rank"
-          }
-        ];
+        scope.pointDefenses = [];
+        scope.pointDefensesHash = {};
 
         scope.systems = {
           cloaking: [],
@@ -72,7 +65,6 @@ angular.module('woin-starship').service('Components',
           dynamicTyping: true,
           step: function (row) {
             var KEY = 'Deflector Shields';
-            var PKEY = 'Point Defense';
             scope.deflectors.push(row.data[0]);
             scope.deflectorHash = {};
             _.each(scope.deflectors, function (item) {
@@ -80,10 +72,7 @@ angular.module('woin-starship').service('Components',
             });
 
 
-            scope.pointDefensesHash = {};
-            _.each(scope.pointDefenses, function (item) {
-              scope.pointDefensesHash[item[PKEY]] = item;
-            });
+
           },
           complete: function () {
             console.log("Deflectors Loaded");
@@ -237,6 +226,18 @@ angular.module('woin-starship').service('Components',
             }
           }
         })
+
+        Papa.parse(pointDefences, {
+          header: true,
+          dynamicTyping: true,
+          step: function (row) {
+            scope.pointDefenses.push(row.data[0]);
+            scope.pointDefensesHash[row.data[0]['Point Defenses']] = row.data[0];
+          },
+          complete: function () {
+            console.log("Point Defence Systems Loaded");
+          }
+        });
       };
 
       var types =
@@ -574,5 +575,13 @@ angular.module('woin-starship').service('Components',
           Notes: "1 SOAK per armor point/class vs. energy; 1.5 SOAK per armor point/class vs ballistic."
         }
       ];
+
+      var pointDefences =
+        "Point Defenses,Space,CPU,Cost,DEFENSE,Aura\n"+
+        "Railgun,10,0.5,10,2,0\n"+
+        "Heavy turbolaser battery,20,0.5,10,1,2\n"+
+        "Dual gauss gun,15,0.5,30,3,0\n"+
+        "Micro-phaser turret,30,1,30,3,0\n"+
+        "Kinetic energy flak weapon,10,0.5,10,3,0";
     });
 
