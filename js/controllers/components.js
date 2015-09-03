@@ -240,8 +240,9 @@ angular.module('woin-starship').service('Components',
           }
         })
 
-        Papa.parse(pointDefences, {
+        Papa.parse(doDownload ? getUrl('pointdefence') : pointDefences, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             scope.pointDefenses.push(row.data[0]);
@@ -252,8 +253,9 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(hangars, {
+        Papa.parse(doDownload ? getUrl('hangars') : hangars, {
           header: true,
+          download: doDownload,
           dynamicTyping: true,
           step: function (row) {
             row.data[0].hangar = true;
