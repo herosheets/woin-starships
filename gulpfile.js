@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     webserver = require('gulp-webserver'),
     del = require('del'),
     sass = require('gulp-sass'),
-    karma = require('gulp-karma'),
     jshint = require('gulp-jshint'),
     sourcemaps = require('gulp-sourcemaps'),
     spritesmith = require('gulp.spritesmith'),
@@ -94,27 +93,6 @@ gulp.task('jshint', function() {
 
 /////////////////////////////////////////////////////////////////////////////////////
 //
-// runs karma tests
-//
-/////////////////////////////////////////////////////////////////////////////////////
-
-gulp.task('test', ['build-js'], function() {
-    var testFiles = [
-        './test/unit/*.js'
-    ];
-
-    return gulp.src(testFiles)
-        .pipe(karma({
-            configFile: 'karma.conf.js',
-            action: 'run'
-        }))
-        .on('error', function(err) {
-            console.log('karma tests failed: ' + err);
-            throw err;
-        });
-});
-/////////////////////////////////////////////////////////////////////////////////////
-//
 // Build a minified Javascript bundle - the order of the js files is determined
 // by browserify
 //
@@ -151,9 +129,16 @@ gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshin
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('copy', ['clean'], function() {
+gulp.task('copy', ['copy:bower', 'copy:data']);
+
+gulp.task('copy:bower', ['clean'], function() {
    return gulp.src('bower_components/**/*')
        .pipe(gulp.dest('./dist/bower_components'));
+});
+
+gulp.task('copy:data', ['clean'], function() {
+    return gulp.src('./starship_data/**/*')
+        .pipe(gulp.dest('./dist/starship_data'));
 });
 
 gulp.task('cname', ['clean'], function() {
@@ -225,4 +210,4 @@ gulp.task('deploy', function() {
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('default', ['sprite','build', 'test']);
+gulp.task('default', ['sprite','build']);
