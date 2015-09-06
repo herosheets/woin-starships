@@ -28,3 +28,22 @@
   background-color: #337ab7;
   color: #fff;
 }
+
+.off-canvas__container {
+  position: relative;
+}
+
+.off-canvas__nav {
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  -webkit-user-drag: none;
+}
+
+.navbar.navbar-fixed-top {
+  margin-top: -51px;
+}

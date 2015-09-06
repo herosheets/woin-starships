@@ -32,7 +32,7 @@ Number.fromRoman= function(roman){
 var angular = require('angular');
 require('../dist/templateCachePartials');
 
-angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs', 'ngFileUpload'])
+angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router', 'ui.router.tabs', 'ngFileUpload', 'cn.offCanvas'])
 	.config(function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 

@@ -159,10 +159,21 @@ var tabs = [
 ];
 
 angular.module('woin-starship')
-  .controller('StarshipCtrl', ['$scope', 'Components', function StarshipCtrl($scope, Components) {
+  .factory('Sidenav', ['cnOffCanvas', function(cnOffCanvas) {
+    return cnOffCanvas({
+      controller: 'SidenavCtrl',
+      controllerAs: 'offCanvas',
+      template: '<div class="off-canvas__nav"><tabs data="tabs" vertical="true" type="pills"></tabs></div>'
+    })
+  }])
+  .controller('SidenavCtrl', ['$scope', function($scope) {
+      $scope.tabs = tabs;
+  }])
+  .controller('StarshipCtrl', ['$scope', 'Components', 'Sidenav', function StarshipCtrl($scope, Components, Sidenav) {
     'use strict';
 
     // initialize data
+    $scope.toggleSidenav = Sidenav.toggle;
     $scope.tabs = tabs;
     $scope.ship = {name: "", description: "", hullConfig: {}};
 
