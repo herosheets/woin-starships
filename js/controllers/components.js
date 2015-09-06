@@ -46,7 +46,7 @@ angular.module('woin-starship').service('Components',
 
         var doDownload = location.hostname === 'starships.enworld.org';
         var getUrl = function(file) {
-          return 'http://www.enworld.org/woin/components/' + file + '.csv';
+          return './starship_data/' + file + '.csv';
         };
 
         Papa.parse(doDownload ? getUrl('computers') : computers, {
