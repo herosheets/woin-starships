@@ -119,7 +119,7 @@ angular.module('woin-starship').service('Components',
           }
         });
 
-        Papa.parse(doDownload ? getUrl('hulls') : hulls, {
+        Papa.parse(doDownload ? getUrl('hull') : hulls, {
           header: true,
           download: doDownload,
           quotes: true,
