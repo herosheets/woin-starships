@@ -1,0 +1,36 @@
+Sub-luminal Engine,Cost,Size,CPU,Space,Power,Fuel Eff
+Carter Psitech EL-1 liquid fuel rocket,14,E,5,9,50,0.5
+Carter Psitech EL-2 liquid fuel rocket,30,E,7.1,10,71,0.7
+Comet Lines SS-1 solar sail,1,S,0.3,5,3,-
+DeltaLight products LI-1 ion engine,22,L,2.6,22,26,1.4
+DeltaLight products LI-2 ion engine,41,L,3.2,25,32,1.4
+Du-Bobrikov Company ES-1 solar sail,7,E,1.9,47,19,-
+Highlight Robotics GL-1 liquid fuel rocket,30,G,6.9,16,69,0.5
+Highlight Robotics GL-2 liquid fuel rocket,70,G,9.9,15,99,0.5
+Narita-Guo Union LF-1 fusion reactor,26,L,5.3,40,53,1.2
+Narita-Guo Union LF-2 fusion reactor,51,L,4.5,34,45,1.4
+Newline-Silverwide Systems SL-1 liquid fuel rocket,1,S,1.1,1,11,0.5
+Newline-Silverwide Systems SL-2 liquid fuel rocket,3,S,1.3,1,13,0.5
+OmniDyne Lines EF-1 fusion reactor,94,E,9.2,73,92,1.4
+OmniDyne Lines EF-1 fusion reactor,55,E,8.2,84,82,1.2
+Oshiro Shipping MI-1 ion engine,11,M,1.8,10,18,1.4
+Oshiro Shipping MI-2 ion engine,25,M,2.1,9,21,1.6
+Panlight Universal MS-1 solar sail,2,M,0.7,10,7,-
+Panwatch Metallurgy GS-1 solar sail,19,G,3.5,92,35,-
+Satellite Concepts SI-1 ion engine,5,S,0.7,4,7,1.4
+Satellite Concepts SI-2 ion engine,8,S,1.1,4,11,1.4
+Star Corporation SF-1 fusion reactor,7,S,1.2,11,12,1.2
+Star Corporation SF-2 fusion reactor,11,S,1.9,12,19,1.2
+Stellar Products LS-1 solar sail,3,L,1.2,22,12,-
+Sun Technologies GF-1 fusion reactor,134,G,10.5,131,105,1.2
+Sun Technologies GF-2 fusion reactor,292,G,17.4,112,174,1.2
+Sunbeam Technologies EI-1 ion engine,38,E,3.8,37,38,1.4
+Sunbeam Technologies EI-2 ion engine,73,E,4.9,30,49,1.4
+SunCo Livestock LL-1 liquid fuel rocket,6,L,3.5,4,35,0.5
+SunCo Livestock LL-2 liquid fuel rocket,14,L,3,3,30,0.6
+Turner-Koga Inc ML-1 liquid fuel rocket,3,M,1.7,1,17,0.5
+Turner-Koga Inc ML-2 liquid fuel rocket,7,M,2.5,1,25,0.6
+WarpCo Alliance MF-1 fusion reactor,11,M,3.3,23,33,1.2
+WarpCo Alliance MF-2 fusion reactor,25,M,3.7,21,37,1.3
+WayDyne Incorporated GI-1 ion engine,80,G,5.3,88,53,1.4
+WayDyne Incorporated GI-2 ion engine,132,G,9.6,103,96,1.6

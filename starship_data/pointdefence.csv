@@ -1,0 +1,6 @@
+Point Defenses,CU,CPU,Cost/point,DEFENSE,Aura
+Railgun,10,0.5,10,2,0
+Heavy turbolaser battery,20,0.5,10,1,2
+Dual gauss gun,15,0.5,30,3,0
+Micro-phaser turret,30,1,30,3,0
+Kinetic energy flak weapon,10,0.5,10,3,0
