@@ -145,6 +145,8 @@ gulp.task('cname', ['clean'], function() {
     return gulp.src('CNAME').pipe(gulp.dest('./dist'));
 });
 
+gulp.task('codeship', ['build', 'deploy']);
+
 /////////////////////////////////////////////////////////////////////////////////////
 //
 // watches file system and triggers a build when a modification is detected

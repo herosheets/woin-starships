@@ -6,7 +6,7 @@
   "scripts": {
     "post-install": "node ./node_modules/bower/bin/bower install",
     "start": "node ./node_modules/gulp/bin/gulp.js",
-    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "build": "node ./node_modules/gulp/bin/gulp.js codeship",
     "test": "node ./node_modules/gulp/bin/gulp.js check",
     "deploy": "node ./node_modules/gulp/bin/gulp.js deploy"
   },
