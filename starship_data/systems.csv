@@ -1,4 +1,4 @@
-Item , Type ,Space ,Size,Cost ,CPU ,Notes 
+Item,Type,Space,Size,Cost,CPU,Notes
 Ultrabeam Y62 Cloaking Device,Cloaking Device,3,S,750,1,Ship classes I-III only
 NorthCo GYN3 Starship Stealth System,Cloaking Device,10,M,2000,2,Ship classes IV-VII only
 Highdyne S2 Stealth Solution,Cloaking Device,40,L,10000,3,Ship classes VIII-XI only
@@ -16,7 +16,6 @@ Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,-,Gathers 20 fu
 Westbreak-NewCorp Partnership H80 External Cargo Bay,Cargo Equipment,-,S,30,-,"Adds 20 CU; -2 DEFENSE, -2 SPEED"
 Daylight KE27 External Cargo Bay,Cargo Equipment,-,M,100,-,"Adds 250 CU; -2 DEFENSE, -2 SPEED"
 SilverCorp E95 External Cargo Bay,Cargo Equipment,-,L,250,-,"Adds 1,000 CU; -2 DEFENSE, -2 SPEED"
-HANGARS,,,,,
 Parsec Systems ZM2 Shuttle/fighter Bay,Hangar,25,S,400,1,Room for 1 shuttle or fighter
 Megalight EI93 Shuttle/fighter Bay,Hangar,80,M,700,1,Room for 4 shuttles or fighters
 Ultrabeam VN34 Shuttle/fighter Bay,Hangar,150,L,1000,2,Room for 16 shuttles or fighters
