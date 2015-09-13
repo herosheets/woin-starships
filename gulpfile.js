@@ -203,7 +203,7 @@ gulp.task('sprite', function () {
 // deploy
 gulp.task('deploy', function() {
     return gulp.src('./dist/**/*')
-        .pipe(ghPages());
+        .pipe(ghPages({ message: "Update [timestamp] --skip-ci"}));
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
