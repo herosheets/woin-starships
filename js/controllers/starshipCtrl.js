@@ -19,7 +19,7 @@ var quantityComponents = {
   'Superstructure': 'superstructureHash',
   'Weapon System': 'weaponHash',
   'Facilities': 'facilitiesHash',
-  'Hangars': 'hangarHash',
+  'Hangar Bay': 'hangarHash',
   'General': 'generalHash'
 };
 

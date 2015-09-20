@@ -36,9 +36,9 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li>
 								<a>
-									CPU: {{ maxCpu() - currentCpu() | number:2 }}
-									Cargo Units: {{ maxSpace() - currentSpace() }}
-									Credits Spent: {{ totalCost() | number:2 }}
+									<strong>CPU</strong>: {{ maxCpu() - currentCpu() | number:2 }}
+									<strong>Cargo Units</strong>: {{ maxSpace() - currentSpace() }}
+									<strong>Credits Spent</strong>: {{ totalCost() | number:2 }}
 								</a>
 							</li>
 						</ul>
