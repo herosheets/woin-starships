@@ -242,7 +242,9 @@ angular.module('woin-starship')
       if (!$scope.ship.hull) return;
       var shipClass = Number.fromRoman($scope.ship.hull.Class);
       var modifier = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
-
+      if (modifier === 0) {
+        modifier = 1;
+      }
       return Math.pow(shipClass, 3) * modifier;
     };
 
