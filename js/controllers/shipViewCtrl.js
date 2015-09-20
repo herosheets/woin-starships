@@ -31,4 +31,13 @@ angular.module('woin-starship')
         return Math.min($scope.weaponHash[weaponName]['Range'], $scope.ship.sensor.Range);
       };
 
+      $scope.countShuttles = function() {
+          var hangarBay = $scope.ship['Hangar Bay'];
+          if(!hangarBay) return 0;
+          return _.reduce(_.keys(hangarBay), function(prev, cur) {
+              console.log(prev, cur, hangarBay[cur], $scope.hangarHash[cur]['Craft']);
+              return prev + (hangarBay[cur] * $scope.hangarHash[cur]['Craft']);
+          }, 0);
+      };
+
   });
