@@ -899,7 +899,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Crew</span>\n' +
     '                    <span ng-bind="calculateCrew() || 0"></span> (cost <span ng-bind="(calculateCrew() * 200)"></span>Cr/m);\n' +
     '                    <span style="font-weight: bold;">Troops</span>\n' +
-    '                    <span ng-bind="ship.Crew.Troops || 0"></span>; Passengers\n' +
+    '                    <span ng-bind="ship.Crew.Troops || 0"></span>; <strong>Passengers</strong>\n' +
     '                    <span ng-bind="ship.Crew[\'Standard Passengers\'] + ship.Crew[\'Luxury Passengers\'] || 0"></span>\n' +
     '                    (<span ng-bind="ship.Crew[\'Standard Passengers\'] || 0"></span> standard, <span ng-bind="ship.Crew[\'Luxury Passengers\'] || 0"></span> luxury)\n' +
     '                </td>\n' +
@@ -914,7 +914,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Computers: </span>\n' +
     '                    <span ng-repeat="(name, quantity) in ship[\'Control Computers\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        ( each CPU cycles: <span ng-bind="computerHash[name][\'CPU\']"></span> ;\n' +
+    '                        (CPU cycles: <span ng-bind="computerHash[name][\'CPU\']"></span> ;\n' +
     '                        max FTL: <span ng-bind="computerHash[name][\'Max FTL\']"></span> ;\n' +
     '                        checks: <span ng-bind="computerHash[name].Checks"></span> )\n' +
     '                    </span>\n' +
@@ -937,7 +937,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Subluminal</span>\n' +
     '                      <span ng-repeat="(name, quantity) in ship[\'Sub-luminal Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        ( each power: <span ng-bind="sublHash[name][\'Power\']"></span> ;\n' +
+    '                        (power: <span ng-bind="sublHash[name][\'Power\']"></span> ;\n' +
     '                        SPEED: <span ng-bind="calculateSublSpeed(name, quantity) | number:1"></span> ;\n' +
     '                        fuel efficiency: <span ng-bind="sublHash[name][\'Fuel Eff\']"></span> )\n' +
     '                    </span>\n' +
@@ -948,14 +948,14 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">FTL</span>\n' +
     '                      <span ng-repeat="(name, quantity) in ship[\'FTL Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        ( each power: <span ng-bind="ftlHash[name][\'Power\']"></span> ;\n' +
+    '                        (power: <span ng-bind="ftlHash[name][\'Power\']"></span> ;\n' +
     '                        FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;\n' +
     '                        fuel efficiency: <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span> )\n' +
     '                    <br>\n' +
     '                    <span style="font-weight: bold;">Backup FTL</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Backup FTL Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        ( each power: <span ng-bind="ftlHash[name][\'Power\']"></span> ;\n' +
+    '                        (power: <span ng-bind="ftlHash[name][\'Power\']"></span> ;\n' +
     '                        FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;\n' +
     '                        fuel efficiency: <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span> )\n' +
     '                    </span>\n' +
@@ -1048,10 +1048,11 @@ module.run(['$templateCache', function($templateCache) {
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Shuttles & Fighters</span>\n' +
-    '                    <span ng-repeat="(name, quantity) in ship[\'Hangar Bay\']">\n' +
-    '                       <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
-    '                        (Room for : <span ng-bind="hangarHash[name][\'Craft\'] * quantity"> </span>shuttles or fighters)\n' +
-    '                    </span>\n' +
+    '                    {{countShuttles()}} (\n' +
+    '                        <span ng-repeat="(name, quantity) in ship[\'Hangar Bay\']">\n' +
+    '                           <span ng-bind="hangarHash[name][\'Craft\'] * quantity"></span>x <span ng-bind="name"></span>,\n' +
+    '                        </span>\n' +
+    '                    )\n' +
     '                </td>\n' +
     '            </tr>\n' +
     '            <tr>\n' +

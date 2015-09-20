@@ -453,7 +453,8 @@ label[for='toggle-all'] {
   position: relative; }
 
 .off-canvas__nav {
-  background-color: black;
+  background-color: #fff;
+  border-right: 1px solid #000;
   color: white;
   position: absolute;
   left: 0;
@@ -466,4 +467,4 @@ label[for='toggle-all'] {
   margin-top: -51px; }
 
 
-/*# sourceMappingURL=maps/woin.06debc05.css.map */
+/*# sourceMappingURL=maps/woin.b510b1cf.css.map */
