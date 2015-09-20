@@ -36,7 +36,7 @@
                     <span style="font-weight: bold;">Crew</span>
                     <span ng-bind="calculateCrew() || 0"></span> (cost <span ng-bind="(calculateCrew() * 200)"></span>Cr/m);
                     <span style="font-weight: bold;">Troops</span>
-                    <span ng-bind="ship.Crew.Troops || 0"></span>; Passengers
+                    <span ng-bind="ship.Crew.Troops || 0"></span>; <strong>Passengers</strong>
                     <span ng-bind="ship.Crew['Standard Passengers'] + ship.Crew['Luxury Passengers'] || 0"></span>
                     (<span ng-bind="ship.Crew['Standard Passengers'] || 0"></span> standard, <span ng-bind="ship.Crew['Luxury Passengers'] || 0"></span> luxury)
                 </td>
