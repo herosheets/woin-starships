@@ -123,7 +123,9 @@ var getTotalCrew = function (ship, scope) {
     if (_.has(ship, 'Crew')) {
       angular.forEach(ship.Crew, function(quantity, crewType) {
         console.log("Crew has " + crewType + " (x " + quantity);
-        baseCrew += quantity;
+        if (crewType === 'Additional Crew') {
+          baseCrew += quantity;
+        }
       });
     }
     var modPercent = 0;
