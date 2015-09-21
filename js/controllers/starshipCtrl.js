@@ -79,16 +79,26 @@ var getTotalShipValue = function (ship, valueName, scope) {
   return base;
 };
 
+var getBackupVal = function (ship, valueName, scope) {
+  var hash = scope['ftlHash'];
+  var componentName = 'Backup FTL Engine';
+  var base = 0;
+  base += getQuantityValue(ship[componentName], valueName, hash);
+  return base;
+};
+
 var getAllShipValues = function (ship, valueName, scope) {
   return getTotalShipValue(ship, valueName, scope);
 };
 
 var getCost = function (ship, scope) {
-  return getTotalShipValue(ship, 'Cost', scope);
+  var backup = getBackupVal(ship, 'Cost', scope);
+  return backup + getTotalShipValue(ship, 'Cost', scope);
 };
 
 var getSpace = function (ship, scope) {
-  return getTotalShipValue(ship, 'Space', scope);
+  var backup = getBackupVal(ship, 'Space', scope);
+  return backup + getTotalShipValue(ship, 'Space', scope);
 };
 
 var getSpaceMax = function (ship) {
@@ -100,7 +110,8 @@ var getSpaceMax = function (ship) {
 };
 
 var getCpu = function (ship, scope) {
-  return (getTotalShipValue(ship, 'CPU', scope) - getCpuMax(ship, scope));
+  var backup = getBackupVal(ship, 'CPU', scope);
+  return (backup + getTotalShipValue(ship, 'CPU', scope) - getCpuMax(ship, scope));
 };
 
 var getCpuMax = function (ship, scope) {
