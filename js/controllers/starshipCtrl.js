@@ -252,13 +252,20 @@ angular.module('woin-starship')
     };
 
     $scope.calculateOperationalRange = function() {
-      if (!$scope.ship.hull) return;
+      if (!$scope.ship.hull || !$scope.ship['FTL Engine']) return;
       var shipClass = Number.fromRoman($scope.ship.hull.Class);
-      var modifier = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
-      if (modifier === 0) {
-        modifier = 1;
+      try {
+        var engines = Object.keys($scope.ship['FTL Engine']);
+        var engineName = engines[0];
+        var fuelEff = $scope.ftlHash[engineName]['Fuel Eff'];
+        if (fuelEff === '-') {
+          return "-";
+        } else {
+          return Math.pow(shipClass, 3) * fuelEff;
+        }
+      } catch (e) {
+        return "-";
       }
-      return Math.pow(shipClass, 3) * modifier;
     };
 
     $scope.calculateSuperstructure = function() {
