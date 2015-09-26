@@ -1,6 +1,6 @@
 Point Defenses,CU,CPU,Cost/point,DEFENSE,Aura
-Railgun,10,0.5,10,2,0
-Heavy turbolaser battery,20,0.5,10,1,2
-Dual gauss gun,15,0.5,30,3,0
-Micro-phaser turret,30,1,30,3,0
-Kinetic energy flak weapon,10,0.5,10,3,0
+Arlington-Driver Tech LT-1 automated railgun,10,0.5,10,2,0
+Extel Harrington Systems BB-4 heavy turbolaser battery,20,0.5,10,1,2
+Stornes & Warner Ultrashield dual gauss gun,15,0.5,30,3,0
+Vulcan Design PH-14 micro-phaser turret,30,1,30,3,0
+Hakimoto AL-47 kinetic energy flak weapon,10,0.5,10,3,0
