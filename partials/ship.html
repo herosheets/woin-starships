@@ -51,9 +51,9 @@
                     <span style="font-weight: bold;">Computers: </span>
                     <span ng-repeat="(name, quantity) in ship['Control Computers']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (CPU cycles: <span ng-bind="computerHash[name]['CPU']"></span> ;
-                        max FTL: <span ng-bind="computerHash[name]['Max FTL']"></span> ;
-                        checks: <span ng-bind="computerHash[name].Checks"></span> )
+                        (CPU cycles <span ng-bind="computerHash[name]['CPU']"></span> ;
+                        max FTL <span ng-bind="computerHash[name]['Max FTL']"></span> ;
+                        checks <span ng-bind="computerHash[name].Checks"></span> )
                     </span>
                 </td>
             </tr>
@@ -74,9 +74,9 @@
                     <span style="font-weight: bold;">Subluminal</span>
                       <span ng-repeat="(name, quantity) in ship['Sub-luminal Engine']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (power: <span ng-bind="sublHash[name]['Power']"></span> ;
-                        SPEED: <span ng-bind="calculateSublSpeed(name, quantity) | number:1"></span> ;
-                        fuel efficiency: <span ng-bind="sublHash[name]['Fuel Eff']"></span> )
+                        (power <span ng-bind="sublHash[name]['Power']"></span> ;
+                        SPEED <span ng-bind="calculateSublSpeed(name, quantity) | number:1"></span> ;
+                        fuel efficiency <span ng-bind="sublHash[name]['Fuel Eff']"></span> )
                     </span>
                 </td>
             </tr>
@@ -85,16 +85,15 @@
                     <span style="font-weight: bold;">FTL</span>
                       <span ng-repeat="(name, quantity) in ship['FTL Engine']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (power: <span ng-bind="ftlHash[name]['Power']"></span> ;
-                        FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;
-                        fuel efficiency: <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
+                        (power <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;
+                        fuel efficiency <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
                     <br>
                     <span style="font-weight: bold;">Backup FTL</span>
                      <span ng-repeat="(name, quantity) in ship['Backup FTL Engine']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (power: <span ng-bind="ftlHash[name]['Power']"></span> ;
-                        FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;
-                        fuel efficiency: <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
+                        (power <span ng-bind="ftlHash[name]['Power']"></span> ;
+                        FTL <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;
+                        fuel efficiency <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
                     </span>
                 </td>
             </tr>
@@ -128,8 +127,8 @@
                     <span style="font-weight: bold;">Shields</span>
                      <span ng-repeat="(name, quantity) in ship['Deflector Shields']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (power: <span ng-bind="deflectorHash[name]['Power'] * quantity"></span>;
-                        SOAK: <span ng-bind="calculateSoak(deflectorHash[name]['Power'], quantity)"></span>)
+                        (power <span ng-bind="deflectorHash[name]['Power'] * quantity"></span>;
+                        SOAK <span ng-bind="calculateSoak(deflectorHash[name]['Power'], quantity)"></span>)
                     </span>
                 </td>
             </tr>
@@ -138,7 +137,7 @@
                     <span style="font-weight: bold;">Point Defenses</span>
                      <span ng-repeat="(name, quantity) in ship['Point Defenses']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (DEFENSE: <span ng-bind="pointDefensesHash[name]['DEFENSE'] * quantity"></span>)
+                        (DEFENSE <span ng-bind="pointDefensesHash[name]['DEFENSE'] * quantity"></span>)
 
                     </span>
                 </td>
@@ -150,9 +149,9 @@
                 <td colspan="10" align="left" height="17" valign="bottom">
                      <span ng-repeat="(name, quantity) in ship['Weapon System']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (range: <span ng-bind="calculateWeaponRange(name)"></span>;
-                        damage: <span ng-bind="weaponHash[name]['Damage']"></span>;
-                        attack: <span ng-bind="weaponHash[name]['Attack']"></span>)<br/>
+                        (range <span ng-bind="calculateWeaponRange(name)"></span>;
+                        damage <span ng-bind="weaponHash[name]['Damage']"></span>;
+                        attack <span ng-bind="weaponHash[name]['Attack']"></span>)<br/>
                     </span>
                 </td>
             </tr>
