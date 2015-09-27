@@ -365,6 +365,7 @@ angular.module('woin-starship')
       if(_.isNaN(lux)) lux = 0;
 
       lux = Math.round(lux * 100) / 100;
+      lux = lux.toFixed(0);
 
       if (lux < 50) {
         return lux + "% (Spartan: -2d6)";
