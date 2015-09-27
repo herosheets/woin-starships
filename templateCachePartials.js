@@ -946,13 +946,15 @@ module.run(['$templateCache', function($templateCache) {
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">FTL</span>\n' +
+    '                    <span ng-if="ship[\'FTL Engine\'] === undefined || isEmpty(\'FTL Engine\')">-</span>\n' +
     '                      <span ng-repeat="(name, quantity) in ship[\'FTL Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
     '                        (power <span ng-bind="calculateFtl(name, quantity) | number:1"></span> ;\n' +
     '                        fuel efficiency <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span> )\n' +
+    '                      </span>\n' +
     '                    <br>\n' +
     '                    <span style="font-weight: bold;">Backup FTL</span>\n' +
-    '                     <span ng-if="ship[\'Backup FTL Engine\'] === undefined">-</span>\n' +
+    '                     <span ng-if="ship[\'Backup FTL Engine\'] === undefined || isEmpty(\'Backup FTL Engine\')">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Backup FTL Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
     '                        (power <span ng-bind="ftlHash[name][\'Power\']"></span> ;\n' +
