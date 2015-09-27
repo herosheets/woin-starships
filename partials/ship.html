@@ -89,6 +89,7 @@
                         fuel efficiency <span ng-bind="ftlHash[name]['Fuel Eff']"></span> )
                     <br>
                     <span style="font-weight: bold;">Backup FTL</span>
+                     <span ng-if="ship['Backup FTL Engine'] === undefined">-</span>
                      <span ng-repeat="(name, quantity) in ship['Backup FTL Engine']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
                         (power <span ng-bind="ftlHash[name]['Power']"></span> ;
@@ -135,6 +136,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Point Defenses</span>
+                    <span ng-if="ship['Point Defenses'] === undefined">-</span>
                      <span ng-repeat="(name, quantity) in ship['Point Defenses']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
                         (DEFENSE <span ng-bind="pointDefensesHash[name]['DEFENSE'] * quantity"></span>)
@@ -174,6 +176,7 @@
             <tr>
                 <td colspan="12" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Other Systems</span>
+                    <span ng-if="ship['General'] === undefined">-</span>
                      <span ng-repeat="(name, quantity) in ship['General']">
                          <span ng-if="!(isHangar(name))">
                             <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
