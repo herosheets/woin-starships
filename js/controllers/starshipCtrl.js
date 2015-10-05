@@ -80,16 +80,26 @@ var getTotalShipValue = function (ship, valueName, scope) {
   return base;
 };
 
+var getBackupVal = function (ship, valueName, scope) {
+  var hash = scope['ftlHash'];
+  var componentName = 'Backup FTL Engine';
+  var base = 0;
+  base += getQuantityValue(ship[componentName], valueName, hash);
+  return base;
+};
+
 var getAllShipValues = function (ship, valueName, scope) {
   return getTotalShipValue(ship, valueName, scope);
 };
 
 var getCost = function (ship, scope) {
-  return getTotalShipValue(ship, 'Cost', scope);
+  var backup = getBackupVal(ship, 'Cost', scope);
+  return backup + getTotalShipValue(ship, 'Cost', scope);
 };
 
 var getSpace = function (ship, scope) {
-  return getTotalShipValue(ship, 'Space', scope);
+  var backup = getBackupVal(ship, 'Space', scope);
+  return backup + getTotalShipValue(ship, 'Space', scope);
 };
 
 var getSpaceMax = function (ship) {
@@ -101,7 +111,8 @@ var getSpaceMax = function (ship) {
 };
 
 var getCpu = function (ship, scope) {
-  return (getTotalShipValue(ship, 'CPU', scope) - getCpuMax(ship, scope));
+  var backup = getBackupVal(ship, 'CPU', scope);
+  return (backup + getTotalShipValue(ship, 'CPU', scope) - getCpuMax(ship, scope));
 };
 
 var getCpuMax = function (ship, scope) {
@@ -124,7 +135,9 @@ var getTotalCrew = function (ship, scope) {
     if (_.has(ship, 'Crew')) {
       angular.forEach(ship.Crew, function(quantity, crewType) {
         console.log("Crew has " + crewType + " (x " + quantity);
-        baseCrew += quantity;
+        if (crewType === 'Additional Crew') {
+          baseCrew += quantity;
+        }
       });
     }
     var modPercent = 0;
@@ -240,11 +253,20 @@ angular.module('woin-starship')
     };
 
     $scope.calculateOperationalRange = function() {
-      if (!$scope.ship.hull) return;
+      if (!$scope.ship.hull || !$scope.ship['FTL Engine']) return;
       var shipClass = Number.fromRoman($scope.ship.hull.Class);
-      var modifier = getAllShipValues($scope.ship, 'Fuel Eff', $scope);
-
-      return Math.pow(shipClass, 3) * modifier;
+      try {
+        var engines = Object.keys($scope.ship['FTL Engine']);
+        var engineName = engines[0];
+        var fuelEff = $scope.ftlHash[engineName]['Fuel Eff'];
+        if (fuelEff === '-') {
+          return "-";
+        } else {
+          return Math.pow(shipClass, 3) * fuelEff;
+        }
+      } catch (e) {
+        return "-";
+      }
     };
 
     $scope.calculateSuperstructure = function() {
@@ -321,7 +343,7 @@ angular.module('woin-starship')
       if ($scope.ship.hull !== undefined) {
         var initialCargo = $scope.ship.hull['Max CU'];
         var amountRemaining = $scope.maxSpace() - $scope.currentSpace();
-        var tonnage = $scope.maxSpace() * 50;
+        var tonnage = amountRemaining * 50;
         return initialCargo + " ("+amountRemaining+" available; capacity " + tonnage + " tons)";
       } else {
         return "-";
@@ -344,6 +366,7 @@ angular.module('woin-starship')
       if(_.isNaN(lux)) lux = 0;
 
       lux = Math.round(lux * 100) / 100;
+      lux = lux.toFixed(0);
 
       if (lux < 50) {
         return lux + "% (Spartan: -2d6)";
