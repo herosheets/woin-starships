@@ -47,4 +47,9 @@ angular.module('woin-starship')
           }, 0);
       };
 
+      $scope.getNumericShipClass = function() {
+        if(!$scope.ship.hull) return;
+        return Number.fromRoman($scope.ship.hull.Class);
+      };
+
   });
