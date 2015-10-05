@@ -2,7 +2,7 @@
 <p class="explainer">
   A small shuttlebay or fighter bay is able to accommodate one class 0-III vessel; the bay's size correlates to its shuttle capacity. Some larger ships have multiple shuttle bays if they need to carry more than 64 shuttles or fighters. A shuttlebay comes already stocked with fighters or shuttles as part of the price. Launching a fighter squadron or a shuttle requires one action.
 </p>
-<h3>Your Hangars</h3>
+<h3>Your Fighter Hangars</h3>
 <table class="table table-striped">
     <thead>
     <tr>
@@ -18,8 +18,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="(name, count) in ship['Hangar Bay']">
-        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+    <tr ng-repeat="(name, count) in ship['Hangar Bay Fighter']">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY+' Fighter', name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
         <td>{{hangarHash[name].Space}}</td>
@@ -29,7 +29,39 @@
         <td>{{hangarHash[name].Craft}}</td>
         <td>{{hangarHash[name].Notes}}</td>
     </tr>
-    <tr ng-if="isEmpty(KEY)">
+    <tr ng-if="isEmpty(KEY+' Fighter')">
+        <td colspan="7" class="text-center">No Hangars selected</td>
+    </tr>
+    </tbody>
+</table>
+<h3>Your Shuttle Hangars</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Count</th>
+        <th>Item</th>
+        <th>Space</th>
+        <th>Size</th>
+        <th>Cost</th>
+        <th>CPU</th>
+        <th>Craft</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship['Hangar Bay Shuttle']">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY+' Shuttle', name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{hangarHash[name].Space}}</td>
+        <td>{{hangarHash[name].Size}}</td>
+        <td>{{hangarHash[name].Cost}}</td>
+        <td>{{hangarHash[name].CPU}}</td>
+        <td>{{hangarHash[name].Craft}}</td>
+        <td>{{hangarHash[name].Notes}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY+' Shuttle')">
         <td colspan="7" class="text-center">No Hangars selected</td>
     </tr>
     </tbody>
@@ -38,6 +70,7 @@
 <table class="table table-striped">
     <thead>
     <tr colspan="7">
+        <th></th>
         <th></th>
         <th>Hangar</th>
         <th>Space</th>
@@ -50,7 +83,8 @@
     </thead>
     <tbody>
       <tr ng-repeat="c in hangars">
-          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Hangar Bay'])">+</button></td>
+          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+' Fighter', c['Hangar Bay'])">+Fighter</button></td>
+          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+' Shuttle', c['Hangar Bay'])">+Shuttle</button></td>
           <td>{{c['Hangar Bay']}}</td>
           <td>{{c.Space}}</td>
           <td>{{c.Size}}</td>

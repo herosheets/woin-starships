@@ -19,7 +19,8 @@ var quantityComponents = {
   'Superstructure': 'superstructureHash',
   'Weapon System': 'weaponHash',
   'Facilities': 'facilitiesHash',
-  'Hangar Bay': 'hangarHash',
+  'Hangar Bay Shuttle': 'hangarHash',
+  'Hangar Bay Fighter': 'hangarHash',
   'General': 'generalHash'
 };
 

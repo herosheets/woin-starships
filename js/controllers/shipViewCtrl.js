@@ -32,11 +32,18 @@ angular.module('woin-starship')
       };
 
       $scope.countShuttles = function() {
-          var hangarBay = $scope.ship['Hangar Bay'];
+          var hangarBay = $scope.ship['Hangar Bay Shuttle'];
           if(!hangarBay) return 0;
           return _.reduce(_.keys(hangarBay), function(prev, cur) {
-              console.log(prev, cur, hangarBay[cur], $scope.hangarHash[cur]['Craft']);
-              return prev + (hangarBay[cur] * $scope.hangarHash[cur]['Craft']);
+              return prev + (hangarBay[cur]);
+          }, 0);
+      };
+
+      $scope.countFighters = function() {
+          var hangarBay = $scope.ship['Hangar Bay Fighter'];
+          if(!hangarBay) return 0;
+          return _.reduce(_.keys(hangarBay), function(prev, cur) {
+              return prev + (hangarBay[cur]);
           }, 0);
       };
 
