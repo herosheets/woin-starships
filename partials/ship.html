@@ -114,7 +114,7 @@
                     <span style="font-weight: bold;">Superstructure</span>
                     <span ng-bind="calculateSuperstructure() || 'none'"></span>
                     <span style="font-weight: bold;">DEFENSE</span>
-                    <span>{{calculateDefense() | number:0}} ({{calculateDefense()/getNumericShipClass() | number:1}} vs. missiles and fighters)</span>
+                    <span>{{calculateDefense() | number:0}}</span>
                     <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>
                     <span ng-bind="calculateElectronicDefense()"></span>
                 </td>
@@ -141,7 +141,7 @@
                     <span ng-if="ship['Point Defenses'] === undefined">-</span>
                      <span ng-repeat="(name, quantity) in ship['Point Defenses']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (DEFENSE: {{pointDefensesHash[name]['DEFENSE'] * quantity}}, {{pointDefensesHash[name]['DEFENSE'] * quantity/getNumericShipClass() | number:1}} vs. missiles and fighters)
+                        ({{pointDefensesHash[name]['DEFENSE'] * quantity/getNumericShipClass() | number:1}} vs. missiles and fighters)
 
                     </span>
                 </td>
