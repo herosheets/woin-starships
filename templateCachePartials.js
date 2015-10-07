@@ -1011,7 +1011,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Superstructure</span>\n' +
     '                    <span ng-bind="calculateSuperstructure() || \'none\'"></span>\n' +
     '                    <span style="font-weight: bold;">DEFENSE</span>\n' +
-    '                    <span>{{calculateDefense() | number:0}} ({{calculateDefense()/getNumericShipClass() | number:1}} vs. missiles and fighters)</span>\n' +
+    '                    <span>{{calculateDefense() | number:0}}</span>\n' +
     '                    <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>\n' +
     '                    <span ng-bind="calculateElectronicDefense()"></span>\n' +
     '                </td>\n' +
@@ -1038,7 +1038,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span ng-if="ship[\'Point Defenses\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Point Defenses\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        (DEFENSE: {{pointDefensesHash[name][\'DEFENSE\'] * quantity}}, {{pointDefensesHash[name][\'DEFENSE\'] * quantity/getNumericShipClass() | number:1}} vs. missiles and fighters)\n' +
+    '                        ({{pointDefensesHash[name][\'DEFENSE\'] * quantity/getNumericShipClass() | number:1}} vs. missiles and fighters)\n' +
     '\n' +
     '                    </span>\n' +
     '                </td>\n' +
