@@ -19,3 +19,5 @@ Transporter pad,-,1,20,0,A small transporter pad contains 1 transporter beam,5% 
 Stateroom,0.5,2,2,0,,-
 Cinema/theater,2,1,4,0,,1% of crew capacity
 Holographic suite,3,4,20,0,,1% of crew capacity
+Training hall,0.5,3,4,0,,5% of crew capacity
+Zero-g sports hall,2,4,5,0,,1% of crew capacity
