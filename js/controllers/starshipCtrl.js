@@ -286,12 +286,6 @@ angular.module('woin-starship')
 
     $scope.calculateDefense = function() {
       var base = getAllShipValues($scope.ship, 'DEFENSE', $scope);
-      if ($scope.ship['Point Defense'] && $scope.ship['Point Defense']['Point defenses']) {
-        var pointDefense = $scope.ship['Point Defense']['Point defenses'];
-        var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
-        base -= (pointDefense * 2);
-        base += ((pointDefense * 2)/hullClass);
-      }
       return base;
     };
 
