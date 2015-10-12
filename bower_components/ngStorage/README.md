@@ -1,4 +1,4 @@
-angularLocalStorage [![Build Status](https://travis-ci.org/agrublev/angularLocalStorage.png?branch=master)](https://travis-ci.org/agrublev/angularLocalStorage)
+angularLocalStorage [![Build Status](https://travis-ci.org/agrublev/angularLocalStorage.svg?branch=master)](https://travis-ci.org/agrublev/angularLocalStorage)
 ====================
 
 The simpliest localStorage module you will ever use. Allowing you to set, get, and *bind* variables.
@@ -39,6 +39,9 @@ The simpliest localStorage module you will ever use. Allowing you to set, get, a
   storage.set('key','value');
   // getting that value
   storage.get('key');
+
+  // Getting an unset key will return null
+  console.log(storage.get('keyThatIsUndefined')) // null
   
   // checking if the cookie fallback is being used right now, so you don't try to store fairly big data in cookies
   if(!storage.isCookieFallbackActive()) {
@@ -72,7 +75,7 @@ bower install git://github.com/agrublev/angularLocalStorage.git
 
 ## Example
 
-For live example please checkout - http://plnkr.co/edit/Y1mrNVRkInCItqvZXtto?p=preview
+For live example please checkout - http://plnkr.co/edit/PNLjDEaRKtpLgGZMJypk?p=preview
 
 ## Suggestions?
 
