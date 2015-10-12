@@ -16,11 +16,6 @@ Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,-,Gathers 20 fu
 Westbreak-NewCorp Partnership H80 External Cargo Bay,Cargo Equipment,-,S,30,-,"Adds 20 CU; -2 DEFENSE, -2 SPEED"
 Daylight KE27 External Cargo Bay,Cargo Equipment,-,M,100,-,"Adds 250 CU; -2 DEFENSE, -2 SPEED"
 SilverCorp E95 External Cargo Bay,Cargo Equipment,-,L,250,-,"Adds 1,000 CU; -2 DEFENSE, -2 SPEED"
-Parsec Systems ZM2 Shuttle/fighter Bay,Hangar,25,S,400,1,Room for 1 shuttle or fighter
-Megalight EI93 Shuttle/fighter Bay,Hangar,80,M,700,1,Room for 4 shuttles or fighters
-Ultrabeam VN34 Shuttle/fighter Bay,Hangar,150,L,1000,2,Room for 16 shuttles or fighters
-Waydyne Shuttle/fighter Bay,Hangar,250,E,1500,2,Room for 32 shuttles or fighters
-"Newwide Gravitics DI11 Shuttle/fighter Bay,Hangar,",460,G,2000,3,Room for 64 shuttles or fighters
 Ultradyne Lines CP97 Repair Bay,Engineering Modification,10,M,200,4,Repairs 1 SS per turn
 Newwatch IE17 Remote Repair Bay,Engineering Modification,20,L,500,8,Repairs 1 SS per turn; range 4 hexes
 Daylight CEA46 Tactical Command Center,C&C,2,S,200,3,Grants +1d6 bonus to 4 ships; range 8 hexes
