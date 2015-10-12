@@ -5,7 +5,7 @@ Sick bay,2,3,20,0,Accomodates 1 patient,5% of crew capacity
 "Cabin, luxury/suite",1,2,2,0,Accomodates 1 crewmember,-
 Chapel,1,3,2,0,,1% of crew capacity
 Galley,2,3,4,0,,5% of crew capacity
-Gymnasium,1,3,4,,5% of crew capacity
+Gymnasium,1,3,4,0,,5% of crew capacity
 Laboratory,-,4,8,0,,-
 Lounge/recreation area,1,1,1,0,,5% of crew capacity
 Messhall,1,4,2,0,,10% of crew capacity
