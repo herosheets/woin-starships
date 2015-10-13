@@ -152,7 +152,7 @@ module.run(['$templateCache', function($templateCache) {
     '    In addition to the crew, a ship can carry troops (military personnel of various kinds). Troops add to the crew\n' +
     '    complement for the purposes of calculating LUXURY (see below), and each uses 2 CU of cargo space.\n' +
     '\n' +
-    '    Passenger capacity also uses cargo space. Standard passengers use 2 CU each, while Luxury passengers use 4 Cu. As\n' +
+    '    Passenger capacity also uses cargo space. Standard passengers use 2 CU each, while Luxury passengers use 4 CU. As\n' +
     '    with troops, passengers add to the crew complement for the purposes of calculating LUXURY</p>\n' +
     '\n' +
     '<h3>Your Crew</h3>\n' +
@@ -207,7 +207,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td ng-bind="p.Cost"></td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
