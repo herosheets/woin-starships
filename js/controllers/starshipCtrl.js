@@ -132,11 +132,12 @@ var getHullClassInteger = function (ship, hulls) {
 var getTotalCrew = function (ship, scope) {
   try {
     var baseCrew = ship.hull.Crew;
+    var totalCrew = baseCrew;
     if (_.has(ship, 'Crew')) {
       angular.forEach(ship.Crew, function(quantity, crewType) {
         console.log("Crew has " + crewType + " (x " + quantity);
         if (crewType === 'Additional Crew') {
-          baseCrew += quantity;
+          totalCrew += quantity;
         }
       });
     }
@@ -149,7 +150,7 @@ var getTotalCrew = function (ship, scope) {
       modPercent += mod*num;
     });
 
-    return Math.floor(baseCrew + (baseCrew*(modPercent/100)));
+    return Math.floor(totalCrew + (baseCrew*(modPercent/100)));
   } catch (e) {
     return 0;
   }
