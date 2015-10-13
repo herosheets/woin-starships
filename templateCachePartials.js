@@ -153,7 +153,8 @@ module.run(['$templateCache', function($templateCache) {
     '    complement for the purposes of calculating LUXURY (see below), and each uses 2 CU of cargo space.\n' +
     '\n' +
     '    Passenger capacity also uses cargo space. Standard passengers use 2 CU each, while Luxury passengers use 4 CU. As\n' +
-    '    with troops, passengers add to the crew complement for the purposes of calculating LUXURY</p>\n' +
+    '    with troops, passengers add to the crew complement for the purposes of calculating LUXURY.<br><br>\n' +
+    '    Your minimum crew is already set by your hull class and control computer.  Additional crew can be used to supplement this minimum value, and are useful if the ship takes casualties.  Vessels which fall below minimum crew through casualties start to suffer penalties, so it is always advisable to carry more than the absolute minimum.</p>\n' +
     '\n' +
     '<h3>Your Crew</h3>\n' +
     '<table class="table table-striped">\n' +
