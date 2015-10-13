@@ -1245,6 +1245,7 @@ module.run(['$templateCache', function($templateCache) {
     '<h2>Superstructure</h2>\n' +
     '<p class="explainer">\n' +
     '    A basic ship\'s SUPERSTRUCTURE is equal to three times its ship class. This typically isn\'t a lot, and many ships have additional superstructure added to the hull. Superstructure is cheaper and lighter than armor; but it does deplete, which armor does not tend to do.\n' +
+    '    <br><br><b>Reccommended amounts.</b> A ship should typically have around ten times its class in superstructure.  Less than this can make it very fragile. Weapons can do in the region of 3d6-6d6 damage (averaging 12-25 damage per shot), so a salvo can easily destroy a ship with too little superstructure.\n' +
     '</p>\n' +
     '<h3>Your Superstructure</h3>\n' +
     '<table class="table table-striped">\n' +
@@ -1292,7 +1293,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td ng-bind="p.Notes"></td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
