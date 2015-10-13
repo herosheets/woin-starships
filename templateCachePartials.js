@@ -677,7 +677,7 @@ module.run(['$templateCache', function($templateCache) {
     '<p class="explainer">\n' +
     '    Select an (optional) hull configuration. There are as many different vessel types as there are stars in the\n' +
     '    sky. The following list is a summary of some common classifications listed in approximate typical size order. Each\n' +
-    '    configuration grants the ship one exploit.\n' +
+    '    configuration grants the ship one exploit. The system does not apply the exploit.\n' +
     '</p>\n' +
     '<select class=\'form-control\' style=\'overflow:hidden;max-width:500px;\'\n' +
     '        ng-model="ship.hullConfig"\n' +
