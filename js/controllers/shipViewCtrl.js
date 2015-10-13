@@ -35,7 +35,7 @@ angular.module('woin-starship')
           var hangarBay = $scope.ship['Hangar Bay Shuttle'];
           if(!hangarBay) return 0;
           return _.reduce(_.keys(hangarBay), function(prev, cur) {
-              return prev + (hangarBay[cur]);
+              return prev + (hangarBay[cur] * $scope.hangarHash[cur].Craft);
           }, 0);
       };
 
@@ -43,7 +43,7 @@ angular.module('woin-starship')
           var hangarBay = $scope.ship['Hangar Bay Fighter'];
           if(!hangarBay) return 0;
           return _.reduce(_.keys(hangarBay), function(prev, cur) {
-              return prev + (hangarBay[cur]);
+              return prev + (hangarBay[cur] * $scope.hangarHash[cur].Craft);
           }, 0);
       };
 
