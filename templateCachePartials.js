@@ -567,7 +567,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/hangars.html',
     '<h2>Hangars</h2>\n' +
     '<p class="explainer">\n' +
-    '  A small shuttlebay or fighter bay is able to accommodate one class 0-III vessel; the bay\'s size correlates to its shuttle capacity. Some larger ships have multiple shuttle bays if they need to carry more than 64 shuttles or fighters. A shuttlebay comes already stocked with fighters or shuttles as part of the price. Launching a fighter squadron or a single shuttle requires one action; one suadron is typically 6 ships.\n' +
+    '  A small shuttlebay or fighter bay is able to accommodate one class 0-III vessel; the bay\'s size correlates to its shuttle capacity. Some larger ships have multiple shuttle bays if they need to carry more than 64 shuttles or fighters. A shuttlebay comes already stocked with fighters or shuttles as part of the price. Launching a fighter squadron or a single shuttle requires one action; one squadron is typically 6-8 ships.\n' +
     '</p>\n' +
     '<h3>Your Fighter Hangars</h3>\n' +
     '<table class="table table-striped">\n' +
