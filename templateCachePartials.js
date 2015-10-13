@@ -1112,7 +1112,8 @@ module.run(['$templateCache', function($templateCache) {
     '            </tr>\n' +
     '            </tbody>\n' +
     '        </table>\n' +
-    '        <div>\n' +
+    '        <div class="well">\n' +
+    '            {{ ship[\'description\'] }}\n' +
     '        </div>\n' +
     '    </div>\n' +
     '\n' +
