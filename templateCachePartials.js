@@ -790,7 +790,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/shields.html',
     '<h2>Your Point Defenses</h2>\n' +
     '<p class="explainer">\n' +
-    '    Point defenses are close-in weaponry batteries and active protection systems which automatically detect, track, and destroy incoming missiles and fighter craft. They are ineffective against energy weapons such as lasers and distruptors, but very effective against torpedoes. Unlike shields and armor, point defense batteries do not grant a SOAK bonus; instead they provide a DEFENSE bonus against missile weapons (but not energy weapons).\n' +
+    '    Point defenses are close-in weaponry batteries and active protection systems which automatically detect, track, and destroy incoming missiles and fighter craft. They are ineffective against energy weapons such as lasers and distruptors, but very effective against torpedoes. Unlike shields and armor, point defense batteries do not grant a SOAK bonus; instead they provide a DEFENSE bonus against missile weapons (but not energy weapons). Because they\'re automated, point defenses have a high CPU overhead.\n' +
     '</p>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -904,7 +904,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{c.Power}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
