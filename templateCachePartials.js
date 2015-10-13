@@ -36,12 +36,48 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/commandcontrol.html',
+    '\n' +
+    'Skip to content\n' +
+    'This repository\n' +
+    '\n' +
+    '    Pull requests\n' +
+    '    Issues\n' +
+    '    Gist\n' +
+    '\n' +
+    '    @Morrus\n' +
+    '\n' +
+    '4\n' +
+    '0\n' +
+    '\n' +
+    '    1\n' +
+    '\n' +
+    'herosheets/woin-starships\n' +
+    '\n' +
+    'woin-starships/partials/commandcontrol.html\n' +
+    '@jsomara jsomara on 30 Aug Closes #41 - Calculate Max CPU correctly\n' +
+    '\n' +
+    '2 contributors\n' +
+    '@seiyria\n' +
+    '@jsomara\n' +
+    '82 lines (79 sloc) 3.29 KB\n' +
     '<h2>Control Computer</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
     '    Nearly every function on a vessel interacts in some way with the computer. The computers, sensors, and engineering facilities on a starship make a up a large part of its efficiency and effectiveness. Faster computers allow a ship to react more quickly in combat situations, while more sensitive sensor systems enable the crew to gather more information about their surroundings. A basic hull comes with a standard integrated computer and sensors, but more powerful systems are needed for effective combat calculations and FTL planning. The computing power aboard a starship cannot be overestimated in its importance.\n' +
     '\n' +
-    '    A ship\'s computer system is able to perform faster-than-light calculations for FTL travel, and ties directly into the sensor array. Data storage in a ship\'s computer is so efficient that the concept of storage capacity does not factor into computer design any more. Some computer systems have a basic AI, while others do not.\n' +
+    '    A ship\'s computer system is able to perform faster-than-light calculations for FTL travel, and ties directly into the sensor array. Data storage in a ship\'s computer is so efficient that the concept of storage capacity does not factor into computer design any more. Some computer systems have a basic AI, while others do not.<br><br>\n' +
+    'Items marked with an asterisk (*) are AL 10 items; they are only available in AL 10 settings. These items can drastically change the nature of a setting, especially in terms of FTL speeds.<br><br>\n' +
+    '\n' +
+    '<b>Navigation computers</b> (navcomps or astrogation units) are an AL 10 technology which increases FTL\n' +
+    'speeds by an order of magnitude by engaging in hyper-fast calculations and route-plott ing formulae far\n' +
+    'beyond most AL 9 computer systems. A navcomp operates alongside a regular control computer system\n' +
+    'and simply replaces its Max FTL limit while leaving all of its other functionality intact. Navcomps also\n' +
+    'maintain detailed navigational charts of the fastest travel routes, which are not necessarily in straight\n' +
+    'lines when dealing with hyperspace, intense gravity wells, dark energy fluctuations, and non-euclidian\n' +
+    'geometry. The introduction of navcomps makes galaxy-wide travel a trivial issue. A navigation computer eff ectively multiplies a ship\'s FTL capability by 10, subject to the na vcomp\'s\n' +
+    'Max FTL value<br><br>\n' +
+    '<b>Fire control systems</b> are used to coordinate point defenses on extremely large ships.  They can effectively operate hundreds or thousands of point defense batteries.  These systems offer a much higher CPU allocation specifically for this purpose.\n' +
+    '\n' +
     '</p>\n' +
     '<h3>Your Computers</h3>\n' +
     '<table class="table table-striped">\n' +
@@ -117,7 +153,13 @@ module.run(['$templateCache', function($templateCache) {
     '        <td ng-bind="c.Checks"></td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '\n' +
+    '    Status API Training Shop Blog About Pricing \n' +
+    '\n' +
+    '    © 2015 GitHub, Inc. Terms Privacy Security Contact Help \n' +
+    '\n' +
+    '');
 }]);
 })();
 
