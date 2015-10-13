@@ -36,30 +36,6 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/commandcontrol.html',
-    '\n' +
-    'Skip to content\n' +
-    'This repository\n' +
-    '\n' +
-    '    Pull requests\n' +
-    '    Issues\n' +
-    '    Gist\n' +
-    '\n' +
-    '    @Morrus\n' +
-    '\n' +
-    '4\n' +
-    '0\n' +
-    '\n' +
-    '    1\n' +
-    '\n' +
-    'herosheets/woin-starships\n' +
-    '\n' +
-    'woin-starships/partials/commandcontrol.html\n' +
-    '@jsomara jsomara on 30 Aug Closes #41 - Calculate Max CPU correctly\n' +
-    '\n' +
-    '2 contributors\n' +
-    '@seiyria\n' +
-    '@jsomara\n' +
-    '82 lines (79 sloc) 3.29 KB\n' +
     '<h2>Control Computer</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
