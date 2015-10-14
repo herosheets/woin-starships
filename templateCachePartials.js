@@ -54,7 +54,7 @@ module.run(['$templateCache', function($templateCache) {
     'Max FTL value<br><br>\n' +
     '<b>Fire control systems</b> are used to coordinate point defenses on extremely large ships.  They can effectively operate hundreds or thousands of point defense batteries.  These systems offer a much higher CPU allocation specifically for this purpose.\n' +
     '<br><br><b>Crew Automation & AI</b> can drastically reduce crew requirements, but have the disadvantage of reducing effectiveness in the form of a negative die modifier.\n' +
-    '</p>\n' +
+    '</p> \n' +
     '<h3>Your Computers</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
