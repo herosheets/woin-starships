@@ -57,8 +57,11 @@ Vor-tang Type 3 plasma delivery system,400,M,8,12,3,+0d6,8d6/2d6 plasma
 Kal-rem Type 4 Plasma Discharge Launcher,700,M,12,14,5,+0d6,10d6/3d6 plasma
 Saliman Industries micro plasma unit Mk I,380,S,8,4,4,+0d6,4d6/1d6 plasma
 Spartan PX-14 Basebuster plasma launcher,1250,G,20,60,6,+0d6,12d6/2d6 plasma
-Cybertron KML-1 mine dispersal unit,30,S,0,2,0,-,1d6 heat
-Cybertron KML-2 mine dispersal unit,120,L,0,5,1,-,2d6 heat
-Fankmeyer Industries Mk I minelayer,70,M,0,4,0,-,2d6 heat
-Smooth & Cross Ltd. Minuteman proximity device,50,M,0,3,1,-,1d6 heat
-Smooth & Cross Ltd. autonomous ECM delivery,60,M,0,4,1,-,2d6 ion
+Cybertron KML-1 mine dispersal unit,30,S,0,2,0,+0d6,1d6 heat
+Cybertron KML-2 mine dispersal unit,120,L,0,5,1,+0d6,2d6 heat
+Fankmeyer Industries Mk I minelayer,70,M,0,4,0,+0d6,2d6 heat
+Smooth & Cross Ltd. Minuteman proximity device,50,M,0,3,1,+0d6,1d6 heat
+Smooth & Cross Ltd. autonomous ECM delivery,60,M,0,4,1,+0d6,2d6 ion
+Corellian Engineering Corporation AG-2G quad laser cannon,9,S,1,2,3,+0d6,2d6 heat
+"BlasTech Ax-108 Ground Buzzer surface-defense blaster cannon",3,S,1,1,1,+0d6,1d6 heat
+Arakyd ST2 concussion missile tube,14,S,2,2,6,+0d6,2d6 ballistic
