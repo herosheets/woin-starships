@@ -8,7 +8,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/basics.html',
     '<h2>Basic Ship Facts</h2>\n' +
     '<p class="explainer">\n' +
-    '    Name your vessel!\n' +
+    '    Name your vessel! This should be the vessel class name, not the name of the individual ship.\n' +
     '</p>\n' +
     '\n' +
     '<div class="row display-row">\n' +
