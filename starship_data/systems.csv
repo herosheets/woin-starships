@@ -4,18 +4,19 @@ NorthCo GYN3 Starship Stealth System,Cloaking Device,10,M,2000,2,Ship classes IV
 Highdyne S2 Stealth Solution,Cloaking Device,40,L,10000,3,Ship classes VIII-XI only
 Daystellar-Silvertech Society JG51 Integrated Cloaking System,Cloaking Device,100,E,40000,4,Ship classes XII-XVI only
 Waywatch BI95 Cloaking Device,Cloaking Device,300,G,90000,5,Ship classes XVII-XIX only
-Galaxy Technologies X2 Tractor Beam,Tractor Beam,5,S,10,-,"STR 2, range 5"
-Transwatch L4 Magnetic Beam,Tractor Beam,10,M,30,-,"STR 4, range 7"
-Warp Sun Metallurgy G75 Tractor/Pressor System,Tractor Beam,15,L,75,-,"STR 6, range 10"
-Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,-,"STR 8, range 12"
-Outer Sun Merchants CCH80 Magnetic Projector,Tractor Beam,25,G,300,-,"STR 10, range 15"
-Fuel bay alteration,Fueling Equipment,1 CU/10 fuel,-,0.5/fuel,-,This can increase or decrease fuel capacity
-Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,-,Gathers 1 fuel unit per hour
-Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,-,Gathers 5 fuel units per hour
-Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,-,Gathers 20 fuel units per hour
-Westbreak-NewCorp Partnership H80 External Cargo Bay,Cargo Equipment,-,S,30,-,"Adds 20 CU; -2 DEFENSE, -2 SPEED"
-Daylight KE27 External Cargo Bay,Cargo Equipment,-,M,100,-,"Adds 250 CU; -2 DEFENSE, -2 SPEED"
-SilverCorp E95 External Cargo Bay,Cargo Equipment,-,L,250,-,"Adds 1,000 CU; -2 DEFENSE, -2 SPEED"
+Galaxy Technologies X2 Tractor Beam,Tractor Beam,5,S,10,0,"STR 2, range 5"
+Transwatch L4 Magnetic Beam,Tractor Beam,10,M,30,0,"STR 4, range 7"
+Warp Sun Metallurgy G75 Tractor/Pressor System,Tractor Beam,15,L,75,0,"STR 6, range 10"
+Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,0,"STR 8, range 12"
+Outer Sun Merchants CCH80 Magnetic Projector,Tractor Beam,25,G,300,0,"STR 10, range 15"
+Phylon C5 tractor beam emitter,Tractor Beam,4,S,24,0,"STR 3, range 3"
+Fuel bay alteration,Fueling Equipment,1 CU/10 fuel,-0,0.5/fuel,0,This can increase or decrease fuel capacity
+Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,0,Gathers 1 fuel unit per hour
+Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,0,Gathers 5 fuel units per hour
+Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,0,Gathers 20 fuel units per hour
+Westbreak-NewCorp Partnership H80 External Cargo Bay,Cargo Equipment,-0,S,30,0,"Adds 20 CU; -2 DEFENSE, -2 SPEED"
+Daylight KE27 External Cargo Bay,Cargo Equipment,-0,M,100,0,"Adds 250 CU; -2 DEFENSE, -2 SPEED"
+SilverCorp E95 External Cargo Bay,Cargo Equipment,-0,L,250,0,"Adds 1,000 CU; -2 DEFENSE, -2 SPEED"
 Ultradyne Lines CP97 Repair Bay,Engineering Modification,10,M,200,4,Repairs 1 SS per turn
 Newwatch IE17 Remote Repair Bay,Engineering Modification,20,L,500,8,Repairs 1 SS per turn; range 4 hexes
 Daylight CEA46 Tactical Command Center,C&C,2,S,200,3,Grants +1d6 bonus to 4 ships; range 8 hexes
@@ -29,3 +30,6 @@ Ultralight BMS55 Jamming System,ECM,15,L,250,4,"Missiles have a -1d6 penalty to 
 Sun Prime LC84 Precision Electronic Warfare System,ECM,25,E,500,5,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes"
 PanCorp Gravitics YN28 Active Decoy Transmitter,ECM,35,G,1000,6,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 25 hexes"
 Electronic Reinforcement,ECM,10/point,-,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.
+Carbanti 29L electromagnetic countermeasures package,ECM,3,S,19,1,"Jams sensors, causing -1d6 penalty"
+Carbanti signal-augmented sensor jammer,ECM,3,S,14,1,"Jams sensors, causing -1d6 penalty"
+Carbanti Whistler encryption module,ECM,2,S,12,1,"Jams sensors, causing -1d6 penalty"
