@@ -18,7 +18,9 @@ Newstellar EM-1 Command Computer,45,E,10,4,16,-5.00%,20,2,-0,+0d6
 Newstellar EM-1H Command Computer,235,E,10,8,32,-10.00%,22,3,1,+1d6
 Terra Prime GM-1 Command Computer,75,G,20,4,16,-10.00%,25,3,-0,+0d6
 Terra Prime GM-1H Command Computer,325,G,20,8,32,-15.00%,27,4,1,+1d6
-Imperator CM-1 Point Defense Processor*,14000,C,2000,0,2000,0,0,0,0,+0d6
+Terra Prime GM-2 Command Computer,550,G,40,14,60,-5.00%,30,3,0,+0d6
+Adricson CS-1 Command Computer,1010,C,70,20,85,-7.00%,32,3,0,+0d6
+Ariakis Designs T100 Heavy Duty Command Computer,2050,T,110,24,110,-2.00%,35,4,0,+0d6
 Xing Starship Design X-1S Navcom System*,65,S,3,63,0,0,0,0,-0,+0d6
 Nikitin AU-45 Astrogation Droid*,78,S,4,79,0,0,0,0,-0,+0d6
 Huang Grav Vehicles Military Class Navigation Solution v1.8*,110,M,7,91,0,0,0,0,-0,+0d6
@@ -27,3 +29,9 @@ Imperial Agencies Standard Astrogation Unit*,495,L,12,125,0,0,0,0,-0,+0d6
 Transfarer Type 2B Navigation Computer*,800,L,15,150,0,0,0,0,-0,+0d6
 Xing Starship Design Black Label Model 1 Navcom*,1050,E,24,158,0,0,0,0,-0,+0d6
 Sikorsky Biotech Organic Astrogation Nucleus*,5500,G,44,200,0,0,0,0,-0,+0d6
+Arctic Accessories CPU Booster Pack,10,S,1,0,1,0,0,0,0,+0d6
+Chan-Ling MCA-1 Crew Automation Center,230,M,17,0,0,-25.00%,0,0,0,-1d6
+Chan-Ling MCA-2 Crew Automation Center,450,M,19,0,0,-30.00%,0,0,0,-1d6
+Chan-Ling LCA-1 Crew Automation Center,500,L,27,0,0,-35.00%,0,0,0,-1d6
+Chan-Ling ECA-1 Crew Automation Center,900,E,50,0,0,-40.00%,0,0,0,-1d6
+Queen Industries MAI-1 Integrated Artificial Intelligence*,600,L,25,0,0,-35.00%,0,0,0,-1d6
