@@ -1,6 +1,7 @@
 Hangar Bay,Space,Size,Cost,CPU,Craft
 Parsec Systems ZM2 Bay,25,S,400,1,1
-Megalight EI93 Bay,80,M,700,1,4
-Ultrabeam VN34 Bay,150,L,1000,2,16
-Waydyne Vehicle Bay,250,E,1500,2,32
+Megalight EI93 Hangar Deck,80,M,700,1,4
+Ultrabeam VN34 Flight Deck,150,L,1000,2,16
+Waydyne Vehicle Shuttle/Fighter Bay,250,E,1500,2,32
 Newwide Gravitics DI11 Bay,460,G,2000,3,64
+Imperial Design SD Hangar,850,C,3800,6,128
