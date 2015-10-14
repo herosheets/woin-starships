@@ -19,11 +19,11 @@ Newstellar EM-1H Command Computer,235,E,10,8,32,-10.00%,22,3,1,+1d6
 Terra Prime GM-1 Command Computer,75,G,20,4,16,-10.00%,25,3,-0,+0d6
 Terra Prime GM-1H Command Computer,325,G,20,8,32,-15.00%,27,4,1,+1d6
 Imperator CM-1 Point Defense Processor*,14000,C,2000,0,2000,0,0,0,0,+0d6
-Xing Starship Design X-1S Navcom System*,65,-,3,63,0,0,0,0,-0,+0d6
-Nikitin AU-45 Astrogation Droid*,78,-,4,79,0,0,0,0,-0,+0d6
-Huang Grav Vehicles Military Class Navigation Solution v1.8*,110,-,4,91,0,0,0,0,-0,+0d6
-Shooting Star Products Mk I Astrogation Unit*,205,-,4,100,0,0,0,0,-0,+0d6
-Imperial Agencies Standard Astrogation Unit*,495,-,5,125,0,0,0,0,-0,+0d6
-Transfarer Type 2B Navigation Computer*,800,-,5,150,0,0,0,0,-0,+0d6
-Xing Starship Design Black Label Model 1 Navcom*,1050,-,4,158,0,0,0,0,-0,+0d6
-Sikorsky Biotech Organic Astrogation Nucleus*,5500,-,4,200,0,0,0,0,-0,+0d6
+Xing Starship Design X-1S Navcom System*,65,S,3,63,0,0,0,0,-0,+0d6
+Nikitin AU-45 Astrogation Droid*,78,S,4,79,0,0,0,0,-0,+0d6
+Huang Grav Vehicles Military Class Navigation Solution v1.8*,110,M,7,91,0,0,0,0,-0,+0d6
+Shooting Star Products Mk I Astrogation Unit*,205,M,8,100,0,0,0,0,-0,+0d6
+Imperial Agencies Standard Astrogation Unit*,495,L,12,125,0,0,0,0,-0,+0d6
+Transfarer Type 2B Navigation Computer*,800,L,15,150,0,0,0,0,-0,+0d6
+Xing Starship Design Black Label Model 1 Navcom*,1050,E,24,158,0,0,0,0,-0,+0d6
+Sikorsky Biotech Organic Astrogation Nucleus*,5500,G,44,200,0,0,0,0,-0,+0d6
