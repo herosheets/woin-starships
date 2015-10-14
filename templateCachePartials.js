@@ -237,7 +237,7 @@ module.run(['$templateCache', function($templateCache) {
     '<p class="explainer">\n' +
     '    They A basic ship comes with a bridge, dormitory accommodations for crew and one cabin for the captain. Ships of smaller than class I do not include accommodations, and have a cockpit instead of a bridge.\n' +
     '\n' +
-    '    Like all equipment, shipboard facilities have degrees of quality. Sometimes, in the case of a cabin or chapel, this only affects the furnishings and general amenities, creating a happier crew. In the case of functional facilities like sick bays and laboratories, the quality directly affects tasks performed using them..\n' +
+    'Facilities directly affect a ship\'s LUXURY score which, if below 100%, can cause penalties. A comfortable crew is a happy crew!  However, decandence can cause penalties, too.\n' +
     '</p>\n' +
     '<h3>Your Facilities</h3>\n' +
     '<table class="table table-striped">\n' +
