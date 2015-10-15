@@ -8,9 +8,9 @@ Galaxy Technologies X2 Tractor Beam,Tractor Beam,5,S,10,0,"STR 2, range 5"
 Transwatch L4 Magnetic Beam,Tractor Beam,10,M,30,0,"STR 4, range 7"
 Warp Sun Metallurgy G75 Tractor/Pressor System,Tractor Beam,15,L,75,0,"STR 6, range 10"
 Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,0,"STR 8, range 12"
-Outer Sun Merchants CCH80 Magnetic Projector,Tractor Beam,25,G,300,0,"STR 10, range 15"
-Phylon C5 tractor beam emitter,Tractor Beam,4,S,24,0,"STR 3, range 3"
-Fuel bay alteration,Fueling Equipment,1 CU/10 fuel,-0,0.5/fuel,0,This can increase or decrease fuel capacity
+Outer Sun Merchants CCH80 Electromagnetic Projector,Tractor Beam,25,G,300,0,"STR 10, range 15"
+Phylon C5 Tractor Beam Emitter,Tractor Beam,4,S,24,0,"STR 3, range 3"
+Fuel Bay Alteration,Fueling Equipment,1 CU/10 fuel,-0,0.5/fuel,0,This can increase or decrease fuel capacity
 Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,0,Gathers 1 fuel unit per hour
 Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,0,Gathers 5 fuel units per hour
 Davison Aeronautics SAA48 Fuel Scoop,Fueling Equipment,90,E,1000,0,Gathers 20 fuel units per hour
