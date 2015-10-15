@@ -30,6 +30,6 @@ Ultralight BMS55 Jamming System,ECM,15,L,250,4,"Missiles have a -1d6 penalty to 
 Sun Prime LC84 Precision Electronic Warfare System,ECM,25,E,500,5,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes"
 PanCorp Gravitics YN28 Active Decoy Transmitter,ECM,35,G,1000,6,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 25 hexes"
 Electronic Reinforcement,ECM,10/point,-,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.
-Carbanti 29L electromagnetic countermeasures package,ECM,3,S,19,1,"Jams sensors, causing -1d6 penalty"
-Carbanti signal-augmented sensor jammer,ECM,3,S,14,1,"Jams sensors, causing -1d6 penalty"
-Carbanti Whistler encryption module,ECM,2,S,12,1,"Jams sensors, causing -1d6 penalty"
+Carbanti 29L Electromagnetic Countermeasures Package,ECM,3,S,19,1,"Jams sensors, causing -1d6 penalty"
+Carbanti Signal-Augmented Sensor Jammer,ECM,3,S,14,1,"Jams sensors, causing -1d6 penalty"
+Carbanti Whistler Encryption Module,ECM,2,S,12,1,"Jams sensors, causing -1d6 penalty"
