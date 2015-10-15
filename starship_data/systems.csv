@@ -10,6 +10,7 @@ Warp Sun Metallurgy G75 Tractor/Pressor System,Tractor Beam,15,L,75,0,"STR 6, ra
 Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,0,"STR 8, range 12"
 Outer Sun Merchants CCH80 Electromagnetic Projector,Tractor Beam,25,G,300,0,"STR 10, range 15"
 Phylon C5 Tractor Beam Emitter,Tractor Beam,4,S,24,0,"STR 3, range 3"
+Phylon Q7 Tractor Beam Projector,Tractor Beam,60,C,450,0,"STR 14, range 20"
 Fuel Bay Alteration,Fueling Equipment,1 CU/10 fuel,-0,0.5/fuel,0,This can increase or decrease fuel capacity
 Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,0,Gathers 1 fuel unit per hour
 Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,0,Gathers 5 fuel units per hour
@@ -29,7 +30,7 @@ Omniwide Productions YPO57 Electronic Countermeasures,ECM,10,M,100,3,"Missiles h
 Ultralight BMS55 Jamming System,ECM,15,L,250,4,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 16 hexes"
 Sun Prime LC84 Precision Electronic Warfare System,ECM,25,E,500,5,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes"
 PanCorp Gravitics YN28 Active Decoy Transmitter,ECM,35,G,1000,6,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 25 hexes"
-Electronic Reinforcement,ECM,10/point,-,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.
+Electronic Reinforcement,ECM,10/point,-0,500/point,0.5/point,Control computer defenses grant a +1 ELECTRONIC DEFENSE bonus per point purchased.
 Carbanti 29L Electromagnetic Countermeasures Package,ECM,3,S,19,1,"Jams sensors, causing -1d6 penalty"
 Carbanti Signal-Augmented Sensor Jammer,ECM,3,S,14,1,"Jams sensors, causing -1d6 penalty"
 Carbanti Whistler Encryption Module,ECM,2,S,12,1,"Jams sensors, causing -1d6 penalty"
