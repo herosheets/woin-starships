@@ -1,5 +1,5 @@
 Customization,Luxury/crew,Space/crew,Cost/crew,CPU,Notes,Recommended
-Sick bay,2,3,20,1,Accomodates 1 patient,5% of crew capacity
+Sick bay,2,3,20,0,Accomodates 1 patient,5% of crew capacity
 "Cabin, standard",0.5,1,0.5,0,Accomodates 1 crewmember,-0
 "Cabin, double",0.3,0.5,0.3,0,,-0
 "Cabin, luxury/environmental",1,2,2,0,Can accomodate environmental requirements,-0
@@ -15,13 +15,13 @@ Observation lounge,0.5,3,2,0,,1% of crew capacity
 Arborium,2,5,5,0,,1% of crew capacity
 Brig,0.5,1,3,0,Each brig unit can hold 1 prisoner,1% of crew capacity
 Escape pod,0.1,0.1,0.5,0,Each pod can carry 1 crewmember,100% of crew capacity
-Transporter pad,0,1,20,3,A small transporter pad contains 1 transporter beam,5% of crew capacity
+Transporter pad,0,1,20,1,A small transporter pad contains 1 transporter beam,5% of crew capacity
 Stateroom,0.5,2,2,0,,-0
 Cinema/theater,2,1,4,0,,1% of crew capacity
 Holographic suite,3,4,20,3,,1% of crew capacity
 Training hall,0.5,3,4,0,,5% of crew capacity
 Zero-g sports hall,2,4,5,0,,1% of crew capacity
-Turbolifts,1,4,10,1,,5% of crew capacity
+Turbolifts,1,4,10,0,,5% of crew capacity
 Hidden storage,0,3,3,0,"Each unit holds 1 CU of goods, but takes 3 CU of space",
 Stellar cartography room,0,8,5,1,,
 Secondary bridge,0,1,5,1,,5 bridge crew
