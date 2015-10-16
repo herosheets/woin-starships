@@ -1,39 +1,49 @@
 Sub-luminal Engine,Cost,Size,CPU,Space,Power,Fuel Eff
-Carter Psitech EL-1 Liquid Fuel Rocket,14,E,5,125,50,0.5
-Carter Psitech EL-2 Liquid Fuel Rocket,30,E,7.1,252.05,71,0.7
-Comet Lines SS-1 Solar Sail,1,S,0.3,0.45,3,1
-DeltaLight products LI-1 Ion Engine,22,L,2.6,33.8,26,1.4
-DeltaLight products LI-2 Ion Engine,41,L,3.2,51.2,32,1.4
-Du-Bobrikov Company ES-1 Solar Sail,7,E,1.9,18.05,19,1
-Highlight Robotics GL-1 Liquid Fuel Rocket,30,G,6.9,238.05,69,0.5
-Highlight Robotics GL-2 Liquid Fuel Rocket,70,G,9.9,490.05,99,0.5
-Girodyne SRB42 Sublight Engine,5,S,1.3,1.8,6,1
-Narita-Guo Union LF-1 Fusion Reactor,26,L,5.3,140.45,53,1.2
-Narita-Guo Union LF-2 Fusion Reactor,51,L,4.5,101.25,45,1.4
+=====LIQUID FUEL ROCKETS=====,,,,,,
 Newline-Silverwide Systems SL-1 Liquid Fuel Rocket,1,S,1.1,6.05,11,0.5
 Newline-Silverwide Systems SL-2 Liquid Fuel Rocket,3,S,1.3,8.45,13,0.5
-OmniDyne Lines EF-1 Fusion Reactor,94,E,9.2,423.2,92,1.4
-OmniDyne Lines EF-1 Fusion Reactor,55,E,8.2,336.2,82,1.2
-Oshiro Shipping MI-1 Ion Engine,11,M,1.8,16.2,18,1.4
-Oshiro Shipping MI-2 Ion Engine,25,M,2.1,22.05,21,1.6
-Panlight Universal MS-1 Solar Sail,2,M,0.7,2.45,7,1
-Panwatch Metallurgy GS-1 Solar Sail,19,G,3.5,61.25,35,1
-Satellite Concepts SI-1 Ion Engine,5,S,0.7,2.45,7,1.4
-Satellite Concepts SI-2 Ion Engine,8,S,1.1,6.05,11,1.4
-Star Corporation SF-1 Fusion Reactor,7,S,1.2,7.2,12,1.2
-Star Corporation SF-2 Fusion Reactor,11,S,1.9,18.05,19,1.2
-Stellar Products LS-1 Solar Sail,3,L,1.2,7.2,12,1
-Sun Technologies GF-1 Fusion Reactor,134,G,10.5,551.25,105,1.2
-Sun Technologies GF-2 Fusion Reactor,292,G,17.4,1513.8,174,1.2
-Sunbeam Technologies EI-1 Ion Engine,38,E,3.8,72.2,38,1.4
-Sunbeam Technologies EI-2 Ion Engine,73,E,4.9,120.05,49,1.4
-SunCo Livestock LL-1 Liquid Fuel Rocket,6,L,3.5,61.25,35,0.5
-SunCo Livestock LL-2 Liquid Fuel Rocket,14,L,3,45,30,0.6
 Turner-Koga Inc ML-1 Liquid Fuel Rocket,3,M,1.7,14.45,17,0.5
 Turner-Koga Inc ML-2 Liquid Fuel Rocket,7,M,2.5,31.25,25,0.6
-WarpCo Alliance MF-1 Fusion Reactor,11,M,3.3,54.45,33,1.2
-WarpCo Alliance MF-2 Fusion Reactor,25,M,3.7,68.45,37,1.3
+SunCo Livestock LL-2 Liquid Fuel Rocket,14,L,3,45,30,0.6
+SunCo Livestock LL-1 Liquid Fuel Rocket,6,L,3.5,61.25,35,0.5
+Carter Psitech EL-1 Liquid Fuel Rocket,14,E,5,125,50,0.5
+Highlight Robotics GL-1 Liquid Fuel Rocket,30,G,6.9,238.05,69,0.5
+Carter Psitech EL-2 Liquid Fuel Rocket,30,E,7.1,252.05,71,0.7
+Highlight Robotics GL-2 Liquid Fuel Rocket,70,G,9.9,490.05,99,0.5
+,,,,,,
+=====ION ENGINES=====,,,,,,
+Satellite Concepts SI-1 Ion Engine,5,S,0.7,2.45,7,1.4
+Satellite Concepts SI-2 Ion Engine,8,S,1.1,6.05,11,1.4
+Oshiro Shipping MI-1 Ion Engine,11,M,1.8,16.2,18,1.4
+Oshiro Shipping MI-2 Ion Engine,25,M,2.1,22.05,21,1.6
+DeltaLight products LI-1 Ion Engine,22,L,2.6,33.8,26,1.4
+DeltaLight products LI-2 Ion Engine,41,L,3.2,51.2,32,1.4
+Sunbeam Technologies EI-1 Ion Engine,38,E,3.8,72.2,38,1.4
+Sunbeam Technologies EI-2 Ion Engine,73,E,4.9,120.05,49,1.4
 WayDyne Incorporated GI-1 Ion Engine,80,G,5.3,140.45,53,1.4
 WayDyne Incorporated GI-2 Ion Engine,132,G,9.6,460.8,96,1.6
-KDY Destroyer-I Ion Engine,480,C,4.5,4205,290,0.7
 Cygnus Spaceworks Germon-4 Ion Engine,350,C,3.8,980,140,0.9
+KDY Destroyer-I Ion Engine,480,C,4.5,4205,290,0.7
+,,,,,,
+=====FUSION REACTORS=====,,,,,,
+Star Corporation SF-1 Fusion Reactor,7,S,1.2,7.2,12,1.2
+Star Corporation SF-2 Fusion Reactor,11,S,1.9,18.05,19,1.2
+WarpCo Alliance MF-1 Fusion Reactor,11,M,3.3,54.45,33,1.2
+Panwatch Metallurgy GS-1 Solar Sail,19,G,3.5,61.25,35,1
+WarpCo Alliance MF-2 Fusion Reactor,25,M,3.7,68.45,37,1.3
+Narita-Guo Union LF-2 Fusion Reactor,51,L,4.5,101.25,45,1.4
+Narita-Guo Union LF-1 Fusion Reactor,26,L,5.3,140.45,53,1.2
+OmniDyne Lines EF-1 Fusion Reactor,55,E,8.2,336.2,82,1.2
+OmniDyne Lines EF-1 Fusion Reactor,94,E,9.2,423.2,92,1.4
+Sun Technologies GF-1 Fusion Reactor,134,G,10.5,551.25,105,1.2
+Sun Technologies GF-2 Fusion Reactor,292,G,17.4,1513.8,174,1.2
+,,,,,,
+=====SOLAR SAILS=====,,,,,,
+Comet Lines SS-1 Solar Sail,1,S,0.3,0.45,3,1
+Panlight Universal MS-1 Solar Sail,2,M,0.7,2.45,7,1
+Stellar Products LS-1 Solar Sail,3,L,1.2,7.2,12,1
+Du-Bobrikov Company ES-1 Solar Sail,7,E,1.9,18.05,19,1
+Panwatch Metallurgy GS-1 Solar Sail,19,G,3.5,61.25,35,1
+,,,,,,
+=====OTHER=====,,,,,,
+Girodyne SRB42 Sublight Engine,5,S,1.3,1.8,6,1
