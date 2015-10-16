@@ -36,10 +36,11 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/commandcontrol.html',
-    '<h2>Control Computers & Power Plants</h2>\n' +
+    '<h2>Control Computers + Power Plants</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
-    '    Vessels require both a control computer and a power plant.  Both grant CPU (Computer & Power Units).<br><br>Nearly every function on a vessel interacts in some way with the computer. The computers, sensors, and engineering facilities on a starship make a up a large part of its efficiency and effectiveness. Faster computers allow a ship to react more quickly in combat situations, while more sensitive sensor systems enable the crew to gather more information about their surroundings. A basic hull comes with a standard integrated computer and sensors, but more powerful systems are needed for effective combat calculations and FTL planning. The computing power aboard a starship cannot be overestimated in its importance.\n' +
+    '    Vessels require both a control computer and a power plant.  Both grant CPU (Computer &\n' +
+    '    +Power Units).<br><br>Nearly every function on a vessel interacts in some way with the computer. The computers, sensors, and engineering facilities on a starship make a up a large part of its efficiency and effectiveness. Faster computers allow a ship to react more quickly in combat situations, while more sensitive sensor systems enable the crew to gather more information about their surroundings. A basic hull comes with a standard integrated computer and sensors, but more powerful systems are needed for effective combat calculations and FTL planning. The computing power aboard a starship cannot be overestimated in its importance.\n' +
     '\n' +
     '    A ship\'s computer system is able to perform faster-than-light calculations for FTL travel, and ties directly into the sensor array. Data storage in a ship\'s computer is so efficient that the concept of storage capacity does not factor into computer design any more. Some computer systems have a basic AI, while others do not.<br><br>\n' +
     'Items marked with an asterisk (*) are AL 10 items; they are only available in AL 10 settings. These items can drastically change the nature of a setting, especially in terms of FTL speeds.<br><br>\n' +
@@ -61,7 +62,7 @@ module.run(['$templateCache', function($templateCache) {
     '    <tr>\n' +
     '        <th></th>\n' +
     '        <th>Quantity</th>\n' +
-    '        <th>Computers & Power</th>\n' +
+    '        <th>Computers + Power</th>\n' +
     '        <th>Cost</th>\n' +
     '        <th>Size</th>\n' +
     '        <th>Space</th>\n' +
@@ -100,7 +101,7 @@ module.run(['$templateCache', function($templateCache) {
     '    <thead>\n' +
     '    <tr>\n' +
     '        <th></th>\n' +
-    '        <th>Computers & Power</th>\n' +
+    '        <th>Computers + Power</th>\n' +
     '        <th>Cost</th>\n' +
     '        <th>Size</th>\n' +
     '        <th>Space</th>\n' +
