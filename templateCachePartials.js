@@ -51,7 +51,7 @@ module.run(['$templateCache', function($templateCache) {
     'maintain detailed navigational charts of the fastest travel routes, which are not necessarily in straight\n' +
     'lines when dealing with hyperspace, intense gravity wells, dark energy fluctuations, and non-euclidian\n' +
     'geometry. The introduction of navcomps makes galaxy-wide travel a trivial issue. A navigation computer eff ectively multiplies a ship\'s FTL capability by 10, subject to the na vcomp\'s\n' +
-    'Max FTL value<br><br>\n' +
+    'Max FTL value\n' +
     '\n' +
     '<br><br><b>Crew Automation + AI</b> can drastically reduce crew requirements, but have the disadvantage of reducing effectiveness in the form of a negative die modifier.\n' +
     '</p> \n' +
