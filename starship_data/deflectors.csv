@@ -1,32 +1,32 @@
 Deflector Shields,Cost,Size,CPU,Space,Power
-Cui-Cui Systems ESM-1 Combat Deflector Screens,60,E,6,69,60
-Cui-Cui Systems ESM-2 Combat Deflector Screens,128,E,6,68,76
-DayCorp Systems SSN-1 Navigational Shield Generator,2,S,1,2,1
 DayCorp Systems SSN-2 Navigational Shield Generator,4,,1,1,1
-Highgraphics-Warpwide GSN-1 Navigation Screens,33,G,5,45,34
-Highgraphics-Warpwide GSN-2 Navigation Screens,71,G,5,49,34
-Huang DEFENSE GSM-1 Ultimate Series Combat Shield,152,G,8,144,93
-Huang DEFENSE GSM-2 Ultimate Series Combat Shield,266,G,8,115,116
-Liu Maltech LSC-1 Civilian Deflector Screens,18,L,3,28,27
-Liu Maltech LSC-2 Civilian Deflector Screens,33,L,3,28,35
-Lunar Foundation GSC-1 Civilian Deflector Shields,52,G,7,75,51
-Lunar Foundation GSC-2 Civilian Deflector Shields,117,G,7,59,60
-Mekhdiev LSN-1 Navigational Deflector Shields,7,L,2,11,16
-Mekhdiev LSN-2 Navigational Deflector Shields,13,L,2,8,20
-Overcorp-Pan Prime LSM-1 Combat Shield Generator,30,L,4,42,34
-Overcorp-Pan Prime LSM-2 Combat Shield Generator,66,L,4,45,37
+DayCorp Systems SSN-1 Navigational Shield Generator,2,S,1,2,1
 Parsec Group SSC-1 Civilan Deflector Screen,3,S,1,4,3
 Parsec Group SSC-2 Civilan Deflector Screen,7,S,1,2,4
-Satellite Yards MSM-1 Combat Deflector Shields,23,M,3,15,23
-Satellite Yards MSM-2 Combat Deflector Shields,31,M,3,12,33
-Sato-Litvak Syndicate MSN-1 Navigational Deflector Screen,3,M,1,6,7
-Sato-Litvak Syndicate MSN-2 Navigational Deflector Screen,6,M,1,4,9
 Tyler Mechanics SSM-1 Combat Shield System,8,S,2,4,5
 Tyler Mechanics SSM-2 Combat Shield System,16,S,2,3,7
+Sato-Litvak Syndicate MSN-1 Navigational Deflector Screen,3,M,1,6,7
+Sato-Litvak Syndicate MSN-2 Navigational Deflector Screen,6,M,1,4,9
 Waybreak Exploration MSC-1 Civilian Shield Generator,9,M,2,14,10
 Waybreak Exploration MSC-2 Civilian Shield Generator,14,M,2,15,15
+Mekhdiev LSN-1 Navigational Deflector Shields,7,L,2,11,16
+Mekhdiev LSN-2 Navigational Deflector Shields,13,L,2,8,20
+Satellite Yards MSM-1 Combat Deflector Shields,23,M,3,15,23
 Westdyne Enterprises ESN-1 Cruiser Navishield Solution,14,E,3,24,25
+Liu Maltech LSC-1 Civilian Deflector Screens,18,L,3,28,27
 Westdyne Enterprises ESN-2 Cruiser Navishield Solution,30,E,3,25,32
 Yang-Chen Co ESC-1 Civilian Shield Generator,30,E,5,56,32
+Satellite Yards MSM-2 Combat Deflector Shields,31,M,3,12,33
+Overcorp-Pan Prime LSM-1 Combat Shield Generator,30,L,4,42,34
+Highgraphics-Warpwide GSN-1 Navigation Screens,33,G,5,45,34
+Highgraphics-Warpwide GSN-2 Navigation Screens,71,G,5,49,34
+Liu Maltech LSC-2 Civilian Deflector Screens,33,L,3,28,35
+Overcorp-Pan Prime LSM-2 Combat Shield Generator,66,L,4,45,37
 Yang-Chen Co ESC-2 Civilian Shield Generator,51,E,5,62,41
+Lunar Foundation GSC-1 Civilian Deflector Shields,52,G,7,75,51
+Lunar Foundation GSC-2 Civilian Deflector Shields,117,G,7,59,60
+Cui-Cui Systems ESM-1 Combat Deflector Screens,60,E,6,69,60
+Cui-Cui Systems ESM-2 Combat Deflector Screens,128,E,6,68,76
+Huang DEFENSE GSM-1 Ultimate Series Combat Shield,152,G,8,144,93
+Huang DEFENSE GSM-2 Ultimate Series Combat Shield,266,G,8,115,116
 KDY ISD-72x Shield Generator Dome,450,C,7,180,175
