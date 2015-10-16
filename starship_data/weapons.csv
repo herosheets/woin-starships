@@ -1,67 +1,73 @@
 Weapon System,Cost,Size,CPU,Space,Range,Attack,Damage
-Bai-Nakamura Fndtn ECPx-1 Blackflash Concussion Torpedo,202,E,4,8,16,+1d6,4d6 ballistic
-Barker Consortium GCCl-1 Thundermaker Concussion Cluster,344,G,5,50,25,+0d6,6d6 ballistic
-Brown Shipping ELS-1 Sunbat Quad Laser Cannon,43,E,4,10,9,+0d6,4d6 heat
-Cui Shipyards EDP-1 Hotbuster Dual Pulse Disruptor,112,E,4,8,8,+0d6,5d6 heat
-Cui-Cook Systems SNPx-1 Starspear Nuclear Warhead ,5,S,1,1,3,+1d6,2d6 heat/radiation
-Daybeam-Microsun MpaC-1 Hellbolt Particle Cannon,31,M,2,3,5,+0d6,2d6 heat
-Daywatch Art ENPx-1 Hellstorm Nuclear Warhead,63,E,4,8,15,+1d6,4d6 heat/radiation
-Frontier partnership GIC-1 Deathflash Dual Heavy Ion Cannon,161,G,5,47,14,+0d6,5d6 ion
-Galactic Company MLB-1 Skysteel Beam Laser,8,M,2,3,5,+0d6,2d6 heat
-Galaxy Society LCCl-1 Stingbird Cluster Missiles,120,L,3,11,10,+0d6,4d6 ballistic
-Green-Huang Enterprises EIP-1 Skyspear Ion Pulse,73,E,4,11,9,+0d6,5d6 ion
-Highbreak Liquids MHP-1 Fireswarm Pulse Phaser,35,M,2,3,4,+0d6,3d6 heat
-Highstellar Ltc. MNPx-1 Bigbow Nuclear Warhead,11,M,2,4,6,+1d6,2d6 heat/radiation
-Highwide Works MPPx-1 Thunderbat Proximity Photonic Torpedo,50,M,2,3,7,+1d6,2d6 heat
-Hydyne Merccants LPR-1 Darksword Railgun,15,L,3,11,4,+0d6,4d6 ballistic
-Imperial Syndicate GLP-1 Redstorm Quad Heavy Turbolaser,108,G,5,53,12,+0d6,6d6 heat
-Imperial Syndicate GLP-2 Redstorm Quad Heavy Turbolaser,236,G,5,43,14,+0d6,6d6 heat
-Imperial Syndicate GLP-3 Redstorm Quad Heavy Turbolaser,396,G,5,39,15,+0d6,7d6 heat
-Long-Summers Industries SPPx-1 Stingstorm Photonic Torpedo,20,S,1,1,4,+1d6,1d6 heat
-Lunar Alliance GNPx-1 Mushroom Nuclear Warhead,140,G,5,43,18,+1d6,5d6 heat/radiation
-MegaCorp-Panstellar Lines LNPx-1 Blackfury Nuclear Warhead,26,L,3,8,7,+1d6,3d6 heat/radiation
+BlasTech Ax-108 Ground Buzzer Surface-Defense Blaster Cannon,3,S,1,1,1,+0d6,1d6 heat
 Mekhdiev Construction SDB-1 Thunderray Beam Disruptor Array,9,S,1,1,3,+0d6,1d6 heat
-Meteor Concepts GPPx-1 Hellbow Photonic Torpedo,484,G,5,48,26,+0d6,5d6 heat
-Microtech Alliance LBP-1 Stingmaker Dual Pulse Blaster,21,L,3,9,3,+0d6,4d6 heat
-Microwatch Hardware EPC-1 Leadbolt Projectile Cannon,31,E,4,9,8,+0d6,4d6 ballistic
-Nakamura Robotics SIC-1 Starbird Ion Cannon,7,S,1,1,3,+0d6,1d6 ion
 Narita Maltech SLP-1 Blackbuster Pulse Laser,5,S,1,1,2,+0d6,2d6 heat
-North Prime Weapons LHB-1 Redsword Phaser Beam,68,L,3,11,8,+0d6,3d6 heat
-North Prime Weapons LHB-1H Redsword Phaser Beam,216,L,3,9,7,+1d6,5d6 heat
-Omnitech-Prime SPR-1 Skyrain Magnetic Railgun,3,S,1,1,2,+0d6,2d6 ballistic
-Outer Sun Products EBP-1 Hellbuster Pulse Blaster,42,E,4,10,4,+0d6,5d6 heat
-Outerwatch-Ultrabeam EHP-1 Hotflash Pulse Phaser,168,E,4,10,10,+0d6,5d6 heat
-Overbeam Biotech MPC-1 Sunbow Projectile Cannon,6,M,2,3,5,+0d6,2d6 ballistic
-Saito Cybernetics EPCl-1 Whiteswarm Photonic Torpedo Cluster,233,E,4,8,17,+0d6,5d6 heat
-Silverfarer Group EPaC-1 Skybolt Particle Cannon,148,E,4,8,10,+0d6,4d6 heat
-Solar Industries GHB-1 Excelsior Phaser Beam Emitter,276,G,5,57,15,+0d6,5d6 heat
-Southtech Heavy Weapons LIC-1 Bigstreak Ion Cannon,33,L,3,8,7,+0d6,3d6 ion
 Star Products SHB-1 Deathsword Phaser System,13,S,1,1,3,+0d6,1d6 heat
 Tan-Korovin Enterprises SBP-1 Hotbuster Pulse Blaster,5,S,1,1,2,+0d6,2d6 heat
-Terra Prime SCCl-1 Starbuster Cluster Concussion Missile Launcher,23,S,1,1,4,+0d6,2d6 ballistic
 Thomas Foundation Spab-1 Skybow Particle Beam,12,S,1,1,3,+0d6,1d6 heat
-Transbeam Art MIB-1 Drainpipe Ion Beam,12,M,2,3,5,+0d6,2d6 ion
-Transco Inc. GDB-1 Loudstream Disruptor Beam,162,G,5,56,13,+0d6,5d6 heat
+Corellian Engineering Corporation AG-2G Quad Laser Cannon,9,S,1,2,3,+0d6,2d6 heat
+Galactic Company MLB-1 Skysteel Beam Laser,8,M,2,3,5,+0d6,2d6 heat
+Highbreak Liquids MHP-1 Fireswarm Pulse Phaser,35,M,2,3,4,+0d6,3d6 heat
+Highbreak Liquids MHP-1 Fireswarm Pulse Phaser,35,M,2,3,4,+0d6,3d6 heat
 Translight Colonization MBB-1 Bigflash Beam Blaster,9,M,2,3,3,+0d6,2d6 heat
-UltraCo-NewCo LDP-1 Redfury Disruptor Beam,58,L,3,12,5,+0d6,3d6 heat
-Ultrastellar Railguns GPR-1 Ultimate Rain Magnetic Railgun,70,G,5,41,14,+0d6,6d6 ballistic
 WarpSun Incorprated MDB-1 Flamefury Pulse Disruptor,21,M,2,4,3,+0d6,3d6 heat
-WayCorp Holography GPaB-1 Deathspear Particle Beam,296,G,5,48,17,+0d6,5d6 heat
-Wayfarer Aeronautics LPPx-1 Flamespear Photonic Torpedo,117,L,3,8,10,+1d6,3d6 heat
 Waywatch Lines LLP-1 Firespear Pulse Laser,21,L,3,8,4,+0d6,4d6 heat
-Waywatch Lines MCPx-1 Redswarm Proximity Concussion Missile,45,M,2,4,7,+1d6,2d6 ballistic
+Cui Shipyards EDP-1 Hotbuster Dual Pulse Disruptor,112,E,4,8,8,+0d6,5d6 heat
+Microtech Alliance LBP-1 Stingmaker Dual Pulse Blaster,21,L,3,9,3,+0d6,4d6 heat
+North Prime Weapons LHB-1H Redsword Phaser Beam,216,L,3,9,7,+1d6,5d6 heat
+Brown Shipping ELS-1 Sunbat Quad Laser Cannon,43,E,4,10,9,+0d6,4d6 heat
+Outer Sun Products EBP-1 Hellbuster Pulse Blaster,42,E,4,10,4,+0d6,5d6 heat
+Outerwatch-Ultrabeam EHP-1 Hotflash Pulse Phaser,168,E,4,10,10,+0d6,5d6 heat
+North Prime Weapons LHB-1 Redsword Phaser Beam,68,L,3,11,8,+0d6,3d6 heat
 Weststellar Ltd. LPaB-1 Hellseeker Particle Beam,66,L,3,11,8,+0d6,3d6 heat
+UltraCo-NewCo LDP-1 Redfury Disruptor Beam,58,L,3,12,5,+0d6,3d6 heat
+Imperial Syndicate GLP-3 Redstorm Quad Heavy Turbolaser,396,G,5,39,15,+0d6,7d6 heat
+Imperial Syndicate GLP-2 Redstorm Quad Heavy Turbolaser,236,G,5,43,14,+0d6,6d6 heat
+WayCorp Holography GPaB-1 Deathspear Particle Beam,296,G,5,48,17,+0d6,5d6 heat
+Imperial Syndicate GLP-1 Redstorm Quad Heavy Turbolaser,108,G,5,53,12,+0d6,6d6 heat
+Transco Inc. GDB-1 Loudstream Disruptor Beam,162,G,5,56,13,+0d6,5d6 heat
+Solar Industries GHB-1 Excelsior Phaser Beam Emitter,276,G,5,57,15,+0d6,5d6 heat
 Young Asteroid Co. GBB-1 Flamebird Blaster Beam,109,G,5,60,8,+0d6,5d6 heat
+,,,,,,,
+Omnitech-Prime SPR-1 Skyrain Magnetic Railgun,3,S,1,1,2,+0d6,2d6 ballistic
+Daybeam-Microsun MpaC-1 Hellbolt Particle Cannon,31,M,2,3,5,+0d6,2d6 heat
+Overbeam Biotech MPC-1 Sunbow Projectile Cannon,6,M,2,3,5,+0d6,2d6 ballistic
+Silverfarer Group EPaC-1 Skybolt Particle Cannon,148,E,4,8,10,+0d6,4d6 heat
+Microwatch Hardware EPC-1 Leadbolt Projectile Cannon,31,E,4,9,8,+0d6,4d6 ballistic
+Hydyne Merccants LPR-1 Darksword Railgun,15,L,3,11,4,+0d6,4d6 ballistic
+Ultrastellar Railguns GPR-1 Ultimate Rain Magnetic Railgun,70,G,5,41,14,+0d6,6d6 ballistic
+,,,,,,,
+Nakamura Robotics SIC-1 Starbird Ion Cannon,7,S,1,1,3,+0d6,1d6 ion
+Transbeam Art MIB-1 Drainpipe Ion Beam,12,M,2,3,5,+0d6,2d6 ion
+Southtech Heavy Weapons LIC-1 Bigstreak Ion Cannon,33,L,3,8,7,+0d6,3d6 ion
+Frontier Partnership GIC-1 Deathflash Dual Heavy Ion Cannon,161,G,5,47,14,+0d6,5d6 ion
+,,,,,,,
+Cui-Cook Systems SNPx-1 Starspear Nuclear Warhead ,5,S,1,1,3,+1d6,2d6 heat/radiation
+Long-Summers Industries SPPx-1 Stingstorm Photonic Torpedo,20,S,1,1,4,+1d6,1d6 heat
+Terra Prime SCCl-1 Starbuster Cluster Concussion Missile Launcher,23,S,1,1,4,+0d6,2d6 ballistic
+Arakyd ST2 Concussion Missile Tube,14,S,2,2,6,+0d6,2d6 ballistic
+Highwide Works MPPx-1 Thunderbat Proximity Photonic Torpedo,50,M,2,3,7,+1d6,2d6 heat
+Waywatch Lines MCPx-1 Redswarm Proximity Concussion Missile,45,M,2,4,7,+1d6,2d6 ballistic
+Wayfarer Aeronautics LPPx-1 Flamespear Photonic Torpedo,117,L,3,8,10,+1d6,3d6 heat
+Bai-Nakamura Fndtn ECPx-1 Blackflash Concussion Torpedo,202,E,4,8,16,+1d6,4d6 ballistic
+Daywatch Art ENPx-1 Hellstorm Nuclear Warhead,63,E,4,8,15,+1d6,4d6 heat/radiation
+Saito Cybernetics EPCl-1 Whiteswarm Photonic Torpedo Cluster,233,E,4,8,17,+0d6,5d6 heat
+Galaxy Society LCCl-1 Stingbird Cluster Missiles,120,L,3,11,10,+0d6,4d6 ballistic
+Meteor Concepts GPPx-1 Hellbow Photonic Torpedo,484,G,5,48,26,+0d6,5d6 heat
+Barker Consortium GCCl-1 Thundermaker Concussion Cluster,344,G,5,50,25,+0d6,6d6 ballistic
 Archangel Ultimate ASM-44 Missile Launcher,3000,G,12,120,9,+0d6,8d6 heat
+,,,,,,,
+Cybertron KML-1 Mine Dispersal Unit,30,S,0,2,0,+0d6,1d6 heat
+Smooth & Cross Ltd. Minuteman Proximity Device,50,M,0,3,1,+0d6,1d6 heat
+Fankmeyer Industries Mk I Minelayer,70,M,0,4,0,+0d6,2d6 heat
+Smooth & Cross Ltd. Autonomous ECM Delivery,60,M,0,4,1,+0d6,2d6 ion
+Cybertron KML-2 Mine Dispersal Unit,120,L,0,5,1,+0d6,2d6 heat
+,,,,,,,
+Saliman Industries Micro Plasma Unit Mk I,380,S,8,4,4,+0d6,4d6/1d6 plasma
 Vor-tang Type 3 Plasma Delivery System,400,M,8,12,3,+0d6,8d6/2d6 plasma
 Kal-rem Type 4 Plasma Discharge Launcher,700,M,12,14,5,+0d6,10d6/3d6 plasma
-Saliman Industries Micro Plasma Unit Mk I,380,S,8,4,4,+0d6,4d6/1d6 plasma
 Spartan PX-14 Basebuster Plasma Launcher,1250,G,20,60,6,+0d6,12d6/2d6 plasma
-Cybertron KML-1 Mine Dispersal Unit,30,S,0,2,0,+0d6,1d6 heat
-Cybertron KML-2 Mine Dispersal Unit,120,L,0,5,1,+0d6,2d6 heat
-Fankmeyer Industries Mk I Minelayer,70,M,0,4,0,+0d6,2d6 heat
-Smooth & Cross Ltd. Minuteman Proximity Device,50,M,0,3,1,+0d6,1d6 heat
-Smooth & Cross Ltd. Autonomous ECM Delivery,60,M,0,4,1,+0d6,2d6 ion
-Corellian Engineering Corporation AG-2G Quad Laser Cannon,9,S,1,2,3,+0d6,2d6 heat
-"BlasTech Ax-108 Ground Buzzer Surface-Defense Blaster Cannon",3,S,1,1,1,+0d6,1d6 heat
-Arakyd ST2 Concussion Missile Tube,14,S,2,2,6,+0d6,2d6 ballistic
+,,,,,,,
+Highstellar Ltc. MNPx-1 Bigbow Nuclear Warhead,11,M,2,4,6,+1d6,2d6 heat/radiation
+MegaCorp-Panstellar Lines LNPx-1 Blackfury Nuclear Warhead,26,L,3,8,7,+1d6,3d6 heat/radiation
+Lunar Alliance GNPx-1 Mushroom Nuclear Warhead,140,G,5,43,18,+1d6,5d6 heat/radiation
