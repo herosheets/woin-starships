@@ -61,7 +61,7 @@ module.run(['$templateCache', function($templateCache) {
     '    <tr>\n' +
     '        <th></th>\n' +
     '        <th>Quantity</th>\n' +
-    '        <th>Control Computers</th>\n' +
+    '        <th>Computers & Power</th>\n' +
     '        <th>Cost</th>\n' +
     '        <th>Size</th>\n' +
     '        <th>Space</th>\n' +
@@ -100,7 +100,7 @@ module.run(['$templateCache', function($templateCache) {
     '    <thead>\n' +
     '    <tr>\n' +
     '        <th></th>\n' +
-    '        <th>Control Computers</th>\n' +
+    '        <th>Computers & Power</th>\n' +
     '        <th>Cost</th>\n' +
     '        <th>Size</th>\n' +
     '        <th>Space</th>\n' +
