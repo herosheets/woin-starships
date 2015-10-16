@@ -22,6 +22,7 @@ Outerwatch-Ultrabeam EHP-1 Hotflash Pulse Phaser,168,E,4,10,10,+0d6,5d6 heat
 North Prime Weapons LHB-1 Redsword Phaser Beam,68,L,3,11,8,+0d6,3d6 heat
 Weststellar Ltd. LPaB-1 Hellseeker Particle Beam,66,L,3,11,8,+0d6,3d6 heat
 UltraCo-NewCo LDP-1 Redfury Disruptor Beam,58,L,3,12,5,+0d6,3d6 heat
+Korat Drive Yards Dual Heavy Turbolaser,75,E,3,18,10,+0d6,3d6 heat
 Imperial Syndicate GLP-3 Redstorm Quad Heavy Turbolaser,396,G,5,39,15,+0d6,7d6 heat
 Imperial Syndicate GLP-2 Redstorm Quad Heavy Turbolaser,236,G,5,43,14,+0d6,6d6 heat
 WayCorp Holography GPaB-1 Deathspear Particle Beam,296,G,5,48,17,+0d6,5d6 heat
@@ -29,6 +30,7 @@ Imperial Syndicate GLP-1 Redstorm Quad Heavy Turbolaser,108,G,5,53,12,+0d6,6d6 h
 Transco Inc. GDB-1 Loudstream Disruptor Beam,162,G,5,56,13,+0d6,5d6 heat
 Solar Industries GHB-1 Excelsior Phaser Beam Emitter,276,G,5,57,15,+0d6,5d6 heat
 Young Asteroid Co. GBB-1 Flamebird Blaster Beam,109,G,5,60,8,+0d6,5d6 heat
+
 ,,,,,,,
 =====BALLISTIC WEAPONS=====,,,,,,,
 Omnitech-Prime SPR-1 Skyrain Magnetic Railgun,3,S,1,1,2,+0d6,2d6 ballistic
@@ -39,7 +41,7 @@ Microwatch Hardware EPC-1 Leadbolt Projectile Cannon,31,E,4,9,8,+0d6,4d6 ballist
 Hydyne Merccants LPR-1 Darksword Railgun,15,L,3,11,4,+0d6,4d6 ballistic
 Ultrastellar Railguns GPR-1 Ultimate Rain Magnetic Railgun,70,G,5,41,14,+0d6,6d6 ballistic
 ,,,,,,,
-=====ION WEAPONS=====,,,,,,,
+=====ION CANNONS=====,,,,,,,
 Nakamura Robotics SIC-1 Starbird Ion Cannon,7,S,1,1,3,+0d6,1d6 ion
 Transbeam Art MIB-1 Drainpipe Ion Beam,12,M,2,3,5,+0d6,2d6 ion
 Southtech Heavy Weapons LIC-1 Bigstreak Ion Cannon,33,L,3,8,7,+0d6,3d6 ion
