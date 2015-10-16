@@ -1,11 +1,11 @@
 Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 =====CONTROL COMPUTERS  (REQUIRED)=====,,,,,,,,,,
-Highwatch SM-1 Command Computer,3,S,1,2,8,-0,5,0,-0,+0d6
-Frontier Products MM-1 Command Computer,15,M,3,2,8,-0,10,0,-0,+0d6
+Highwatch SM-1 Command Computer,3,S,1,2,8,0.00%,5,0,-0,+0d6
+Frontier Products MM-1 Command Computer,15,M,3,2,8,0.00%,10,0,-0,+0d6
 Frontier Products MM-2 Command Computer,30,M,3,3,12,-1.00%,11,0,-0,+0d6
 Highwatch SM-1H Command Computer,109,S,1,4,16,-5.00%,7,1,1,+1d6
 Frontier Products MM-3 Command Computer,45,M,3,4,16,-2.00%,11,0,1,+0d6
-Chemerkin-Liang Products LM-1 Command Computer,30,L,5,4,16,-0,15,1,-0,+0d6
+Chemerkin-Liang Products LM-1 Command Computer,30,L,5,4,16,0.00%,15,1,-0,+0d6
 Newstellar EM-1 Command Computer,45,E,10,4,16,-5.00%,20,2,-0,+0d6
 Terra Prime GM-1 Command Computer,75,G,20,4,16,-10.00%,25,3,-0,+0d6
 Chemerkin-Liang Products LM-2 Command Computer,60,L,5,5,20,-1.00%,16,1,-0,+0d6
@@ -24,29 +24,29 @@ Adricson CS-1 Command Computer,1010,C,70,20,85,-7.00%,32,3,0,+0d6
 Ariakis Designs T100 Heavy Duty Command Computer,2050,T,110,24,110,-2.00%,35,4,0,+0d6
 ,,,,,,,,,,
 =====POWER PLANTS (REQUIRED)=====,,,,,,,,,,
-Quadex Power Core,5,S,3,0,2,-0,0,0,0,+0d6
-Incom N21-4 Power Converter,7,S,2,0,2,-0,0,0,0,+0d6
-Cryogenic Reserve Power Cell,10,S,1,0,1,-0,0,0,0,+0d6
-SFS I-a2b Solar Ionization Reactor,4000,C,100,0,150,-0,0,0,0,+0d6
-C-1 Carbon Reaction Chamber,15,M,8,0,20,-0,0,0,0,+0d6
-FPL-1 Fusion Power Plant,24,L,18,0,30,0,0,0,0,+0d6
-MFPL-1 Microfusion Reactor,3,S,2,0,2,-0,0,0,0,+0d6
-FMA-1 Matter/Antimatter Reaction Chamber,28,L,15,0,35,-0,0,0,0,+0d6
-FMA-2 Matter/Antmatter Reaction Chamber,45,E,27,0,50,-0,0,0,0,+0d6
-FMA-3 Matter/Antmatter Reaction Chamber,105,G,52,0,110,-0,0,0,0,+0d6
+Quadex Power Core,5,S,3,0,2,0.00%,0,0,0,+0d6
+Incom N21-4 Power Converter,7,S,2,0,2,0.00%,0,0,0,+0d6
+Cryogenic Reserve Power Cell,10,S,1,0,1,0.00%,0,0,0,+0d6
+SFS I-a2b Solar Ionization Reactor,4000,C,100,0,150,0.00%,0,0,0,+0d6
+C-1 Carbon Reaction Chamber,15,M,8,0,20,0.00%,0,0,0,+0d6
+FPL-1 Fusion Power Plant,24,L,18,0,30,0.00%,0,0,0,+0d6
+MFPL-1 Microfusion Reactor,3,S,2,0,2,0.00%,0,0,0,+0d6
+FMA-1 Matter/Antimatter Reaction Chamber,28,L,15,0,35,0.00%,0,0,0,+0d6
+FMA-2 Matter/Antmatter Reaction Chamber,45,E,27,0,50,0.00%,0,0,0,+0d6
+FMA-3 Matter/Antmatter Reaction Chamber,105,G,52,0,110,0.00%,0,0,0,+0d6
 ,,,,,,,,,,
 =====NAVIGATION COMPUTERS (AL 10)=====,,,,,,,,,,
-Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,0,0,0,-0,+0d6
-Nikitin AU-45 Class 4 Astrogation Droid*,78,S,0.5,79,0,0,0,0,-0,+0d6
-Huang Grav Vehicles Military Class 3 Navigation Solution v1.8*,110,M,7,91,0,0,0,0,-0,+0d6
-Shooting Star Products Mk I Class 2 Astrogation Unit*,205,M,8,100,0,0,0,0,-0,+0d6
-Imperial Agencies Class 1 Astrogation Unit*,495,L,12,125,0,0,0,0,-0,+0d6
-Transfarer Type 2B Class 0.6 Navigation Computer*,800,L,15,150,0,0,0,0,-0,+0d6
-Xing Starship Design Black Label Class 0.5 Navcom*,1050,E,24,158,0,0,0,0,-0,+0d6
-Sikorsky Biotech Organic Class 0.25 Astrogation Nucleus*,5500,G,44,200,0,0,0,0,-0,+0d6
+Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,0.00%,0,0,-0,+0d6
+Nikitin AU-45 Class 4 Astrogation Droid*,78,S,0.5,79,0,0.00%,0,0,-0,+0d6
+Huang Grav Vehicles Military Class 3 Navigation Solution v1.8*,110,M,7,91,0,0.00%,0,0,-0,+0d6
+Shooting Star Products Mk I Class 2 Astrogation Unit*,205,M,8,100,0,0.00%,0,0,-0,+0d6
+Imperial Agencies Class 1 Astrogation Unit*,495,L,12,125,0,0.00%,0,0,-0,+0d6
+Transfarer Type 2B Class 0.6 Navigation Computer*,800,L,15,150,0,0.00%,0,0,-0,+0d6
+Xing Starship Design Black Label Class 0.5 Navcom*,1050,E,24,158,0,0.00%,0,0,-0,+0d6
+Sikorsky Biotech Organic Class 0.25 Astrogation Nucleus*,5500,G,44,200,0,0.00%,0,0,-0,+0d6
 ,,,,,,,,,,
 =====CPU BOOSTERS=====,,,,,,,,,,
-Arctic Accessories CPU Booster Pack,10,S,1,0,1,0,0,0,0,+0d6
+Arctic Accessories CPU Booster Pack,10,S,1,0,1,0.00%,0,0,0,+0d6
 ,,,,,,,,,,
 =====ARTIFICIAL INTELLIGENCE=====,,,,,,,,,,
 Chan-Ling MCA-1 Crew Automation Center,230,M,17,0,0,-25.00%,0,0,0,-1d6
