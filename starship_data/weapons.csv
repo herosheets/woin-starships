@@ -80,3 +80,35 @@ Cui-Cook Systems SNPx-1 Starspear Nuclear Warhead,5,S,1,1,3,+1d6,2d6 heat/radiat
 Highstellar Ltc. MNPx-1 Bigbow Nuclear Warhead,11,M,2,4,6,+1d6,2d6 heat/radiation
 MegaCorp-Panstellar Lines LNPx-1 Blackfury Nuclear Warhead,26,L,3,8,7,+1d6,3d6 heat/radiation
 Lunar Alliance GNPx-1 Mushroom Nuclear Warhead,140,G,5,43,18,+1d6,5d6 heat/radiation
+
+,,,,,,,
+=====FASA TREK=====,,,,,,,
+HiBeam Energies Ltd FH-1 Phaser Beam,38,,0.5,5,8,+0d6,1d6 heat
+HiBeam Energies Ltd FH-2 Phaser Beam,56,,1.3,8,10,+0d6,1d6 heat
+Mariola Technologies FH-3 Phaser Beam,94,,5.8,12,20,+2d6,2d6 heat
+HiBeam Energies Ltd FH-4 Phaser Beam,56,,2.6,8,14,+1d6,1d6 heat
+HiBeam Energies Ltd FH-5 Phaser Beam,75,,3.1,10,16,+1d6,1d6 heat
+HiBeam Energies Ltd FH-6 Phaser Beam,45,,2.3,6,13,+1d6,1d6 heat
+HiBeam Energies Ltd FH-7 Phaser Beam,60,,3.2,8,14,+1d6,1d6 heat
+HiBeam Energies Ltd FH-8 Phaser Beam,75,,4.3,10,18,+1d6,2d6 heat
+HiBeam Energies Ltd FH-9 Phaser Beam,90,,6,12,22,+2d6,2d6 heat
+HiBeam Energies Ltd FH-10 Phaser Beam,63,,9.7,8,20,+2d6,2d6 heat
+HiBeam Energies Ltd FH-11 Phaser Beam,90,,10.7,12,24,+2d6,3d6 heat
+HiBeam Energies Ltd FH-12 Phaser Beam,58,,4.9,7,16,+1d6,2d6 heat
+HiBeam Energies Ltd FH-13 Phaser Beam,65,,6.5,12,18,+1d6,2d6 heat
+Williams Weapons Mk 1 FL-1 Laser Beam,9,,0.4,10,6,+0d6,1d6 heat
+Williams Weapons Mk 1 FL-1 Laser BeamFL-2 Laser Beam,12,,0.6,12,8,+0d6,1d6 heat
+Johanson Energy Co-op Mk 1 FL-3 Laser Beam,14,,0.7,14,10,+0d6,1d6 heat
+Johanson Energy Co-op Mk 2 FL-4 Laser Beam,20,,1,15,10,+0d6,1d6 heat
+Williams Weapons FL-5 Laser Beam,22,,1.1,16,10,+0d6,1d6 heat
+Williams Weapons FL-6 Laser Beam,32,,1.4,16,10,+0d6,1d6 heat
+Loraxial Ltd FP-1 Photon Torpedo,30,,4.4,4,12,+1d6,3d6 heat
+Loraxial Ltd FP-2 Photon Torpedo,18,,2,3,10,+0d6,2d6 heat
+Loraxial Ltd FP-3 Photon Torpedo,15,,1.2,2,6,+0d6,2d6 heat
+Morris Magtronics FP-4 Photon Torpedo,36,,12.5,5,16,+1d6,5d6 heat
+Morris Magtronics FP-5 Photon Torpedo,30,,9.5,4,16,+1d6,4d6 heat
+Morris Magtronics FP-6 Photon Torpedo,24,,6.7,3,14,+1d6,3d6 heat
+Loraxial Ltd FP-7 Photon Torpedo,32,,4.8,4,16,+1d6,2d6 heat
+Loraxial Ltd FAC-1 Accelerator Cannon,10,,0.6,10,8,+0d6,2d6 heat/radiation
+Loraxial Ltd FAC-2 Accelerator Cannon,14,,1.4,14,10,+0d6,3d6 heat/radiation
+Loraxial Ltd FAC-3 Accelerator Cannon,16,,2,17,10,+0d6,3d6 heat/radiation
