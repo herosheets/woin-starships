@@ -53,7 +53,7 @@ module.run(['$templateCache', function($templateCache) {
     'geometry. The introduction of navcomps makes galaxy-wide travel a trivial issue. A navigation computer eff ectively multiplies a ship\'s FTL capability by 10, subject to the na vcomp\'s\n' +
     'Max FTL value<br><br>\n' +
     '\n' +
-    '<br><br><b>Crew Automation & AI</b> can drastically reduce crew requirements, but have the disadvantage of reducing effectiveness in the form of a negative die modifier.\n' +
+    '<br><br><b>Crew Automation + AI</b> can drastically reduce crew requirements, but have the disadvantage of reducing effectiveness in the form of a negative die modifier.\n' +
     '</p> \n' +
     '<h3>Your Computers</h3>\n' +
     '<table class="table table-striped">\n' +
