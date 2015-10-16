@@ -52,7 +52,7 @@ module.run(['$templateCache', function($templateCache) {
     'lines when dealing with hyperspace, intense gravity wells, dark energy fluctuations, and non-euclidian\n' +
     'geometry. The introduction of navcomps makes galaxy-wide travel a trivial issue. A navigation computer eff ectively multiplies a ship\'s FTL capability by 10, subject to the na vcomp\'s\n' +
     'Max FTL value<br><br>\n' +
-    '<b>Fire control systems</b> are used to coordinate point defenses on extremely large ships.  They can effectively operate hundreds or thousands of point defense batteries.  These systems offer a much higher CPU allocation specifically for this purpose.\n' +
+    '\n' +
     '<br><br><b>Crew Automation & AI</b> can drastically reduce crew requirements, but have the disadvantage of reducing effectiveness in the form of a negative die modifier.\n' +
     '</p> \n' +
     '<h3>Your Computers</h3>\n' +
