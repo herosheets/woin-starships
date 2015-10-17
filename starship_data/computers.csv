@@ -1,5 +1,5 @@
 Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
-=====CONTROL COMPUTERS  (REQUIRED)=====,,,,,,,,,,
+=====CONTROL COMPUTERS=====,,,,,,,,,,
 Highwatch SM-1 Command Computer,3,S,1,2,8,-0.00%,5,0,-0,+0d6
 Frontier Products MM-1 Command Computer,15,M,3,2,8,-0.00%,10,0,-0,+0d6
 Frontier Products MM-2 Command Computer,30,M,3,3,12,-1.00%,11,0,-0,+0d6
@@ -23,7 +23,7 @@ Chemerkin-Liang Products LM-5S Command Computer,2000,L,5,16,64,-15.00%,23,3,4,+1
 Adricson CS-1 Command Computer,1010,C,70,20,85,-7.00%,32,3,0,+0d6
 Ariakis Designs T100 Heavy Duty Command Computer,2050,T,110,24,110,-2.00%,35,4,0,+0d6
 ,,,,,,,,,,
-=====POWER PLANTS (REQUIRED)=====,,,,,,,,,,
+=====POWER PLANTS=====,,,,,,,,,,
 Quadex Power Core,5,S,3,0,2,-0.00%,0,0,0,+0d6
 Incom N21-4 Power Converter,7,S,2,0,2,-0.00%,0,0,0,+0d6
 Cryogenic Reserve Power Cell,10,S,1,0,1,-0.00%,0,0,0,+0d6
@@ -54,15 +54,15 @@ Chan-Ling MCA-2 Crew Automation Center,450,M,19,0,0,-30.00%,0,0,0,-1d6
 Chan-Ling LCA-1 Crew Automation Center,500,L,27,0,0,-35.00%,0,0,0,-1d6
 Queen Industries MAI-1 Integrated Artificial Intelligence*,600,L,25,0,0,-35.00%,0,0,0,-1d6
 Chan-Ling ECA-1 Crew Automation Center,900,E,50,0,0,-40.00%,0,0,0,-1d6
-
 ,,,,,,,,,,
 =====FASA TREK=====,,,,,,,,,,
-Shiputer Corporation L-12,4,,1,4,2,0,4,0.08,0.0666666667,+0d6
-Perandis CompWorks L-13,11,,9,5,5,1,10,0.2,0.1666666667,+0d6
-Shiputer Corporation L-14,17,,21,6,10,1,20,0.4,0.3333333333,+0d6
-Daystrom Data Concepts M-1,48,,58,7,30,3,60,1.2,1,+1d6
-Daystrom Data Concepts M-2,60,,76,8,40,4,80,1.6,1.3333333333,+1d6
-Daystrom Data Concepts M-3,71,,94,9,50,5,100,2,1.6666666667,+1d6
-Daystrom Data Concepts M-4,83,,115,10,70,7,140,2.8,2.3333333333,+1d6
-Daystrom Data Concepts M-6,150,,120,12,90,9,180,3.6,3,+1d6
-Daystrom Data Concepts M-7,500,,230,14,150,15,300,6,5,+2d6
+Shiputer Corporation L-12,4,,1,4,2,0.00%,3,0.08,0.0666666667,+0d6
+Perandis CompWorks L-13,11,,9,5,5,-1.00%,4,0.2,0.1666666667,+0d6
+Shiputer Corporation L-14,17,,21,6,10,-1.00%,5,0.4,0.3333333333,+0d6
+Daystrom Data Concepts M-1,48,,58,7,30,-3.00%,6,1.2,1,+1d6
+Daystrom Data Concepts M-2,60,,76,8,40,-4.00%,8,1.6,1.3333333333,+1d6
+Daystrom Data Concepts M-3,71,,94,9,50,-5.00%,10,2,1.6666666667,+1d6
+Daystrom Data Concepts M-4,83,,115,10,70,-7.00%,14,2.8,2.3333333333,+1d6
+Daystrom Data Concepts M-6,150,,120,11,90,-9.00%,18,3.6,3,+1d6
+Daystrom Data Concepts M-7,500,,230,12,150,-15.00%,30,6,5,+2d6
+Daystrom Data Concepts M-8,1200,,350,14,220,-10.00%,,6,5,+3d6
