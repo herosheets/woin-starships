@@ -21,7 +21,7 @@ Cinema/Theater,2,1,4,0,,1% of crew capacity
 Holographic Suite,3,4,20,3,,1% of crew capacity
 Training Hall,0.5,3,4,0,,5% of crew capacity
 Zero-G Sports Hall,2,4,5,0,,1% of crew capacity
-Turbolifts,1,4,10,0,,5% of crew capacity
+Turbolifts,1,0.2,10,0,,5% of crew capacity
 Hidden Storage,0,3,3,0,"Each unit holds 1 CU of goods, but takes 3 CU of space",
 Stellar Cartography Room,0,8,5,1,,
 Secondary Bridge,0,1,5,1,,5 bridge crew
