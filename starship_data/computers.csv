@@ -32,8 +32,8 @@ C-1 Carbon Reaction Chamber,15,M,8,0,20,-0.00%,0,0,0,+0d6
 FPL-1 Fusion Power Plant,24,L,18,0,30,-0.00%,0,0,0,+0d6
 MFPL-1 Microfusion Reactor,3,S,2,0,2,-0.00%,0,0,0,+0d6
 FMA-1 Matter/Antimatter Reaction Chamber,28,L,15,0,35,-0.00%,0,0,0,+0d6
-FMA-2 Matter/Antmatter Reaction Chamber,45,E,27,0,50,-0.00%,0,0,0,+0d6
-FMA-3 Matter/Antmatter Reaction Chamber,105,G,52,0,110,-0.00%,0,0,0,+0d6
+FMA-2 Matter/Antimatter Reaction Chamber,45,E,27,0,50,-0.00%,0,0,0,+0d6
+FMA-3 Matter/Antimatter Reaction Chamber,105,G,52,0,110,-0.00%,0,0,0,+0d6
 ,,,,,,,,,,
 =====NAVIGATION COMPUTERS (AL 10)=====,,,,,,,,,,
 Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,-0.00%,0,0,-0,+0d6
