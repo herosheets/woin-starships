@@ -57,12 +57,12 @@ Chan-Ling ECA-1 Crew Automation Center,900,E,50,0,0,-40.00%,0,0,0,-1d6
 
 ,,,,,,,,,,
 =====FASA TREK=====,,,,,,,,,,
-Shiputer Corporation L-12,4,,1,,2,0,4,0.08,0.0666666667,+0d6
-Perandis CompWorks L-13,11,,9,,5,1,10,0.2,0.1666666667,+0d6
-Shiputer Corporation L-14,17,,21,,10,1,20,0.4,0.3333333333,+0d6
-Daystrom Data Concepts M-1,48,,58,,30,3,60,1.2,1,+1d6
-Daystrom Data Concepts M-2,60,,76,,40,4,80,1.6,1.3333333333,+1d6
-Daystrom Data Concepts M-3,71,,94,,50,5,100,2,1.6666666667,+1d6
-Daystrom Data Concepts M-4,83,,115,,70,7,140,2.8,2.3333333333,+1d6
-Daystrom Data Concepts M-6,150,,120,,90,9,180,3.6,3,+1d6
-Daystrom Data Concepts M-7,500,,230,,150,15,300,6,5,+2d6
+Shiputer Corporation L-12,4,,1,4,2,0,4,0.08,0.0666666667,+0d6
+Perandis CompWorks L-13,11,,9,5,5,1,10,0.2,0.1666666667,+0d6
+Shiputer Corporation L-14,17,6,21,,10,1,20,0.4,0.3333333333,+0d6
+Daystrom Data Concepts M-1,48,7,58,,30,3,60,1.2,1,+1d6
+Daystrom Data Concepts M-2,60,8,76,,40,4,80,1.6,1.3333333333,+1d6
+Daystrom Data Concepts M-3,71,,94,8,50,5,100,2,1.6666666667,+1d6
+Daystrom Data Concepts M-4,83,,115,9,70,7,140,2.8,2.3333333333,+1d6
+Daystrom Data Concepts M-6,150,,120,10,90,9,180,3.6,3,+1d6
+Daystrom Data Concepts M-7,500,,230,14,150,15,300,6,5,+2d6
