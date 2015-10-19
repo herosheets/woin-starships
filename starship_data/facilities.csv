@@ -4,6 +4,7 @@ Medical Hologram,4,1,100,2,,-
 "Cabin, Standard",0.5,1,0.5,0,Accomodates 1 crewmember,-
 "Cabin, Double",0.3,0.5,0.3,0,,-
 "Cabin, Luxury/Environmental",1,2,2,0,Can accomodate environmental requirements,-
+Casino,1,2,3,0,,-
 Chapel,1,3,2,0,,1% of crew capacity
 Cryogenic Unit,0,1,1,0.1,Includes supporting infrastructure,-
 Galley,2,3,4,0,,5% of crew capacity
