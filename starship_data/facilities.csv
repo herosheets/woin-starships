@@ -15,7 +15,7 @@ Messhall,1,4,2,0,,10% of crew capacity
 Bar/Restaurant,2,4,10,0,0.5/m income,5% of crew capacity
 Shop,2,3,8,0,0.6/m income; type should be specified,-
 Observation Lounge,0.5,3,2,0,,1% of crew capacity
-Arboretum,2,5,5,0,,1% of crew capacity
+Arboretum,2,5,5,0,For both hydroponics and leisure/relaxation,1% of crew capacity
 Brig,0.5,1,3,0,Each brig unit can hold 1 prisoner,1% of crew capacity
 Escape Pod,0.1,0.1,0.5,0,Each pod can carry 1 crewmember,100% of crew capacity
 Transporter Pad,0,1,20,1,A small transporter pad contains 1 transporter beam,5% of crew capacity
