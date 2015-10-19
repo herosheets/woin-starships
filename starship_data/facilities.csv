@@ -27,6 +27,7 @@ Shop,2,3,8,0,0.6/m income; type should be specified,-
 Sickbay,2,3,20,0,Accomodates 1 patient,5% of crew capacity
 Stateroom,0.5,2,2,0,,-
 Stellar Cartography Room,0,8,5,1,,-
+Swimming Pool,2,4,6,0,,-
 Transporter Pad,0,1,20,1,A small transporter pad contains 1 transporter beam,5% of crew capacity
 "Transporter, Cargo",0,1,10,0.5,Not suitable for living beings,-
 Training Hall,0.5,3,4,0,,5% of crew capacity
