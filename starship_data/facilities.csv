@@ -1,6 +1,8 @@
 Customization,Luxury/crew,Space/crew,Cost/crew,CPU,Notes,Recommended
-Sickbay,2,3,20,0,Accomodates 1 patient,5% of crew capacity
-Medical Hologram,4,1,100,2,,-
+Arboretum,2,5,5,0,For both hydroponics and leisure/relaxation,1% of crew capacity
+Bar/Restaurant,2,4,10,0,0.5/m income,5% of crew capacity
+Brig,0.5,1,3,0,Each brig unit can hold 1 prisoner,1% of crew capacity
+Cinema/Theater,2,1,4,0,,1% of crew capacity
 "Cabin, Hotbunk",0.2,0.3,0.2,0,Often uses 3 rotating shifts per 24 hours,-
 "Cabin, Standard",0.5,1,0.5,0,Accomodates 1 crewmember,-
 "Cabin, Double",0.3,0.5,0.3,0,,-
@@ -8,26 +10,24 @@ Medical Hologram,4,1,100,2,,-
 Casino,1,2,3,0,Not common on military ships,-
 Chapel,1,3,2,0,,1% of crew capacity
 Cryogenic Unit,0,1,1,0.1,Includes supporting infrastructure,-
+Escape Pod,0.1,0.1,0.5,0,Each pod can carry 1 crewmember,100% of crew capacity
 Galley,2,3,4,0,,5% of crew capacity
 Gymnasium,1,3,4,0,,5% of crew capacity
+Hidden Storage,0,3,3,0,"Each unit holds 1 CU of goods, but takes 3 CU of space",-
+Holographic Suite,3,4,20,3,,1% of crew capacity
 Laboratory,0,4,8,1,Type should be specified,-
 Lounge/Recreation Area,1,1,1,0,,5% of crew capacity
+Medical Hologram,4,1,100,2,,-
 Messhall,1,4,2,0,Sometimes called a mess or mess deck,10% of crew capacity
-Bar/Restaurant,2,4,10,0,0.5/m income,5% of crew capacity
-Shop,2,3,8,0,0.6/m income; type should be specified,-
 Observation Lounge,0.5,3,2,0,,1% of crew capacity
-Arboretum,2,5,5,0,For both hydroponics and leisure/relaxation,1% of crew capacity
-Brig,0.5,1,3,0,Each brig unit can hold 1 prisoner,1% of crew capacity
-Escape Pod,0.1,0.1,0.5,0,Each pod can carry 1 crewmember,100% of crew capacity
+Replicator,1,0.5,5,0.1,,-
+Secondary Bridge,0,1,5,1,,5 bridge crew
+Shop,2,3,8,0,0.6/m income; type should be specified,-
+Sickbay,2,3,20,0,Accomodates 1 patient,5% of crew capacity
+Stateroom,0.5,2,2,0,,-
+Stellar Cartography Room,0,8,5,1,,-
 Transporter Pad,0,1,20,1,A small transporter pad contains 1 transporter beam,5% of crew capacity
 "Transporter, Cargo",0,1,10,0.5,Not suitable for living beings,-
-Stateroom,0.5,2,2,0,,-
-Cinema/Theater,2,1,4,0,,1% of crew capacity
-Holographic Suite,3,4,20,3,,1% of crew capacity
 Training Hall,0.5,3,4,0,,5% of crew capacity
-Zero-G Sports Hall,2,4,5,0,,1% of crew capacity
 Turbolifts,1,0.2,10,0,About 5% of crew need turbolifts at any time,5% of crew capacity
-Hidden Storage,0,3,3,0,"Each unit holds 1 CU of goods, but takes 3 CU of space",-
-Stellar Cartography Room,0,8,5,1,,-
-Secondary Bridge,0,1,5,1,,5 bridge crew
-Replicator,1,0.5,5,0.1,,-
+Zero-G Sports Hall,2,4,5,0,,1% of crew capacity
