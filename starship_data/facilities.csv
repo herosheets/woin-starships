@@ -1,7 +1,7 @@
 Customization,Luxury/crew,Space/crew,Cost/crew,CPU,Notes,Recommended
 Sickbay,2,3,20,0,Accomodates 1 patient,5% of crew capacity
 Medical Hologram,4,1,100,2,,-
-"Cabin, Hotbunk",0.2,0.3,0.2,0,,-
+"Cabin, Hotbunk",0.2,0.3,0.2,0,Often uses 3 rotating shifts per 24 hours,-
 "Cabin, Standard",0.5,1,0.5,0,Accomodates 1 crewmember,-
 "Cabin, Double",0.3,0.5,0.3,0,,-
 "Cabin, Luxury/Environmental",1,2,2,0,Can accomodate environmental requirements,-
