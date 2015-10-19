@@ -19,7 +19,7 @@ Arboretum,2,5,5,0,,1% of crew capacity
 Brig,0.5,1,3,0,Each brig unit can hold 1 prisoner,1% of crew capacity
 Escape Pod,0.1,0.1,0.5,0,Each pod can carry 1 crewmember,100% of crew capacity
 Transporter Pad,0,1,20,1,A small transporter pad contains 1 transporter beam,5% of crew capacity
-Transporter, Cargo,0,1,10,0.5,Not suitable for living beings,-
+"Transporter, Cargo",0,1,10,0.5,Not suitable for living beings,-
 Stateroom,0.5,2,2,0,,-
 Cinema/Theater,2,1,4,0,,1% of crew capacity
 Holographic Suite,3,4,20,3,,1% of crew capacity
