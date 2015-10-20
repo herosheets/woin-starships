@@ -1,5 +1,6 @@
 Customization,Luxury/crew,Space/crew,Cost/crew,CPU,Notes,Recommended
 Arboretum,2,5,5,0,For both hydroponics and leisure/relaxation,1% of crew capacity
+Armory,0,0.5,100,0,For crew; troops have their own gear,-
 Bar/Restaurant,2,4,10,0,0.5/m income,5% of crew capacity
 Brig,0.5,1,3,0,Each brig unit can hold 1 prisoner,1% of crew capacity
 Cinema/Theater,2,1,4,0,,1% of crew capacity
