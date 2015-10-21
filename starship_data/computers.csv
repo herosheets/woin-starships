@@ -55,7 +55,7 @@ Chan-Ling LCA-1 Crew Automation Center,500,L,27,0,0,-35.00%,0,0,0,-1d6
 Queen Industries MAI-1 Integrated Artificial Intelligence*,600,L,25,0,0,-35.00%,0,0,0,-1d6
 Chan-Ling ECA-1 Crew Automation Center,900,E,50,0,0,-40.00%,0,0,0,-1d6
 ,,,,,,,,,,
-=====FASA TREK=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+=====FASA TREK UFP=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Shiputer Corporation L-12,4,,1,4,2,0.00%,3,0.08,0.0666666667,+0d6
 Perandis CompWorks L-13,11,,9,5,5,-1.00%,4,0.2,0.1666666667,+0d6
 Shiputer Corporation L-14,17,,21,6,10,-1.00%,5,0.4,0.3333333333,+0d6
@@ -66,3 +66,6 @@ Daystrom Data Concepts M-4,83,,115,10,70,-7.00%,14,2.8,2.3333333333,+1d6
 Daystrom Data Concepts M-6,150,,120,11,90,-9.00%,18,3.6,3,+1d6
 Daystrom Data Concepts M-7,500,,230,12,150,-15.00%,30,6,5,+2d6
 Daystrom Data Concepts M-8,1200,,350,14,220,-10.00%,32,6,5,+3d6
+,,,,,,,,,,
+=====FASA TREK KLI=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+ZD-1,6,,2,2,2,-0.00%,3,0,0,+0d6
