@@ -15,7 +15,7 @@ Panwatch-Microbeam EA-2H Antimatter Engine,589,E,14.6,532.9,73,1.1
 Panwatch-Microbeam EA-2S Antimatter Engine,1369,E,15.2,577.6,76,1.4
 Yang Astrotech GA-2 Antimatter Engine,721,G,15.8,624.1,79,1.1
 ,,,,,,
-=====HYPERDRIVES=====,,,,,,
+=====HYPERDRIVES=====,Cost,Size,CPU,Space,Power,Fuel Eff
 Cui-Green Alliance SH-1 Hyperdrive,12,S,0.8,1.6,4,0.8
 Cui-Green Alliance SH-2 Hyperdrive,26,S,1,2.5,5,1
 Cui-Green Alliance SH-3 Hyperdrive,53,S,1.6,6.4,8,1
@@ -34,14 +34,14 @@ Highfarer Enterprises GH-2 Hyperdrive,481,G,12,360,60,0.9
 KDY Capital Destroyer Hyperdrive Thruster,8500,C,30,16000,400,0.8
 Cygnus Spaceworks Super Hyperdrive Reactor,34000,T,45,81000,900,0.5
 ,,,,,,
-=====SAILS=====,,,,,,
+=====SAILS=====,Cost,Size,CPU,Space,Power,Fuel Eff
 TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,4.9,7,1
 Micro PrimeTech MT-1 Tachyon Sail,93,M,3,22.5,15,1
 Shooting Star LT-1 Tachyon Sail,160,L,5.4,72.9,27,1
 Frontier Yards ET-1 Tachyon Sail,259,E,8.8,193.6,44,1
 Butler Grav Vehicles GT-1 Tachyon Sail,569,G,11,302.5,55,1
 ,,,,,,
-=====TACHYON CONDUITS=====,,,,,,
+=====TACHYON CONDUITS=====,Cost,Size,CPU,Space,Power,Fuel Eff
 TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,4.9,7,1
 Highwatch SC-1 Tachyon Conduit System,64,S,3,22.5,15,1.6
 Arakaki-Cao Union MC-1 Tachyon Conduit System,119,M,5.6,78.4,28,1.6
@@ -50,7 +50,7 @@ Star Products EC-1 Tachyon Conduit System,515,E,15,562.5,75,1.6
 Long Transport GC-1 Tachyon Conduit System,1254,G,25,1562.5,125,1.6
 
 ,,,,,,
-=====FASA TREK=====,,,,,,
+=====FASA TREK=====,Cost,Size,CPU,Space,Power,Fuel Eff
 Shuvinaaljis Warp Technologies FWA-1 Warp Engine,2.4,,2.4,2.4,12,1
 Shuvinaaljis Warp Technologies FWA-2 Warp Engine,3,,3.2,2.4,16,1
 Shuvinaaljis Warp Technologies FWB-1 Warp Engine,36,,3.6,18,18,1
