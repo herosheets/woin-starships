@@ -81,7 +81,7 @@ Highstellar Ltc. MNPx-1 Bigbow Nuclear Warhead,11,M,2,4,6,+1d6,2d6 heat/radiatio
 MegaCorp-Panstellar Lines LNPx-1 Blackfury Nuclear Warhead,26,L,3,8,7,+1d6,3d6 heat/radiation
 Lunar Alliance GNPx-1 Mushroom Nuclear Warhead,140,G,5,43,18,+1d6,5d6 heat/radiation
 ,,,,,,,
-=====MASS ACCELERATORS=====
+=====MASS ACCELERATORS=====,,,,,,,
 ME-V Giga Mass Accelerator,15000,G,100,6000,50,+0d6,7d6 ballistic
 ME-W Colossus Mass Accelerator,20000,C,150,9000,70,+0d6,8d6 ballistic
 ME-X Titan Mass Accelerator,30000,T,200,15000,75,+0d6,10d6 ballistic
