@@ -23,7 +23,7 @@ Chemerkin-Liang Products LM-5S Command Computer,2000,L,5,16,64,-15.00%,23,3,4,+1
 Adricson CS-1 Command Computer,1010,C,70,20,85,-7.00%,32,3,0,+0d6
 Ariakis Designs T100 Heavy Duty Command Computer,2050,T,110,24,110,-2.00%,35,4,0,+0d6
 ,,,,,,,,,,
-=====POWER PLANTS=====,,,,,,,,,,
+=====POWER PLANTS=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Quadex Power Core,5,S,3,0,2,-0.00%,0,0,0,+0d6
 Incom N21-4 Power Converter,7,S,2,0,2,-0.00%,0,0,0,+0d6
 Cryogenic Reserve Power Cell,10,S,1,0,1,-0.00%,0,0,0,+0d6
@@ -35,7 +35,7 @@ FMA-1 Matter/Antimatter Reaction Chamber,28,L,15,0,35,-0.00%,0,0,0,+0d6
 FMA-2 Matter/Antimatter Reaction Chamber,45,E,27,0,50,-0.00%,0,0,0,+0d6
 FMA-3 Matter/Antimatter Reaction Chamber,105,G,52,0,110,-0.00%,0,0,0,+0d6
 ,,,,,,,,,,
-=====NAVIGATION COMPUTERS (AL 10)=====,,,,,,,,,,
+=====NAVIGATION COMPUTERS (AL 10)=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,-0.00%,0,0,-0,+0d6
 Nikitin AU-45 Class 4 Astrogation Droid*,78,S,0.5,79,0,-0.00%,0,0,-0,+0d6
 Huang Grav Vehicles Military Class 3 Navigation Solution v1.8*,110,M,7,91,0,-0.00%,0,0,-0,+0d6
@@ -45,17 +45,17 @@ Transfarer Type 2B Class 0.6 Navigation Computer*,800,L,15,150,0,-0.00%,0,0,-0,+
 Xing Starship Design Black Label Class 0.5 Navcom*,1050,E,24,158,0,-0.00%,0,0,-0,+0d6
 Sikorsky Biotech Organic Class 0.25 Astrogation Nucleus*,5500,G,44,200,0,-0.00%,0,0,-0,+0d6
 ,,,,,,,,,,
-=====CPU BOOSTERS=====,,,,,,,,,,
+=====CPU BOOSTERS=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Arctic Accessories CPU Booster Pack,10,S,1,0,1,-0.00%,0,0,0,+0d6
 ,,,,,,,,,,
-=====ARTIFICIAL INTELLIGENCE=====,,,,,,,,,,
+=====ARTIFICIAL INTELLIGENCE=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Chan-Ling MCA-1 Crew Automation Center,230,M,17,0,0,-25.00%,0,0,0,-1d6
 Chan-Ling MCA-2 Crew Automation Center,450,M,19,0,0,-30.00%,0,0,0,-1d6
 Chan-Ling LCA-1 Crew Automation Center,500,L,27,0,0,-35.00%,0,0,0,-1d6
 Queen Industries MAI-1 Integrated Artificial Intelligence*,600,L,25,0,0,-35.00%,0,0,0,-1d6
 Chan-Ling ECA-1 Crew Automation Center,900,E,50,0,0,-40.00%,0,0,0,-1d6
 ,,,,,,,,,,
-=====FASA TREK=====,,,,,,,,,,
+=====FASA TREK=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Shiputer Corporation L-12,4,,1,4,2,0.00%,3,0.08,0.0666666667,+0d6
 Perandis CompWorks L-13,11,,9,5,5,-1.00%,4,0.2,0.1666666667,+0d6
 Shiputer Corporation L-14,17,,21,6,10,-1.00%,5,0.4,0.3333333333,+0d6
