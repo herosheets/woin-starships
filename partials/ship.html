@@ -177,12 +177,46 @@
             </tr>
             <tr>
                 <td colspan="12" align="left" height="17" valign="bottom">
-                    <span style="font-weight: bold;">Other Systems</span>
-                    <span ng-if="ship['General'] === undefined">-</span>
-                     <span ng-repeat="(name, quantity) in ship['General']">
-                         <span ng-if="!(isHangar(name))">
-                            <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
-                         </span>
+                    <span style="font-weight: bold;">Fueling</span>
+                    <span ng-if="ship['Fueling'] === undefined">-</span>
+                     <span ng-repeat="(name, quantity) in ship['Fueling']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Electronic Warfare</span>
+                    <span ng-if="ship['Electronic Warfare'] === undefined">-</span>
+                     <span ng-repeat="(name, quantity) in ship['Electronic Warfare']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Tractor Beams</span>
+                    <span ng-if="ship['Tractor Beam'] === undefined">-</span>
+                     <span ng-repeat="(name, quantity) in ship['Tractor Beam']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Cloaking</span>
+                    <span ng-if="ship['Cloaking'] === undefined">-</span>
+                     <span ng-repeat="(name, quantity) in ship['Cloaking']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Engine Modifications</span>
+                    <span ng-if="ship['Engine Mods'] === undefined">-</span>
+                     <span ng-repeat="(name, quantity) in ship['Engine Mods']">
+                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),
                     </span>
                 </td>
             </tr>

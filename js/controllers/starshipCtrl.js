@@ -21,7 +21,12 @@ var quantityComponents = {
   'Facilities': 'facilitiesHash',
   'Hangar Bay Shuttle': 'hangarHash',
   'Hangar Bay Fighter': 'hangarHash',
-  'General': 'generalHash'
+  'General': 'generalHash',
+  'Cloaking': 'generalHash',
+  'Electronic Warfare': 'generalHash',
+  'Tractor Beam': 'generalHash',
+  'Fueling': 'generalHash',
+  'Engine Mods': 'generalHash'
 };
 
 var crewValues = ['Space', 'Cost', 'Luxury'];
@@ -166,10 +171,15 @@ var tabs = [
   {heading: 'FTL Engines', route: 'main.ftl'},
   {heading: 'Superstructure', route: 'main.superstructure'},
   {heading: 'Deflector Shields', route: 'main.deflectors'},
+  {heading: 'Point Defense', route: 'main.pointdefense'},
   {heading: 'Weaponry', route: 'main.weaponry'},
   {heading: 'Facilities', route: 'main.facilities'},
   {heading: 'Hangars', route: 'main.hangars'},
-  {heading: 'General Equipment', route: 'main.general'},
+  {heading: 'Tractor Beams', route: 'main.tractor'},
+  {heading: 'Engine Mods', route: 'main.enginemods'},
+  {heading: 'Fueling', route: 'main.fueling'},
+  {heading: 'Cloaking Devices', route: 'main.cloaking'},
+  {heading: 'Electronic Warfare', route: 'main.electronicwarfare'},
   {heading: 'Your Ship', route: 'main.ship'}
 ];
 

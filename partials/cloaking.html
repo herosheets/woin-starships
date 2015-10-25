@@ -1,0 +1,59 @@
+<h2>Cloaking Devices</h2>
+<p class="explainer">
+    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>
+<h3>Your General Equipment</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Count</th>
+        <th>Item</th>
+        <th>Space</th>
+        <th>Size</th>
+        <th>Cost</th>
+        <th>CPU</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship.Cloaking">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{generalHash[name].Space}}</td>
+        <td>{{generalHash[name].Size}}</td>
+        <td>{{generalHash[name].Cost}}</td>
+        <td>{{generalHash[name].CPU}}</td>
+        <td>{{generalHash[name].Notes}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY)">
+        <td colspan="7" class="text-center">No cloaking equipment selected.</td>
+    </tr>
+    </tbody>
+</table>
+<table class="table table-striped">
+    <thead>
+    <tr colspan="7">
+        <th></th>
+        <th>Item</th>
+        <th>Space</th>
+        <th>Size</th>
+        <th>Cost</th>
+        <th>CPU</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td colspan="7" class="text-center"><strong>Cloaking Systems</strong></td></tr>
+    <tr ng-repeat="c in systems.cloaking">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)" ng-disabled="notValidHull(c.Notes)">+</button></td>
+        <td>{{c.Item}}</td>
+        <td>{{c.Space}}</td>
+        <td>{{c.Size}}</td>
+        <td>{{c.Cost}}</td>
+        <td>{{c.CPU}}</td>
+        <td>{{c.Notes}}</td>
+    </tr>
+    </tbody>
+</table>

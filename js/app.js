@@ -91,16 +91,40 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "FacilitiesCtrl", templateUrl: '/partials/facilities.html' }
 				}
 			})
-			.state('main.general', {
-				url: 'general',
-				views: {
-					content: { controller: "GeneralCtrl", templateUrl: '/partials/general.html' }
-				}
-			})
 			.state('main.hangars', {
 				url: 'hangars',
 				views: {
 					content: { controller: "HangarsCtrl", templateUrl: '/partials/hangars.html' }
+				}
+			})
+			.state('main.cloaking', {
+				url: 'cloaking',
+				views: {
+					content: { controller: "CloakingCtrl", templateUrl: '/partials/cloaking.html' }
+				}
+			})
+			.state('main.electronicwarfare', {
+				url: 'electronicwarfare',
+				views: {
+					content: { controller: "ElectronicWarfareCtrl", templateUrl: '/partials/electronicwarfare.html' }
+				}
+			})
+			.state('main.fueling', {
+				url: 'fueling',
+				views: {
+					content: { controller: "FuelingCtrl", templateUrl: '/partials/fueling.html' }
+				}
+			})
+			.state('main.enginemods', {
+				url: 'enginemods',
+				views: {
+					content: { controller: "EngineModsCtrl", templateUrl: '/partials/enginemods.html' }
+				}
+			})
+			.state('main.tractor', {
+				url: 'tractor',
+				views: {
+					content: { controller: "TractorCtrl", templateUrl: '/partials/tractor.html' }
 				}
 			})
 			.state('main.superstructure', {
@@ -121,6 +145,12 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "DeflectorShieldCtrl", templateUrl: '/partials/shields.html' }
 				}
 			})
+			.state('main.pointdefense', {
+				url: 'pointdefense.html',
+				views: {
+					content: { controller: "PointDefenseCtrl", templateUrl: '/partials/pointdefense.html' }
+				}
+			})
 			.state('main.ship', {
 				url: 'ship',
 				views: {
@@ -139,8 +169,13 @@ require('subluminalCtrl');
 require('ftlCtrl');
 require('weaponCtrl');
 require('deflectorsCtrl');
-require('generalCtrl');
 require('superstructureCtrl');
 require('sensorCtrl');
 require('shipViewCtrl');
 require('hangarsCtrl');
+require('pointDefenseCtrl');
+require('cloakingCtrl');
+require('electronicWarfareCtrl');
+require('engineModsCtrl');
+require('tractorCtrl');
+require('fuelingCtrl');

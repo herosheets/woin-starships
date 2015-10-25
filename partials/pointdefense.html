@@ -1,0 +1,58 @@
+<h2>Your Point Defenses</h2>
+<p class="explainer">
+    Point defenses are close-in weaponry batteries and active protection systems which automatically detect, track, and destroy incoming missiles and fighter craft. They are ineffective against energy weapons such as lasers and distruptors, but very effective against torpedoes. Unlike shields and armor, point defense batteries do not grant a SOAK bonus; instead they provide a DEFENSE bonus against missile weapons (but not energy weapons).
+</p>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Amount</th>
+        <th>Name</th>
+        <th>Space</th>
+        <th>CPU</th>
+        <th>Cost/point</th>
+        <th>DEFENSE</th>
+        <th>Aura<th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship[PKEY]">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(PKEY, name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{pointDefensesHash[name].Space}}</td>
+        <td>{{pointDefensesHash[name].CPU}}</td>
+        <td>{{pointDefensesHash[name].Cost}}</td>
+        <td>{{pointDefensesHash[name].DEFENSE}}</td>
+        <td>{{pointDefensesHash[name].Aura}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY)">
+        <td colspan="7" class="text-center">No point defenses selected.</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Point Defense</th>
+        <th>Space</th>
+        <th>CPU</th>
+        <th>Cost/point</th>
+        <th>DEFENSE</th>
+        <th>Aura</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="c in pointDefenses">
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(PKEY, c[PKEY])">+</button></td>
+        <td>{{c['Point Defenses']}}</td>
+        <td>{{c.Space}}</td>
+        <td>{{c.CPU}}</td>
+        <td>{{c.Cost}}</td>
+        <td>{{c.DEFENSE}}</td>
+        <td>{{c.Aura}}</td>
+    </tr>
+    </tbody>
+</table>
