@@ -297,6 +297,7 @@ angular.module('woin-starship')
 
     $scope.calculateDefense = function() {
       var base = getAllShipValues($scope.ship, 'DEFENSE', $scope);
+      base -=  getQuantityValue($scope.ship['Point Defenses'], 'DEFENSE', $scope.pointDefensesHash);
       return base;
     };
 
