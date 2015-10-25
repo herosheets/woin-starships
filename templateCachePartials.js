@@ -35,6 +35,77 @@ try {
   module = angular.module('starshipPartials', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('/partials/cloaking.html',
+    '<h2>Cloaking Devices</h2>\n' +
+    '<p class="explainer">\n' +
+    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '<h3>Your General Equipment</h3>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr>\n' +
+    '        <th></th>\n' +
+    '        <th>Count</th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="(name, count) in ship.Cloaking">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
+    '        <td ng-bind="count"></td>\n' +
+    '        <td ng-bind="name"></td>\n' +
+    '        <td>{{generalHash[name].Space}}</td>\n' +
+    '        <td>{{generalHash[name].Size}}</td>\n' +
+    '        <td>{{generalHash[name].Cost}}</td>\n' +
+    '        <td>{{generalHash[name].CPU}}</td>\n' +
+    '        <td>{{generalHash[name].Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    <tr ng-if="isEmpty(KEY)">\n' +
+    '        <td colspan="7" class="text-center">No cloaking equipment selected.</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr colspan="7">\n' +
+    '        <th></th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr><td colspan="7" class="text-center"><strong>Cloaking Systems</strong></td></tr>\n' +
+    '    <tr ng-repeat="c in systems.cloaking">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)" ng-disabled="notValidHull(c.Notes)">+</button></td>\n' +
+    '        <td>{{c.Item}}</td>\n' +
+    '        <td>{{c.Space}}</td>\n' +
+    '        <td>{{c.Size}}</td>\n' +
+    '        <td>{{c.Cost}}</td>\n' +
+    '        <td>{{c.CPU}}</td>\n' +
+    '        <td>{{c.Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('starshipPartials');
+} catch (e) {
+  module = angular.module('starshipPartials', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/commandcontrol.html',
     '<h2>Control Computers + Power Plants</h2>\n' +
     '<p class="explainer">\n' +
@@ -212,6 +283,145 @@ module.run(['$templateCache', function($templateCache) {
     '    </tbody>\n' +
     '</table>\n' +
     '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('starshipPartials');
+} catch (e) {
+  module = angular.module('starshipPartials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('/partials/electronicwarfare.html',
+    '<h2>Electronic Warfare</h2>\n' +
+    '<p class="explainer">\n' +
+    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '<h3>Your General Equipment</h3>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr>\n' +
+    '        <th></th>\n' +
+    '        <th>Count</th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="(name, count) in ship[\'Electronic Warfare\']">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
+    '        <td ng-bind="count"></td>\n' +
+    '        <td ng-bind="name"></td>\n' +
+    '        <td>{{generalHash[name].Space}}</td>\n' +
+    '        <td>{{generalHash[name].Size}}</td>\n' +
+    '        <td>{{generalHash[name].Cost}}</td>\n' +
+    '        <td>{{generalHash[name].CPU}}</td>\n' +
+    '        <td>{{generalHash[name].Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    <tr ng-if="isEmpty(KEY)">\n' +
+    '        <td colspan="7" class="text-center">No electronic warfare equipment selected.</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr colspan="7">\n' +
+    '        <th></th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr><td colspan="7" class="text-center"><strong>Electronic Warfare</strong></td></tr>\n' +
+    '    <tr ng-repeat="c in systems.electronicWarfare">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>\n' +
+    '        <td>{{c.Item}}</td>\n' +
+    '        <td>{{c.Space}}</td>\n' +
+    '        <td>{{c.Size}}</td>\n' +
+    '        <td>{{c.Cost}}</td>\n' +
+    '        <td>{{c.CPU}}</td>\n' +
+    '        <td>{{c.Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('starshipPartials');
+} catch (e) {
+  module = angular.module('starshipPartials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('/partials/enginemods.html',
+    '<h2>Engine Modificatiions</h2>\n' +
+    '<p class="explainer">\n' +
+    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '<h3>Your Engine Mods</h3>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr>\n' +
+    '        <th></th>\n' +
+    '        <th>Count</th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="(name, count) in ship[\'Engine Mods\']">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
+    '        <td ng-bind="count"></td>\n' +
+    '        <td ng-bind="name"></td>\n' +
+    '        <td>{{generalHash[name].Space}}</td>\n' +
+    '        <td>{{generalHash[name].Size}}</td>\n' +
+    '        <td>{{generalHash[name].Cost}}</td>\n' +
+    '        <td>{{generalHash[name].CPU}}</td>\n' +
+    '        <td>{{generalHash[name].Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    <tr ng-if="isEmpty(KEY)">\n' +
+    '        <td colspan="7" class="text-center">No engine mods selected.</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr colspan="7">\n' +
+    '        <th></th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr><td colspan="7" class="text-center"><strong>Engine Mods</strong></td></tr>\n' +
+    '    <tr ng-repeat="c in systems.engMods">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>\n' +
+    '        <td>{{c.Item}}</td>\n' +
+    '        <td>{{c.Space}}</td>\n' +
+    '        <td>{{c.Size}}</td>\n' +
+    '        <td>{{c.Cost}}</td>\n' +
+    '        <td>{{c.CPU}}</td>\n' +
+    '        <td>{{c.Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>');
 }]);
 })();
 
@@ -455,11 +665,11 @@ try {
   module = angular.module('starshipPartials', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('/partials/general.html',
-    '<h2>General Equipment & Systems</h2>\n' +
+  $templateCache.put('/partials/fueling.html',
+    '<h2>Fueling</h2>\n' +
     '<p class="explainer">\n' +
     '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
-    '<h3>Your General Equipment</h3>\n' +
+    '<h3>Your Fueling Equipment</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr>\n' +
@@ -474,7 +684,8 @@ module.run(['$templateCache', function($templateCache) {
     '    </tr>\n' +
     '    </thead>\n' +
     '    <tbody>\n' +
-    '    <tr ng-repeat="(name, count) in ship.General">\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="(name, count) in ship.Fueling">\n' +
     '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
     '        <td ng-bind="count"></td>\n' +
     '        <td ng-bind="name"></td>\n' +
@@ -485,12 +696,10 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{generalHash[name].Notes}}</td>\n' +
     '    </tr>\n' +
     '    <tr ng-if="isEmpty(KEY)">\n' +
-    '        <td colspan="7" class="text-center">No general equipment selected.</td>\n' +
+    '        <td colspan="7" class="text-center">No fueling equipment selected.</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
     '</table>\n' +
-    '\n' +
-    '\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr colspan="7">\n' +
@@ -514,49 +723,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{c.CPU}}</td>\n' +
     '        <td>{{c.Notes}}</td>\n' +
     '    </tr>\n' +
-    '    <tr><td colspan="7" class="text-center"><strong>Tractor Beams</strong></td></tr>\n' +
-    '    <tr ng-repeat="c in systems.tractor">\n' +
-    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>\n' +
-    '        <td>{{c.Item}}</td>\n' +
-    '        <td>{{c.Space}}</td>\n' +
-    '        <td>{{c.Size}}</td>\n' +
-    '        <td>{{c.Cost}}</td>\n' +
-    '        <td>{{c.CPU}}</td>\n' +
-    '        <td>{{c.Notes}}</td>\n' +
-    '    </tr>\n' +
-    '    <tr><td colspan="7" class="text-center"><strong>Engine Mods</strong></td></tr>\n' +
-    '    <tr ng-repeat="c in systems.engMods">\n' +
-    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>\n' +
-    '        <td>{{c.Item}}</td>\n' +
-    '        <td>{{c.Space}}</td>\n' +
-    '        <td>{{c.Size}}</td>\n' +
-    '        <td>{{c.Cost}}</td>\n' +
-    '        <td>{{c.CPU}}</td>\n' +
-    '        <td>{{c.Notes}}</td>\n' +
-    '    </tr>\n' +
-    '    <tr><td colspan="7" class="text-center"><strong>Electronic Warfare</strong></td></tr>\n' +
-    '    <tr ng-repeat="c in systems.electronicWarfare">\n' +
-    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>\n' +
-    '        <td>{{c.Item}}</td>\n' +
-    '        <td>{{c.Space}}</td>\n' +
-    '        <td>{{c.Size}}</td>\n' +
-    '        <td>{{c.Cost}}</td>\n' +
-    '        <td>{{c.CPU}}</td>\n' +
-    '        <td>{{c.Notes}}</td>\n' +
-    '    </tr>\n' +
-    '    <tr><td colspan="7" class="text-center"><strong>Cloaking Systems</strong></td></tr>\n' +
-    '    <tr ng-repeat="c in systems.cloaking">\n' +
-    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)" ng-disabled="notValidHull(c.Notes)">+</button></td>\n' +
-    '        <td>{{c.Item}}</td>\n' +
-    '        <td>{{c.Space}}</td>\n' +
-    '        <td>{{c.Size}}</td>\n' +
-    '        <td>{{c.Cost}}</td>\n' +
-    '        <td>{{c.CPU}}</td>\n' +
-    '        <td>{{c.Notes}}</td>\n' +
-    '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>\n' +
-    '');
+    '</table>');
 }]);
 })();
 
@@ -750,53 +918,10 @@ try {
   module = angular.module('starshipPartials', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('/partials/sensors.html',
-    '<h2>Sensor Systems</h2>\n' +
-    '<p class="explainer">\n' +
-    '\n' +
-    '    A sensor array is a collection of sensors and sub processors designed to gather and collate information. They include navigational and combat sensors, as well as equipment which measures and records the environment capable of detecting a wide range of phenomena. Sensors also include communications equipment, and are used for offensive electronic warfare.</p>\n' +
-    '<table class="table table-striped">\n' +
-    '    <thead>\n' +
-    '    <tr>\n' +
-    '        <th></th>\n' +
-    '        <th>Sensor Systems</th>\n' +
-    '        <th>Cost</th>\n' +
-    '        <th>Size</th>\n' +
-    '        <th>Space</th>\n' +
-    '        <th>Range</th>\n' +
-    '        <th>Range Inc</th>\n' +
-    '        <th>DEFENSE</th>\n' +
-    '        <th>Checks</th>\n' +
-    '    </tr>\n' +
-    '    </thead>\n' +
-    '    <tbody>\n' +
-    '    <tr ng-repeat="s in sensors">\n' +
-    '        <td><input type="radio" ng-model="ship.sensor" ng-value="s"></td>\n' +
-    '        <td ng-bind="s[\'Sensor Systems\']"></td>\n' +
-    '        <td ng-bind="s.Cost"></td>\n' +
-    '        <td ng-bind="s.Size"></td>\n' +
-    '        <td ng-bind="s.Space"></td>\n' +
-    '        <td ng-bind="s.Range"></td>\n' +
-    '        <td ng-bind="s[\'Range Inc\']"></td>\n' +
-    '        <td ng-bind="s.DEFENSE"></td>\n' +
-    '        <td ng-bind="s.Checks"></td>\n' +
-    '    </tr>\n' +
-    '    </tbody>\n' +
-    '</table>');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('starshipPartials');
-} catch (e) {
-  module = angular.module('starshipPartials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('/partials/shields.html',
+  $templateCache.put('/partials/pointdefense.html',
     '<h2>Your Point Defenses</h2>\n' +
     '<p class="explainer">\n' +
-    '    Point defenses are close-in weaponry batteries and active protection systems which automatically detect, track, and destroy incoming missiles and fighter craft. They are ineffective against energy weapons such as lasers and distruptors, but very effective against torpedoes. Unlike shields and armor, point defense batteries do not grant a SOAK bonus; instead they provide a DEFENSE bonus against missile weapons (but not energy weapons). Because they\'re automated, point defenses have a high CPU overhead.\n' +
+    '    Point defenses are close-in weaponry batteries and active protection systems which automatically detect, track, and destroy incoming missiles and fighter craft. They are ineffective against energy weapons such as lasers and distruptors, but very effective against torpedoes. Unlike shields and armor, point defense batteries do not grant a SOAK bonus; instead they provide a DEFENSE bonus against missile weapons (but not energy weapons).\n' +
     '</p>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -851,8 +976,61 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{c.Aura}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>\n' +
+    '</table>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('starshipPartials');
+} catch (e) {
+  module = angular.module('starshipPartials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('/partials/sensors.html',
+    '<h2>Sensor Systems</h2>\n' +
+    '<p class="explainer">\n' +
     '\n' +
+    '    A sensor array is a collection of sensors and sub processors designed to gather and collate information. They include navigational and combat sensors, as well as equipment which measures and records the environment capable of detecting a wide range of phenomena. Sensors also include communications equipment, and are used for offensive electronic warfare.</p>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr>\n' +
+    '        <th></th>\n' +
+    '        <th>Sensor Systems</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Range</th>\n' +
+    '        <th>Range Inc</th>\n' +
+    '        <th>DEFENSE</th>\n' +
+    '        <th>Checks</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="s in sensors">\n' +
+    '        <td><input type="radio" ng-model="ship.sensor" ng-value="s"></td>\n' +
+    '        <td ng-bind="s[\'Sensor Systems\']"></td>\n' +
+    '        <td ng-bind="s.Cost"></td>\n' +
+    '        <td ng-bind="s.Size"></td>\n' +
+    '        <td ng-bind="s.Space"></td>\n' +
+    '        <td ng-bind="s.Range"></td>\n' +
+    '        <td ng-bind="s[\'Range Inc\']"></td>\n' +
+    '        <td ng-bind="s.DEFENSE"></td>\n' +
+    '        <td ng-bind="s.Checks"></td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('starshipPartials');
+} catch (e) {
+  module = angular.module('starshipPartials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('/partials/shields.html',
     '<h2>Deflector Shields</h2>\n' +
     '<p class="explainer">\n' +
     '    Deflector shields (also referred to as screens or force-fields) are a technology devised to protect ships, stations, and sometimes even planets from damage. A deflector shield is a (usually invisible) field projected around an object which disperses or deflects energy and projectiles. The shields may use various energy types to create the fields – magnetic fields, gravitons, and so on – but most have much the same effect. Shields are not typically raised at all times (although navigational shields stay active permanently; larger shields have a lower navigational power level which is used during normal travel). Shield capacity is directly proportional to the power generated divided by the size of the area to be protected. Earlier shields typically project an elliptical field around the object to be protected, while more advanced versions conform to the contours of the ship within a few feet or so.</p>\n' +
@@ -1102,12 +1280,46 @@ module.run(['$templateCache', function($templateCache) {
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
-    '                    <span style="font-weight: bold;">Other Systems</span>\n' +
-    '                    <span ng-if="ship[\'General\'] === undefined">-</span>\n' +
-    '                     <span ng-repeat="(name, quantity) in ship[\'General\']">\n' +
-    '                         <span ng-if="!(isHangar(name))">\n' +
-    '                            <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
-    '                         </span>\n' +
+    '                    <span style="font-weight: bold;">Fueling</span>\n' +
+    '                    <span ng-if="ship[\'Fueling\'] === undefined">-</span>\n' +
+    '                     <span ng-repeat="(name, quantity) in ship[\'Fueling\']">\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                    </span>\n' +
+    '                </td>\n' +
+    '            </tr>\n' +
+    '            <tr>\n' +
+    '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
+    '                    <span style="font-weight: bold;">Electronic Warfare</span>\n' +
+    '                    <span ng-if="ship[\'Electronic Warfare\'] === undefined">-</span>\n' +
+    '                     <span ng-repeat="(name, quantity) in ship[\'Electronic Warfare\']">\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                    </span>\n' +
+    '                </td>\n' +
+    '            </tr>\n' +
+    '            <tr>\n' +
+    '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
+    '                    <span style="font-weight: bold;">Tractor Beams</span>\n' +
+    '                    <span ng-if="ship[\'Tractor Beam\'] === undefined">-</span>\n' +
+    '                     <span ng-repeat="(name, quantity) in ship[\'Tractor Beam\']">\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                    </span>\n' +
+    '                </td>\n' +
+    '            </tr>\n' +
+    '            <tr>\n' +
+    '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
+    '                    <span style="font-weight: bold;">Cloaking</span>\n' +
+    '                    <span ng-if="ship[\'Cloaking\'] === undefined">-</span>\n' +
+    '                     <span ng-repeat="(name, quantity) in ship[\'Cloaking\']">\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                    </span>\n' +
+    '                </td>\n' +
+    '            </tr>\n' +
+    '            <tr>\n' +
+    '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
+    '                    <span style="font-weight: bold;">Engine Modifications</span>\n' +
+    '                    <span ng-if="ship[\'Engine Mods\'] === undefined">-</span>\n' +
+    '                     <span ng-repeat="(name, quantity) in ship[\'Engine Mods\']">\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1303,6 +1515,75 @@ module.run(['$templateCache', function($templateCache) {
     '    </tbody>\n' +
     '</table>\n' +
     '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('starshipPartials');
+} catch (e) {
+  module = angular.module('starshipPartials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('/partials/tractor.html',
+    '<h2>General Equipment & Systems</h2>\n' +
+    '<p class="explainer">\n' +
+    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '<h3>Your Tractor Beams</h3>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr>\n' +
+    '        <th></th>\n' +
+    '        <th>Count</th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="(name, count) in ship[\'Tractor Beam\']">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
+    '        <td ng-bind="count"></td>\n' +
+    '        <td ng-bind="name"></td>\n' +
+    '        <td>{{generalHash[name].Space}}</td>\n' +
+    '        <td>{{generalHash[name].Size}}</td>\n' +
+    '        <td>{{generalHash[name].Cost}}</td>\n' +
+    '        <td>{{generalHash[name].CPU}}</td>\n' +
+    '        <td>{{generalHash[name].Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    <tr ng-if="isEmpty(KEY)">\n' +
+    '        <td colspan="7" class="text-center">No tractor beams selected.</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr colspan="7">\n' +
+    '        <th></th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr><td colspan="7" class="text-center"><strong>Tractor Beams</strong></td></tr>\n' +
+    '    <tr ng-repeat="c in systems.tractor">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c.Item)">+</button></td>\n' +
+    '        <td>{{c.Item}}</td>\n' +
+    '        <td>{{c.Space}}</td>\n' +
+    '        <td>{{c.Size}}</td>\n' +
+    '        <td>{{c.Cost}}</td>\n' +
+    '        <td>{{c.CPU}}</td>\n' +
+    '        <td>{{c.Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>');
 }]);
 })();
 
