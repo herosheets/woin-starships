@@ -296,7 +296,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/electronicwarfare.html',
     '<h2>Electronic Warfare</h2>\n' +
     '<p class="explainer">\n' +
-    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '    Electronic warfare generally takes two forms.  Offensive EA equipment includes ion beams and computer systems (bought elsewhere); defensive EA systems include jammers, countermeasures, encryption, and electronic reinforcement. Without electronic defensive measures, ships are very vulnerable to electronic attack which can drain CPU resources and shut down systems.</p>\n' +
     '<h3>Your General Equipment</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -351,7 +351,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{c.Notes}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
