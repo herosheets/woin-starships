@@ -1131,7 +1131,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Weight</span>\n' +
     '                    <span ng-bind="calculateWeight(ship.hull.Tonnage) | number:0 "></span> tons;\n' +
     '                    <span style="font-weight: bold;">Cargo Units</span>\n' +
-    '                    <span ng-bind="presentCargo()"></span>\n' +
+    '                    <span ng-bind="presentCargo()"></span><br>\n' +
     '                    <span style="font-weight: bold;">Hull Class </span>\n' +
     '                    <span ng-bind=\'ship.hull.Class || "none"\'></span> (INIT <span ng-bind="ship.hull.INITIATIVE || 0"></span>)<br>\n' +
     '                    <span style="font-weight: bold;">Traits</span> {{ship.hullConfig.Traits}}<br>\n' +
