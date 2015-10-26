@@ -1266,7 +1266,7 @@ module.run(['$templateCache', function($templateCache) {
     '                </td>\n' +
     '            </tr>\n' +
     '            <tr>\n' +
-    '                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Facilities</b></td>\n' +
+    '                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Systems & Facilities</b></td>\n' +
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="10" sdnum="2057;0;0" align="left" height="17" valign="bottom">\n' +
@@ -1310,7 +1310,7 @@ module.run(['$templateCache', function($templateCache) {
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
-    '                    <span style="font-weight: bold;">Cloaking</span>\n' +
+    '                    <span style="font-weight: bold;">Cloaking Device</span>\n' +
     '                    <span ng-if="ship[\'Cloaking\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Cloaking\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
@@ -1319,12 +1319,15 @@ module.run(['$templateCache', function($templateCache) {
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="12" align="left" height="17" valign="bottom">\n' +
-    '                    <span style="font-weight: bold;">Engine Modifications</span>\n' +
+    '                    <span style="font-weight: bold;">Engineering</span>\n' +
     '                    <span ng-if="ship[\'Engine Mods\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Engine Mods\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
     '                    </span>\n' +
     '                </td>\n' +
+    '            </tr>\n' +
+    '            <tr>\n' +
+    '                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom"><b>Hangars & Bays</b></td>\n' +
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
@@ -1360,7 +1363,8 @@ module.run(['$templateCache', function($templateCache) {
     '        </div>\n' +
     '    </div>\n' +
     '\n' +
-    '</div>');
+    '</div>\n' +
+    '');
 }]);
 })();
 
