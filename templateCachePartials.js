@@ -1526,9 +1526,9 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/tractor.html',
-    '<h2>General Equipment & Systems</h2>\n' +
+    '<h2>Tractor/Pressor Beams</h2>\n' +
     '<p class="explainer">\n' +
-    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '    Tractor and pressor systems use a variety of technologies. Some manipulate gravity, while others use similar technology to deflecor shields. Large vessels often have multiple tractor beams.</p>\n' +
     '<h3>Your Tractor Beams</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -1583,7 +1583,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{c.Notes}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
