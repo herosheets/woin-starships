@@ -669,7 +669,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/fueling.html',
     '<h2>Fueling</h2>\n' +
     '<p class="explainer">\n' +
-    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '    Many ships have a long operational range, but any ship can exhaust its fuel reserves.  Fuel bays can increase a ship\'s fuel capacity (and therefore its operational range), while fuel scoops can gather fuel from gas giants or from the coronas of stars.</p>\n' +
     '<h3>Your Fueling Equipment</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -725,7 +725,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{c.Notes}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
