@@ -38,7 +38,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/cloaking.html',
     '<h2>Cloaking Devices</h2>\n' +
     '<p class="explainer">\n' +
-    '    Starships also have a variety of individual pieces of equipment. These cover a wide range of purposes, including fuel scoops, tractor beams, fuel-bay alterations, cloaking devices, and more.</p>\n' +
+    '   Clocking devices are resource-intensive, with high CPU overheads.  They take up a lot of space, and can be extremely expensive.</p>\n' +
     '<h3>Your General Equipment</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
