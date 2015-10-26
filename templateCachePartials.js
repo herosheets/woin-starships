@@ -364,7 +364,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/enginemods.html',
-    '<h2>Engineeering Modificatiions</h2>\n' +
+    '<h2>Engineering Modificatiions</h2>\n' +
     '<p class="explainer">\n' +
     '     Repair bays handle damage control, and automated and crew repair systems. Regular repair bays work on the ship they are installed on, while remote repair bays can help to restore allied ships within range. </p>\n' +
     '<h3>Your Engineeering Mods</h3>\n' +
