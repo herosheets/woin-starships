@@ -1154,7 +1154,7 @@ module.run(['$templateCache', function($templateCache) {
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
-    '                    <span style="font-weight: bold;">Computers: </span>\n' +
+    '                    <span style="font-weight: bold;">Computers </span>\n' +
     '                    <span ng-repeat="(name, quantity) in ship[\'Control Computers\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
     '                        (CPU cycles: <span ng-bind="computerHash[name][\'CPU\']"></span>;\n' +
