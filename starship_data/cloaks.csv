@@ -1,6 +1,6 @@
 Item,Space,Size,Cost,CPU,Notes
-Ultrabeam Y62 Cloaking Device,30,S,750,1,Restricted to ship classes I;II;III
-NorthCo GYN3 Starship Stealth System,100,M,2000,2,Restricted to ship classes IV;V;VI;VII
-Highdyne S2 Stealth Solution,400,L,10000,3,Restricted to ship classes VIII;IX;X;XI
-Daystellar-Silvertech Society JG51 Integrated Cloaking System,1000,E,40000,4,Restricted to ship classes XII;XIII;XIV;XV;XVI
-Waywatch BI95 Cloaking Device,3000,G,90000,5,Restricted to ship classes XVII;XVIII;XIX
+Ultrabeam Y62 Cloaking Device,30,S,750,12,Restricted to ship classes I;II;III
+NorthCo GYN3 Starship Stealth System,100,M,2000,22,Restricted to ship classes IV;V;VI;VII
+Highdyne S2 Stealth Solution,400,L,10000,32,Restricted to ship classes VIII;IX;X;XI
+Daystellar-Silvertech Society JG51 Integrated Cloaking System,1000,E,40000,48,Restricted to ship classes XII;XIII;XIV;XV;XVI
+Waywatch BI95 Cloaking Device,3000,G,90000,75,Restricted to ship classes XVII;XVIII;XIX
