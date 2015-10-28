@@ -1,5 +1,4 @@
 Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
-=====CONTROL COMPUTERS=====,,,,,,,,,,
 Highwatch SM-1 Command Computer,3,S,1,2,8,-0.00%,5,0,-0,+0d6
 Frontier Products MM-1 Command Computer,15,M,3,2,8,-0.00%,10,0,-0,+0d6
 Frontier Products MM-2 Command Computer,30,M,3,3,12,-1.00%,11,0,-0,+0d6
@@ -23,7 +22,7 @@ Chemerkin-Liang Products LM-5S Command Computer,2000,L,5,16,64,-15.00%,23,3,4,+1
 Adricson CS-1 Command Computer,1010,C,70,20,85,-7.00%,32,3,0,+0d6
 Ariakis Designs T100 Heavy Duty Command Computer,2050,T,110,24,110,-2.00%,35,4,0,+0d6
 ,,,,,,,,,,
-=====POWER PLANTS=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+POWER PLANTS,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Quadex Power Core,5,S,3,0,2,-0.00%,0,0,0,+0d6
 Incom N21-4 Power Converter,7,S,2,0,2,-0.00%,0,0,0,+0d6
 Cryogenic Reserve Power Cell,10,S,1,0,1,-0.00%,0,0,0,+0d6
@@ -35,7 +34,7 @@ FMA-1 Matter/Antimatter Reaction Chamber,28,L,15,0,35,-0.00%,0,0,0,+0d6
 FMA-2 Matter/Antimatter Reaction Chamber,45,E,27,0,50,-0.00%,0,0,0,+0d6
 FMA-3 Matter/Antimatter Reaction Chamber,105,G,52,0,110,-0.00%,0,0,0,+0d6
 ,,,,,,,,,,
-=====NAVIGATION COMPUTERS (AL 10)=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+NAVCOMPS,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,-0.00%,0,0,-0,+0d6
 Nikitin AU-45 Class 4 Astrogation Droid*,78,S,0.5,79,0,-0.00%,0,0,-0,+0d6
 Huang Grav Vehicles Military Class 3 Navigation Solution v1.8*,110,M,7,91,0,-0.00%,0,0,-0,+0d6
@@ -45,35 +44,45 @@ Transfarer Type 2B Class 0.6 Navigation Computer*,800,L,15,150,0,-0.00%,0,0,-0,+
 Xing Starship Design Black Label Class 0.5 Navcom*,1050,E,24,158,0,-0.00%,0,0,-0,+0d6
 Sikorsky Biotech Organic Class 0.25 Astrogation Nucleus*,5500,G,44,200,0,-0.00%,0,0,-0,+0d6
 ,,,,,,,,,,
-=====CPU BOOSTERS=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
-Arctic Accessories CPU Booster Pack,10,S,1,0,1,-0.00%,0,0,0,+0d6
-,,,,,,,,,,
-=====ARTIFICIAL INTELLIGENCE=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+ARTIFICIAL INTELLIGENCE,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Chan-Ling MCA-1 Crew Automation Center,230,M,17,0,0,-25.00%,0,0,0,-1d6
 Chan-Ling MCA-2 Crew Automation Center,450,M,19,0,0,-30.00%,0,0,0,-1d6
 Chan-Ling LCA-1 Crew Automation Center,500,L,27,0,0,-35.00%,0,0,0,-1d6
 Queen Industries MAI-1 Integrated Artificial Intelligence*,600,L,25,0,0,-35.00%,0,0,0,-1d6
 Chan-Ling ECA-1 Crew Automation Center,900,E,50,0,0,-40.00%,0,0,0,-1d6
 ,,,,,,,,,,
-=====FASA TREK UFP=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
-Shiputer Corporation L-12,4,,1,4,2,0.00%,3,0.08,0.0666666667,+0d6
-Perandis CompWorks L-13,11,,9,5,5,-1.00%,4,0.2,0.1666666667,+0d6
-Shiputer Corporation L-14,17,,21,6,10,-1.00%,5,0.4,0.3333333333,+0d6
-Daystrom Data Concepts M-1,48,,58,7,30,-3.00%,6,1.2,1,+1d6
-Daystrom Data Concepts M-2,60,,76,8,40,-4.00%,8,1.6,1.3333333333,+1d6
-Daystrom Data Concepts M-3,71,,94,9,50,-5.00%,10,2,1.6666666667,+1d6
-Daystrom Data Concepts M-4,83,,115,10,70,-7.00%,14,2.8,2.3333333333,+1d6
-Daystrom Data Concepts M-6,150,,120,11,90,-9.00%,18,3.6,3,+1d6
-Daystrom Data Concepts M-7,500,,230,12,150,-15.00%,30,6,5,+2d6
-Daystrom Data Concepts M-8,1200,,350,14,220,-10.00%,32,6,5,+3d6
-Daystrom Data Concepts M-8A Duotronics AICS,4000,,600,18,490,-30.00%,32,6,5,+3d6
-,,,,,,,,,,
-=====FASA TREK KLI=====,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
-ZD-1,6,,2,2,2,-0.00%,3,0,0,+0d6
-ZD-2,21,,5,3,7,-0.00%,4,0,0,+0d6
-ZD-3,32,,38,4,16,-0.00%,5,0,0,+0d6
-ZD-4,94,,77,5,25,-0.00%,6,0,0,+0d6
-ZD-5,140,,142,6,40,-0.00%,8,0,0,+0d6
-ZD-6,260,,196,7,60,-0.00%,10,0,0,+0d6
-ZD-7,435,,231,8,80,-0.00%,12,1,0,+0d6
-ZD-8,630,,294,9,140,-0.00%,15,1,1,+0d6
+FASA TREK,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+Shiputer Corporation L-12,4,,1,2,2,-0.20%,2,0,0,+0d6
+Perandis CompWorks L-13,11,,9,2,5,-0.50%,2,0,0,+0d6
+Shiputer Corporation L-14,17,,21,2,10,-1.00%,2,1,1,+0d6
+Daystrom Data Concepts M-1,48,,58,3,30,-3.00%,3,2,2,+0d6
+Daystrom Data Concepts M-2,60,,76,4,40,-4.00%,4,2,2,+0d6
+Daystrom Data Concepts M-3,71,,94,5,50,-5.00%,5,3,3,+1d6
+Daystrom Data Concepts M-4,83,,115,7,70,-7.00%,7,4,4,+1d6
+Daystrom Data Concepts M-6,150,,120,9,90,-9.00%,9,5,5,+1d6
+Daystrom Data Concepts M-7,500,,230,15,150,-15.00%,15,8,8,+2d6
+Daystrom Data Concepts M-8,1200,,350,22,220,-22.00%,22,11,11,+2d6
+Daystrom Data Concepts M-8A Duotronics AICS,4000,,600,49,490,-49.00%,49,25,25,+3d6
+Klingon Empire ZD-1,6,,2,2,2,-0.20%,2,0,0,+0d6
+Klingon Empire ZD-2,21,,5,2,7,-0.70%,2,0,0,+0d6
+Klingon Empire ZD-3,32,,38,2,16,-1.60%,2,1,1,+0d6
+Klingon Empire ZD-4,94,,77,2.5,25,-2.50%,2.5,1,1,+0d6
+Klingon Empire ZD-5,140,,142,4,40,-4.00%,4,2,2,+0d6
+Klingon Empire ZD-6,260,,196,6,60,-6.00%,6,3,3,+1d6
+Klingon Empire ZD-7,435,,231,8,80,-8.00%,8,4,4,+1d6
+Klingon Empire ZD-8,630,,294,14,140,-14.00%,14,7,7,+2d6
+Romulan Star Empire R1M,6,,1,2,3,-0.30%,2,0,0,+0d6
+Romulan Star Empire R2M,24,,13,2,8,-0.80%,2,0,0,+0d6
+Romulan Star Empire R3M,34,,39,2.5,25,-2.50%,2.5,1,1,+0d6
+Romulan Star Empire R4M,70,,63,5,50,-0.05%,5,3,3,+1d6
+Romulan Star Empire R5M,100,,105,7.5,75,-7.50%,7.5,4,4,+1d6
+Romulan Star Empire R6M,230,,162,10.5,105,-10.50%,10.5,5,5,+2d6
+Orion Colonies Mark I,3,,1,2,2,-0.20%,2,0,0,+0d6
+Orion Colonies Mark II,9,,6,2,8,-0.80%,2,0,0,+0d6
+Orion Colonies Mark III,22,,17,2.2,22,-2.20%,2.2,1,1,+0d6
+Orion Colonies Mark IV,50,,55,4,40,-4.00%,4,2,2,+0d6
+Gorn Alliance 1AG,6,,1,0.5,5,-0.50%,0.5,0,0,+0d6
+Gorn Alliance 1BG,18,,10,1,10,-1.00%,1,1,1,+0d6
+Gorn Alliance 1CG,44,,28,2,20,-2.00%,2,1,1,+0d6
+Gorn Alliance 1DG,100,,67,4,40,-4.00%,4,2,2,+0d6
+Gorn Alliance 1EG,190,,136,8,80,-8.00%,8,4,4,+1d6
