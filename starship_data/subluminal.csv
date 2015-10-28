@@ -1,5 +1,4 @@
-Sub-luminal Engine,Cost,Size,CPU,Space,Power,Fuel Eff
-=====LIQUID FUEL ROCKETS=====,,,,,,
+Rockets,Cost,Size,CPU,Space,Power,Fuel Eff
 Newline-Silverwide Systems SL-1 Liquid Fuel Rocket,1,S,1.1,6.05,11,0.5
 Newline-Silverwide Systems SL-2 Liquid Fuel Rocket,3,S,1.3,8.45,13,0.5
 Turner-Koga Inc ML-1 Liquid Fuel Rocket,3,M,1.7,14.45,17,0.5
@@ -11,7 +10,7 @@ Highlight Robotics GL-1 Liquid Fuel Rocket,30,G,6.9,238.05,69,0.5
 Carter Psitech EL-2 Liquid Fuel Rocket,30,E,7.1,252.05,71,0.7
 Highlight Robotics GL-2 Liquid Fuel Rocket,70,G,9.9,490.05,99,0.5
 ,,,,,,
-=====ION ENGINES=====,Cost,Size,CPU,Space,Power,Fuel Eff
+Ion Engines,Cost,Size,CPU,Space,Power,Fuel Eff
 Satellite Concepts SI-1 Ion Engine,5,S,0.7,2.45,7,1.4
 Satellite Concepts SI-2 Ion Engine,8,S,1.1,6.05,11,1.4
 Oshiro Shipping MI-1 Ion Engine,11,M,1.8,16.2,18,1.4
@@ -25,7 +24,7 @@ WayDyne Incorporated GI-2 Ion Engine,132,G,9.6,460.8,96,1.6
 Cygnus Spaceworks Germon-4 Ion Engine,350,C,3.8,980,140,0.9
 KDY Destroyer-I Ion Engine,480,C,4.5,4205,290,0.7
 ,,,,,,
-=====FUSION REACTORS=====,Cost,Size,CPU,Space,Power,Fuel Eff
+Fusion Reactors,Cost,Size,CPU,Space,Power,Fuel Eff
 Star Corporation SF-1 Fusion Reactor,7,S,1.2,7.2,12,1.2
 Star Corporation SF-2 Fusion Reactor,11,S,1.9,18.05,19,1.2
 WarpCo Alliance MF-1 Fusion Reactor,11,M,3.3,54.45,33,1.2
@@ -38,37 +37,98 @@ OmniDyne Lines EF-1 Fusion Reactor,94,E,9.2,423.2,92,1.4
 Sun Technologies GF-1 Fusion Reactor,134,G,10.5,551.25,105,1.2
 Sun Technologies GF-2 Fusion Reactor,292,G,17.4,1513.8,174,1.2
 ,,,,,,
-=====SOLAR SAILS=====,Cost,Size,CPU,Space,Power,Fuel Eff
+Solar Sails,Cost,Size,CPU,Space,Power,Fuel Eff
 Comet Lines SS-1 Solar Sail,1,S,0.3,0.45,3,1
 Panlight Universal MS-1 Solar Sail,2,M,0.7,2.45,7,1
 Stellar Products LS-1 Solar Sail,3,L,1.2,7.2,12,1
 Du-Bobrikov Company ES-1 Solar Sail,7,E,1.9,18.05,19,1
 Panwatch Metallurgy GS-1 Solar Sail,19,G,3.5,61.25,35,1
 ,,,,,,
-=====OTHER=====,Cost,Size,CPU,Space,Power,Fuel Eff
+Other,Cost,Size,CPU,Space,Power,Fuel Eff
 Girodyne SRB42 Sublight Engine,5,S,1.3,1.8,6,1
-
 ,,,,,,
-=====FASA TREK=====,Cost,Size,CPU,Space,Power,Fuel Eff
-Smith & Smythe Motor Works Ltd FIA-1 Impulse Engine,10,,1,3,10,1
-Smith & Smythe Motor Works Ltd FIA-2 Impulse Engine,10,,2,3,20,1
-Smith & Smythe Motor Works Ltd FIA-3 Impulse Engine,20,,3,3,30,1
-Smith & Smythe Motor Works Ltd FIB-1 Impulse Engine,10,,2,4,20,1
-Smith & Smythe Motor Works Ltd FIB-2 Impulse Engine,20,,4,4,40,1
-Smith & Smythe Motor Works Ltd FIB-3 Impulse Engine,30,,6,4,60,1
-Kloratis Drives FIC-1 Impulse Engine,10,,1,5,10,1
-Kloratis Drives FIC-2 Impulse Engine,20,,3,5,30,1
-Kloratis Drives FIC-3 Impulse Engine,30,,6,5,60,1
-Smith & Smythe Motor Works Ltd FID-1 Impulse Engine,20,,2,6,20,1
-Smith & Smythe Motor Works Ltd FID-2 Impulse Engine,30,,4,6,40,1
-Smith & Smythe Motor Works Ltd FID-3 Impulse Engine,40,,8,6,80,1
-Kloratis Drives FIE-1 Impulse Engine,30,,4,7,40,1
-Kloratis Drives FIE-2 Impulse Engine,40,,8,7,80,1
-Kloratis Drives FIE-3 Impulse Engine,50,,16,7,160,1
-Smith & Smythe Motor Works Ltd FIF-1 Impulse Engine,40,,12,9,120,1
-Smith & Smythe Motor Works Ltd FIF-2 Impulse Engine,50,,16,9,160,1
-Smith & Smythe Motor Works Ltd FIF-3 Impulse Engine,70,,20,9,200,1
-Kloratis Drives FIG-1 Impulse Engine,100,,24,11,240,1
-Kloratis Drives FIG-2 Impulse Engine,180,,32,11,320,1
-Kloratis Drives FIG-3 Impulse Engine,340,,40,11,400,1
-Smith & Smythe Motor Works Ltd FMIA Micro Impulse Engine,10,,1,0.1,10,1
+,,,,,,
+FASA TREK IMPULSE ENGINES,Cost,Size,CPU,Space,Power,Fuel Eff
+Smith & Smythe Motor Works Ltd FIA-1 Impulse Engine,1,,1,3,10,1
+Smith & Smythe Motor Works Ltd FIA-2 Impulse Engine,1,,2,3,20,1
+Smith & Smythe Motor Works Ltd FIA-3 Impulse Engine,2,,3,3,30,1
+Smith & Smythe Motor Works Ltd FIB-1 Impulse Engine,1,,2,4,20,1
+Smith & Smythe Motor Works Ltd FIB-2 Impulse Engine,2,,4,4,40,1
+Smith & Smythe Motor Works Ltd FIB-3 Impulse Engine,3,,6,4,60,1
+Kloratis Drives FIC-1 Impulse Engine,1,,1,5,10,1
+Kloratis Drives FIC-2 Impulse Engine,2,,3,5,30,1
+Kloratis Drives FIC-3 Impulse Engine,3,,6,5,60,1
+Smith & Smythe Motor Works Ltd FID-1 Impulse Engine,2,,2,6,20,1
+Smith & Smythe Motor Works Ltd FID-2 Impulse Engine,3,,4,6,40,1
+Smith & Smythe Motor Works Ltd FID-3 Impulse Engine,4,,8,6,80,1
+Kloratis Drives FIE-1 Impulse Engine,3,,4,7,40,1
+Kloratis Drives FIE-2 Impulse Engine,4,,8,7,80,1
+Kloratis Drives FIE-3 Impulse Engine,5,,16,7,160,1
+Smith & Smythe Motor Works Ltd FIF-1 Impulse Engine,4,,12,9,120,1
+Smith & Smythe Motor Works Ltd FIF-2 Impulse Engine,5,,16,9,160,1
+Smith & Smythe Motor Works Ltd FIF-3 Impulse Engine,7,,20,9,200,1
+Kloratis Drives FIG-1 Impulse Engine,10,,24,11,240,1
+Kloratis Drives FIG-2 Impulse Engine,18,,32,11,320,1
+Kloratis Drives FIG-3 Impulse Engine,34,,40,11,400,1
+Smith & Smythe Motor Works Ltd FMIA Micro Impulse Engine,1,,1,0.1,10,1
+Klingon Empire KIA-1,17,,1,4,10,1
+Klingon Empire KIA-2,28,,2,4,20,1
+Klingon Empire KIA-3,40,,3,4,30,1
+Klingon Empire KIB-1,34,,3,6.5,30,1
+Klingon Empire KIB-2,38,,2,6.5,20,1
+Klingon Empire KIC-1,41,,2,11,20,1
+Klingon Empire KIC-2,50,,4,11,40,1
+Klingon Empire KIC-3,68,,5,11,50,1
+Klingon Empire KIC-4,97,,8,11,80,1
+Klingon Empire KID-1,79,,6,14,60,1
+Klingon Empire KID-2,62,,4,14,40,1
+Klingon Empire KIE-1,94,,6,17,60,1
+Klingon Empire KIE-2,135,,12,17,120,1
+Klingon Empire KIE-3,181,,18,17,180,1
+Klingon Empire KIF-1,174,,17,19,170,1
+Klingon Empire KIF-2,278,,23,19,230,1
+Romulan Star Empire RIA-1,10,,1,4,10,1
+Romulan Star Empire RIA-2,17,,2,4,20,1
+Romulan Star Empire RIA-3,26,,3,4,30,1
+Romulan Star Empire RIB-1,20,,2,5,20,1
+Romulan Star Empire RIB-2,30,,3,5,30,1
+Romulan Star Empire RIB-3,48,,5,5,50,1
+Romulan Star Empire RIC-1,21,,1,10,10,1
+Romulan Star Empire RIC-2,31,,4,10,40,1
+Romulan Star Empire RIC-3,50,,5,10,50,1
+Romulan Star Empire RIC-4,60,,6,10,60,1
+Romulan Star Empire RID-1,34,,4,14,40,1
+Romulan Star Empire RID-2,62,,8,14,80,1
+Romulan Star Empire RID-3,117,,12,14,120,1
+Romulan Star Empire RIE-1,104,,10,16,100,1
+Romulan Star Empire RIE-2,151,,15,16,150,1
+Romulan Star Empire RIE-3,178,,20,16,200,1
+Romulan Star Empire RIF-1,122,,12,18,120,1
+Romulan Star Empire RIE-2,202,,18,18,180,1
+Romulan Star Empire RIE-3,306,,28,18,280,1
+Orion Colonies OIA-1,10,,1,0.5,10,1
+Orion Colonies OIA-2,19,,2,0.5,20,1
+Orion Colonies OIA-3,28,,3,0.5,30,1
+Orion Colonies OIB-1,12,,1,1.5,10,1
+Orion Colonies OIB-2,22,,2,1.5,20,1
+Orion Colonies OIB-3,33,,3,1.5,30,1
+Orion Colonies OIC-1,26,,2,4,20,1
+Orion Colonies OIC-2,32,,4,4,40,1
+Orion Colonies OIC-3,45,,6,4,60,1
+Gorn Alliance GIA-1,10,,1,5,10,1
+Gorn Alliance GIA-2,20,,2,5,20,1
+Gorn Alliance GIB-1,10,,1,7,10,1
+Gorn Alliance GIB-2,20,,2,7,20,1
+Gorn Alliance GIB-3,40,,4,7,40,1
+Gorn Alliance GIC-1,20,,2,13,20,1
+Gorn Alliance GIC-2,30,,3,13,30,1
+Gorn Alliance GIC-3,40,,4,13,40,1
+Gorn Alliance GID-1,30,,3,16,30,1
+Gorn Alliance GID-2,60,,6,16,60,1
+Gorn Alliance GID-3,80,,8,16,80,1
+Gorn Alliance GIE-1,40,,4,19,40,1
+Gorn Alliance GIE-2,70,,7,19,70,1
+Gorn Alliance GIE-3,100,,10,19,100,1
+Gorn Alliance GIF-1,50,,5,21,50,1
+Gorn Alliance GIF-2,100,,10,21,100,1
+Gorn Alliance GIF-3,150,,15,21,150,1
