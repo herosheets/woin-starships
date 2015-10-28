@@ -5,15 +5,13 @@ Highdyne S2 Stealth Solution,400,L,10000,25,Restricted to ship classes VIII;IX;X
 Daystellar-Silvertech Society JG51 Integrated Cloaking System,1000,E,40000,35,Restricted to ship classes XII;XIII;XIV;XV;XVI
 Waywatch BI95 Cloaking Device,3000,G,90000,55,Restricted to ship classes XVII;XVIII;XIX
 ,,,,,
-=====FASA KLI=====,Space,Size,Cost,CPU,Notes
-KCA,18,S,10000,12,Restricted to ship classes I;II;III
-KCB,40,M,15000,22,Restricted to ship classes IV;V
-KCC,210,L,30000,32,Restricted to ship classes VI;VII;VIII;IX
-KCD,700,E,50000,48,Restricted to ship classes X;XI
-,,,,,
-=====FASA ROM=====,Space,Size,Cost,CPU,Notes
-RCA,14,S,12000,9,Restricted to ship classes II;III
-RCB,30,M,20000,14,Restricted to ship classes IV;V
-RCC,175,L,45000,18,Restricted to ship classes VI;VII;VIII;IX
-RCD,550,E,70000,24,Restricted to ship classes X;XI
-RCE,850,E,90000,32,Restricted to ship classes XII
+FASA TREK,Space,Size,Cost,CPU,Notes
+Kingon Empire KCA Cloaking Device,18,S,10000,12,Restricted to ship classes I;II;III
+Kingon Empire KCB Cloaking Device,40,M,15000,22,Restricted to ship classes IV;V
+Kingon Empire KCC Cloaking Device,210,L,30000,32,Restricted to ship classes VI;VII;VIII;IX
+Kingon Empire KCD Cloaking Device,700,E,50000,48,Restricted to ship classes X;XI
+Romulan Star Empire RCA Cloaking Device,14,S,12000,8,Restricted to ship classes II;III
+Romulan Star Empire RCB Cloaking Device,30,M,20000,10,Restricted to ship classes IV;V
+Romulan Star Empire RCC Cloaking Device,175,L,45000,15,Restricted to ship classes VI;VII;VIII;IX
+Romulan Star Empire RCD Cloaking Device,550,E,70000,22,Restricted to ship classes X;XI
+Romulan Star Empire RCE Cloaking Device,850,E,90000,38,Restricted to ship classes XII
