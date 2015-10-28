@@ -1286,7 +1286,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Fueling</span>\n' +
     '                    <span ng-if="ship[\'Fueling\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Fueling\']">\n' +
-    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1295,7 +1295,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Electronic Warfare</span>\n' +
     '                    <span ng-if="ship[\'Electronic Warfare\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Electronic Warfare\']">\n' +
-    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1304,7 +1304,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Tractor Beams</span>\n' +
     '                    <span ng-if="ship[\'Tractor Beam\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Tractor Beam\']">\n' +
-    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1313,7 +1313,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Cloaking Device</span>\n' +
     '                    <span ng-if="ship[\'Cloaking\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Cloaking\']">\n' +
-    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1322,7 +1322,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Engineering</span>\n' +
     '                    <span ng-if="ship[\'Engine Mods\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Engine Mods\']">\n' +
-    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span> (<span ng-bind="quantity"></span>),\n' +
+    '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
