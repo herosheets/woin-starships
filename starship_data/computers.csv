@@ -26,9 +26,16 @@ POWER PLANTS,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Quadex Power Core,5,S,3,0,2,-0.00%,0,0,0,+0d6
 Incom N21-4 Power Converter,7,S,2,0,2,-0.00%,0,0,0,+0d6
 Cryogenic Reserve Power Cell,10,S,1,0,1,-0.00%,0,0,0,+0d6
-SFS I-a2b Solar Ionization Reactor,4000,C,100,0,150,-0.00%,0,0,0,+0d6
+SFS I-a2b Solar Ionization Reactor,4000,C,500,0,150,-0.00%,0,0,0,+0d6
+SFS I-a3b  Solar Ionization Reactor,7000,T,900,0,290,-0.00%,0,0,0,+0d6
 C-1 Carbon Reaction Chamber,15,M,8,0,20,-0.00%,0,0,0,+0d6
-FPL-1 Fusion Power Plant,24,L,18,0,30,-0.00%,0,0,0,+0d6
+FPL-1 Fusion Power Plant,5,S,1,0,3,-0.00%,0,0,0,+0d6
+FPL-2 Fusion Power Plant,13,S,14,0,8,-0.00%,0,0,0,+0d6
+FPL-3 Fusion Power Plant,80,M,70,0,50,-0.00%,0,0,0,+0d6
+FPL-4 Fusion Power Plant,100,M,110,0,75,-0.00%,0,0,0,+0d6
+FPL-5 Fusion Power Plant,130,L,135,0,120,-0.00%,0,0,0,+0d6
+FPL-6 Fusion Power Plant,250,E,150,0,160,-0.00%,0,0,0,+0d6
+FPL-7 Fusion Power Plant,2000,G,400,0,250,-0.00%,0,0,0,+0d6
 MFMA-1 Matter/Antimatter Chamber,8,S,1,0,4,-0.00%,0,0,0,+0d6
 MFMA-2 Matter/Antimatter Chamber,22,S,9,0,10,-0.00%,0,0,0,+0d6
 MFMA-3 Matter/Antimatter Chamber,34,S,21,0,20,-0.00%,0,0,0,+0d6
