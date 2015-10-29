@@ -867,7 +867,7 @@ module.run(['$templateCache', function($templateCache) {
     '\n' +
     '    Starships are categorized by class, which is a rough measure of tonnage. This initial decision determines the size\n' +
     '    parameters of your ship design. It also determines your crew requirement, fuel capacity, cargo space, and DEFENSE\n' +
-    '    values.  For especially large ships (those over Class XX or so), space starts to matter less and less.  However, in most objects, mass increases at the cube rate of volume.<br><br>\n' +
+    '    values.  For especially large ships (those over Class XX or so), space starts to matter less and less; it will be easy to fit in any components required (as long as you can afford them!) but instead the challenge of maintaining increasingly larger crews, paying them monthly, and outfitting the vessel to crew comfortable becomes more difficult.<br><br>\n' +
     '    While a DEFENSE value cannot drop below 0 during play, larger ships do have negative values which can still counteract bonuses and the like.\n' +
     '</p>\n' +
     '<table class="table table-striped">\n' +
