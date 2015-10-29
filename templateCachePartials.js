@@ -1180,7 +1180,7 @@ module.run(['$templateCache', function($templateCache) {
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Crew</span>\n' +
-    '                    <span ng-bind="calculateCrew() || 0"></span> (cost <span ng-bind="(calculateCrew() * 200)"></span>Cr/m);\n' +
+    '                    <span ng-bind="calculateCrew() || 0"></span> (cost <span ng-bind="(calculateCrew() * 200)"></span>cr/m);\n' +
     '                    <span style="font-weight: bold;">Troops</span>\n' +
     '                    <span ng-bind="ship.Crew.Troops || 0"></span>; <strong>Passengers</strong>\n' +
     '                    <span ng-bind="ship.Crew[\'Standard Passengers\'] + ship.Crew[\'Luxury Passengers\'] || 0"></span>\n' +
