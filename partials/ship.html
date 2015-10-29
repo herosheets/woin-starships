@@ -128,6 +128,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Shields</span>
+                    <span ng-if="ship['Deflector Shields'] === undefined">-</span>
                      <span ng-repeat="(name, quantity) in ship['Deflector Shields']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
                         (power <span ng-bind="deflectorHash[name]['Power'] * quantity"></span>;
