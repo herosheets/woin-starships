@@ -29,10 +29,17 @@ Cryogenic Reserve Power Cell,10,S,1,0,1,-0.00%,0,0,0,+0d6
 SFS I-a2b Solar Ionization Reactor,4000,C,100,0,150,-0.00%,0,0,0,+0d6
 C-1 Carbon Reaction Chamber,15,M,8,0,20,-0.00%,0,0,0,+0d6
 FPL-1 Fusion Power Plant,24,L,18,0,30,-0.00%,0,0,0,+0d6
-MFPL-1 Microfusion Reactor,3,S,2,0,2,-0.00%,0,0,0,+0d6
-FMA-1 Matter/Antimatter Reaction Chamber,28,L,15,0,35,-0.00%,0,0,0,+0d6
-FMA-2 Matter/Antimatter Reaction Chamber,45,E,27,0,50,-0.00%,0,0,0,+0d6
-FMA-3 Matter/Antimatter Reaction Chamber,105,G,52,0,110,-0.00%,0,0,0,+0d6
+MFMA-1 Matter/Antimatter Chamber,8,S,1,0,4,-0.00%,0,0,0,+0d6
+MFMA-2 Matter/Antimatter Chamber,22,S,9,0,10,-0.00%,0,0,0,+0d6
+MFMA-3 Matter/Antimatter Chamber,34,S,21,0,20,-0.00%,0,0,0,+0d6
+FMA-1 Matter/Antimatter Chamber,96,M,58,0,60,-0.00%,0,0,0,+0d6
+FMA-2 Matter/Antimatter Chamber,120,M,76,0,80,-0.00%,0,0,0,+0d6
+FMA-3 Matter/Antimatter Chamber,142,M,94,0,100,-0.00%,0,0,0,+0d6
+FMA-4 Matter/Antimatter Chamber,166,L,115,0,140,-0.00%,0,0,0,+0d6
+FMA-5 Matter/Antimatter Chamber,300,E,120,0,180,-0.00%,0,0,0,+0d6
+FMA-6 Matter/Antimatter Chamber,1000,G,230,0,300,-0.00%,0,0,0,+0d6
+FMA-7 Matter/Antimatter Chamber,2400,C,350,0,440,-0.00%,0,0,0,+0d6
+FMA-8 Matter/Antimatter Chamber,8000,T,600,0,580,-0.00%,0,0,0,+0d6
 ,,,,,,,,,,
 NAVCOMPS,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,-0.00%,0,0,-0,+0d6
