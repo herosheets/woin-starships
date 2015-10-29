@@ -1274,6 +1274,7 @@ module.run(['$templateCache', function($templateCache) {
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Shields</span>\n' +
+    '                    <span ng-if="ship[\'Deflector Shields\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Deflector Shields\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
     '                        (power <span ng-bind="deflectorHash[name][\'Power\'] * quantity"></span>;\n' +
