@@ -1,110 +1,110 @@
 FTL Engine,Cost,Size,CPU,Space,Power,Fuel Eff
 ANTIMATTER ENGINES,,,,,,
-Warpdyne Asteroid Mining SA-1 Antimatter Engine,17,S,1.2,3.6,6,1
-Warpdyne Asteroid Mining SA-2 Antimatter Engine,35,S,1.6,6.4,8,1.1
-White AgriSpace MA-1 Antimatter Engine,34,M,3,22.5,15,1
-White AgriSpace MA-2 Antimatter Engine,84,M,3.6,32.4,18,1
-Newdyne Concepts LA-1 Antimatter Engine,92,L,4,40,20,1
-Newdyne Concepts LA-2 Antimatter Engine,180,L,5,62.5,25,0.9
-White AgriSpace MA-3 Antimatter Engine,114,M,5.6,78.4,28,1.3
-Panwatch-Microbeam EA-1 Antimatter Engine,140,E,6.4,102.4,32,1
-Newdyne Concepts LA-3 Antimatter Engine,261,L,8.4,176.4,42,1.4
-Panwatch-Microbeam EA-2 Antimatter Engine,336,E,11.4,324.9,57,1
-Yang Astrotech GA-1 Antimatter Engine,374,G,14.4,518.4,72,1
-Panwatch-Microbeam EA-2H Antimatter Engine,589,E,14.6,532.9,73,1.1
-Panwatch-Microbeam EA-2S Antimatter Engine,1369,E,15.2,577.6,76,1.4
-Yang Astrotech GA-2 Antimatter Engine,721,G,15.8,624.1,79,1.1
+Warpdyne Asteroid Mining SA-1 Antimatter Engine,17,S,1.2,60,6,1
+Warpdyne Asteroid Mining SA-2 Antimatter Engine,35,S,1.6,80,8,1.1
+White AgriSpace MA-1 Antimatter Engine,34,M,3,150,15,1
+White AgriSpace MA-2 Antimatter Engine,84,M,3.6,180,18,1
+Newdyne Concepts LA-1 Antimatter Engine,92,M,4,200,20,1
+Newdyne Concepts LA-2 Antimatter Engine,180,L,5,250,25,0.9
+White AgriSpace MA-3 Antimatter Engine,114,L,5.6,280,28,1.3
+Panwatch-Microbeam EA-1 Antimatter Engine,140,L,6.4,320,32,1
+Newdyne Concepts LA-3 Antimatter Engine,261,E,8.4,420,42,1.4
+Panwatch-Microbeam EA-2 Antimatter Engine,336,E,11.4,570,57,1
+Yang Astrotech GA-1 Antimatter Engine,374,G,14.4,720,72,1
+Panwatch-Microbeam EA-2H Antimatter Engine,589,G,14.6,730,73,1.1
+Panwatch-Microbeam EA-2S Antimatter Engine,1369,G,15.2,760,76,1.4
+Yang Astrotech GA-2 Antimatter Engine,721,G,15.8,790,79,1.1
 ,,,,,,
 HYPERDRIVES,Cost,Size,CPU,Space,Power,Fuel Eff
-Cui-Green Alliance SH-1 Hyperdrive,12,S,0.8,1.6,4,0.8
-Cui-Green Alliance SH-2 Hyperdrive,26,S,1,2.5,5,1
-Cui-Green Alliance SH-3 Hyperdrive,53,S,1.6,6.4,8,1
-Outerdyne DayCorp MH-1 Hyperdrive,33,M,1.8,8.1,9,0.8
-Avatar-10 Hyperdrive,45,S,3,8.1,9,0.9
-Outerdyne DayCorp MH-2 Hyperdrive,64,M,2,10,10,0.9
-Kinjo Hardware LH-1 Hyperdrive,49,L,3.2,25.6,16,0.8
-Isu-Sim SSP05 Hyperdrive Generator,104,S,8,25.6,16,1.9
-Series 401 Hyperdrive Motivator,195,M,12,32.4,18,1.4
-Kinjo Hardware LH-2H Hyperdrive,231,L,3.8,36.1,19,1
-Kinjo Hardware LH-2 Hyperdrive,118,L,4,40,20,0.8
-Stellar Group EH-1 Hyperdrive,109,E,4.8,57.6,24,0.8
-Stellar Group EH-2 Hyperdrive,240,E,6,90,30,0.9
-Highfarer Enterprises GH-1 Hyperdrive,256,G,8.8,193.6,44,0.8
-Highfarer Enterprises GH-2 Hyperdrive,481,G,12,360,60,0.9
-KDY Capital Destroyer Hyperdrive Thruster,8500,C,30,16000,400,0.8
-Cygnus Spaceworks Super Hyperdrive Reactor,34000,T,45,81000,900,0.5
+Cui-Green Alliance SH-1 Hyperdrive,12,S,0.8,40,4,0.8
+Cui-Green Alliance SH-2 Hyperdrive,26,S,1,50,5,1
+Cui-Green Alliance SH-3 Hyperdrive,53,S,1.6,80,8,1
+Outerdyne DayCorp MH-1 Hyperdrive,33,S,1.8,90,9,0.8
+Avatar-10 Hyperdrive,45,S,1.8,90,9,0.9
+Outerdyne DayCorp MH-2 Hyperdrive,64,M,2,100,10,0.9
+Kinjo Hardware LH-1 Hyperdrive,49,M,3.2,160,16,0.8
+Isu-Sim SSP05 Hyperdrive Generator,104,M,3.2,160,16,1.9
+Series 401 Hyperdrive Motivator,195,M,3.6,180,18,1.4
+Kinjo Hardware LH-2H Hyperdrive,231,M,3.8,190,19,1
+Kinjo Hardware LH-2 Hyperdrive,118,L,4,200,20,0.8
+Stellar Group EH-1 Hyperdrive,109,L,4.8,240,24,0.8
+Stellar Group EH-2 Hyperdrive,240,L,6,300,30,0.9
+Highfarer Enterprises GH-1 Hyperdrive,256,E,8.8,440,44,0.8
+Highfarer Enterprises GH-2 Hyperdrive,481,E,12,600,60,0.9
+KDY Capital Destroyer Hyperdrive Thruster,8500,C,80,4000,400,0.8
+Cygnus Spaceworks Super Hyperdrive Reactor,34000,T,180,45000,900,0.5
 ,,,,,,
 TACHYON SAILS,Cost,Size,CPU,Space,Power,Fuel Eff
-TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,4.9,7,1
-Micro PrimeTech MT-1 Tachyon Sail,93,M,3,22.5,15,1
-Shooting Star LT-1 Tachyon Sail,160,L,5.4,72.9,27,1
-Frontier Yards ET-1 Tachyon Sail,259,E,8.8,193.6,44,1
-Butler Grav Vehicles GT-1 Tachyon Sail,569,G,11,302.5,55,1
+TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,70,7,1
+Micro PrimeTech MT-1 Tachyon Sail,93,M,3,150,15,1
+Shooting Star LT-1 Tachyon Sail,160,L,5.4,270,27,1
+Frontier Yards ET-1 Tachyon Sail,259,E,8.8,440,44,1
+Butler Grav Vehicles GT-1 Tachyon Sail,569,E,11,550,55,1
 ,,,,,,
 TACHYON CONDUITS,Cost,Size,CPU,Space,Power,Fuel Eff
-TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,4.9,7,1
-Highwatch SC-1 Tachyon Conduit System,64,S,3,22.5,15,1.6
-Arakaki-Cao Union MC-1 Tachyon Conduit System,119,M,5.6,78.4,28,1.6
-Transwide Products LC-1 Tachyon Conduit System,288,L,8,160,40,1.6
-Star Products EC-1 Tachyon Conduit System,515,E,15,562.5,75,1.6
-Long Transport GC-1 Tachyon Conduit System,1254,G,25,1562.5,125,1.6
+TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,70,7,1
+Highwatch SC-1 Tachyon Conduit System,64,M,3,150,15,1.6
+Arakaki-Cao Union MC-1 Tachyon Conduit System,119,L,5.6,280,28,1.6
+Transwide Products LC-1 Tachyon Conduit System,288,E,8,400,40,1.6
+Star Products EC-1 Tachyon Conduit System,515,G,15,750,75,1.6
+Long Transport GC-1 Tachyon Conduit System,1254,C,25,1250,125,1.6
 ,,,,,,
 ,,,,,,
 FASA TREK WARP ENGINES,Cost,Size,CPU,Space,Power,Fuel Eff
-Shuvinaaljis Warp Technologies FWA-1 Warp Engine,2.4,,1,24,12,1
-Shuvinaaljis Warp Technologies FWA-2 Warp Engine,3,,1,24,16,1
-Shuvinaaljis Warp Technologies FWB-1 Warp Engine,36,,7,180,18,1
-Shuvinaaljis Warp Technologies FWB-2 Warp Engine,42,,7,180,24,1
-Leeding Engines Ltd FWC-1 Warp Engine,240,,24,600,28,1
-Leeding Engines Ltd FWC-2 Warp Engine,264,,24,600,40,1
-Shuvinaaljis Warp Technologies FWD-1 Warp Engine,200,,20,500,20,1
-Shuvinaaljis Warp Technologies FWD-2 Warp Engine,227,,20,500,32,1
-Shuvinaaljis Warp Technologies FWE-1 Warp Engine,123,,16,400,16,1
-Leeding Engines Ltd FWE-2 Warp Engine,135,,16,400,24,1
-Shuvinaaljis Warp Technologies FWF-1 Warp Engine,248,,25,620,36,1
-Leeding Engines Ltd FWG-1 Warp Engine,303.5,,20,620,40,1
-Leeding Engines Ltd FWH-1 Warp Engine,5,,1.5,40,20,1
-Shuvinaaljis Warp Technologies FMWA-1 Microwarp Engine,0.6,,2.5,3,4,1
-Shuvinaaljis Warp Technologies FTWA-1 Transwarp Engine,9000,,62,780,76,1
-Klingon Empire KWA-1,24,,0.5,18,5,1
-Klingon Empire KWA-2,37,,1,25,10,1
-Klingon Empire KWB-1,60,,2.5,60,8,1
-Klingon Empire KWB-2,77,,3,70,12,1
-Klingon Empire KWB-3,105,,5.5,100,13,1
-Klingon Empire KWC-1,500,,10,250,14,1
-Klingon Empire KWC-2,535,,10,250,18,1
-Klingon Empire KWC-3,650,,10,250,22,1
-Klingon Empire KWD-1,1200,,12,300,16,1
-Klingon Empire KWD-2,1150,,12,300,10,1
-Klingon Empire KWE-1,1650,,16,400,9,1
-Klingon Empire KWE-2,2375,,16,450,16,1
-Klingon Empire KWE-3,2900,,16,450,20,1
-Klingon Empire KWF-1,2150,,14,350,15,1
-Klingon Empire KWG-1,3700,,20.5,650,26,1
-Romulan Star Empire RWA-1,4.2,,1,30,6,1
-Romulan Star Empire RWA-2,5,,1,28,8,1
-Romulan Star Empire RWB-1,7.2,,3,80,10,1
-Romulan Star Empire RWB-2,8.5,,3,82,9,1
-Romulan Star Empire RWC-1,49,,8,200,12,1
-Romulan Star Empire RWC-2,50,,8,200,14,1
-Romulan Star Empire RWD-1,145,,12,300,15,1
-Romulan Star Empire RWD-2,192,,12,300,18,1
-Romulan Star Empire RWE-1,206,,16,400,12,1
-Romulan Star Empire RWF-1,312,,20,500,16,1
-Romulan Star Empire RWF-2,322,,20,500,18,1
-Romulan Star Empire RWG-1,497,,28,700,22,1
-Orion Colonies OWA-1,65,,2.5,60,15,1
-Orion Colonies OWA-2,85,,2.5,60,17,1
-Orion Colonies OWB-1,20,,1,14,8,1
-Orion Colonies OWC-1,38,,2,30,6,1
-Orion Colonies OWD-1,200,,5,100,12,1
-Orion Colonies OWE-1,175,,4,80,10,1
-Gorn Alliance GWA-1,80,,1.5,35,8,1
-Gorn Alliance GWB-1,100,,5,120,10,1
-Gorn Alliance GWC-1,140,,6,180,14,1
-Gorn Alliance GWC-2,160,,7,180,16,1
-Gorn Alliance GWD-1,150,,11,260,15,1
-Gorn Alliance GWD-2,170,,16.5,400,17,1
-Gorn Alliance GWE-1,220,,25,600,22,1
-Gorn Alliance GWF-1,240,,30,720,24,1
-Gorn Alliance GWG-1,140,,12,340,14,1
+Shuvinaaljis Warp Technologies FWA-1 Warp Engine,2.4,M,1,24,12,1
+Shuvinaaljis Warp Technologies FWA-2 Warp Engine,3,M,1,24,16,1
+Shuvinaaljis Warp Technologies FWB-1 Warp Engine,36,M,7,180,18,1
+Shuvinaaljis Warp Technologies FWB-2 Warp Engine,42,L,7,180,24,1
+Leeding Engines Ltd FWC-1 Warp Engine,240,L,24,600,28,1
+Leeding Engines Ltd FWC-2 Warp Engine,264,E,24,600,40,1
+Shuvinaaljis Warp Technologies FWD-1 Warp Engine,200,L,20,500,20,1
+Shuvinaaljis Warp Technologies FWD-2 Warp Engine,227,L,20,500,32,1
+Shuvinaaljis Warp Technologies FWE-1 Warp Engine,123,M,16,400,16,1
+Leeding Engines Ltd FWE-2 Warp Engine,135,L,16,400,24,1
+Shuvinaaljis Warp Technologies FWF-1 Warp Engine,248,E,25,620,36,1
+Leeding Engines Ltd FWG-1 Warp Engine,303.5,E,20,620,40,1
+Leeding Engines Ltd FWH-1 Warp Engine,5,L,1.5,40,20,1
+Shuvinaaljis Warp Technologies FMWA-1 Microwarp Engine,0.6,S,2.5,3,4,1
+Shuvinaaljis Warp Technologies FTWA-1 Transwarp Engine,9000,G,62,780,76,1
+Klingon Empire KWA-1,24,S,0.5,18,5,1
+Klingon Empire KWA-2,37,M,1,25,10,1
+Klingon Empire KWB-1,60,S,2.5,60,8,1
+Klingon Empire KWB-2,77,M,3,70,12,1
+Klingon Empire KWB-3,105,M,5.5,100,13,1
+Klingon Empire KWC-1,500,M,10,250,14,1
+Klingon Empire KWC-2,535,M,10,250,18,1
+Klingon Empire KWC-3,650,L,10,250,22,1
+Klingon Empire KWD-1,1200,M,12,300,16,1
+Klingon Empire KWD-2,1150,M,12,300,10,1
+Klingon Empire KWE-1,1650,S,16,400,9,1
+Klingon Empire KWE-2,2375,M,16,450,16,1
+Klingon Empire KWE-3,2900,L,16,450,20,1
+Klingon Empire KWF-1,2150,M,14,350,15,1
+Klingon Empire KWG-1,3700,L,20.5,650,26,1
+Romulan Star Empire RWA-1,4.2,S,1,30,6,1
+Romulan Star Empire RWA-2,5,S,1,28,8,1
+Romulan Star Empire RWB-1,7.2,M,3,80,10,1
+Romulan Star Empire RWB-2,8.5,S,3,82,9,1
+Romulan Star Empire RWC-1,49,M,8,200,12,1
+Romulan Star Empire RWC-2,50,M,8,200,14,1
+Romulan Star Empire RWD-1,145,M,12,300,15,1
+Romulan Star Empire RWD-2,192,M,12,300,18,1
+Romulan Star Empire RWE-1,206,M,16,400,12,1
+Romulan Star Empire RWF-1,312,M,20,500,16,1
+Romulan Star Empire RWF-2,322,M,20,500,18,1
+Romulan Star Empire RWG-1,497,L,28,700,22,1
+Orion Colonies OWA-1,65,M,2.5,60,15,1
+Orion Colonies OWA-2,85,M,2.5,60,17,1
+Orion Colonies OWB-1,20,S,1,14,8,1
+Orion Colonies OWC-1,38,S,2,30,6,1
+Orion Colonies OWD-1,200,M,5,100,12,1
+Orion Colonies OWE-1,175,M,4,80,10,1
+Gorn Alliance GWA-1,80,S,1.5,35,8,1
+Gorn Alliance GWB-1,100,M,5,120,10,1
+Gorn Alliance GWC-1,140,M,6,180,14,1
+Gorn Alliance GWC-2,160,M,7,180,16,1
+Gorn Alliance GWD-1,150,M,11,260,15,1
+Gorn Alliance GWD-2,170,M,16.5,400,17,1
+Gorn Alliance GWE-1,220,L,25,600,22,1
+Gorn Alliance GWF-1,240,L,30,720,24,1
+Gorn Alliance GWG-1,140,M,12,340,14,1
