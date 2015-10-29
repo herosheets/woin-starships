@@ -110,23 +110,63 @@ module.run(['$templateCache', function($templateCache) {
     '<h2>Control Computers + Power Plants</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
-    '    Vessels require either a <b>control computer</b> or a <b>power plant</b>.  Both are different design approaches to grant CPU (Computer and Power Units), which is a combined resource unit which measures both computer processor resources and raw power resources.  Some starship designs rely on heavy computer automation and control centralization; others rely on many different control systems manned by crewmembers.<br><br>Nearly every function on a vessel interacts in some way with the computer. The computers, sensors, and engineering facilities on a starship make a up a large part of its efficiency and effectiveness. Faster computers allow a ship to react more quickly in combat situations, while more sensitive sensor systems enable the crew to gather more information about their surroundings. A basic hull comes with a standard integrated computer and sensors, but more powerful systems are needed for effective combat calculations and FTL planning. The computing power aboard a starship cannot be overestimated in its importance.\n' +
-    '\n' +
-    ' <br><br>A ship\'s <b>computer system</b> is able to perform faster-than-light calculations for FTL travel, and ties directly into the sensor array. Data storage in a ship\'s computer is so efficient that the concept of storage capacity does not factor into computer design any more. Some computer systems have a basic AI, while others do not.<br><br>\n' +
-    'The <b>power plant</b> provides raw power to the CPU total.<br><br>\n' +
-    '\n' +
-    'Items marked with an asterisk (*) are AL 10 items; they are only available in AL 10 settings. These items can drastically change the nature of a setting, especially in terms of FTL speeds.<br><br>\n' +
-    '\n' +
-    '<b>Navigation computers</b> (navcomps or astrogation units) are an AL 10 technology which increases FTL\n' +
-    'speeds by an order of magnitude by engaging in hyper-fast calculations and route-plott ing formulae far\n' +
-    'beyond most AL 9 computer systems. A navcomp operates alongside a regular control computer system\n' +
-    'and simply replaces its Max FTL limit while leaving all of its other functionality intact. Navcomps also\n' +
-    'maintain detailed navigational charts of the fastest travel routes, which are not necessarily in straight\n' +
-    'lines when dealing with hyperspace, intense gravity wells, dark energy fluctuations, and non-euclidian\n' +
-    'geometry. The introduction of navcomps makes galaxy-wide travel a trivial issue. A navigation computer eff ectively multiplies a ship\'s FTL capability by 10, subject to the na vcomp\'s\n' +
+    '    Vessels require either a <b>control computer</b> or a <b>power\n' +
+    'plant</b>. Both are different design approaches to grant CPU\n' +
+    '(Computer and Power Units), which is a combined resource unit which\n' +
+    'measures both computer processor resources and raw power resources.\n' +
+    'Some starship designs rely on heavy computer automation and control\n' +
+    'centralization; others rely on many different control systems manned by\n' +
+    'crewmembers.<br>\n' +
+    '<br>\n' +
+    '<span style="font-weight: bold;">Computer-based systems.</span>\n' +
+    'Nearly every function on a vessel interacts in some way with the\n' +
+    'computer. The computers, sensors, and engineering facilities on a\n' +
+    'starship make a up a large part of its efficiency and effectiveness.\n' +
+    'Faster computers allow a ship to react more quickly in combat\n' +
+    'situations, while more sensitive sensor systems enable the crew to\n' +
+    'gather more information about their surroundings. A basic hull comes\n' +
+    'with a standard integrated computer and sensors, but more powerful\n' +
+    'systems are needed for effective combat calculations and FTL planning.\n' +
+    'The computing power aboard a starship cannot be overestimated in its\n' +
+    'importance.\n' +
+    '&nbsp;A ship\'s computer system is able to perform faster-than-light\n' +
+    'calculations for FTL travel, and ties directly into the sensor array.\n' +
+    'Data storage in a ship\'s computer is so efficient that the concept of\n' +
+    'storage capacity does not factor into computer design any more. Some\n' +
+    'computer systems have a basic AI, while others do not.<br>\n' +
+    '<br>\n' +
+    '<span style="font-weight: bold;">Power-based systems.</span>\n' +
+    'Power based systems dispense with much of the AI, crew automation, and\n' +
+    'centralized coordination, and man specific components with crew. Rather\n' +
+    'than a single gunner at a console, for example, a power-based system\n' +
+    'will have gunners manning each gun. &nbsp;This is a different\n' +
+    'approach to resource coordination on a space vessel.<br>\n' +
+    '<br>\n' +
+    'Items marked with an asterisk (*) are AL 10 items; they are only\n' +
+    'available in AL 10 settings. These items can drastically change the\n' +
+    'nature of a setting, especially in terms of FTL speeds.<br>\n' +
+    '<br>\n' +
+    '<b>Navigation computers</b> (navcomps or astrogation units)\n' +
+    'are an AL 10 technology which increases FTL\n' +
+    'speeds by an order of magnitude by engaging in hyper-fast calculations\n' +
+    'and route-plott ing formulae far\n' +
+    'beyond most AL 9 computer systems. A navcomp operates alongside a\n' +
+    'regular control computer system\n' +
+    'and simply replaces its Max FTL limit while leaving all of its other\n' +
+    'functionality intact. Navcomps also\n' +
+    'maintain detailed navigational charts of the fastest travel routes,\n' +
+    'which are not necessarily in straight\n' +
+    'lines when dealing with hyperspace, intense gravity wells, dark energy\n' +
+    'fluctuations, and non-euclidian\n' +
+    'geometry. The introduction of navcomps makes galaxy-wide travel a\n' +
+    'trivial issue. A navigation computer eff ectively multiplies a ship\'s\n' +
+    'FTL capability by 10, subject to the na vcomp\'s\n' +
     'Max FTL value\n' +
-    '\n' +
-    '<br><br><b>Crew Automation + AI</b> can drastically reduce crew requirements, but have the disadvantage of reducing effectiveness in the form of a negative die modifier.\n' +
+    '<br>\n' +
+    '<br>\n' +
+    '<b>Crew Automation + AI</b> can drastically reduce crew\n' +
+    'requirements, but have the disadvantage of reducing effectiveness in\n' +
+    'the form of a negative die modifier.\n' +
     '</p> \n' +
     '<h3>Your Computers</h3>\n' +
     '<table class="table table-striped">\n' +
