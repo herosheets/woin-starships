@@ -51,60 +51,60 @@ Long Transport GC-1 Tachyon Conduit System,1254,G,25,1562.5,125,1.6
 ,,,,,,
 ,,,,,,
 FASA TREK WARP ENGINES,Cost,Size,CPU,Space,Power,Fuel Eff
-Shuvinaaljis Warp Technologies FWA-1 Warp Engine,2.4,,1,48,12,1
-Shuvinaaljis Warp Technologies FWA-2 Warp Engine,3,,1,48,16,1
-Shuvinaaljis Warp Technologies FWB-1 Warp Engine,36,,7,360,18,1
-Shuvinaaljis Warp Technologies FWB-2 Warp Engine,42,,7,360,24,1
-Leeding Engines Ltd FWC-1 Warp Engine,240,,24,1200,28,1
-Leeding Engines Ltd FWC-2 Warp Engine,264,,24,1200,40,1
-Shuvinaaljis Warp Technologies FWD-1 Warp Engine,200,,20,1000,20,1
-Shuvinaaljis Warp Technologies FWD-2 Warp Engine,227,,20,1000,32,1
-Shuvinaaljis Warp Technologies FWE-1 Warp Engine,123,,16,800,16,1
-Leeding Engines Ltd FWE-2 Warp Engine,135,,16,800,24,1
-Shuvinaaljis Warp Technologies FWF-1 Warp Engine,248,,25,1240,36,1
-Leeding Engines Ltd FWG-1 Warp Engine,303.5,,20,1000,40,1
-Leeding Engines Ltd FWH-1 Warp Engine,5,,1.5,80,20,1
-Shuvinaaljis Warp Technologies FMWA-1 Microwarp Engine,0.6,,2.5,6,4,1
-Shuvinaaljis Warp Technologies FTWA-1 Transwarp Engine,9000,,62,1560,76,1
-Klingon Empire KWA-1,24,,0.5,36,5,1
-Klingon Empire KWA-2,37,,1,50,10,1
-Klingon Empire KWB-1,60,,2.5,120,8,1
-Klingon Empire KWB-2,77,,3,140,12,1
-Klingon Empire KWB-3,105,,5.5,200,13,1
-Klingon Empire KWC-1,500,,10,500,14,1
-Klingon Empire KWC-2,535,,10,500,18,1
-Klingon Empire KWC-3,650,,10,500,22,1
-Klingon Empire KWD-1,1200,,12,600,16,1
-Klingon Empire KWD-2,1150,,12,600,10,1
-Klingon Empire KWE-1,1650,,16,800,9,1
-Klingon Empire KWE-2,2375,,16,900,16,1
-Klingon Empire KWE-3,2900,,16,900,20,1
-Klingon Empire KWF-1,2150,,14,700,15,1
-Klingon Empire KWG-1,3700,,20.5,1300,26,1
-Romulan Star Empire RWA-1,4.2,,1,60,6,1
-Romulan Star Empire RWA-2,5,,1,56,8,1
-Romulan Star Empire RWB-1,7.2,,3,160,10,1
-Romulan Star Empire RWB-2,8.5,,3,164,9,1
-Romulan Star Empire RWC-1,49,,8,400,12,1
-Romulan Star Empire RWC-2,50,,8,400,14,1
-Romulan Star Empire RWD-1,145,,12,600,15,1
-Romulan Star Empire RWD-2,192,,12,600,18,1
-Romulan Star Empire RWE-1,206,,16,800,12,1
-Romulan Star Empire RWF-1,312,,20,1000,16,1
-Romulan Star Empire RWF-2,322,,20,1000,18,1
-Romulan Star Empire RWG-1,497,,28,1400,22,1
-Orion Colonies OWA-1,65,,2.5,120,15,1
-Orion Colonies OWA-2,85,,2.5,120,17,1
-Orion Colonies OWB-1,20,,1,28,8,1
-Orion Colonies OWC-1,38,,2,60,6,1
-Orion Colonies OWD-1,200,,5,200,12,1
-Orion Colonies OWE-1,175,,4,160,10,1
-Gorn Alliance GWA-1,80,,1.5,70,8,1
-Gorn Alliance GWB-1,100,,5,240,10,1
-Gorn Alliance GWC-1,140,,6,320,14,1
-Gorn Alliance GWC-2,160,,7,360,16,1
-Gorn Alliance GWD-1,150,,11,520,15,1
-Gorn Alliance GWD-2,170,,16.5,800,17,1
-Gorn Alliance GWE-1,220,,25,1200,22,1
-Gorn Alliance GWF-1,240,,30,1440,24,1
-Gorn Alliance GWG-1,140,,12,680,14,1
+Shuvinaaljis Warp Technologies FWA-1 Warp Engine,2.4,,1,24,12,1
+Shuvinaaljis Warp Technologies FWA-2 Warp Engine,3,,1,24,16,1
+Shuvinaaljis Warp Technologies FWB-1 Warp Engine,36,,7,180,18,1
+Shuvinaaljis Warp Technologies FWB-2 Warp Engine,42,,7,180,24,1
+Leeding Engines Ltd FWC-1 Warp Engine,240,,24,600,28,1
+Leeding Engines Ltd FWC-2 Warp Engine,264,,24,600,40,1
+Shuvinaaljis Warp Technologies FWD-1 Warp Engine,200,,20,500,20,1
+Shuvinaaljis Warp Technologies FWD-2 Warp Engine,227,,20,500,32,1
+Shuvinaaljis Warp Technologies FWE-1 Warp Engine,123,,16,400,16,1
+Leeding Engines Ltd FWE-2 Warp Engine,135,,16,400,24,1
+Shuvinaaljis Warp Technologies FWF-1 Warp Engine,248,,25,620,36,1
+Leeding Engines Ltd FWG-1 Warp Engine,303.5,,20,620,40,1
+Leeding Engines Ltd FWH-1 Warp Engine,5,,1.5,40,20,1
+Shuvinaaljis Warp Technologies FMWA-1 Microwarp Engine,0.6,,2.5,3,4,1
+Shuvinaaljis Warp Technologies FTWA-1 Transwarp Engine,9000,,62,780,76,1
+Klingon Empire KWA-1,24,,0.5,18,5,1
+Klingon Empire KWA-2,37,,1,25,10,1
+Klingon Empire KWB-1,60,,2.5,60,8,1
+Klingon Empire KWB-2,77,,3,70,12,1
+Klingon Empire KWB-3,105,,5.5,100,13,1
+Klingon Empire KWC-1,500,,10,250,14,1
+Klingon Empire KWC-2,535,,10,250,18,1
+Klingon Empire KWC-3,650,,10,250,22,1
+Klingon Empire KWD-1,1200,,12,300,16,1
+Klingon Empire KWD-2,1150,,12,300,10,1
+Klingon Empire KWE-1,1650,,16,400,9,1
+Klingon Empire KWE-2,2375,,16,450,16,1
+Klingon Empire KWE-3,2900,,16,450,20,1
+Klingon Empire KWF-1,2150,,14,350,15,1
+Klingon Empire KWG-1,3700,,20.5,650,26,1
+Romulan Star Empire RWA-1,4.2,,1,30,6,1
+Romulan Star Empire RWA-2,5,,1,28,8,1
+Romulan Star Empire RWB-1,7.2,,3,80,10,1
+Romulan Star Empire RWB-2,8.5,,3,82,9,1
+Romulan Star Empire RWC-1,49,,8,200,12,1
+Romulan Star Empire RWC-2,50,,8,200,14,1
+Romulan Star Empire RWD-1,145,,12,300,15,1
+Romulan Star Empire RWD-2,192,,12,300,18,1
+Romulan Star Empire RWE-1,206,,16,400,12,1
+Romulan Star Empire RWF-1,312,,20,500,16,1
+Romulan Star Empire RWF-2,322,,20,500,18,1
+Romulan Star Empire RWG-1,497,,28,700,22,1
+Orion Colonies OWA-1,65,,2.5,60,15,1
+Orion Colonies OWA-2,85,,2.5,60,17,1
+Orion Colonies OWB-1,20,,1,14,8,1
+Orion Colonies OWC-1,38,,2,30,6,1
+Orion Colonies OWD-1,200,,5,100,12,1
+Orion Colonies OWE-1,175,,4,80,10,1
+Gorn Alliance GWA-1,80,,1.5,35,8,1
+Gorn Alliance GWB-1,100,,5,120,10,1
+Gorn Alliance GWC-1,140,,6,180,14,1
+Gorn Alliance GWC-2,160,,7,180,16,1
+Gorn Alliance GWD-1,150,,11,260,15,1
+Gorn Alliance GWD-2,170,,16.5,400,17,1
+Gorn Alliance GWE-1,220,,25,600,22,1
+Gorn Alliance GWF-1,240,,30,720,24,1
+Gorn Alliance GWG-1,140,,12,340,14,1
