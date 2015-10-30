@@ -815,6 +815,7 @@ module.run(['$templateCache', function($templateCache) {
     '    </tr>\n' +
     '    </tbody>\n' +
     '</table>\n' +
+    '\n' +
     '<h3>Your Shuttle Hangars</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -848,6 +849,39 @@ module.run(['$templateCache', function($templateCache) {
     '    </tbody>\n' +
     '</table>\n' +
     '\n' +
+    '<h3>Your Vehicle Hangars</h3>\n' +
+    '<table class="table table-striped">\n' +
+    '    <thead>\n' +
+    '    <tr>\n' +
+    '        <th></th>\n' +
+    '        <th>Count</th>\n' +
+    '        <th>Item</th>\n' +
+    '        <th>Space</th>\n' +
+    '        <th>Size</th>\n' +
+    '        <th>Cost</th>\n' +
+    '        <th>CPU</th>\n' +
+    '        <th>Craft</th>\n' +
+    '        <th>Notes</th>\n' +
+    '    </tr>\n' +
+    '    </thead>\n' +
+    '    <tbody>\n' +
+    '    <tr ng-repeat="(name, count) in ship[\'Hangar Bay Vehicle\']">\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY+\' Vehicle\', name)">-</button></td>\n' +
+    '        <td ng-bind="count"></td>\n' +
+    '        <td ng-bind="name"></td>\n' +
+    '        <td>{{hangarHash[name].Space}}</td>\n' +
+    '        <td>{{hangarHash[name].Size}}</td>\n' +
+    '        <td>{{hangarHash[name].Cost}}</td>\n' +
+    '        <td>{{hangarHash[name].CPU}}</td>\n' +
+    '        <td>{{hangarHash[name].Craft}}</td>\n' +
+    '        <td>{{hangarHash[name].Notes}}</td>\n' +
+    '    </tr>\n' +
+    '    <tr ng-if="isEmpty(KEY+\' Vehicle\')">\n' +
+    '        <td colspan="7" class="text-center">No Hangars selected</td>\n' +
+    '    </tr>\n' +
+    '    </tbody>\n' +
+    '</table>\n' +
+    '\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr colspan="7">\n' +
@@ -866,6 +900,7 @@ module.run(['$templateCache', function($templateCache) {
     '      <tr ng-repeat="c in hangars">\n' +
     '          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+\' Fighter\', c[\'Hangar Bay\'])">+Fighter</button></td>\n' +
     '          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+\' Shuttle\', c[\'Hangar Bay\'])">+Shuttle</button></td>\n' +
+    '          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+\' Vehicle\', c[\'Hangar Bay\'])">+Vehicle</button></td>\n' +
     '          <td>{{c[\'Hangar Bay\']}}</td>\n' +
     '          <td>{{c.Space}}</td>\n' +
     '          <td>{{c.Size}}</td>\n' +
@@ -1389,6 +1424,17 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Fighters</span>\n' +
     '                    {{countFighters()}} (\n' +
     '                        <span ng-repeat="(name, quantity) in ship[\'Hangar Bay Fighter\']">\n' +
+    '                           <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
+    '                        </span>\n' +
+    '                    )\n' +
+    '                </td>\n' +
+    '            </tr>\n' +
+    '\n' +
+    '            <tr>\n' +
+    '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
+    '                    <span style="font-weight: bold;">Vehicles</span>\n' +
+    '                    {{countVehicles()}} (\n' +
+    '                        <span ng-repeat="(name, quantity) in ship[\'Hangar Bay Vehicle\']">\n' +
     '                           <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,\n' +
     '                        </span>\n' +
     '                    )\n' +
