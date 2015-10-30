@@ -34,6 +34,7 @@
     </tr>
     </tbody>
 </table>
+
 <h3>Your Shuttle Hangars</h3>
 <table class="table table-striped">
     <thead>
@@ -67,6 +68,39 @@
     </tbody>
 </table>
 
+<h3>Your Vehicle Hangars</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Count</th>
+        <th>Item</th>
+        <th>Space</th>
+        <th>Size</th>
+        <th>Cost</th>
+        <th>CPU</th>
+        <th>Craft</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(name, count) in ship['Hangar Bay Vehicle']">
+        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY+' Vehicle', name)">-</button></td>
+        <td ng-bind="count"></td>
+        <td ng-bind="name"></td>
+        <td>{{hangarHash[name].Space}}</td>
+        <td>{{hangarHash[name].Size}}</td>
+        <td>{{hangarHash[name].Cost}}</td>
+        <td>{{hangarHash[name].CPU}}</td>
+        <td>{{hangarHash[name].Craft}}</td>
+        <td>{{hangarHash[name].Notes}}</td>
+    </tr>
+    <tr ng-if="isEmpty(KEY+' Vehicle')">
+        <td colspan="7" class="text-center">No Hangars selected</td>
+    </tr>
+    </tbody>
+</table>
+
 <table class="table table-striped">
     <thead>
     <tr colspan="7">
@@ -85,6 +119,7 @@
       <tr ng-repeat="c in hangars">
           <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+' Fighter', c['Hangar Bay'])">+Fighter</button></td>
           <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+' Shuttle', c['Hangar Bay'])">+Shuttle</button></td>
+          <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY+' Vehicle', c['Hangar Bay'])">+Vehicle</button></td>
           <td>{{c['Hangar Bay']}}</td>
           <td>{{c.Space}}</td>
           <td>{{c.Size}}</td>

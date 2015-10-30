@@ -47,6 +47,14 @@ angular.module('woin-starship')
           }, 0);
       };
 
+      $scope.countVehicles = function() {
+          var hangarBay = $scope.ship['Hangar Bay Vehicle'];
+          if(!hangarBay) return 0;
+          return _.reduce(_.keys(hangarBay), function(prev, cur) {
+              return prev + (hangarBay[cur] * $scope.hangarHash[cur].Craft);
+          }, 0);
+      };
+
       $scope.getNumericShipClass = function() {
         if(!$scope.ship.hull) return;
         return Number.fromRoman($scope.ship.hull.Class);

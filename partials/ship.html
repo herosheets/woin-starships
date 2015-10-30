@@ -250,6 +250,17 @@
             </tr>
 
             <tr>
+                <td colspan="10" align="left" height="17" valign="bottom">
+                    <span style="font-weight: bold;">Vehicles</span>
+                    {{countVehicles()}} (
+                        <span ng-repeat="(name, quantity) in ship['Hangar Bay Vehicle']">
+                           <span ng-bind="quantity"></span>x <span ng-bind="name"></span>,
+                        </span>
+                    )
+                </td>
+            </tr>
+
+            <tr>
                 <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom">
                     <b>Market Value {{ totalCost() }} MCr</b>
                 </td>
