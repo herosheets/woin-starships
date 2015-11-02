@@ -110,8 +110,8 @@ module.run(['$templateCache', function($templateCache) {
     '<h2>Control Computers + Power Plants</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
-    '    Vessels require either a <b>control computer</b> and a <b>power\n' +
-    'plant</b>. Both grant CPU. CPU is a resource budget which determine the vessel\'s capacity to handle components. While named CPU by default, this resource can be freely renamed to any other core capacity resource. Examples include Power, or even Psionic Energy or Magic, depending on the campaign setting.<br>\n' +
+    '    Vessels require a <b>control computer</b> and a <b>power\n' +
+    'plant</b>. Both grant CPU. CPU is a resource budget which determine the vessel\'s capacity to handle components. While named CPU by default, this resource can be freely renamed to any other core capacity resource. Examples include Power, or even Psionic Energy or Magic, depending on the campaign setting. This Builder allows the total resource budget to be built from any combination of computers and power plants, but setting-specific factors may restrict this.<br>\n' +
     '<br>\n' +
     'Nearly every function on a vessel interacts in some way with the\n' +
     'computer. The computers, sensors, and engineering facilities on a\n' +
