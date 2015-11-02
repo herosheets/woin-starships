@@ -145,6 +145,12 @@ angular.module('woin-starship', ['starshipPartials', 'ui.bootstrap', 'ui.router'
 					content: { controller: "DeflectorShieldCtrl", templateUrl: '/partials/shields.html' }
 				}
 			})
+			.state('main.powerplants', {
+				url: 'powerplants',
+				views: {
+					content: { controller: "PowerplantCtrl", templateUrl: '/partials/powerplants.html' }
+				}
+			})
 			.state('main.pointdefense', {
 				url: 'pointdefense.html',
 				views: {
@@ -179,3 +185,4 @@ require('electronicWarfareCtrl');
 require('engineModsCtrl');
 require('tractorCtrl');
 require('fuelingCtrl');
+require('powerplantCtrl');

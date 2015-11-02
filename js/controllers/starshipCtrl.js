@@ -12,6 +12,7 @@ var flatComponents = ['hull', 'sensor'];
 var quantityComponents = {
   'Crew': 'crewHash',
   'Control Computers': "computerHash",
+  'Power Plants': "powerplantHash",
   'Sub-luminal Engine': 'sublHash',
   'FTL Engine': 'ftlHash',
   'Point Defenses': 'pointDefensesHash',
@@ -165,6 +166,7 @@ var tabs = [
   {heading: 'Basics', route: 'main.basics'},
   {heading: 'Hull Class', route: 'main.hull'},
   {heading: 'Command & Control', route: 'main.command'},
+  {heading: 'Power Plants', route: 'main.powerplants'},
   {heading: 'Ship Sensors', route: 'main.sensors'},
   {heading: 'Crew', route: 'main.crew'},
   {heading: 'Sub-Luminal Engines', route: 'main.subluminal'},

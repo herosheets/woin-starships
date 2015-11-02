@@ -7,6 +7,7 @@ angular.module('woin-starship').service('Components',
       self.loadCsvData = function (scope) {
         scope.hulls = [];
         scope.computers = [];
+        scope.powerplants = [];
         scope.sensors = [];
         scope.deflectors = [];
         scope.facilities = [];
@@ -23,6 +24,7 @@ angular.module('woin-starship').service('Components',
           cloaking: [],
           fueling: [],
           commandControl: [],
+          powerplants: [],
           tractor: [],
           engMods: [],
           cargo: [],
@@ -63,6 +65,23 @@ angular.module('woin-starship').service('Components',
           },
           complete: function () {
             console.log("Computers Loaded");
+          }
+        });
+
+        Papa.parse(doDownload ? getUrl('powerplants') : powerplants, {
+          header: true,
+          download: doDownload,
+          dynamicTyping: true,
+          step: function (row) {
+            var KEY = 'Power Plants';
+            scope.powerplants.push(row.data[0]);
+            scope.powerplantHash = {};
+            _.each(scope.powerplants, function (item) {
+              scope.powerplantHash[item[KEY]] = item;
+            });
+          },
+          complete: function () {
+            console.log("Powerplants Loaded");
           }
         });
 
@@ -297,7 +316,10 @@ angular.module('woin-starship').service('Components',
         "Frontier Products MM-2,30,M,3,3,12,-1.00%,11,-,-,+0d6\n" +
         "Frontier Products MM-3,45,M,3,4,16,-2.00%,11,-,1,+0d6\n" +
         "Frontier Products MM-3H,345,M,3,8,32,-7.00%,13,1,2,+1d6\n" +
-        "Frontier Products MM-4H,435,M,3,9,36,-8.00%,14,2,2,+1d6\n" +
+        "Frontier Products MM-4H,435,M,3,9,36,-8.00%,14,2,2,+1d6\n";
+
+      var powerplants =
+        "Power Plants,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +
         "Highwatch SM-1,3,S,1,2,8,-,5,-,-,+0d6\n" +
         "Highwatch SM-1H,109,S,1,4,16,-5.00%,7,1,1,+1d6\n" +
         "MicroCorp EM-2H,470,E,10,9,36,-11.00%,23,3,1,+1d6\n" +
