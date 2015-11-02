@@ -110,37 +110,17 @@ module.run(['$templateCache', function($templateCache) {
     '<h2>Control Computers + Power Plants</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
-    '    Vessels require either a <b>control computer</b> or a <b>power\n' +
-    'plant</b>. Both are different design approaches to grant CPU\n' +
-    '(Computer and Power Units), which is a combined resource unit which\n' +
-    'measures both computer processor resources and raw power resources.\n' +
-    'Some starship designs rely on heavy computer automation and control\n' +
-    'centralization; others rely on many different control systems manned by\n' +
-    'crewmembers.<br>\n' +
+    '    Vessels require either a <b>control computer</b> and a <b>power\n' +
+    'plant</b>. Both grant CPU. CPU is a resource budget which determine the vessel\'s capacity to handle components. While named CPU by default, this resource can be freely renamed to any other core capacity resource. Examples include Power, or even Psionic Energy or Magic, depending on the campaign setting.<br>\n' +
     '<br>\n' +
-    '<span style="font-weight: bold;">Computer-based systems.</span>\n' +
     'Nearly every function on a vessel interacts in some way with the\n' +
     'computer. The computers, sensors, and engineering facilities on a\n' +
     'starship make a up a large part of its efficiency and effectiveness.\n' +
-    'Faster computers allow a ship to react more quickly in combat\n' +
-    'situations, while more sensitive sensor systems enable the crew to\n' +
-    'gather more information about their surroundings. A basic hull comes\n' +
-    'with a standard integrated computer and sensors, but more powerful\n' +
-    'systems are needed for effective combat calculations and FTL planning.\n' +
-    'The computing power aboard a starship cannot be overestimated in its\n' +
-    'importance.\n' +
     '&nbsp;A ship\'s computer system is able to perform faster-than-light\n' +
     'calculations for FTL travel, and ties directly into the sensor array.\n' +
     'Data storage in a ship\'s computer is so efficient that the concept of\n' +
     'storage capacity does not factor into computer design any more. Some\n' +
     'computer systems have a basic AI, while others do not.<br>\n' +
-    '<br>\n' +
-    '<span style="font-weight: bold;">Power-based systems.</span>\n' +
-    'Power based systems dispense with much of the AI, crew automation, and\n' +
-    'centralized coordination, and man specific components with crew. Rather\n' +
-    'than a single gunner at a console, for example, a power-based system\n' +
-    'will have gunners manning each gun. &nbsp;This is a different\n' +
-    'approach to resource coordination on a space vessel.<br>\n' +
     '<br>\n' +
     'Items marked with an asterisk (*) are AL 10 items; they are only\n' +
     'available in AL 10 settings. These items can drastically change the\n' +
@@ -160,13 +140,10 @@ module.run(['$templateCache', function($templateCache) {
     'fluctuations, and non-euclidian\n' +
     'geometry. The introduction of navcomps makes galaxy-wide travel a\n' +
     'trivial issue. A navigation computer eff ectively multiplies a ship\'s\n' +
-    'FTL capability by 10, subject to the na vcomp\'s\n' +
+    'FTL capability by 10, subject to its\n' +
     'Max FTL value\n' +
     '<br>\n' +
-    '<br>\n' +
-    '<b>Crew Automation + AI</b> can drastically reduce crew\n' +
-    'requirements, but have the disadvantage of reducing effectiveness in\n' +
-    'the form of a negative die modifier.\n' +
+    '\n' +
     '</p> \n' +
     '<h3>Your Computers</h3>\n' +
     '<table class="table table-striped">\n' +
