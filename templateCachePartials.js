@@ -1043,7 +1043,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/powerplants.html',
-    '<h2>Control Computers + Power Plants</h2>\n' +
+    '<h2>Power Plants</h2>\n' +
     '<p class="explainer">\n' +
     'Like the control computer, a power plant creates the resource budget which determines how many components the ship can operate. This is named CPU by default, but can freely be renamed to Power, Psionic Energy, Magic, or any other setting-specific resource.\n' +
     '</p>\n' +
