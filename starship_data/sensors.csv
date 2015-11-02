@@ -16,6 +16,6 @@ Intergalactic Foundation GS-2,200,G,20,12,26,-,+0d6
 Intergalactic Foundation GS-2H,800,G,20,22,28,1,+1d6
 
 ,,,,,,,
-Sensor Systems,Cost,Size,Space,Range,Range Inc,DEFENSE,Checks
+SPELLSHIPS,Cost,Size,Space,Range,Range Inc,DEFENSE,Checks
 Crystal Ball,4,S,1,2,5,-,+0d6
 Minor Divination Mirror,8,S,1,4,6,-,+0d6
