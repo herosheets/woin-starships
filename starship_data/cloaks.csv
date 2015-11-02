@@ -15,3 +15,7 @@ Romulan Star Empire RCB Cloaking Device,30,M,20000,10,Restricted to ship classes
 Romulan Star Empire RCC Cloaking Device,175,L,45000,15,Restricted to ship classes VI;VII;VIII;IX
 Romulan Star Empire RCD Cloaking Device,550,E,70000,22,Restricted to ship classes X;XI
 Romulan Star Empire RCE Cloaking Device,850,E,90000,38,Restricted to ship classes XII
+,,,,,
+SPELLSHIPS,Space,Size,Cost,CPU,Notes
+Minor Invisibility Cloak,18,S,10000,12,Restricted to ship classes I;II;III
+Greater Invisibility Cloak,40,M,15000,22,Restricted to ship classes IV;V
