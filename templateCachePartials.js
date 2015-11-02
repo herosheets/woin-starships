@@ -1406,7 +1406,7 @@ module.run(['$templateCache', function($templateCache) {
     '            </tr>\n' +
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" bgcolor="#dddddd" valign="bottom">\n' +
-    '                    <b>Engine &amp; Power Data</b>\n' +
+    '                    <b>Engine &amp; Propulsion Data</b>\n' +
     '                </td>\n' +
     '            </tr>\n' +
     '            <tr>\n' +
