@@ -23,7 +23,7 @@ FMA-5 Matter/Antimatter Chamber,300,E,120,0,180,-0.00%,0,0,0,+0d6
 FMA-6 Matter/Antimatter Chamber,1000,G,230,0,300,-0.00%,0,0,0,+0d6
 FMA-7 Matter/Antimatter Chamber,2400,C,350,0,440,-0.00%,0,0,0,+0d6
 FMA-8 Matter/Antimatter Chamber,8000,T,600,0,580,-0.00%,0,0,0,+0d6
-,,,,,,,,,
+,,,,,,,,,,
 Power Plant,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Jade Arcane Source,8,S,1,0,4,-0.00%,0,0,0,+0d6
 Ruby Arcane Source,22,S,9,0,10,-0.00%,0,0,0,+0d6
