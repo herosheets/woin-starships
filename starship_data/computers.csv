@@ -23,16 +23,18 @@ Adricson CS-1 Command Computer,1010,C,70,20,170,-7.00%,32,3,0,+0d6
 Ariakis Designs T100 Heavy Duty Command Computer,2050,T,110,24,220,-2.00%,35,4,0,+0d6
 ,,,,,,,,,,
 NAVCOMPS,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
-Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,0,-0.00%,0,0,-0,+0d6
-Nikitin AU-45 Class 4 Astrogation Droid*,78,S,0.5,79,0,-0.00%,0,0,-0,+0d6
-Huang Grav Vehicles Military Class 3 Navigation Solution v1.8*,110,M,7,91,0,-0.00%,0,0,-0,+0d6
-Shooting Star Products Mk I Class 2 Astrogation Unit*,205,M,8,100,0,-0.00%,0,0,-0,+0d6
-Imperial Agencies Class 1 Astrogation Unit*,495,L,12,125,0,-0.00%,0,0,-0,+0d6
-Transfarer Type 2B Class 0.6 Navigation Computer*,800,L,15,150,0,-0.00%,0,0,-0,+0d6
-Xing Starship Design Black Label Class 0.5 Navcom*,1050,E,24,158,0,-0.00%,0,0,-0,+0d6
-Sikorsky Biotech Organic Class 0.25 Astrogation Nucleus*,5500,G,44,200,0,-0.00%,0,0,-0,+0d6
+Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,2,-0.00%,0,0,-0,+0d6
+Nikitin AU-45 Class 4 Astrogation Droid*,78,S,0.5,79,3,-0.00%,0,0,-0,+0d6
+Nikitin AU-54 Class 2 Astrogation Droid*,2125,S,0.5,100,3,-0.00%,0,0,0,+0d6
+Huang Grav Vehicles Military Class 3 Navigation Solution v1.8*,110,M,7,91,5,-0.00%,0,0,-0,+0d6
+Shooting Star Products Mk I Class 2 Astrogation Unit*,205,M,8,100,7,-0.00%,0,0,-0,+0d6
+Imperial Agencies Class 1 Astrogation Unit*,495,L,12,125,10,-0.00%,0,0,-0,+0d6
+Transfarer Type 2B Class 0.6 Navigation Computer*,800,L,15,150,12,-0.00%,0,0,-0,+0d6
+Rubicon Class 0.5 Navigation Computer*,12000,M,6,158,6,-0.00%,0,0,0,+0d6
+Xing Starship Design Black Label Class 0.5 Navcom*,1050,E,24,158,15,-0.00%,0,0,-0,+0d6
+Sikorsky Biotech Organic Class 0.25 Astrogation Nucleus*,5500,G,44,200,20,-0.00%,0,0,-0,+0d6
 ,,,,,,,,,,
-ARTIFICIAL INTELLIGENCE,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
+AUTOMATION SYSTEMS,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks
 Chan-Ling MCA-1 Crew Automation Center,230,M,17,0,0,-25.00%,0,0,0,-1d6
 Chan-Ling MCA-2 Crew Automation Center,450,M,19,0,0,-30.00%,0,0,0,-1d6
 Chan-Ling LCA-1 Crew Automation Center,500,L,27,0,0,-35.00%,0,0,0,-1d6
