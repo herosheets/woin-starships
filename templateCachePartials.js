@@ -126,22 +126,14 @@ module.run(['$templateCache', function($templateCache) {
     'available in AL 10 settings. These items can drastically change the\n' +
     'nature of a setting, especially in terms of FTL speeds.<br>\n' +
     '<br>\n' +
-    '<b>Navigation computers</b> (navcomps or astrogation units)\n' +
-    'are an AL 10 technology which increases FTL\n' +
-    'speeds by an order of magnitude by engaging in hyper-fast calculations\n' +
-    'and route-plott ing formulae far\n' +
-    'beyond most AL 9 computer systems. A navcomp operates alongside a\n' +
-    'regular control computer system\n' +
-    'and simply replaces its Max FTL limit while leaving all of its other\n' +
-    'functionality intact. Navcomps also\n' +
+    'There are different approaches to computer integration and design; the starship designer should choose one. Navigation computers (navcomps or astrogation units)\n' +
+    'are an AL 10 technology which allow for vastly higher FTL speeds, but do not take on the processing roles that other computer systems do. Navcomps also\n' +
     'maintain detailed navigational charts of the fastest travel routes,\n' +
     'which are not necessarily in straight\n' +
     'lines when dealing with hyperspace, intense gravity wells, dark energy\n' +
     'fluctuations, and non-euclidian\n' +
     'geometry. The introduction of navcomps makes galaxy-wide travel a\n' +
-    'trivial issue. A navigation computer eff ectively multiplies a ship\'s\n' +
-    'FTL capability by 10, subject to its\n' +
-    'Max FTL value\n' +
+    'trivial issue. \n' +
     '<br>\n' +
     '\n' +
     '</p> \n' +
