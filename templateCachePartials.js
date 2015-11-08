@@ -1063,16 +1063,16 @@ module.run(['$templateCache', function($templateCache) {
     '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
     '        <td ng-bind="count"></td>\n' +
     '        <td ng-bind="name"></td>\n' +
-    '        <td ng-bind="computerHash[name].Cost"></td>\n' +
-    '        <td ng-bind="computerHash[name].Size"></td>\n' +
-    '        <td ng-bind="computerHash[name].Space"></td>\n' +
-    '        <td ng-bind="computerHash[name][\'Max FTL\']"></td>\n' +
-    '        <td ng-bind="computerHash[name][\'CPU\']"></td>\n' +
-    '        <td ng-bind="computerHash[name].Crew"></td>\n' +
-    '        <td ng-bind="computerHash[name][\'Rng Inc\']"></td>\n' +
-    '        <td ng-bind="computerHash[name].SOAK"></td>\n' +
-    '        <td ng-bind="computerHash[name].DEFENSE"></td>\n' +
-    '        <td ng-bind="computerHash[name].Checks"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].Cost"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].Size"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].Space"></td>\n' +
+    '        <td ng-bind="powerplantHash[name][\'Max FTL\']"></td>\n' +
+    '        <td ng-bind="powerplantHash[name][\'CPU\']"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].Crew"></td>\n' +
+    '        <td ng-bind="powerplantHash[name][\'Rng Inc\']"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].SOAK"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].DEFENSE"></td>\n' +
+    '        <td ng-bind="powerplantHash[name].Checks"></td>\n' +
     '    </tr>\n' +
     '    <tr ng-if="isEmpty(KEY)">\n' +
     '        <td colspan="13" class="text-center">No power plants selected.</td>\n' +
@@ -1099,7 +1099,7 @@ module.run(['$templateCache', function($templateCache) {
     '    </thead>\n' +
     '    <tbody>\n' +
     '    <tr ng-repeat="c in powerplants">\n' +
-    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c[\'Power Plants\'])">+</button></td>\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c[\'Power Plant\'])">+</button></td>\n' +
     '        <td ng-bind="c[\'Power Plant\']"></td>\n' +
     '        <td ng-bind="c.Cost"></td>\n' +
     '        <td ng-bind="c.Size"></td>\n' +
@@ -1301,7 +1301,7 @@ module.run(['$templateCache', function($templateCache) {
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Power Plants</span>\n' +
-    '                    <span ng-repeat="(name, quantity) in ship[\'Power Plants\']">\n' +
+    '                    <span ng-repeat="(name, quantity) in ship[\'Power Plant\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
     '                        (CPU cycles: <span ng-bind="powerplantHash[name][\'CPU\']"></span>;\n' +
     '                        max FTL: <span ng-bind="powerplantHash[name][\'Max FTL\']"></span>;\n' +
