@@ -26,16 +26,16 @@ Like the control computer, a power plant creates the resource budget which deter
         <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
-        <td ng-bind="computerHash[name].Cost"></td>
-        <td ng-bind="computerHash[name].Size"></td>
-        <td ng-bind="computerHash[name].Space"></td>
-        <td ng-bind="computerHash[name]['Max FTL']"></td>
-        <td ng-bind="computerHash[name]['CPU']"></td>
-        <td ng-bind="computerHash[name].Crew"></td>
-        <td ng-bind="computerHash[name]['Rng Inc']"></td>
-        <td ng-bind="computerHash[name].SOAK"></td>
-        <td ng-bind="computerHash[name].DEFENSE"></td>
-        <td ng-bind="computerHash[name].Checks"></td>
+        <td ng-bind="powerplantHash[name].Cost"></td>
+        <td ng-bind="powerplantHash[name].Size"></td>
+        <td ng-bind="powerplantHash[name].Space"></td>
+        <td ng-bind="powerplantHash[name]['Max FTL']"></td>
+        <td ng-bind="powerplantHash[name]['CPU']"></td>
+        <td ng-bind="powerplantHash[name].Crew"></td>
+        <td ng-bind="powerplantHash[name]['Rng Inc']"></td>
+        <td ng-bind="powerplantHash[name].SOAK"></td>
+        <td ng-bind="powerplantHash[name].DEFENSE"></td>
+        <td ng-bind="powerplantHash[name].Checks"></td>
     </tr>
     <tr ng-if="isEmpty(KEY)">
         <td colspan="13" class="text-center">No power plants selected.</td>
@@ -62,7 +62,7 @@ Like the control computer, a power plant creates the resource budget which deter
     </thead>
     <tbody>
     <tr ng-repeat="c in powerplants">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Power Plants'])">+</button></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Power Plant'])">+</button></td>
         <td ng-bind="c['Power Plant']"></td>
         <td ng-bind="c.Cost"></td>
         <td ng-bind="c.Size"></td>

@@ -60,7 +60,7 @@
             <tr>
                 <td colspan="10" align="left" height="17" valign="bottom">
                     <span style="font-weight: bold;">Power Plants</span>
-                    <span ng-repeat="(name, quantity) in ship['Power Plants']">
+                    <span ng-repeat="(name, quantity) in ship['Power Plant']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
                         (CPU cycles: <span ng-bind="powerplantHash[name]['CPU']"></span>;
                         max FTL: <span ng-bind="powerplantHash[name]['Max FTL']"></span>;
