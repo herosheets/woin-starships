@@ -1059,7 +1059,7 @@ module.run(['$templateCache', function($templateCache) {
     '    </tr>\n' +
     '    </thead>\n' +
     '    <tbody>\n' +
-    '    <tr ng-repeat="(name, count) in ship[\'Power Plants\']">\n' +
+    '    <tr ng-repeat="(name, count) in ship[\'Power Plant\']">\n' +
     '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
     '        <td ng-bind="count"></td>\n' +
     '        <td ng-bind="name"></td>\n' +
@@ -1100,7 +1100,7 @@ module.run(['$templateCache', function($templateCache) {
     '    <tbody>\n' +
     '    <tr ng-repeat="c in powerplants">\n' +
     '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c[\'Power Plants\'])">+</button></td>\n' +
-    '        <td ng-bind="c[\'Power Plants\']"></td>\n' +
+    '        <td ng-bind="c[\'Power Plant\']"></td>\n' +
     '        <td ng-bind="c.Cost"></td>\n' +
     '        <td ng-bind="c.Size"></td>\n' +
     '        <td ng-bind="c.Space"></td>\n' +
