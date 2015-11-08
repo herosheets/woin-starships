@@ -22,7 +22,7 @@ Like the control computer, a power plant creates the resource budget which deter
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="(name, count) in ship['Power Plants']">
+    <tr ng-repeat="(name, count) in ship['Power Plant']">
         <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
@@ -63,7 +63,7 @@ Like the control computer, a power plant creates the resource budget which deter
     <tbody>
     <tr ng-repeat="c in powerplants">
         <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, c['Power Plants'])">+</button></td>
-        <td ng-bind="c['Power Plants']"></td>
+        <td ng-bind="c['Power Plant']"></td>
         <td ng-bind="c.Cost"></td>
         <td ng-bind="c.Size"></td>
         <td ng-bind="c.Space"></td>

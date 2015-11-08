@@ -73,7 +73,7 @@ angular.module('woin-starship').service('Components',
           download: doDownload,
           dynamicTyping: true,
           step: function (row) {
-            var KEY = 'Power Plants';
+            var KEY = 'Power Plant';
             scope.powerplants.push(row.data[0]);
             scope.powerplantHash = {};
             _.each(scope.powerplants, function (item) {
@@ -319,7 +319,7 @@ angular.module('woin-starship').service('Components',
         "Frontier Products MM-4H,435,M,3,9,36,-8.00%,14,2,2,+1d6\n";
 
       var powerplants =
-        "Power Plants,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +
+        "Power Plant,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +
         "Highwatch SM-1,3,S,1,2,8,-,5,-,-,+0d6\n" +
         "Highwatch SM-1H,109,S,1,4,16,-5.00%,7,1,1,+1d6\n" +
         "MicroCorp EM-2H,470,E,10,9,36,-11.00%,23,3,1,+1d6\n" +
