@@ -12,7 +12,7 @@ var flatComponents = ['hull', 'sensor'];
 var quantityComponents = {
   'Crew': 'crewHash',
   'Control Computers': "computerHash",
-  'Power Plants': "powerplantHash",
+  'Power Plant': "powerplantHash",
   'Sub-luminal Engine': 'sublHash',
   'FTL Engine': 'ftlHash',
   'Point Defenses': 'pointDefensesHash',
