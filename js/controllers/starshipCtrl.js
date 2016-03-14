@@ -300,16 +300,16 @@ angular.module('woin-starship')
     $scope.calculateDefense = function() {
       var base = getAllShipValues($scope.ship, 'DEFENSE', $scope);
       base -=  getQuantityValue($scope.ship['Point Defenses'], 'DEFENSE', $scope.pointDefensesHash);
-      return base;
+      return Math.max(10, base);
     };
 
     $scope.calculateElectronicDefense = function() {
       try {
         var bonus = getAllShipValues($scope.ship, 'ELECTRONIC DEFENSE', $scope);
         var base = getCpu($scope.ship, $scope);
-        return Math.floor((base/2) + bonus);
+        return Math.max(10, Math.floor((base/2) + bonus));
       } catch (e) {
-        return 0;
+        return 10;
       }
 
     };
