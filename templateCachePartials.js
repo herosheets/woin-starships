@@ -1028,7 +1028,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/powerplants.html',
     '<h2>Power Plants</h2>\n' +
     '<p class="explainer">\n' +
-    'Like the control computer, a power plant creates the resource budget which determines how many components the ship can operate. This is named CPU by default, but can freely be renamed to Power, Psionic Energy, Magic, or any other setting-specific resource. This Builder allows the resource budget to be provided by any combination of computers and power plants, but setting-specific factors may restrict this.\n' +
+    'Alternatively, power plants are also able to provide CPU.\n' +
     '</p>\n' +
     '<h3>Your Power Plants</h3>\n' +
     '<table class="table table-striped">\n' +
