@@ -110,8 +110,9 @@ module.run(['$templateCache', function($templateCache) {
     '<h2>Control Computers + Power Plants</h2>\n' +
     '<p class="explainer">\n' +
     '\n' +
-    '    Vessels require a <b>control computer</b> and a <b>power\n' +
-    'plant</b>. Both grant CPU. CPU is a resource budget which determine the vessel\'s capacity to handle components. While named CPU by default, this resource can be freely renamed to any other core capacity resource. Examples include Power, or even Psionic Energy or Magic, depending on the campaign setting. This Builder allows the total resource budget to be built from any combination of computers and power plants, but setting-specific factors may restrict this.<br>\n' +
+    'Vessels require a <b>control computer</b> which provides CPU capacity.\n' +
+    'CPU is a resource budget which determine the vessel\'s capacity to\n' +
+    'handle components. <br>\n' +
     '<br>\n' +
     'Nearly every function on a vessel interacts in some way with the\n' +
     'computer. The computers, sensors, and engineering facilities on a\n' +
@@ -125,16 +126,6 @@ module.run(['$templateCache', function($templateCache) {
     'Items marked with an asterisk (*) are AL 10 items; they are only\n' +
     'available in AL 10 settings. These items can drastically change the\n' +
     'nature of a setting, especially in terms of FTL speeds.<br>\n' +
-    '<br>\n' +
-    'There are different approaches to computer integration and design; the starship designer should choose one. Navigation computers (navcomps or astrogation units)\n' +
-    'are an AL 10 technology which allow for vastly higher FTL speeds, but do not take on the processing roles that other computer systems do. Navcomps also\n' +
-    'maintain detailed navigational charts of the fastest travel routes,\n' +
-    'which are not necessarily in straight\n' +
-    'lines when dealing with hyperspace, intense gravity wells, dark energy\n' +
-    'fluctuations, and non-euclidian\n' +
-    'geometry. The introduction of navcomps makes galaxy-wide travel a\n' +
-    'trivial issue. \n' +
-    '<br>\n' +
     '\n' +
     '</p> \n' +
     '<h3>Your Computers</h3>\n' +
