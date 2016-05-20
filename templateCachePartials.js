@@ -1027,7 +1027,7 @@ module.run(['$templateCache', function($templateCache) {
   $templateCache.put('/partials/powerplants.html',
     '<h2>Power Plants</h2>\n' +
     '<p class="explainer">\n' +
-    'Alternatively, power plants are also able to provide CPU.\n' +
+    'Ignore this section. It is not needed.\n' +
     '</p>\n' +
     '<h3>Your Power Plants</h3>\n' +
     '<table class="table table-striped">\n' +
