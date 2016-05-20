@@ -1,52 +1,45 @@
 FTL Engine,Cost,Size,CPU,Space,Power,Fuel Eff
 ANTIMATTER ENGINES,,,,,,
-Warpdyne Asteroid Mining SA-1 Antimatter Engine,17,S,1.2,60,6,1
-Warpdyne Asteroid Mining SA-2 Antimatter Engine,35,S,1.6,80,8,1.1
-White AgriSpace MA-1 Antimatter Engine,34,M,3,150,15,1
-White AgriSpace MA-2 Antimatter Engine,84,M,3.6,180,18,1
-Newdyne Concepts LA-1 Antimatter Engine,92,M,4,200,20,1
-Newdyne Concepts LA-2 Antimatter Engine,180,L,5,250,25,0.9
-White AgriSpace MA-3 Antimatter Engine,114,L,5.6,280,28,1.3
-Panwatch-Microbeam EA-1 Antimatter Engine,140,L,6.4,320,32,1
-Newdyne Concepts LA-3 Antimatter Engine,261,E,8.4,420,42,1.4
-Panwatch-Microbeam EA-2 Antimatter Engine,336,E,11.4,570,57,1
-Yang Astrotech GA-1 Antimatter Engine,374,G,14.4,720,72,1
-Panwatch-Microbeam EA-2H Antimatter Engine,589,G,14.6,730,73,1.1
-Panwatch-Microbeam EA-2S Antimatter Engine,1369,G,15.2,760,76,1.4
-Yang Astrotech GA-2 Antimatter Engine,721,G,15.8,790,79,1.1
+Warpdyne Asteroid Mining SA-1 Antimatter Engine,17,S,1.2,5,6,1
+Warpdyne Asteroid Mining SA-2 Antimatter Engine,35,S,1.6,4,8,1.1
+White AgriSpace MA-1 Antimatter Engine,34,M,3,11,15,1
+White AgriSpace MA-2 Antimatter Engine,84,M,3.6,10,18,1
+Newdyne Concepts LA-1 Antimatter Engine,92,M,4,18,20,1
+Newdyne Concepts LA-2 Antimatter Engine,180,L,5,19,25,0.9
+White AgriSpace MA-3 Antimatter Engine,114,L,5.6,9,28,1.3
+Panwatch-Microbeam EA-1 Antimatter Engine,140,L,6.4,33,32,1
+Newdyne Concepts LA-3 Antimatter Engine,261,E,8.4,19,42,1.4
+Panwatch-Microbeam EA-2 Antimatter Engine,336,E,11.4,35,57,1
+Yang Astrotech GA-1 Antimatter Engine,374,G,14.4,87,72,1
+Panwatch-Microbeam EA-2H Antimatter Engine,589,G,14.6,51,73,1.1
+Panwatch-Microbeam EA-2S Antimatter Engine,1369,G,15.2,44,76,1.4
+Yang Astrotech GA-2 Antimatter Engine,721,G,15.8,79,79,1.1
 ,,,,,,
 HYPERDRIVES,Cost,Size,CPU,Space,Power,Fuel Eff
-Cui-Green Alliance SH-1 Hyperdrive,12,S,0.8,40,4,0.8
-Cui-Green Alliance SH-2 Hyperdrive,26,S,1,50,5,1
-Cui-Green Alliance SH-3 Hyperdrive,53,S,1.6,80,8,1
-Outerdyne DayCorp MH-1 Hyperdrive,33,S,1.8,90,9,0.8
-Avatar-10 Hyperdrive,45,S,1.8,90,9,0.9
-Outerdyne DayCorp MH-2 Hyperdrive,64,M,2,100,10,0.9
-Kinjo Hardware LH-1 Hyperdrive,49,M,3.2,160,16,0.8
-Isu-Sim SSP05 Hyperdrive Generator,104,M,3.2,160,16,1.9
-Series 401 Hyperdrive Motivator,195,M,3.6,180,18,1.4
-Kinjo Hardware LH-2H Hyperdrive,231,M,3.8,190,19,1
-Kinjo Hardware LH-2 Hyperdrive,118,L,4,200,20,0.8
-Stellar Group EH-1 Hyperdrive,109,L,4.8,240,24,0.8
-Stellar Group EH-2 Hyperdrive,240,L,6,300,30,0.9
-Highfarer Enterprises GH-1 Hyperdrive,256,E,8.8,440,44,0.8
-Highfarer Enterprises GH-2 Hyperdrive,481,E,12,600,60,0.9
-KDY Capital Destroyer Hyperdrive Thruster,8500,C,80,4000,400,0.8
-Cygnus Spaceworks Super Hyperdrive Reactor,34000,T,180,45000,900,0.5
+Cui-Green Alliance SH-1 Hyperdrive,12,S,0.8,2,4,0.8
+Cui-Green Alliance SH-2 Hyperdrive,26,S,1,3,5,1
+Cui-Green Alliance SH-3 Hyperdrive,53,S,1.6,2,8,1
+Outerdyne DayCorp MH-1 Hyperdrive,33,S,1.8,4,9,0.8
+Outerdyne DayCorp MH-2 Hyperdrive,64,M,2,3,10,0.9
+Kinjo Hardware LH-1 Hyperdrive,49,M,3.2,7,16,0.8
+Kinjo Hardware LH-2H Hyperdrive,231,M,3.8,5,19,1
+Kinjo Hardware LH-2 Hyperdrive,118,L,4,6,20,0.8
+Stellar Group EH-1 Hyperdrive,109,L,4.8,13,24,0.8
+Stellar Group EH-2 Hyperdrive,240,L,6,10,30,0.9
+Highfarer Enterprises GH-1 Hyperdrive,256,E,8.8,38,44,0.8
+Highfarer Enterprises GH-2 Hyperdrive,481,E,12,30,60,0.9
 ,,,,,,
 TACHYON SAILS,Cost,Size,CPU,Space,Power,Fuel Eff
-TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,70,7,1
-Micro PrimeTech MT-1 Tachyon Sail,93,M,3,150,15,1
-Shooting Star LT-1 Tachyon Sail,160,L,5.4,270,27,1
-Frontier Yards ET-1 Tachyon Sail,259,E,8.8,440,44,1
-Butler Grav Vehicles GT-1 Tachyon Sail,569,E,11,550,55,1
+TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,6,7,1
+Micro PrimeTech MT-1 Tachyon Sail,93,M,3,15,15,1
+Shooting Star LT-1 Tachyon Sail,160,L,5.4,26,27,1
+Frontier Yards ET-1 Tachyon Sail,259,E,8.8,47,44,1
+Butler Grav Vehicles GT-1 Tachyon Sail,569,E,11,117,55,1
 ,,,,,,
 TACHYON CONDUITS,Cost,Size,CPU,Space,Power,Fuel Eff
-TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,70,7,1
-Highwatch SC-1 Tachyon Conduit System,64,M,3,150,15,1.6
-Arakaki-Cao Union MC-1 Tachyon Conduit System,119,L,5.6,280,28,1.6
-Transwide Products LC-1 Tachyon Conduit System,288,E,8,400,40,1.6
-Star Products EC-1 Tachyon Conduit System,515,G,15,750,75,1.6
-Long Transport GC-1 Tachyon Conduit System,1254,C,25,1250,125,1.6
-
-
+TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,6,7,1
+Highwatch SC-1 Tachyon Conduit System,64,M,3,4,15,1.6
+Arakaki-Cao Union MC-1 Tachyon Conduit System,119,L,5.6,9,28,1.6
+Transwide Products LC-1 Tachyon Conduit System,288,E,8,14,40,1.6
+Star Products EC-1 Tachyon Conduit System,515,G,15,30,75,1.6
+Long Transport GC-1 Tachyon Conduit System,1254,C,25,68,125,1.6
