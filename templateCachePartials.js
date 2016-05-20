@@ -1288,7 +1288,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
-    '            <tr>\n' +
+    '            <!-- <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Power Plants</span>\n' +
     '                    <span ng-repeat="(name, quantity) in ship[\'Power Plant\']">\n' +
@@ -1298,7 +1298,7 @@ module.run(['$templateCache', function($templateCache) {
     '                        checks: <span ng-bind="powerplantHash[name].Checks"></span>)\n' +
     '                    </span>\n' +
     '                </td>\n' +
-    '            </tr>\n' +
+    '            </tr> -->\n' +
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Sensors</span>\n' +
