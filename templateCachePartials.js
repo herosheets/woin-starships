@@ -1357,7 +1357,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span ng-bind="calculateSuperstructure() || \'none\'"></span>\n' +
     '                    <span style="font-weight: bold;">DEFENSE</span>\n' +
     '                    <span>{{calculateDefense() | number:0}}</span>\n' +
-    '                    <span style="font-weight: bold;">ELECTRONIC DEFENSE</span>\n' +
+    '                    <span style="font-weight: bold;">E-DEFENSE</span>\n' +
     '                    <span ng-bind="calculateElectronicDefense()"></span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
