@@ -903,7 +903,7 @@ module.run(['$templateCache', function($templateCache) {
     '    Starships are categorized by class, which is a rough measure of tonnage. This initial decision determines the size\n' +
     '    parameters of your ship design. It also determines your crew requirement, fuel capacity, cargo space, and DEFENSE\n' +
     '    values.  For especially large ships (those over Class XX or so), space starts to matter less and less; it will be easy to fit in any components required (as long as you can afford them!) but instead the challenge of maintaining increasingly larger crews, paying them monthly, and outfitting the vessel to crew comfortable becomes more difficult.<br><br>\n' +
-    '    A DEFENSE value cannot drop below 0.\n' +
+    '    A DEFENSE value cannot drop below 10.\n' +
     '</p>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
