@@ -42,10 +42,7 @@ Stellar Products LS-1 Solar Sail,3,L,1.2,22,12,1
 Du-Bobrikov Company ES-1 Solar Sail,7,E,1.9,47,19,1
 Panwatch Metallurgy GS-1 Solar Sail,19,G,3.5,92,35,1
 ,,,,,,
-AL 6-7 SUB-L Engines,Cost,Size,CPU,Space,Power,Fuel Eff
+AL 6-7 Sublight Engines,Cost,Size,CPU,Space,Power,Fuel Eff
 Chenzua Corporation 21Ca Fusion Reactor,4,M,0.5,20,0.3,1
 Chenzua Corporation 21Cb Fusion Reactor,12,M,2,25,0.5,1.1
-Aerojet Rocketdyne RS-25 Liquid Fuel Cryogenic Rocket Engine,2,S,0.1,1,0.1,0.3
-ISRO Liquid Apogee Motor,1,S,0.2,1,0.1,0.5
-NASA MHW-RTG Radiosiotopic Thermolectric Generator,1,S,0.1,1,0.1,1.5
 Chenzua Corporation B21Cc Large Rocket Engine,20,L,2,40,1,1
