@@ -23,6 +23,7 @@ WayDyne Incorporated GI-1 Ion Engine,80,G,5.3,88,53,1.4
 WayDyne Incorporated GI-2 Ion Engine,132,G,9.6,103,96,1.6
 ,,,,,,
 Fusion Reactors,Cost,Size,CPU,Space,Power,Fuel Eff
+Chenzua Corporation 21Ca Fusion Reactor,4,M,0.5,20,0.3,1.0
 Star Corporation SF-1 Fusion Reactor,7,S,1.2,11,12,1.2
 Star Corporation SF-2 Fusion Reactor,11,S,1.9,12,19,1.2
 WarpCo Alliance MF-1 Fusion Reactor,11,M,3.3,23,33,1.2
