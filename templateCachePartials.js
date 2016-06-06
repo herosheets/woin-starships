@@ -1552,6 +1552,7 @@ module.run(['$templateCache', function($templateCache) {
     '</h2>\n' +
     '<p class="explainer">\n' +
     '    A ship\'s power comes from its engines. Basic engines come integrated in a ship\'s hull type, and provide minimal power. Upgrading the engines is often a new captain\'s first project. The existing engines cannot be sold or exchanged; they have an effective value of zero. There are many types of starship propulsion and power systems. Listed below are some common civilian systems, from liquid fuel or fusion systems to more advanced antimatter or hyperdrive engines. Not all engines provide FTL capability; and FTL engines cannot be used at sub-luminal speeds. For this reason, a vessel may need more than one engine – perhaps a fusion reactor and a hyperdrive system. An engineer will need to balance ship class, space, power, FTL capability and fuel efficiency to obtain her desired outcome.</p>\n' +
+    '<br>Note that SPEEDs of 1 or higher are typically AL 8 technology. SPEEDS lower than 1 are typically AL 6-7.\n' +
     '<h3>Your Sub-luminal Engine</h3>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
@@ -1608,7 +1609,8 @@ module.run(['$templateCache', function($templateCache) {
     '        <td>{{item[\'Fuel Eff\']}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
-    '</table>');
+    '</table>\n' +
+    '');
 }]);
 })();
 
