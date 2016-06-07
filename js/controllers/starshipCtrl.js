@@ -192,7 +192,7 @@ fromRoman = function (roman, accept) {
 };
 
 var getHullClassInteger = function (ship, hulls) {
-  return Number.fromRoman(ship.hull['Class'], true);
+  return ship.hull ? Number.fromRoman(ship.hull['Class'], true): '';
 };
 
 var tabs = [
