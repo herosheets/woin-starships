@@ -10,7 +10,7 @@
         <th></th>
         <th>Quantity</th>
         <th>Type</th>
-        <th>Space</th>
+        <th>Space (CU)</th>
         <th>Cost</th>
         <th>Notes</th>
     </tr>
@@ -20,7 +20,7 @@
         <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
-        <td ng-bind="superstructureHash[name].Space"></td>
+        <td ng-bind="superstructureHash[name]['Space']"></td>
         <td ng-bind="superstructureHash[name].Cost"></td>
         <td ng-bind="superstructureHash[name].Notes"></td>
     </tr>
@@ -35,16 +35,16 @@
     <tr>
         <th>Select</th>
         <th>Type</th>
-        <th>Space</th>
+        <th>Space (CU)</th>
         <th>Cost</th>
         <th>Notes</th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="p in superstructureOptions">
-        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p['Type'])">+</button></td>
-        <td ng-bind="p.Type"></td>
-        <td ng-bind="p.Space"></td>
+        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p['SS/Armor'])">+</button></td>
+        <td ng-bind="p['SS/Armor']"></td>
+        <td ng-bind="p['Space']"></td>
         <td ng-bind="p.Cost"></td>
         <td ng-bind="p.Notes"></td>
     </tr>

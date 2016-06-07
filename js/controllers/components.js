@@ -34,22 +34,36 @@ angular.module('woin-starship').service('Components',
         scope.weapons = [];
         scope.hullConfigurations = [];
         scope.passengerOptions = passengers;
-        scope.superstructureOptions = superstructures;
+        scope.superstructureOptions = [];
 
         scope.crewHash = {};
         _.each(scope.passengerOptions, function (item) {
           scope.crewHash[item['Type']] = item;
         });
 
-        scope.superstructureHash = {};
-        _.each(scope.superstructureOptions, function (item) {
-          scope.superstructureHash[item['Type']] = item;
-        });
 
         var doDownload = location.hostname === 'starships.enworld.org';
         var getUrl = function(file) {
           return './starship_data/' + file + '.csv';
         };
+
+
+        Papa.parse(doDownload ? getUrl('superstructure') : superstructures, {
+          header: true,
+          download: doDownload,
+          dynamicTyping: true,
+          step: function (row) {
+            var KEY = 'SS/Armor';
+            scope.superstructureOptions.push(row.data[0]);
+            scope.superstructureHash = {};
+            _.each(scope.superstructureOptions, function (item) {
+              scope.superstructureHash[item[KEY]] = item;
+            });
+          },
+          complete: function () {
+            console.log("Superstructures Loaded");
+          }
+        });
 
         Papa.parse(doDownload ? getUrl('computers') : computers, {
           header: true,
@@ -618,21 +632,11 @@ angular.module('woin-starship').service('Components',
         {Type: "Luxury Passengers", Space: "4", Cost: "0.3"}
       ];
 
-      var superstructures = [
-        {Type: "Additional SS", Space: "1", Cost: "0.5", Notes: "Base (free) SS = ship class"},
-        {
-          Type: "Armor, reactive",
-          Space: "10",
-          Cost: "10",
-          Notes: "1 SOAK per armor point/class vs. ballistic; 1.5 SOAK per armor point/class vs energy."
-        },
-        {
-          Type: "Armor, ablative",
-          Space: "10",
-          Cost: "10",
-          Notes: "1 SOAK per armor point/class vs. energy; 1.5 SOAK per armor point/class vs ballistic."
-        }
-      ];
+      var superstructures =
+        "SS/Armor,Space,Cost,Notes\n"+
+        "Additional SS,1 per SS,0.5 MCr per SS,Base (free) SS = 3 x ship class\n"+
+        "\"Armor, reactive\",10 per 1 armor point,10 MCr per armor point,1 SOAK per armor point/class vs. ballistic; 1.5 SOAK per armor point/class vs energy.\n"+
+        "\"Armor, ablative\",10 per 1 armor point,10 MCr per armor point,1 SOAK per armor point/class vs. energy; 1.5 SOAK per armor point/class vs ballistic.";
 
       var pointDefences =
         "Point Defenses,Space,CPU,Cost,DEFENSE,Aura\n"+
