@@ -49,7 +49,7 @@ var getQuantityValue = function (shipPart, val, partsList) {
     angular.forEach(shipPart, function (quantity, component) {
       if (_.has(partsList[component], val)) {
         var b = +(parseFloat(partsList[component][val]));
-        if (!(isNaN(b))) {
+        if (!(_.isNaN(b))) {
           total += b * quantity;
         }
       }
@@ -76,7 +76,8 @@ var getTotalShipValue = function (ship, valueName, scope) {
   var base = 0;
   var crewSize = getTotalCrew(ship, scope);
   angular.forEach(flatComponents, function (c) {
-    base += getComponentValue(ship[c], valueName);
+    var res = getComponentValue(ship[c], valueName);
+    base += _.isNumber(res) ? res : 0;
   });
   angular.forEach(quantityComponents, function (hashName, componentName) {
     var hash = scope[hashName];
@@ -336,7 +337,7 @@ angular.module('woin-starship')
 
     $scope.calculateDefense = function() {
       var base = getAllShipValues($scope.ship, 'DEFENSE', $scope);
-      base -=  getQuantityValue($scope.ship['Point Defenses'], 'DEFENSE', $scope.pointDefensesHash);
+      base -= getQuantityValue($scope.ship['Point Defenses'], 'DEFENSE', $scope.pointDefensesHash);
       return Math.max(10, base);
     };
 
