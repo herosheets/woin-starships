@@ -230,7 +230,7 @@ angular.module('woin-starship')
   .controller('SidenavCtrl', ['$scope', function($scope) {
       $scope.tabs = tabs;
   }])
-  .controller('StarshipCtrl', ['$scope', 'Components', 'Sidenav', function StarshipCtrl($scope, Components, Sidenav) {
+  .controller('StarshipCtrl', ['$scope', '$filter', 'Components', 'Sidenav', function StarshipCtrl($scope, $filter, Components, Sidenav) {
     'use strict';
 
     // initialize data
@@ -398,7 +398,7 @@ angular.module('woin-starship')
         var initialCargo = $scope.ship.hull['Max CU'];
         var amountRemaining = $scope.maxSpace() - $scope.currentSpace();
         var tonnage = amountRemaining * 50;
-        return initialCargo + " ("+amountRemaining+" available; capacity " + tonnage + " tons)";
+        return initialCargo + " ("+$filter('number')(amountRemaining, 1)+" available; capacity " + $filter('number')(tonnage, 1) + " tons)";
       } else {
         return "-";
       }
