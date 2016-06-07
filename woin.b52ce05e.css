@@ -17,7 +17,9 @@ hr {
   text-decoration: underline;
   color: #787e7e; }
 
-.learn h3, .learn h4, .learn h5 {
+.learn h3,
+.learn h4,
+.learn h5 {
   margin: 10px 0;
   font-weight: 500;
   line-height: 1.2;
@@ -121,7 +123,8 @@ hr {
   margin-right: auto;
   margin-left: auto; }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0; }
 
@@ -151,7 +154,8 @@ body {
   font-smoothing: antialiased;
   font-weight: 300; }
 
-button, input[type="checkbox"] {
+button,
+input[type="checkbox"] {
   outline: none; }
 
 .hidden {
@@ -190,7 +194,8 @@ button, input[type="checkbox"] {
   -moz-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility; }
 
-#new-todo, .edit {
+#new-todo,
+.edit {
   position: relative;
   margin: 0;
   width: 100%;
@@ -373,13 +378,15 @@ label[for='toggle-all'] {
   border: 1px solid transparent;
   border-radius: 3px; }
 
-#filters li a.selected, #filters li a:hover {
+#filters li a.selected,
+#filters li a:hover {
   border-color: rgba(175, 47, 47, 0.1); }
 
 #filters li a.selected {
   border-color: rgba(175, 47, 47, 0.2); }
 
-#clear-completed, html #clear-completed:active {
+#clear-completed,
+html #clear-completed:active {
   float: right;
   position: relative;
   line-height: 20px;
@@ -413,7 +420,8 @@ label[for='toggle-all'] {
 	Can't use it globally since it destroys checkboxes in Firefox
 */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  #toggle-all, #todo-list li .toggle {
+  #toggle-all,
+  #todo-list li .toggle {
     background: none; }
   #todo-list li .toggle {
     height: 40px; }
@@ -466,5 +474,4 @@ label[for='toggle-all'] {
 .navbar.navbar-fixed-top {
   margin-top: -51px; }
 
-
-/*# sourceMappingURL=maps/woin.b510b1cf.css.map */
+/*# sourceMappingURL=maps/woin.b52ce05e.css.map */

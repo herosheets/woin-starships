@@ -1634,7 +1634,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <th></th>\n' +
     '        <th>Quantity</th>\n' +
     '        <th>Type</th>\n' +
-    '        <th>Space</th>\n' +
+    '        <th>Space (CU)</th>\n' +
     '        <th>Cost</th>\n' +
     '        <th>Notes</th>\n' +
     '    </tr>\n' +
@@ -1644,7 +1644,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
     '        <td ng-bind="count"></td>\n' +
     '        <td ng-bind="name"></td>\n' +
-    '        <td ng-bind="superstructureHash[name].Space"></td>\n' +
+    '        <td ng-bind="superstructureHash[name][\'Space\']"></td>\n' +
     '        <td ng-bind="superstructureHash[name].Cost"></td>\n' +
     '        <td ng-bind="superstructureHash[name].Notes"></td>\n' +
     '    </tr>\n' +
@@ -1659,16 +1659,16 @@ module.run(['$templateCache', function($templateCache) {
     '    <tr>\n' +
     '        <th>Select</th>\n' +
     '        <th>Type</th>\n' +
-    '        <th>Space</th>\n' +
+    '        <th>Space (CU)</th>\n' +
     '        <th>Cost</th>\n' +
     '        <th>Notes</th>\n' +
     '    </tr>\n' +
     '    </thead>\n' +
     '    <tbody>\n' +
     '    <tr ng-repeat="p in superstructureOptions">\n' +
-    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p[\'Type\'])">+</button></td>\n' +
-    '        <td ng-bind="p.Type"></td>\n' +
-    '        <td ng-bind="p.Space"></td>\n' +
+    '        <td><button type="button" class="btn btn-primary" ng-click="incrementItem(KEY, p[\'SS/Armor\'])">+</button></td>\n' +
+    '        <td ng-bind="p[\'SS/Armor\']"></td>\n' +
+    '        <td ng-bind="p[\'Space\']"></td>\n' +
     '        <td ng-bind="p.Cost"></td>\n' +
     '        <td ng-bind="p.Notes"></td>\n' +
     '    </tr>\n' +
