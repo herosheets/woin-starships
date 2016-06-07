@@ -150,7 +150,7 @@ var getTotalCrew = function (ship, scope) {
       var baseString = scope.computerHash[key].Crew;
       if(!_.contains(baseString, '%')) return;
       var mod = +(baseString.split('%')[0]);
-      modPercent += mod*num;
+      modPercent = Math.min(modPercent, mod*num);
     });
 
     return Math.floor(totalCrew + (baseCrew*(modPercent/100)));
