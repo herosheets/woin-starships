@@ -424,6 +424,15 @@ angular.module('woin-starship')
       return parseInt(power * quantity / hullClass);
     };
 
+    $scope.calculateAura = function(aura) {
+      var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+      if (aura !== undefined) {
+        return Math.round(hullClass/4) + aura;
+      } else {
+        return Math.round(hullClass/4);
+      }
+    };
+
     $scope.isHangar = function(itemName) {
       return ($scope.generalHash[itemName] && $scope.generalHash[itemName].hangar !== undefined);
     };
