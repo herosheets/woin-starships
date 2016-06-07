@@ -307,7 +307,15 @@ angular.module('woin-starship')
     $scope.calculateElectronicDefense = function() {
       try {
         var bonus = getAllShipValues($scope.ship, 'ELECTRONIC DEFENSE', $scope);
-        var base = getCpu($scope.ship, $scope);
+
+        var base = 0;
+        _.each($scope.ship['Control Computers'], function(num, key) {
+          var p = parseInt($scope.computerHash[key].CPU);
+          if (p > base) {
+            base = p;
+          }
+        });
+
         return Math.max(10, Math.floor((base/2) + bonus));
       } catch (e) {
         return 10;
@@ -370,11 +378,8 @@ angular.module('woin-starship')
     $scope.calculateLuxury = function() {
       var luxuryTotal = getAllShipValues($scope.ship, 'Luxury/crew', $scope);
 
-      console.log("Luxury: " + luxuryTotal);
-
       var crewTotal = $scope.getTotalCrew();
 
-      console.log("Base crew total: " + crewTotal);
       if ($scope.ship.Crew !== undefined) {
         if ($scope.ship.Crew['Standard Passengers'] !== undefined) {
           crewTotal = crewTotal + $scope.ship.Crew['Standard Passengers']
