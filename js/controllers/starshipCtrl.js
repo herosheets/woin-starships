@@ -48,7 +48,7 @@ var getQuantityValue = function (shipPart, val, partsList) {
   if (shipPart !== undefined && shipPart !== null) {
     angular.forEach(shipPart, function (quantity, component) {
       if (_.has(partsList[component], val)) {
-        var b = +(partsList[component][val]);
+        var b = +(parseFloat(partsList[component][val]));
         if (!(isNaN(b))) {
           total += b * quantity;
         }
