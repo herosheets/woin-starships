@@ -234,7 +234,9 @@ angular.module('woin-starship')
 
     $scope.calculateSublSpeed = function (engineName, quantity) {
       var totalPower = $scope.sublHash[engineName]['Power'] * quantity;
+      console.log("Engine name: " + engineName + " , power: " + $scope.sublHash[engineName]['Power'] + " x" + quantity);
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
+      console.log(" hull: " + hullClass + " divided = " + totalPower/hullClass);
 
       if (totalPower !== undefined && hullClass !== undefined) {
         return totalPower/hullClass;

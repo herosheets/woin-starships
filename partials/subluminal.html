@@ -23,13 +23,12 @@
         <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>
         <td ng-bind="count"></td>
         <td ng-bind="name"></td>
-        <td>{{item['Sub-luminal Engine']}}</td>
-        <td>{{item.Cost}}</td>
-        <td>{{item.Size}}</td>
-        <td>{{item.CPU}}</td>
-        <td>{{item.Space}}</td>
-        <td>{{item.Power}}</td>
-        <td>{{item['Fuel Eff']}}</td>
+        <td>{{sublHash[name].Cost}}</td>
+        <td>{{sublHash[name].Size}}</td>
+        <td>{{sublHash[name].CPU}}</td>
+        <td>{{sublHash[name].Space}}</td>
+        <td>{{sublHash[name].Power}}</td>
+        <td>{{sublHash[name]['Fuel Eff']}}</td>
     </tr>
     </tbody>
 </table>
