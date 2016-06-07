@@ -1384,7 +1384,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span ng-if="ship[\'Point Defenses\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Point Defenses\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        (+{{pointDefensesHash[name][\'DEFENSE\'] * quantity/getNumericShipClass() | number:0}} vs. missiles and fighters, Aura: {{ pointDefensesHash[name][\'Aura\'] }})\n' +
+    '                        (+{{pointDefensesHash[name][\'DEFENSE\'] * quantity/getNumericShipClass() | number:0}} vs. missiles and fighters, Aura: {{ calculateAura(pointDefensesHash[name][\'Aura\']) }})\n' +
     '\n' +
     '                    </span>\n' +
     '                </td>\n' +
