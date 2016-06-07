@@ -1573,13 +1573,12 @@ module.run(['$templateCache', function($templateCache) {
     '        <td><button type="button" class="btn btn-primary" ng-click="decrementItem(KEY, name)">-</button></td>\n' +
     '        <td ng-bind="count"></td>\n' +
     '        <td ng-bind="name"></td>\n' +
-    '        <td>{{item[\'Sub-luminal Engine\']}}</td>\n' +
-    '        <td>{{item.Cost}}</td>\n' +
-    '        <td>{{item.Size}}</td>\n' +
-    '        <td>{{item.CPU}}</td>\n' +
-    '        <td>{{item.Space}}</td>\n' +
-    '        <td>{{item.Power}}</td>\n' +
-    '        <td>{{item[\'Fuel Eff\']}}</td>\n' +
+    '        <td>{{sublHash[name].Cost}}</td>\n' +
+    '        <td>{{sublHash[name].Size}}</td>\n' +
+    '        <td>{{sublHash[name].CPU}}</td>\n' +
+    '        <td>{{sublHash[name].Space}}</td>\n' +
+    '        <td>{{sublHash[name].Power}}</td>\n' +
+    '        <td>{{sublHash[name][\'Fuel Eff\']}}</td>\n' +
     '    </tr>\n' +
     '    </tbody>\n' +
     '</table>\n' +
