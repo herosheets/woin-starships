@@ -343,7 +343,7 @@ angular.module('woin-starship')
       if (base === "") {
         base = "-";
       } else {
-        base += "(SOAK " + ballistic + " ballistic, " + energy + " energy.)";
+        base += "(SOAK " + Math.round(ballistic) + " ballistic, " + Math.round(energy) + " energy.)";
       }
       return base;
     };
