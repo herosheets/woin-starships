@@ -141,7 +141,6 @@ var getTotalCrew = function (ship, scope) {
     var totalCrew = baseCrew;
     if (_.has(ship, 'Crew')) {
       angular.forEach(ship.Crew, function(quantity, crewType) {
-        console.log("Crew has " + crewType + " (x " + quantity);
         if (crewType === 'Additional Crew') {
           totalCrew += quantity;
         }
@@ -370,7 +369,27 @@ angular.module('woin-starship')
 
     $scope.calculateLuxury = function() {
       var luxuryTotal = getAllShipValues($scope.ship, 'Luxury/crew', $scope);
+
+      console.log("Luxury: " + luxuryTotal);
+
       var crewTotal = $scope.getTotalCrew();
+
+      console.log("Base crew total: " + crewTotal);
+      if ($scope.ship.Crew !== undefined) {
+        if ($scope.ship.Crew['Standard Passengers'] !== undefined) {
+          crewTotal = crewTotal + $scope.ship.Crew['Standard Passengers']
+          // console.log(" + standard Passengers = " + crewTotal);
+        }
+        if ($scope.ship.Crew['Luxury Passengers'] !== undefined) {
+          crewTotal = crewTotal + $scope.ship.Crew['Luxury Passengers'];
+          // console.log(" + luxury Passengers = " + crewTotal);
+        }
+        if ($scope.ship.Crew['Troops'] !== undefined) {
+          crewTotal = crewTotal + $scope.ship.Crew['Troops'];
+          // console.log(" + troops = " + crewTotal);
+        }
+      }
+
       var lux = (luxuryTotal / crewTotal) * 100;
 
       if(_.isNaN(lux)) lux = 0;
