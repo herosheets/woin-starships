@@ -286,9 +286,11 @@ angular.module('woin-starship')
       try {
         var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
         var baseSs = hullClass * 3;
-        var additional = $scope.ship.Superstructure["Additional SS"];
-        if (additional !== undefined) {
-          baseSs += additional;
+        if ($scope.ship.Superstructure !== undefined) {
+          var additional = $scope.ship.Superstructure["Additional SS"];
+          if (additional !== undefined) {
+            baseSs += additional;
+          }
         }
         return baseSs;
       } catch(e) {
