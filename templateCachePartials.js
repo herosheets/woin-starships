@@ -1345,7 +1345,7 @@ module.run(['$templateCache', function($templateCache) {
     '            <tr>\n' +
     '                <td colspan="10" align="left" height="17" valign="bottom">\n' +
     '                    <span style="font-weight: bold;">Operational Range</span>\n' +
-    '                    <span ng-bind="calculateOperationalRange()"></span> parsecs\n' +
+    '                    <span ng-bind="calculateOperationalRange() | number:0"></span> parsecs\n' +
     '                </td>\n' +
     '            </tr>\n' +
     '            <tr>\n' +
