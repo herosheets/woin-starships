@@ -311,7 +311,8 @@ angular.module('woin-starship')
         if (fuelEff === '-') {
           return "-";
         } else {
-          return Math.pow(shipClass, 3) * fuelEff;
+          var fuelBay = _.get($scope.ship, 'Fueling["Fuel bay alteration"]') || 0;
+          return (Math.pow(shipClass, 3) + fuelBay) * fuelEff;
         }
       } catch (e) {
         return "-";
