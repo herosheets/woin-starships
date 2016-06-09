@@ -1641,6 +1641,7 @@ module.run(['$templateCache', function($templateCache) {
     '<h3>Your Superstructure</h3>\n' +
     '<h4>Current Superstructure:\n' +
     '    <span ng-bind="calculateSuperstructure() || \'none\'"></span>\n' +
+    '    <span ng-bind="calculateArmor()"></span>\n' +
     '</h4>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
