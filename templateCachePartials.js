@@ -1320,9 +1320,10 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span style="font-weight: bold;">Subluminal</span>\n' +
     '                      <span ng-repeat="(name, quantity) in ship[\'Sub-luminal Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        (power: <span ng-bind="sublHash[name][\'Power\']"></span>;\n' +
-    '                        SPEED: <span ng-bind="calculateSublSpeed(name, quantity) | number:1"></span>;\n' +
-    '                        fuel efficiency: <span ng-bind="sublHash[name][\'Fuel Eff\']"></span>)\n' +
+    '                        (power <span ng-bind="sublHash[name][\'Power\']"></span>\n' +
+    '                          <span ng-if="quantity > 1">ea</span>;\n' +
+    '                        SPEED <span ng-bind="calculateSublSpeed(name, quantity) | number:1"></span>;\n' +
+    '                        fuel efficiency <span ng-bind="sublHash[name][\'Fuel Eff\']"></span>)\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1332,17 +1333,19 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span ng-if="ship[\'FTL Engine\'] === undefined || isEmpty(\'FTL Engine\')">-</span>\n' +
     '                      <span ng-repeat="(name, quantity) in ship[\'FTL Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        (power: <span ng-bind="ftlHash[name][\'Power\']"></span>;\n' +
-    '                        FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span>;\n' +
-    '                        fuel efficiency: <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span>)\n' +
+    '                        (power <span ng-bind="ftlHash[name][\'Power\']"></span>\n' +
+    '                          <span ng-if="quantity > 1">ea</span>;\n' +
+    '                        FTL <span ng-bind="calculateFtl(name, quantity) | number:1"></span>;\n' +
+    '                        fuel efficiency <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span>)\n' +
     '                    <br>\n' +
     '                    <span style="font-weight: bold;">Backup FTL</span>\n' +
     '                     <span ng-if="ship[\'Backup FTL Engine\'] === undefined || isEmpty(\'Backup FTL Engine\')">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Backup FTL Engine\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        (power: <span ng-bind="ftlHash[name][\'Power\']"></span>;\n' +
-    '                        FTL: <span ng-bind="calculateFtl(name, quantity) | number:1"></span>;\n' +
-    '                        fuel efficiency: <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span>)\n' +
+    '                        (power <span ng-bind="ftlHash[name][\'Power\']"></span>\n' +
+    '                          <span ng-if="quantity > 1">ea</span>;\n' +
+    '                        FTL <span ng-bind="calculateFtl(name, quantity) | number:1"></span>;\n' +
+    '                        fuel efficiency <span ng-bind="ftlHash[name][\'Fuel Eff\']"></span>)\n' +
     '                    </span>\n' +
     '                </td>\n' +
     '            </tr>\n' +
@@ -1377,7 +1380,7 @@ module.run(['$templateCache', function($templateCache) {
     '                    <span ng-if="ship[\'Deflector Shields\'] === undefined">-</span>\n' +
     '                     <span ng-repeat="(name, quantity) in ship[\'Deflector Shields\']">\n' +
     '                        <span ng-bind="quantity"></span>x <span ng-bind="name"></span>\n' +
-    '                        (power <span ng-bind="deflectorHash[name][\'Power\'] * quantity"></span>;\n' +
+    '                        (power <span ng-bind="deflectorHash[name][\'Power\']"></span> ea;\n' +
     '                        SOAK <span ng-bind="calculateSoak(deflectorHash[name][\'Power\'], quantity)"></span>)\n' +
     '                    </span>\n' +
     '                </td>\n' +
