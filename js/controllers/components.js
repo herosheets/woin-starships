@@ -319,18 +319,27 @@ angular.module('woin-starship').service('Components',
         "Carrier,Scramble";
 
       var computers =
-        "Control Computers,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +
-        "Chemerkin-Liang Products LM-1,30,L,5,4,16,-,15,1,-,+0d6\n" +
-        "Chemerkin-Liang Products LM-2,60,L,5,5,20,-1.00%,16,1,-,+0d6\n" +
-        "Chemerkin-Liang Products LM-2H,380,L,5,10,40,-6.00%,18,2,1,+1d6\n" +
-        "Chemerkin-Liang Products LM-2S,800,L,5,13,52,-11.00%,21,2,2,+1d6\n" +
-        "Chemerkin-Liang Products LM-3S,1200,L,5,14,56,-13.00%,22,2,3,+1d6\n" +
-        "Chemerkin-Liang Products LM-5S,2000,L,5,16,64,-15.00%,23,3,4,+1d6\n" +
-        "Frontier Products Frontier Products MM-1,15,M,3,2,8,-,10,-,-,+0d6\n" +
-        "Frontier Products MM-2,30,M,3,3,12,-1.00%,11,-,-,+0d6\n" +
-        "Frontier Products MM-3,45,M,3,4,16,-2.00%,11,-,1,+0d6\n" +
-        "Frontier Products MM-3H,345,M,3,8,32,-7.00%,13,1,2,+1d6\n" +
-        "Frontier Products MM-4H,435,M,3,9,36,-8.00%,14,2,2,+1d6\n";
+        "Control Computers,Cost,Size,Space,Max FTL,CPU,E-DEFENSE,Crew,Rng Inc,SOAK,DEFENSE,Checks\n"+
+      "Highwatch SM-1 Command Computer,3,S,1,2,8,10,-0.00%,5,0,-0,+0d6\n"+
+      "Frontier Products MM-1 Command Computer,15,M,3,2,8,10,-0.00%,10,0,-0,+0d6\n"+
+      "Frontier Products MM-2 Command Computer,30,M,3,3,12,10,-1.00%,11,0,-0,+0d6\n"+
+      "Highwatch SM-1H Command Computer,109,S,1,4,16,10,-5.00%,7,1,1,+1d6\n"+
+      "Frontier Products MM-3 Command Computer,45,M,3,4,16,10,-2.00%,11,0,1,+0d6\n"+
+      "Chemerkin-Liang Products LM-1 Command Computer,30,L,5,4,16,10,-0.00%,15,1,-0,+0d6\n"+
+      "Newstellar EM-1 Command Computer,45,E,10,4,16,10,-5.00%,20,2,-0,+0d6\n"+
+      "Terra Prime GM-1 Command Computer,75,G,20,4,16,10,-10.00%,25,3,-0,+0d6\n"+
+      "Chemerkin-Liang Products LM-2 Command Computer,60,L,5,5,20,10,-1.00%,16,1,-0,+0d6\n"+
+      "Frontier Products MM-3H Command Computer,345,M,3,8,32,16,-7.00%,13,1,2,+1d6\n"+
+      "Newstellar EM-1H Command Computer,235,E,10,8,32,16,-10.00%,22,3,1,+1d6\n"+
+      "Terra Prime GM-1H Command Computer,325,G,20,8,32,16,-15.00%,27,4,1,+1d6\n"+
+      "Frontier Products MM-4H Command Computer,435,M,3,9,36,18,-8.00%,14,2,2,+1d6\n"+
+      "MicroCorp EM-2H Command Computer,470,E,10,9,36,18,-11.00%,23,3,1,+1d6\n"+
+      "Chemerkin-Liang Products LM-2H Command Computer,380,L,5,10,40,20,-6.00%,18,2,1,+1d6\n"+
+      "Chemerkin-Liang Products LM-2S Command Computer,800,L,5,13,52,26,-11.00%,21,2,2,+1d6\n"+
+      "Chemerkin-Liang Products LM-3S Command Computer,1200,L,5,14,56,28,-13.00%,22,2,3,+1d6\n"+
+      "MicroCorp EM-3S Command Computer,1425,E,10,14,56,28,-17.00%,26,3,3,+1d6\n"+
+      "Terra Prime GM-2 Command Computer,550,G,40,14,60,30,-5.00%,30,3,0,+0d6\n"+
+      "Chemerkin-Liang Products LM-5S Command Computer,2000,L,5,16,64,32,-15.00%,23,3,4,+1d6";
 
       var powerplants =
         "Power Plant,Cost,Size,Space,Max FTL,CPU,Crew,Rng Inc,SOAK,DEFENSE,Checks\n" +

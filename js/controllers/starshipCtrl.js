@@ -348,13 +348,13 @@ angular.module('woin-starship')
 
         var base = 0;
         _.each($scope.ship['Control Computers'], function(num, key) {
-          var p = parseInt($scope.computerHash[key].CPU);
+          var p = parseInt($scope.computerHash[key]['E-DEFENSE']);
           if (p > base) {
             base = p;
           }
         });
 
-        return Math.max(10, Math.floor((base/2) + bonus));
+        return Math.max(10, base + bonus);
       } catch (e) {
         return 10;
       }
