@@ -139,6 +139,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <th>Space</th>\n' +
     '        <th>Max FTL</th>\n' +
     '        <th>Max CPU</th>\n' +
+    '        <th>E-DEFENSE</th>\n' +
     '        <th>Crew</th>\n' +
     '        <th>Rng Inc</th>\n' +
     '        <th>SOAK</th>\n' +
@@ -156,6 +157,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <td ng-bind="computerHash[name].Space"></td>\n' +
     '        <td ng-bind="computerHash[name][\'Max FTL\']"></td>\n' +
     '        <td ng-bind="computerHash[name][\'CPU\']"></td>\n' +
+    '        <td ng-bind="computerHash[name][\'E-DEFENSE\']"></td>\n' +
     '        <td ng-bind="computerHash[name].Crew"></td>\n' +
     '        <td ng-bind="computerHash[name][\'Rng Inc\']"></td>\n' +
     '        <td ng-bind="computerHash[name].SOAK"></td>\n' +
@@ -178,6 +180,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <th>Space</th>\n' +
     '        <th>Max FTL</th>\n' +
     '        <th>Max CPU</th>\n' +
+    '        <th>E-DEFENSE</th>\n' +
     '        <th>Crew</th>\n' +
     '        <th>Rng Inc</th>\n' +
     '        <th>SOAK</th>\n' +
@@ -194,6 +197,7 @@ module.run(['$templateCache', function($templateCache) {
     '        <td ng-bind="c.Space"></td>\n' +
     '        <td ng-bind="c[\'Max FTL\']"></td>\n' +
     '        <td ng-bind="c[\'CPU\']"></td>\n' +
+    '        <td ng-bind="c[\'E-DEFENSE\']"></td>\n' +
     '        <td ng-bind="c.Crew"></td>\n' +
     '        <td ng-bind="c[\'Rng Inc\']"></td>\n' +
     '        <td ng-bind="c.SOAK"></td>\n' +
