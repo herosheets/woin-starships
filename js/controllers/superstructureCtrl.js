@@ -6,4 +6,8 @@ angular.module('woin-starship')
     if(!$scope.ship[KEY]) $scope.ship[KEY] = {};
 
     $scope.superstructureHash = $scope.$parent.superstructureHash;
+
+    $scope.calculateSuperstructure = function() {
+        return $scope.$parent.calculateSuperstructure();
+    };
   });
