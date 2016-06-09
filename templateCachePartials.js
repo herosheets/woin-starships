@@ -233,6 +233,8 @@ module.run(['$templateCache', function($templateCache) {
     '    Your minimum crew is already set by your hull class and control computer.  Additional crew can be used to supplement this minimum value, and are useful if the ship takes casualties.  Vessels which fall below minimum crew through casualties start to suffer penalties, so it is always advisable to carry more than the absolute minimum.</p>\n' +
     '\n' +
     '<h3>Your Crew</h3>\n' +
+    '<h4>Current Crew:\n' +
+    '    <span ng-bind="getTotalCrew() || \'none\'"></span></h4>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr>\n' +
@@ -457,6 +459,9 @@ module.run(['$templateCache', function($templateCache) {
     'Facilities directly affect a ship\'s LUXURY score which, if below 100%, can cause penalties. A comfortable crew is a happy crew!  However, decandence can cause penalties, too.\n' +
     '</p>\n' +
     '<h3>Your Facilities</h3>\n' +
+    '<h4>Current Luxury:\n' +
+    '    <span ng-bind="calculateLuxury() || \'none\'"></span>\n' +
+    '</h4>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr>\n' +
@@ -1634,6 +1639,9 @@ module.run(['$templateCache', function($templateCache) {
     '    <br><br><b>Recommended amounts.</b> A ship should typically have around ten times its class in superstructure, and considerably more if it is designed as a combat vessel.  Less than this can make it very fragile. Weapons can do in the region of 3d6-6d6 damage (averaging 12-25 damage per shot), so a salvo can easily destroy a ship with too little superstructure.\n' +
     '</p>\n' +
     '<h3>Your Superstructure</h3>\n' +
+    '<h4>Current Superstructure:\n' +
+    '    <span ng-bind="calculateSuperstructure() || \'none\'"></span>\n' +
+    '</h4>\n' +
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr>\n' +
