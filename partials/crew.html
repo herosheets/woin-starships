@@ -8,6 +8,8 @@
     Your minimum crew is already set by your hull class and control computer.  Additional crew can be used to supplement this minimum value, and are useful if the ship takes casualties.  Vessels which fall below minimum crew through casualties start to suffer penalties, so it is always advisable to carry more than the absolute minimum.</p>
 
 <h3>Your Crew</h3>
+<h4>Current Crew:
+    <span ng-bind="getTotalCrew() || 'none'"></span></h4>
 <table class="table table-striped">
     <thead>
     <tr>

@@ -131,8 +131,7 @@ var getCpuMax = function (ship, scope) {
   }
 };
 
-
-
+// common function for crew calculation
 var getTotalCrew = function (ship, scope) {
   try {
     var baseCrew = ship.hull.Crew;
