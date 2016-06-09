@@ -10,4 +10,8 @@ angular.module('woin-starship')
     $scope.facilitiesValueRemoveHash = {};
 
     $scope.facilitiesHash = $scope.$parent.facilitiesHash;
+
+      $scope.calculateLuxury = function() {
+          return $scope.$parent.calculateLuxury();
+      }
   });

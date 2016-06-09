@@ -5,6 +5,9 @@
 Facilities directly affect a ship's LUXURY score which, if below 100%, can cause penalties. A comfortable crew is a happy crew!  However, decandence can cause penalties, too.
 </p>
 <h3>Your Facilities</h3>
+<h4>Current Luxury:
+    <span ng-bind="calculateLuxury() || 'none'"></span>
+</h4>
 <table class="table table-striped">
     <thead>
     <tr>
