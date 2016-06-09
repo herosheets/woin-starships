@@ -10,4 +10,13 @@ angular.module('woin-starship')
     $scope.calculateSuperstructure = function() {
         return $scope.$parent.calculateSuperstructure();
     };
+
+      $scope.calculateArmor = function() {
+          try {
+            var b = $scope.$parent.presentArmor();
+            return "- (" + b.split('(')[1];
+          } catch (e) {
+            return "";
+          }
+      }
   });
