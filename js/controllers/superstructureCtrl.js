@@ -14,7 +14,12 @@ angular.module('woin-starship')
       $scope.calculateArmor = function() {
           try {
             var b = $scope.$parent.presentArmor();
-            return "- (" + b.split('(')[1];
+            var armor = b.split('(')[1];
+            if (armor === undefined || armor === 'none') {
+              return ""
+            } else {
+              return "- (" + armor;
+            }
           } catch (e) {
             return "";
           }
