@@ -43,14 +43,14 @@ var getComponentValue = function (c, val) {
   return 0;
 };
 
-var getQuantityValue = function (shipPart, val, partsList) {
+var getQuantityValue = function (shipPart, val, partsList, maxQuantity) {
   var total = 0;
   if (shipPart !== undefined && shipPart !== null) {
     angular.forEach(shipPart, function (quantity, component) {
       if (_.has(partsList[component], val)) {
         var b = +(parseFloat(partsList[component][val]));
         if (!(_.isNaN(b))) {
-          total += b * quantity;
+          total += b * (maxQuantity ? Math.min(maxQuantity, quantity) : quantity);
         }
       }
     });
@@ -83,6 +83,21 @@ var getTotalShipValue = function (ship, valueName, scope) {
     var hash = scope[hashName];
     base += getQuantityValue(ship[componentName], valueName, hash);
     base += getCrewValue(ship[componentName], valueName, hash, crewSize);
+  });
+  return base;
+};
+
+var getMaxShipValue = function (ship, valueName, scope) {
+  var base = 0;
+  var crewSize = getTotalCrew(ship, scope);
+  angular.forEach(flatComponents, function (c) {
+    var res = getComponentValue(ship[c], valueName);
+    base = Math.max(base, _.isNumber(res) ? res : 0);
+  });
+  angular.forEach(quantityComponents, function (hashName, componentName) {
+    var hash = scope[hashName];
+    base = Math.max(base, getQuantityValue(ship[componentName], valueName, hash, 1));
+    base = Math.max(base, getCrewValue(ship[componentName], valueName, hash, crewSize));
   });
   return base;
 };
@@ -286,8 +301,8 @@ angular.module('woin-starship')
     $scope.calculateFtl = function (engineName, quantity) {
       var totalPower = $scope.ftlHash[engineName]['Power'] * quantity;
       var hullClass = getHullClassInteger($scope.ship, $scope.hulls);
-      var maxFtl = getTotalShipValue($scope.ship, 'Max FTL', $scope);
-
+      var maxFtl = getMaxShipValue($scope.ship, 'Max FTL', $scope);
+      
       if (totalPower !== undefined && hullClass !== undefined) {
         var max = totalPower/hullClass;
         if (max <= maxFtl) {
