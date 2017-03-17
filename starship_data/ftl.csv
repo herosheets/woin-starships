@@ -43,19 +43,3 @@ Arakaki-Cao Union MC-1 Tachyon Conduit System,119,L,5.6,9,28,1.6
 Transwide Products LC-1 Tachyon Conduit System,288,E,8,14,40,1.6
 Star Products EC-1 Tachyon Conduit System,515,G,15,30,75,1.6
 Long Transport GC-1 Tachyon Conduit System,1254,C,25,68,125,1.6
-,,,,,,
-SPARTAN ENGINES,Cost,Size,CPU,Space,Power,Fuel Eff
-Huraga MKI Antimatter Engine,20,S,1.2,5,6,0.8
-Huraga MKII Antimatter Engine,40,S,1.6,4,8,0.9
-DuKath MKI Antimatter Engine,41,M,3,11,15,0.9
-DuKath MKII Antimatter Engine,100,M,3.6,10,18,0.8
-D'Ghor MKI Antimatter Engine,120,M,4,18,20,0.8
-D'Ghor MKII Antimatter Engine,210,L,5,19,25,0.7
-DuKath MKIII Antimatter Engine,130,L,5.6,9,28,0.9
-Dracla MKI Antimatter Engine,170,L,6.4,33,32,0.9
-D'Ghor MKIII Antimatter Engine,300,E,8.4,19,42,0.9
-Dracla MKII Antimatter Engine,350,E,11.4,35,57,0.9
-Kessec MKI Antimatter Engine,400,G,14.4,87,72,0.9
-Dracla MKIII Antimatter Engine,650,G,14.6,51,73,0.9
-Dracla MKIV Antimatter Engine,2000,G,15.2,44,76,0.9
-Kessec MKII Antimatter Engine,1000,G,15.8,79,79,0.9
