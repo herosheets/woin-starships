@@ -71,9 +71,6 @@ Cybertron KML-2 Mine Dispersal Unit,120,L,0,5,1,+0d6,2d6 heat
 ,,,,,,,
 Plasma Weapons,Cost,Size,CPU,Space,Range,Attack,Damage
 Saliman Industries Micro Plasma Unit Mk I,380,S,8,4,4,+0d6,4d6/1d6 plasma
-Vor-tang Type 3 Plasma Delivery System,400,M,8,12,3,+0d6,8d6/2d6 plasma
-Kal-rem Type 4 Plasma Discharge Launcher,700,M,12,14,5,+0d6,10d6/3d6 plasma
-Spartan PX-14 Basebuster Plasma Launcher,1250,G,20,60,6,+0d6,12d6/2d6 plasma
 ,,,,,,,
 Nuclear Warheads,Cost,Size,CPU,Space,Range,Attack,Damage
 Cui-Cook Systems SNPx-1 Starspear Nuclear Warhead,5,S,1,1,3,+1d6,2d6 heat/radiation
@@ -86,3 +83,19 @@ ME-V Giga Mass Accelerator,15000,G,100,6000,50,+0d6,7d6 ballistic
 ME-W Colossus Mass Accelerator,20000,C,150,9000,70,+0d6,8d6 ballistic
 ME-X Titan Mass Accelerator,30000,T,200,15000,75,+0d6,10d6 ballistic
 ME-Y Cosmic Mass Accelerator,65000,T,350,25000,100,+0d6,12d6 ballistic
+,,,,,,,
+Spartan Weapons,Cost,Size,CPU,Space,Range,Attack,Damage
+Ankhisk Type 1 Magnetic Railgun,5,S,1,2,2,+0d6,3d6 ballistic
+Kellein Type 1 Particle Cannon,35,M,2,4,4,+0d6,3d6 heat
+D'Ghor Type 1 Projectile Cannon,10,M,4,5,4,+0d6,3d6 ballistic
+Katilla Type 2 Particle Cannon,175,E,8,10,8,+0d6,5d6 heat
+Koloth Type 2 Projectile Cannon,60,E,8,12,5,+0d6,5d6 ballistic
+KaiTan Type 2 Magnetic Railgun,30,L,6,15,3,+0d6,5d6 ballistic
+B'iJik Type 3 Magnetic Railgun,200,G,10,50,10,+0d6,7d6 ballistic
+K'tanga Type 1 Nuclear Warhead,8,S,2,2,3,+0d6,3d6 heat/radiation
+Chang Type 2 Nuclear Warhead,15,M,2,6,5,+0d6,3d6 heat/radiation
+Ko'Roth Type 3 Nuclear Warhead,30,L,3,10,6,+0d6,4d6 heat/radiation
+Z'Tan Type 4 Nuclear Warhead,180,G,5,55,13,+0d6,6d6 heat/radiation
+Vor-tang Type 3 Plasma Delivery System,400,M,8,12,3,+0d6,8d6/2d6 plasma
+Kal-rem Type 4 Plasma Discharge Launcher,700,M,12,14,5,+0d6,10d6/3d6 plasma
+P'Rax Type 1 Basebuster Plasma Launcher,1250,G,20,60,7,+0d6,12d6/2d6 plasma
