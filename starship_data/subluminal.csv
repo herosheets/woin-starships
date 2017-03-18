@@ -46,3 +46,14 @@ AL 6-7 Sublight Engines,Cost,Size,CPU,Space,Power,Fuel Eff
 Chenzua Corporation 21Ca Fusion Reactor,4,M,0.5,20,0.3,1
 Chenzua Corporation 21Cb Fusion Reactor,12,M,2,25,0.5,1.1
 Chenzua Corporation B21Cc Large Rocket Engine,20,L,2,40,1,1
+,,,,,,
+Spartan Fusion Reactors,Cost,Size,CPU,Space,Power,Fuel Eff
+Azetbor MKI Fusion Reactor,15,S,0.6,20,15,0.6
+Azetbor MKII Fusion Reactor,22,S,1.1,25,22,0.6
+Kargan MKI Fusion Reactor,23,M,1.6,35,38,0.6
+Kadrya MKII Fusion Reactor,110,L,2,55,49,0.7
+Kadrya MKI Fusion Reactor,45,L,2.5,60,58,0.6
+Batrell MKI Fusion Reactor,100,E,4.5,130,90,0.6
+Batrell MKII Fusion Reactor,205,E,5.5,165,105,0.7
+Kintata MKI Fusion Reactor,300,G,6,250,125,0.6
+Kintata MKII Fusion Reactor,650,G,9,275,200,0.6
