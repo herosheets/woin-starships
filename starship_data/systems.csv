@@ -36,6 +36,6 @@ Carbanti Signal-Augmented Sensor Jammer,ECM,3,S,14,1,"Jams sensors, causing -1d6
 Carbanti Whistler Encryption Module,ECM,2,S,12,1,"Jams sensors, causing -1d6 penalty"
 ,,,,,,
 Spartan Systems,,,,,,
-T'Panga MKII Control Beam,Tractor Beam,30,G,450,0,"STR 12, range 10"
+K'Chorla MKII Control Beam,Tractor Beam,30,G,450,0,"STR 12, range 10"
 J'Larr MKII War Center,C&C,4,M,190,3,Grants +2d6 bonus to 4 ships; range 8 hexes
 T'Panga Electronic Warfare System,ECM,30,E,550,6,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes"
