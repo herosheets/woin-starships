@@ -11,6 +11,7 @@ Omnibeam J21 Gravity Beam,Tractor Beam,20,E,120,0,"STR 8, range 12"
 Outer Sun Merchants CCH80 Electromagnetic Projector,Tractor Beam,25,G,300,0,"STR 10, range 15"
 Phylon C5 Tractor Beam Emitter,Tractor Beam,4,S,24,0,"STR 3, range 3"
 Phylon Q7 Tractor Beam Projector,Tractor Beam,60,C,450,0,"STR 14, range 20"
+T'Panga MKII Control Beam,Tractor Beam,30,G,450,0,"STR 12, range 10"
 Fuel Bay Alteration,Fueling Equipment,0.1,n/a,0.5,0,Increase operational range by +1 (before fuel eff. mod is applied)
 Over Prime O68 Fuel Scoop,Fueling Equipment,5,S,100,0,Gathers 1 fuel unit per hour
 Black Hole Products P40 Fuel Scoop,Fueling Equipment,40,M,250,0,Gathers 5 fuel units per hour
