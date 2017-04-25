@@ -11,6 +11,7 @@ Carter Psitech EL-2 Liquid Fuel Rocket,30,E,7.1,10,71,0.7
 Highlight Robotics GL-2 Liquid Fuel Rocket,70,G,9.9,15,99,0.5
 ,,,,,,
 Ion Engines,Cost,Size,CPU,Space,Power,Fuel Eff
+Chen-Zua mSI-1 Micro ion Engone,1,S,0.3,1,2,1.0
 Satellite Concepts SI-1 Ion Engine,5,S,0.7,4,7,1.4
 Satellite Concepts SI-2 Ion Engine,8,S,1.1,4,11,1.4
 Oshiro Shipping MI-1 Ion Engine,11,M,1.8,10,18,1.4
