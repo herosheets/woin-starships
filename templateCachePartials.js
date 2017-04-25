@@ -466,7 +466,7 @@ module.run(['$templateCache', function($templateCache) {
     '    <thead>\n' +
     '    <tr>\n' +
     '        <th class="input-cell"></th>\n' +
-    '        <th>Quantity</th>\n' +
+    '        <th>Capacity (crew)</th>\n' +
     '        <th>Customization</th>\n' +
     '        <th>Cost/crew</th>\n' +
     '        <th>Luxury/crew</th>\n' +
