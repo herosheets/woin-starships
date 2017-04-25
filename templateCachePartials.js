@@ -500,7 +500,7 @@ module.run(['$templateCache', function($templateCache) {
     '<table class="table table-striped">\n' +
     '    <thead>\n' +
     '    <tr>\n' +
-    '        <th class="input-cell"></th>\n' +
+    '        <th class="input-cell">CAPACITY</th>\n' +
     '        <th>Customization</th>\n' +
     '        <th>Cost/crew</th>\n' +
     '        <th>Luxury/crew</th>\n' +
