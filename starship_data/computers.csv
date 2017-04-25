@@ -1,4 +1,5 @@
 Control Computers,Cost,Size,Space,Max FTL,CPU,E-DEFENSE,Crew,Rng Inc,SOAK,DEFENSE,Checks,,
+Chen-Zua mM-1 Cockpit Control System,1,S,0.2,2,4,10,-0.00%,3,0,-0,+0d6
 Highwatch SM-1 Command Computer,3,S,1,2,8,10,-0.00%,5,0,-0,+0d6,,1
 Frontier Products MM-1 Command Computer,15,M,3,2,8,10,-0.00%,10,0,-0,+0d6,,4
 Frontier Products MM-2 Command Computer,30,M,3,3,12,10,-1.00%,11,0,-0,+0d6,,4
