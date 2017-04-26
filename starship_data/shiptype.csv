@@ -1,5 +1,6 @@
 Type,Traits
 Fighter,Evasive
+Bomber
 Patrol Craft,"Evasive, Inspector"
 Courier,"Fast, Silent-running"
 Corvette,"Tactical,Evasive"
