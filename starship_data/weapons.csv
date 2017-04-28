@@ -1,7 +1,7 @@
 Weapon System,Cost,Size,CPU,Space,Range,Attack,Damage
 Energy Weapons,,,,,,,
-Chen-Zua mLC Laser Cannon,1,S,0.1,0.1,3,+0d6,1 heat
-Chen-Zua mB-1 Micro Blaster,1,S,0.3,0.5,3,+0d6,1d6 heat
+Chen-Zua mLC Laser Cannon,1,S,0.1,0.1,1,+0d6,1 heat
+Chen-Zua mB-1 Micro Blaster,1,S,0.3,0.5,1,+0d6,1d6 heat
 BlasTech Ax-108 Ground Buzzer Surface-Defense Blaster Cannon,3,S,1,1,1,+0d6,1d6 heat
 Mekhdiev Construction SDB-1 Thunderray Beam Disruptor Array,9,S,1,1,3,+0d6,1d6 heat
 Narita Maltech SLP-1 Blackbuster Pulse Laser,5,S,1,1,2,+0d6,2d6 heat
@@ -35,7 +35,7 @@ Young Asteroid Co. GBB-1 Flamebird Blaster Beam,109,G,5,60,8,+0d6,5d6 heat
 ,,,,,,,
 ,,,,,,,
 Ballistic Weapons,Cost,Size,CPU,Space,Range,Attack,Damage
-Chen-Zua mR-1 Mini Railgun,1,S,0.2,0.5,3,+0d6,1d6 ballistic
+Chen-Zua mR-1 Mini Railgun,1,S,0.2,0.5,1,+0d6,1d6 ballistic
 Omnitech-Prime SPR-1 Skyrain Magnetic Railgun,3,S,1,1,2,+0d6,2d6 ballistic
 Daybeam-Microsun MpaC-1 Hellbolt Particle Cannon,31,M,2,3,5,+0d6,2d6 heat
 Overbeam Biotech MPC-1 Sunbow Projectile Cannon,6,M,2,3,5,+0d6,2d6 ballistic
@@ -51,8 +51,8 @@ Southtech Heavy Weapons LIC-1 Bigstreak Ion Cannon,33,L,3,8,7,+0d6,3d6 ion
 Frontier Partnership GIC-1 Deathflash Dual Heavy Ion Cannon,161,G,5,47,14,+0d6,5d6 ion
 ,,,,,,,
 Missiles & Torpedoes,Cost,Size,CPU,Space,Range,Attack,Damage
-Chen-Zua mPR-1 Proton Torpedo,2,S,0.5,1,5,+0d6,1d6 heat
-Chen-Zua mJM-1 Bayonet Missile,2,S,0.4,1,4,+0d6,1d6 heat
+Chen-Zua mPR-1 Proton Torpedo,2,S,0.5,1,2,+0d6,1d6 heat
+Chen-Zua mJM-1 Bayonet Missile,2,S,0.4,1,2,+0d6,1d6 heat
 Long-Summers Industries SPPx-1 Stingstorm Photonic Torpedo,20,S,1,1,4,+1d6,1d6 heat
 Terra Prime SCCl-1 Starbuster Cluster Concussion Missile Launcher,23,S,1,1,4,+0d6,2d6 ballistic
 Arakyd ST2 Concussion Missile Tube,14,S,2,2,6,+0d6,2d6 ballistic
