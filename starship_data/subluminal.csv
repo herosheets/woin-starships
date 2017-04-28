@@ -1,4 +1,5 @@
 Sub-luminal Engine,Cost,Size,CPU,Space,Power,Fuel Eff
+Chen-Zua mL-1 Micro Rocket,1,S,0.2,1,2,0.7
 Newline-Silverwide Systems SL-1 Liquid Fuel Rocket,1,S,1.1,1,11,0.5
 Newline-Silverwide Systems SL-2 Liquid Fuel Rocket,3,S,1.3,1,13,0.5
 Turner-Koga Inc ML-1 Liquid Fuel Rocket,3,M,1.7,1,17,0.5
@@ -24,6 +25,7 @@ WayDyne Incorporated GI-1 Ion Engine,80,G,5.3,88,53,1.4
 WayDyne Incorporated GI-2 Ion Engine,132,G,9.6,103,96,1.6
 ,,,,,,
 Fusion Reactors,Cost,Size,CPU,Space,Power,Fuel Eff
+Chen-Zua mF-1 Turbo Fusion Engine,1,S,0.3,0.6,3,0.8
 Star Corporation SF-1 Fusion Reactor,7,S,1.2,11,12,1.2
 Star Corporation SF-2 Fusion Reactor,11,S,1.9,12,19,1.2
 WarpCo Alliance MF-1 Fusion Reactor,11,M,3.3,23,33,1.2
