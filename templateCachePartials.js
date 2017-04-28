@@ -456,7 +456,9 @@ module.run(['$templateCache', function($templateCache) {
     '<p class="explainer">\n' +
     '    They A basic ship comes with a bridge, dormitory accommodations for crew and one cabin for the captain. Ships of smaller than class I do not include accommodations, and have a cockpit instead of a bridge.\n' +
     '\n' +
-    'Facilities directly affect a ship\'s LUXURY score which, if below 100%, can cause penalties. A comfortable crew is a happy crew!  However, decandence can cause penalties, too.\n' +
+    'Facilities directly affect a ship\'s LUXURY score which, if below 100%, can cause penalties. A comfortable crew is a happy crew! However, decadence can cause penalties, too.\n' +
+    '    \n' +
+    '    Note that shops smaller than Class I are not affected by LUXURY.\n' +
     '</p>\n' +
     '<h3>Your Facilities</h3>\n' +
     '<h4>Current Luxury:\n' +
