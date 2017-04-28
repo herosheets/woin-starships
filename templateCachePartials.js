@@ -900,6 +900,8 @@ module.run(['$templateCache', function($templateCache) {
     '    configuration grants the ship one exploit. The system does not apply the exploit. For some examples of the sizes and types of some famous starships, <a\n' +
     ' href="http://www.enworld.org/forum/showthread.php?470480-Some-famous-starships"\n' +
     ' target="_blank">click here</a>.\n' +
+    '    <br><br>\n' +
+    '    For ships smaller than Class I, the system is unable to calculate derived figures based on class (SPEED, FTL, SOAK, ARMOR). You will need to apply those figures manually when complete.\n' +
     '\n' +
     '</p>\n' +
     '<select class=\'form-control\' style=\'overflow:hidden;max-width:500px;\'\n' +
