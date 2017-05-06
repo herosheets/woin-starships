@@ -52,7 +52,7 @@ Frontier Partnership GIC-1 Deathflash Dual Heavy Ion Cannon,161,G,5,47,14,+0d6,5
 ,,,,,,,
 Missiles & Torpedoes,Cost,Size,CPU,Space,Range,Attack,Damage
 Chen-Zua mPR-1 Proton Torpedo,2,S,0.5,1,2,+0d6,1d6 heat
-Chen-Zua mJM-1 Bayonet Missile,2,S,0.4,1,2,+0d6,1d6 heat
+Chen-Zua mJM-1 Bayonet Missile,3,S,0.4,1,3,+0d6,1d6 heat
 Long-Summers Industries SPPx-1 Stingstorm Photonic Torpedo,20,S,1,1,4,+1d6,1d6 heat
 Terra Prime SCCl-1 Starbuster Cluster Concussion Missile Launcher,23,S,1,1,4,+0d6,2d6 ballistic
 Arakyd ST2 Concussion Missile Tube,14,S,2,2,6,+0d6,2d6 ballistic
