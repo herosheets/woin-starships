@@ -39,3 +39,16 @@ Spartan Systems,,,,,,
 K'Chorla MKII Control Beam,Tractor Beam,30,G,450,0,"STR 12, range 10"
 J'Larr MKII War Center,C&C,4,M,190,3,Grants +2d6 bonus to 4 ships; range 8 hexes
 T'Panga Electronic Warfare System,ECM,30,E,550,6,"Missiles have a -1d6 penalty to hit the ship, as do scanning attempts; range 20 hexes"
+,,,,,,
+Borian Systems,,,,,,
+BA1 Repair Bay,Engineering Modification,9,M,190,3,Repairs 2 SS per turn
+BA1A Remote Repair Bay,Engineering Modification,16,L,400,5,"Repairs 2 SS per turn; range 4 hexes"
+BA1B Remote Repair Bay,Engineering Modification,18,L,900,6,"Repairs 2 SS per turn; range 6 hexes"
+BFS1 Fuel Scoop,Fueling Equipment,4,S,80,0,Gathers 2 fuel per hour
+BFS1A Fuel Scoop,Fueling Equipment,30,M,200,0,Gathers 8 fuel per hour
+BFS2A Fuel Scoop,Fueling Equipment,70,E,800,0,Gathers 30 fuel per hour
+BT-1 Tractor Beam,Tractor Beam,4,S,8,0,"STR 3, range 6"
+BT-2 Tractor Beam,Tractor Beam,9,M,25,0,"STR 6, range 10"
+BT-3 Tractor Beam,Tractor Beam,12,L,60,0,"STR 8, range 13"
+BT-4 Tractor Beam,Tractor Beam,18,E,100,0,"STR 12, range 15"
+BT-5 Tractor Beam,Tractor Beam,22,G,250,0,"STR 15, range 15"
