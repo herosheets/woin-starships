@@ -12,7 +12,7 @@ Carter Psitech EL-2 Liquid Fuel Rocket,30,E,7.1,10,71,0.7
 Highlight Robotics GL-2 Liquid Fuel Rocket,70,G,9.9,15,99,0.5
 ,,,,,,
 Ion Engines,Cost,Size,CPU,Space,Power,Fuel Eff
-Chen-Zua mSI-1 Micro Ion Engine,1,S,0.3,0.5,2,1.0
+Chen-Zua mSI-1 Micro Ion Engine,1,S,0.3,0.5,2,1
 Satellite Concepts SI-1 Ion Engine,5,S,0.7,4,7,1.4
 Satellite Concepts SI-2 Ion Engine,8,S,1.1,4,11,1.4
 Oshiro Shipping MI-1 Ion Engine,11,M,1.8,10,18,1.4
@@ -60,3 +60,17 @@ Batrell MKI Fusion Reactor,100,E,4.5,130,90,0.6
 Batrell MKII Fusion Reactor,205,E,5.5,165,105,0.7
 Kintata MKI Fusion Reactor,300,G,6,250,125,0.6
 Kintata MKII Fusion Reactor,650,G,9,275,200,0.6
+,,,,,,
+Borian Fusion Reactors,,,,,,
+Type A Fusion Engine,0.5,S,0.2,0.5,4,1.5
+Type B1 Fusion Reactor,3,S,0.9,12,15,1.6
+Type B2 Fusion Reactor,5,S,1.4,13,22,1.6
+Type C Fusion Reactor,6,M,2.8,25,36,1.9
+Type D Fusion Reactor,9,G,2.5,100,40,1.4
+Type E Fusion Reactor,12,M,3,24,41,1.9
+Type F1 Fusion Reactor,26,L,3.5,45,48,2
+Type F2 Fusion Reactor,13,L,4,40,60,1.5
+Type G Fusion Reactor,28,E,5.5,80,90,1.6
+Type H1 Fusion Reactor,49,E,6.5,95,100,1.7
+Type H2 Fusion Reactor,70,G,8,150,120,1.5
+Type H3 Fusion Reactor,150,G,12,180,199,1.5
