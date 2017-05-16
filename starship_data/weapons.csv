@@ -107,11 +107,13 @@ Kal-rem Type 4 Plasma Discharge Launcher,700,M,12,14,5,+0d6,10d6/3d6 plasma
 P'Rax Type 1 Basebuster Plasma Launcher,1250,G,20,60,7,+0d6,12d6/2d6 plasma
 ,,,,,,,
 Borian Weapons,Cost,Size,CPU,Space,Range,Attack,Damage
-BIC-1 Ion Projector,25,M,2,8,5,+0d6,2d6 ion (cone 5)
-BIC-2 Ion Projector,70,L,6,22,8,+0d6,3d6 ion (cone 8)
-BIB-1 Ion Beam,15,M,1.5,4,7,+1d6,3d6 ion
-BIB-2 Ion Beam,20,M,2,4,10,+1d6,4d6 ion
-BIG-1 Ion Bomb,30,S,1,2,15,+0d6,1d6 ion (burst 3)
-BIG-2 Ion Bomb,45,M,3,5,15,+0d6,2d6 ion (burst 5)
-BIPG-1 Ion Pulse Generator,60,L,5,12,0,+0d6,1d6 ion (burst 5)
-BIPH-2 Ion Pulse Generator,100,E,9,20,0,+0d6,2d6 ion (burst 6)
+Boria Energy Systems BIC-1 Ion Projector,25,M,2,8,5,+0d6,2d6 ion (cone 5)
+Boria Energy Systems BIC-2 Ion Projector,70,L,6,22,8,+0d6,3d6 ion (cone 8)
+Boria Energy Systems BIB-1 Ion Beam,15,M,1.5,4,7,+1d6,3d6 ion
+Boria Energy Systems BIB-2 Ion Beam,20,M,2,4,10,+1d6,4d6 ion
+Boria Energy Systems BIG-1 Ion Bomb,30,S,1,2,15,+0d6,1d6 ion (burst 3)
+Boria Energy Systems BIG-2 Ion Bomb,45,M,3,5,15,+0d6,2d6 ion (burst 5)
+Boria Energy Systems BIPG-1 Ion Pulse Generator,60,L,5,12,0,+0d6,1d6 ion (burst 5)
+Boria Energy Systems BIPH-2 Ion Pulse Generator,100,E,9,20,0,+0d6,2d6 ion (burst 6)
+Boria Moon Mining Co-Op BML-1 Mining Laser,5,M,1,4,1,+0d6,1d6 heat (3d6 vs. rock)
+Boria Moon Mining Co-Op BML-2 Mining Laser,9,L,2,6,2,+0d6,1d6 heat (4d6 vs. rock)
