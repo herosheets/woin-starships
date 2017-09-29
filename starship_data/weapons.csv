@@ -117,3 +117,11 @@ Boria Energy Systems BIPG-1 Ion Pulse Generator,60,L,5,12,0,+0d6,1d6 ion (burst 
 Boria Energy Systems BIPH-2 Ion Pulse Generator,100,E,9,20,0,+0d6,2d6 ion (burst 6)
 Boria Moon Mining Co-Op BML-1 Mining Laser,5,M,1,4,1,+0d6,1d6 heat (3d6 vs. rock)
 Boria Moon Mining Co-Op BML-2 Mining Laser,9,L,2,6,2,+0d6,1d6 heat (4d6 vs. rock)
+,,,,,,,
+Venetian Weapons,Cost,Size,CPU,Space,Range,Attack,Damage
+Inthili Starlance Type 1,400,L,12,25,25,+1d6,4d6 heat
+Inthili Starlance Type 2,800,L,18,30,30,+1d6,5d6 heat
+Vas'mor Ion Beamer,290,M,10,10,8,+1d6,3d6 ion
+Loymayus Pulse Casters,100,S,5,5,10,+1d6,3d6 heat
+Uthus Beth'ed Annlayr Vortex Cannon Type 1,800,L,10,30,20,+1d6,4d6 heat/ballistic
+Uthus Beth'ed Annlayr Vortex Cannon Type 2,1450,L,16,35,20,+1d6,6d6 heat/ballistic
