@@ -61,7 +61,7 @@ Batrell MKII Fusion Reactor,205,E,5.5,165,105,0.7
 Kintata MKI Fusion Reactor,300,G,6,250,125,0.6
 Kintata MKII Fusion Reactor,650,G,9,275,200,0.6
 ,,,,,,
-Borian Fusion Reactors,,,,,,
+Borian Fusion Reactors,Cost,Size,CPU,Space,Power,Fuel Eff
 Boria Stellar Foundation Type A Fusion Engine,0.5,S,0.2,0.5,4,1.5
 Boria Stellar Foundation Type B1 Fusion Reactor,3,S,0.9,12,15,1.6
 Boria Stellar Foundation Type B2 Fusion Reactor,5,S,1.4,13,22,1.6
@@ -74,3 +74,10 @@ Boria Stellar Foundation Type G Fusion Reactor,28,E,5.5,80,90,1.6
 Boria Stellar Foundation Type H1 Fusion Reactor,49,E,6.5,95,100,1.7
 Boria Stellar Foundation Type H2 Fusion Reactor,70,G,8,150,120,1.5
 Boria Stellar Foundation Type H3 Fusion Reactor,150,G,12,180,199,1.5
+,,,,,,
+Venetian Star Sails,Cost,Size,CPU,Space,Power,Fuel Eff
+Ghamia Vos Star Sail Type 1,10,S,3,4,5,2
+Ghamia Vos Star Sail Type 2,19,M,6,8,10,2
+Ghamia Vos Star Sail Type 3,31,L,10,18,15,2
+Ghamia Vos Star Sail Type 4,75,E,15,39,25,2
+Ghamia Vos Star Sail Type 5,210,G,30,75,45,2
