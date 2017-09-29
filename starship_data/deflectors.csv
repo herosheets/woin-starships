@@ -40,5 +40,11 @@ Borian Shields,,,,,
 Boria Prime Engineering Inc. Type I,2,S,1.2,3,8
 Boria Prime Engineering Inc. Type II,5,M,2.5,8,18
 Boria Prime Engineering Inc. Type III,10,L,3.5,15,26
-Boria Prime Engineering Inc. Type IV,20,E,4.0,37,45
-Boria Prime Engineering Inc. Type V,45,G,6.0,50,70
+Boria Prime Engineering Inc. Type IV,20,E,4,37,45
+Boria Prime Engineering Inc. Type V,45,G,6,50,70
+,,,,,
+Venetian Shields,,,,,
+Shahamia Energy Shield Type 1,30,S,11,7,20
+Shahamia Energy Shield Type 2,75,S,12,9,30
+Drathus Mox Deflector Shield Type 1,260,M,25,18,80
+Drathus Mox Deflector Shield Type 2,640,M,35,30,160
