@@ -51,9 +51,9 @@
                     <span style="font-weight: bold;">Computers </span>
                     <span ng-repeat="(name, quantity) in ship['Control Computers']">
                         <span ng-bind="quantity"></span>x <span ng-bind="name"></span>
-                        (CPU cycles: <span ng-bind="computerHash[name]['CPU']"></span>;
-                        max FTL: <span ng-bind="computerHash[name]['Max FTL']"></span>;
-                        checks: <span ng-bind="computerHash[name].Checks"></span>)
+                        (CPU cycles <span ng-bind="computerHash[name]['CPU']"></span>;
+                        max FTL <span ng-bind="computerHash[name]['Max FTL']"></span>;
+                        checks <span ng-bind="computerHash[name].Checks"></span>)
                     </span>
                 </td>
             </tr>
