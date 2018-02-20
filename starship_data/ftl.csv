@@ -14,6 +14,7 @@ Yang Astrotech GA-1 Antimatter Engine,374,G,14.4,87,72,1
 Panwatch-Microbeam EA-2H Antimatter Engine,589,G,14.6,51,73,1.1
 Panwatch-Microbeam EA-2S Antimatter Engine,1369,G,15.2,44,76,1.4
 Yang Astrotech GA-2 Antimatter Engine,721,G,15.8,79,79,1.1
+Chen Zua TA-1 Titan Antimatter Engine,3000,Tt,90,24000,950,0.8
 ,,,,,,
 HYPERDRIVES,Cost,Size,CPU,Space,Power,Fuel Eff
 Chen-Zua mSH-1 Micro Hyperdrive,2,S,1,1,1,0.5
@@ -29,6 +30,7 @@ Stellar Group EH-1 Hyperdrive,109,L,4.8,13,24,0.8
 Stellar Group EH-2 Hyperdrive,240,L,6,10,30,0.9
 Highfarer Enterprises GH-1 Hyperdrive,256,E,8.8,38,44,0.8
 Highfarer Enterprises GH-2 Hyperdrive,481,E,12,30,60,0.9
+Chen Zua TH-1 Colossus Hyperdrive,3900,Tt,110,25000,1100,0.8
 ,,,,,,
 TACHYON SAILS,Cost,Size,CPU,Space,Power,Fuel Eff
 TransCo NewStellar ST-1 Tachyon Sail,48,S,1.4,6,7,1
@@ -74,3 +76,4 @@ Zenlush Ghen Void Sail Type 2,900,M,10,12,40,3
 Zenlush Ghen Void Sail Type 3,1600,L,19,22,65,3
 Zenlush Ghen Void Sail Type 4,2500,E,30,40,100,3
 Zenlush Ghen Void Sail Type 5,6000,E,40,99,150,3
+Zimhadi Void Sail,30000,Tt,160,49000,2100,3

@@ -6,6 +6,7 @@ Chen-Zua mM-1 Flight Avionics Unit,1,S,0.5,2,5,10,-0.00%,3,0,-0,+0d6,,
 Highwatch SM-1 Command Computer,3,S,1,2,8,10,-0.00%,5,0,-0,+0d6,,1
 Frontier Products MM-1 Command Computer,15,M,3,2,8,10,-0.00%,10,0,-0,+0d6,,4
 Frontier Products MM-2 Command Computer,30,M,3,3,12,10,-1.00%,11,0,-0,+0d6,,4
+Chen Zua SM-1H Basic Navigation Controller,40,S,4,4,2,10,-0.00%,1,0,0,+0d6,,1
 Highwatch SM-1H Command Computer,109,S,1,4,16,10,-5.00%,7,1,1,+1d6,,1
 Frontier Products MM-3 Command Computer,45,M,3,4,16,10,-2.00%,11,0,1,+0d6,,4
 Chemerkin-Liang Products LM-1 Command Computer,30,L,5,4,16,10,-0.00%,15,1,-0,+0d6,,8
@@ -23,6 +24,7 @@ Chemerkin-Liang Products LM-3S Command Computer,1200,L,5,14,56,28,-13.00%,22,2,3
 MicroCorp EM-3S Command Computer,1425,E,10,14,56,28,-17.00%,26,3,3,+1d6,,16
 Terra Prime GM-2 Command Computer,550,G,40,14,60,30,-5.00%,30,3,0,+0d6,,64
 Chemerkin-Liang Products LM-5S Command Computer,2000,L,5,16,64,32,-15.00%,23,3,4,+1d6,,8
+Kilajo-Smythe XT-1 Navigation Console,400,S,4,20,1,10,-10.00%,0,0,0,+0d6,,
 ,,,,,,,,,,,,,
 ADVANCEMENT LEVEL 10 COMPUTERS,Cost,Size,Space,Max FTL,CPU,E-DEFENSE,Crew,Rng Inc,SOAK,DEFENSE,Checks,,
 Xing Starship Design X-1S Clss 5 Navcom System*,65,S,3,63,2,10,-0.00%,0,0,-0,+0d6,,
